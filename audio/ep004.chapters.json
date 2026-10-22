@@ -1,0 +1,21 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 89,
+      "title": "The famous actor in our pocket"
+    },
+    {
+      "startTime": 326,
+      "title": "Sorry for missing that tumor"
+    },
+    {
+      "startTime": 399,
+      "title": "A happy baby is here"
+    }
+  ]
+}

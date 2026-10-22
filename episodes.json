@@ -34,5 +34,17 @@
     "music": true,
     "chapters": "audio/ep003.chapters.json",
     "cover": "covers/ep003.jpg"
+  },
+  {
+    "no": 4,
+    "date": "2026-10-22",
+    "title": "Our AI Midwife",
+    "summary": "A father describes how a chatbot playing a TV doctor suggested the MRI that found a fibroid behind his wife's six years of unexplained infertility, leading to a natural pregnancy after surgery. He uses the story to argue that AI's everyday benefits deserve acknowledgment alongside its risks.",
+    "file": "audio/ep004.mp3",
+    "bytes": 4627029,
+    "duration": "00:09:20",
+    "music": true,
+    "chapters": "audio/ep004.chapters.json",
+    "cover": "covers/ep004.jpg"
   }
 ]
