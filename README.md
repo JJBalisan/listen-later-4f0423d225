@@ -1,7 +1,7 @@
 # Tab Closed (unlisted)
 
 Pages, articles and papers saved with the `listen` command in
-`threshold-and-bar-tools`, cleaned up for the ear and read aloud. The repo is
+`podcast-kit`, cleaned up for the ear and read aloud. The repo is
 public only because free GitHub Pages needs that; the name is random and the
 page carries noindex. Treat the feed URL as a secret.
 
