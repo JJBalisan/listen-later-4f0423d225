@@ -58,5 +58,17 @@
     "music": true,
     "chapters": "audio/ep005.chapters.json",
     "cover": "covers/ep005.jpg"
+  },
+  {
+    "no": 6,
+    "date": "2026-10-22",
+    "title": "Your Book Review: We Present Television",
+    "summary": "A reviewer reads a 1940 collection of essays by the pioneers of American television, and finds it mostly prosaic technical description laced with startlingly accurate, and sometimes eerie, prophecy about the world television would build. The reviewer argues that \"Television\" meant far more than the TV set, and that its authors foresaw much of our connected, screen-saturated present.",
+    "file": "audio/ep006.mp3",
+    "bytes": 26225583,
+    "duration": "00:54:20",
+    "music": true,
+    "chapters": "audio/ep006.chapters.json",
+    "cover": "covers/ep006.jpg"
   }
 ]
