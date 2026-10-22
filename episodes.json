@@ -10,5 +10,17 @@
     "music": true,
     "chapters": "audio/ep001.chapters.json",
     "cover": "covers/ep001.jpg"
+  },
+  {
+    "no": 2,
+    "date": "2026-10-22",
+    "title": "Current AIs out-persuade professionals in lab settings but (probably) not in the world",
+    "summary": "The author argues that experiments show AIs beating professional humans at narrow persuasion tasks, but real-world evidence suggests broad AI persuasion sits between median human and median professional level.",
+    "file": "audio/ep002.mp3",
+    "bytes": 10657300,
+    "duration": "00:21:54",
+    "music": true,
+    "chapters": "audio/ep002.chapters.json",
+    "cover": "covers/ep002.jpg"
   }
 ]

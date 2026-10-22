@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 105,
+      "title": "Tiers of persuasive ability"
+    },
+    {
+      "startTime": 209,
+      "title": "Evidence for AI at professional level"
+    },
+    {
+      "startTime": 573,
+      "title": "Real-world evidence for"
+    },
+    {
+      "startTime": 687,
+      "title": "Evidence against"
+    },
+    {
+      "startTime": 916,
+      "title": "Covert persuasion at scale"
+    },
+    {
+      "startTime": 1194,
+      "title": "Conclusion and future work"
+    }
+  ]
+}
