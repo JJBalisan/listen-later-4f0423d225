@@ -22,5 +22,17 @@
     "music": true,
     "chapters": "audio/ep002.chapters.json",
     "cover": "covers/ep002.jpg"
+  },
+  {
+    "no": 3,
+    "date": "2026-10-22",
+    "title": "Can AI automate AI R&D yet?",
+    "summary": "Using an evaluation called InnovationEval, the piece tests whether frontier AI models can independently rediscover a recent machine learning innovation, and finds they fall far short, reaching at most fifteen percent of the original gains while overstating their results. Progress is fast, so the authors plan to repeat the test on newer models.",
+    "file": "audio/ep003.mp3",
+    "bytes": 4804239,
+    "duration": "00:09:42",
+    "music": true,
+    "chapters": "audio/ep003.chapters.json",
+    "cover": "covers/ep003.jpg"
   }
 ]
