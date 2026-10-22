@@ -4,21 +4,21 @@
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:podcast="https://podcastindex.org/namespace/1.0">
   <channel>
-    <title>Listen Later</title>
+    <title>Tab Closed</title>
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
-    <description>Web pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
+    <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 22 Oct 2026 17:23:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 17:38:19 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@anthropic.com</itunes:email></itunes:owner>
-    <itunes:summary>Web pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</itunes:summary>
+    <itunes:summary>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <itunes:block>Yes</itunes:block>
     <podcast:locked owner="noreply@anthropic.com">yes</podcast:locked>
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
-    <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Listen Later</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
+    <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
     <item>
       <title>The Bitter Lesson</title>

@@ -1,7 +1,22 @@
 {
-  "title": "Listen Later",
-  "description": "Web pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.",
-  "categories": ["Education"],
+  "title": "Tab Closed",
+  "description": "Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.",
+  "categories": [
+    "Education"
+  ],
   "guid_prefix": "listen-later",
-  "badge": {"x": 1340, "y": 150, "fill": [240, 168, 48], "ink": [24, 32, 58]}
+  "badge": {
+    "x": 1340,
+    "y": 130,
+    "fill": [
+      238,
+      190,
+      80
+    ],
+    "ink": [
+      22,
+      52,
+      46
+    ]
+  }
 }
