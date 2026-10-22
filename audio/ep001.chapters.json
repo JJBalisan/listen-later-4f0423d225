@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 19,
+      "title": "Chess and Go"
+    },
+    {
+      "startTime": 130,
+      "title": "Speech and vision"
+    },
+    {
+      "startTime": 233,
+      "title": "The lesson"
+    },
+    {
+      "startTime": 289,
+      "title": "Two general points"
+    }
+  ]
+}

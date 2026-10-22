@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "no": 1,
+    "date": "2026-10-22",
+    "title": "The Bitter Lesson",
+    "summary": "Looking back over decades of AI research, the piece argues that general methods which scale with computation, namely search and learning, have always eventually beaten approaches that build in human knowledge, and that researchers should build meta-methods that discover rather than encode what we think we know.",
+    "file": "audio/ep001.mp3",
+    "bytes": 3164410,
+    "duration": "00:06:17",
+    "music": true,
+    "chapters": "audio/ep001.chapters.json",
+    "cover": "covers/ep001.jpg"
+  }
+]
