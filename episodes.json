@@ -70,5 +70,17 @@
     "music": true,
     "chapters": "audio/ep006.chapters.json",
     "cover": "covers/ep006.jpg"
+  },
+  {
+    "no": 7,
+    "date": "2026-10-25",
+    "title": "James Bond: Jack Lowden and Callum Turner to screen test this weekend, reports say",
+    "summary": "Reports say three to five actors, reportedly including Jack Lowden, Callum Turner and Josh O'Connor, are in the final screen tests to replace Daniel Craig as James Bond, with no timeline yet for a decision.",
+    "file": "audio/ep007.mp3",
+    "bytes": 3110643,
+    "duration": "00:06:11",
+    "music": true,
+    "chapters": "audio/ep007.chapters.json",
+    "cover": "covers/ep007.jpg"
   }
 ]
