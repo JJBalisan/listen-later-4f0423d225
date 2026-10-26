@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 25 Oct 2026 06:26:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 23:25:49 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,20 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>We tried to automate Epoch</title>
+      <description>Epoch tested leading AI models on its own regular work tasks, graded against the standards applied to human employees, and found the best scored about sixty-five percent, which is still a failing grade. This helps explain why AI's economic impact lags behind its benchmark results. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Epoch tested leading AI models on its own regular work tasks, graded against the standards applied to human employees, and found the best scored about sixty-five percent, which is still a failing grade. This helps explain why AI's economic impact lags behind its benchmark results. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Mon, 26 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep009</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep009.mp3" length="2577993" type="audio/mpeg"/>
+      <itunes:duration>00:05:04</itunes:duration>
+      <itunes:episode>9</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep009.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep009.chapters.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>Andy Burnham defends Gogglebox appearance after Badenoch criticism</title>
       <description>Prime Minister Andy Burnham defended appearing on a celebrity Gogglebox episode for Stand Up To Cancer after Kemi Badenoch said she was amazed he had the time. Badenoch argued that a prime minister should be focused on the job rather than Gogglebox and social media. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>

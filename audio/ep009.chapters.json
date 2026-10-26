@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 22,
+      "title": "The productivity paradox"
+    },
+    {
+      "startTime": 78,
+      "title": "The Automation Reports"
+    },
+    {
+      "startTime": 153,
+      "title": "A sixty-five percent score is still a failed task"
+    },
+    {
+      "startTime": 234,
+      "title": "Why economic impact lags"
+    }
+  ]
+}
