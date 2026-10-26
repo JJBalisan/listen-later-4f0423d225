@@ -130,5 +130,17 @@
     "music": true,
     "chapters": "audio/ep011.chapters.json",
     "cover": "covers/ep011.jpg"
+  },
+  {
+    "no": 12,
+    "date": "2026-10-26",
+    "title": "What\u2019s IN & what\u2019s OUT in bi dating right now \ud83d\udc40",
+    "summary": "Florence Scordoulis lists seventeen things that should be in and out of bi plus dating for cuffing season, from biphobic assumptions and app algorithms to queer belonging and timelines, while promoting a London bi plus speed dating and karaoke event.",
+    "file": "audio/ep012.mp3",
+    "bytes": 5094872,
+    "duration": "00:10:18",
+    "music": true,
+    "chapters": "audio/ep012.chapters.json",
+    "cover": "covers/ep012.jpg"
   }
 ]
