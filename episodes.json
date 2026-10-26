@@ -118,5 +118,17 @@
     "music": true,
     "chapters": "audio/ep010.chapters.json",
     "cover": "covers/ep010.jpg"
+  },
+  {
+    "no": 11,
+    "date": "2026-10-26",
+    "title": "Single points of failure in military AI command",
+    "summary": "As autonomous systems replace human soldiers and officers, control of a military can collapse toward a single point of failure at the top. Nuclear command-and-control offers three kinds of safeguards, integrity, containment and soundness of command, but the ones that constrain the top are the least likely to be adopted.",
+    "file": "audio/ep011.mp3",
+    "bytes": 15503734,
+    "duration": "00:32:00",
+    "music": true,
+    "chapters": "audio/ep011.chapters.json",
+    "cover": "covers/ep011.jpg"
   }
 ]

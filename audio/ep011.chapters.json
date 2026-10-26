@@ -1,0 +1,45 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 130,
+      "title": "Obedience and independence"
+    },
+    {
+      "startTime": 234,
+      "title": "Automation removes independence"
+    },
+    {
+      "startTime": 403,
+      "title": "Pressures toward autonomy"
+    },
+    {
+      "startTime": 557,
+      "title": "Lessons from nuclear command"
+    },
+    {
+      "startTime": 689,
+      "title": "Integrity of command"
+    },
+    {
+      "startTime": 993,
+      "title": "Containment"
+    },
+    {
+      "startTime": 1173,
+      "title": "Soundness of command"
+    },
+    {
+      "startTime": 1435,
+      "title": "The adoption gradient"
+    },
+    {
+      "startTime": 1840,
+      "title": "Conclusion"
+    }
+  ]
+}
