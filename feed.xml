@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 26 Oct 2026 23:54:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 23:55:52 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,20 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>ChinAI #379: “Chinese AI only makes trash TV?”</title>
+      <description>Jeff Ding's newsletter examines a viral Chinese claim that over half of China's computing power goes to trash short dramas, traces it to a single investor statement, and notes a Banyuetan commentary debunking it. It also flags three further readings on recursive self-improvement, the global AI talent race, and past issues. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Jeff Ding's newsletter examines a viral Chinese claim that over half of China's computing power goes to trash short dramas, traces it to a single investor statement, and notes a Banyuetan commentary debunking it. It also flags three further readings on recursive self-improvement, the global AI talent race, and past issues. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Mon, 26 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep014</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep014.mp3" length="4173304" type="audio/mpeg"/>
+      <itunes:duration>00:08:23</itunes:duration>
+      <itunes:episode>14</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep014.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep014.chapters.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>We need more bees, so is honey the answer?</title>
       <description>The piece argues that beekeeping and eating honey do not help bee conservation, because managed western honeybees compete with, spread disease to, and pollinate less effectively than wild pollinators, and it urges better use of outdoor spaces and a plant-based diet instead. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>

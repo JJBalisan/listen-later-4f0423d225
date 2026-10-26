@@ -154,5 +154,17 @@
     "music": true,
     "chapters": "audio/ep013.chapters.json",
     "cover": "covers/ep013.jpg"
+  },
+  {
+    "no": 14,
+    "date": "2026-10-26",
+    "title": "ChinAI #379: \u201cChinese AI only makes trash TV?\u201d",
+    "summary": "Jeff Ding's newsletter examines a viral Chinese claim that over half of China's computing power goes to trash short dramas, traces it to a single investor statement, and notes a Banyuetan commentary debunking it. It also flags three further readings on recursive self-improvement, the global AI talent race, and past issues.",
+    "file": "audio/ep014.mp3",
+    "bytes": 4173304,
+    "duration": "00:08:23",
+    "music": true,
+    "chapters": "audio/ep014.chapters.json",
+    "cover": "covers/ep014.jpg"
   }
 ]
