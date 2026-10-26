@@ -106,5 +106,17 @@
     "music": true,
     "chapters": "audio/ep009.chapters.json",
     "cover": "covers/ep009.jpg"
+  },
+  {
+    "no": 10,
+    "date": "2026-10-26",
+    "title": "A World Driven By Fear",
+    "summary": "Steve Magness argues that a media and political environment built on fear and outrage pushes society into a rigid, protective survival mode and trains helplessness, and that we can counter it by deliberately building hope through small, repeated actions.",
+    "file": "audio/ep010.mp3",
+    "bytes": 6814545,
+    "duration": "00:13:53",
+    "music": true,
+    "chapters": "audio/ep010.chapters.json",
+    "cover": "covers/ep010.jpg"
   }
 ]
