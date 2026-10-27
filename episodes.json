@@ -166,5 +166,17 @@
     "music": true,
     "chapters": "audio/ep014.chapters.json",
     "cover": "covers/ep014.jpg"
+  },
+  {
+    "no": 15,
+    "date": "2026-10-27",
+    "title": "Evaluating how AI agents use tools",
+    "summary": "AgentMail tested twenty-five model-and-harness agents on seven email tasks and found that agents rarely fail at the work itself, but at points where the tool leaves them guessing, such as hidden filtered mail, misleadingly named endpoints, and ambiguous spam labels. Most fixes belong to the tool: say what was filtered, name operations for what they do, and explain what labels mean.",
+    "file": "audio/ep015.mp3",
+    "bytes": 11840140,
+    "duration": "00:24:22",
+    "music": true,
+    "chapters": "audio/ep015.chapters.json",
+    "cover": "covers/ep015.jpg"
   }
 ]
