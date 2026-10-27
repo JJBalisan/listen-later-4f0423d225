@@ -190,5 +190,17 @@
     "music": true,
     "chapters": "audio/ep016.chapters.json",
     "cover": "covers/ep016.jpg"
+  },
+  {
+    "no": 17,
+    "date": "2026-10-27",
+    "title": "Your Book Review: The Ghost In My Brain",
+    "summary": "A reviewer who has her own concussion reads Clark Elliott's memoir of a decade of severe post-concussion symptoms and his recovery through puzzles and prism lenses. She weighs the thin evidence for the treatments and argues that patient communities, paired with structured case registries, could help decide what deserves a proper trial.",
+    "file": "audio/ep017.mp3",
+    "bytes": 13294285,
+    "duration": "00:27:23",
+    "music": true,
+    "chapters": "audio/ep017.chapters.json",
+    "cover": "covers/ep017.jpg"
   }
 ]

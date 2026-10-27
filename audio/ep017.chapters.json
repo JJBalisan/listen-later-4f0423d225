@@ -1,0 +1,41 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 165,
+      "title": "A hurricane on fifty million computers"
+    },
+    {
+      "startTime": 423,
+      "title": "Partial death"
+    },
+    {
+      "startTime": 548,
+      "title": "The miracle begins"
+    },
+    {
+      "startTime": 627,
+      "title": "Bells and prisms"
+    },
+    {
+      "startTime": 750,
+      "title": "The uncanny valley of concussion science"
+    },
+    {
+      "startTime": 1093,
+      "title": "When averages fail"
+    },
+    {
+      "startTime": 1280,
+      "title": "Z-bell tests and Fijian reef fish"
+    },
+    {
+      "startTime": 1510,
+      "title": "Getting out of the parking lot"
+    }
+  ]
+}
