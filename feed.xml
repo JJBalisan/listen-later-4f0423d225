@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 27 Oct 2026 00:17:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 00:22:29 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,20 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>What's the ROI of software engineers' spending on AI?</title>
+      <description>The author surveyed engineering leaders at twenty-seven companies, plus data from CodeRabbit and Gitar, to see what companies spend on AI per engineer and how pull request throughput changed. Spending varies widely and is unrelated to company size, and gains in throughput are uneven, with return on investment hard to pin down. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>The author surveyed engineering leaders at twenty-seven companies, plus data from CodeRabbit and Gitar, to see what companies spend on AI per engineer and how pull request throughput changed. Spending varies widely and is unrelated to company size, and gains in throughput are uneven, with return on investment hard to pin down. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Tue, 27 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep018</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep018.mp3" length="8313485" type="audio/mpeg"/>
+      <itunes:duration>00:17:01</itunes:duration>
+      <itunes:episode>18</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep018.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep018.chapters.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>Your Book Review: The Ghost In My Brain</title>
       <description>A reviewer who has her own concussion reads Clark Elliott's memoir of a decade of severe post-concussion symptoms and his recovery through puzzles and prism lenses. She weighs the thin evidence for the treatments and argues that patient communities, paired with structured case registries, could help decide what deserves a proper trial. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>

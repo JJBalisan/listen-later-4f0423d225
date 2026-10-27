@@ -202,5 +202,17 @@
     "music": true,
     "chapters": "audio/ep017.chapters.json",
     "cover": "covers/ep017.jpg"
+  },
+  {
+    "no": 18,
+    "date": "2026-10-27",
+    "title": "What's the ROI of software engineers' spending on AI?",
+    "summary": "The author surveyed engineering leaders at twenty-seven companies, plus data from CodeRabbit and Gitar, to see what companies spend on AI per engineer and how pull request throughput changed. Spending varies widely and is unrelated to company size, and gains in throughput are uneven, with return on investment hard to pin down.",
+    "file": "audio/ep018.mp3",
+    "bytes": 8313485,
+    "duration": "00:17:01",
+    "music": true,
+    "chapters": "audio/ep018.chapters.json",
+    "cover": "covers/ep018.jpg"
   }
 ]
