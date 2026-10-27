@@ -178,5 +178,17 @@
     "music": true,
     "chapters": "audio/ep015.chapters.json",
     "cover": "covers/ep015.jpg"
+  },
+  {
+    "no": 16,
+    "date": "2026-10-27",
+    "title": "Bruna's Marathon Comeback: From The Trails To The Roads for a 10-minute Personal Best",
+    "summary": "Coach Marco describes how Bruna Maia returned from stress fractures to run a ten-minute marathon personal best in Chicago. He covers moving their coaching to the augo platform, her lab-tested physiology, and the training that fit her strengths.",
+    "file": "audio/ep016.mp3",
+    "bytes": 10206077,
+    "duration": "00:20:57",
+    "music": true,
+    "chapters": "audio/ep016.chapters.json",
+    "cover": "covers/ep016.jpg"
   }
 ]
