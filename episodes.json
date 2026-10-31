@@ -229,5 +229,20 @@
     "vtt": "audio/ep019.vtt",
     "link": "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo",
     "cover": "covers/ep019.jpg"
+  },
+  {
+    "no": 20,
+    "date": "2026-10-31",
+    "title": "How talking about Man Utd's cycle of doom became an industry",
+    "summary": "The piece examines how constant commentary from former Manchester United players on podcasts and YouTube has turned the club's struggles into a content industry, and whether that coverage helps or harms the club.",
+    "file": "audio/ep020.mp3",
+    "bytes": 4418514,
+    "duration": "00:08:54",
+    "music": true,
+    "chapters": "audio/ep020.chapters.json",
+    "transcript": "audio/ep020.transcript.html",
+    "vtt": "audio/ep020.vtt",
+    "link": "https://www.bbc.co.uk/sport/football/articles/cjn5v3pl0159o",
+    "cover": "covers/ep020.jpg"
   }
 ]
