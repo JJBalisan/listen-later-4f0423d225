@@ -214,5 +214,20 @@
     "music": true,
     "chapters": "audio/ep018.chapters.json",
     "cover": "covers/ep018.jpg"
+  },
+  {
+    "no": 19,
+    "date": "2026-10-31",
+    "title": "Jack Grealish: What next for England winger after 'breach of club discipline'?",
+    "summary": "Everton left Jack Grealish out of their League Cup win over Newcastle because of a breach of club discipline, understood to be an unauthorised absence from training, raising questions about his future at the club.",
+    "file": "audio/ep019.mp3",
+    "bytes": 2640186,
+    "duration": "00:05:12",
+    "music": true,
+    "chapters": "audio/ep019.chapters.json",
+    "transcript": "audio/ep019.transcript.html",
+    "vtt": "audio/ep019.vtt",
+    "link": "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo",
+    "cover": "covers/ep019.jpg"
   }
 ]
