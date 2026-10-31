@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 31 Oct 2026 14:33:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 14:48:49 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Neural Networks Are Already Clean</title>
+      <description>Nick Cammarata argues that apparent polysemanticity in neural networks is mostly recursive generalization rather than superposition, so a network's own neurons and circuits can be studied directly. He supports this with vision and language model experiments and argues for exploratory, agent-driven interpretability. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Nick Cammarata argues that apparent polysemanticity in neural networks is mostly recursive generalization rather than superposition, so a network's own neurons and circuits can be studied directly. He supports this with vision and language model experiments and argues for exploratory, agent-driven interpretability. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Sat, 31 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep021</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep021.mp3" length="45677433" type="audio/mpeg"/>
+      <itunes:duration>01:34:51</itunes:duration>
+      <itunes:episode>21</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep021.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://already-clean.goodfire.com/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep021.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep021.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep021.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>How talking about Man Utd's cycle of doom became an industry</title>
       <description>The piece examines how constant commentary from former Manchester United players on podcasts and YouTube has turned the club's struggles into a content industry, and whether that coverage helps or harms the club. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>

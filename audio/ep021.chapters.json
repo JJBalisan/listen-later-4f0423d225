@@ -1,0 +1,53 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 1024,
+      "title": "Cars and Animals"
+    },
+    {
+      "startTime": 1544,
+      "title": "A History of Microscope Errors"
+    },
+    {
+      "startTime": 1747,
+      "title": "Recursive Generalization"
+    },
+    {
+      "startTime": 1889,
+      "title": "Superposition"
+    },
+    {
+      "startTime": 2070,
+      "title": "Superposition of the Gaps"
+    },
+    {
+      "startTime": 2482,
+      "title": "Exploring Image Models"
+    },
+    {
+      "startTime": 3465,
+      "title": "Exploring Language Models"
+    },
+    {
+      "startTime": 4044,
+      "title": "Slouching Towards Monosemanticity"
+    },
+    {
+      "startTime": 4256,
+      "title": "The Residual Stream"
+    },
+    {
+      "startTime": 4486,
+      "title": "Attention"
+    },
+    {
+      "startTime": 4698,
+      "title": "What I Mean by Clean"
+    }
+  ]
+}

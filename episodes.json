@@ -244,5 +244,20 @@
     "vtt": "audio/ep020.vtt",
     "link": "https://www.bbc.co.uk/sport/football/articles/cjn5v3pl0159o",
     "cover": "covers/ep020.jpg"
+  },
+  {
+    "no": 21,
+    "date": "2026-10-31",
+    "title": "Neural Networks Are Already Clean",
+    "summary": "Nick Cammarata argues that apparent polysemanticity in neural networks is mostly recursive generalization rather than superposition, so a network's own neurons and circuits can be studied directly. He supports this with vision and language model experiments and argues for exploratory, agent-driven interpretability.",
+    "file": "audio/ep021.mp3",
+    "bytes": 45677433,
+    "duration": "01:34:51",
+    "music": true,
+    "chapters": "audio/ep021.chapters.json",
+    "transcript": "audio/ep021.transcript.html",
+    "vtt": "audio/ep021.vtt",
+    "link": "https://already-clean.goodfire.com/",
+    "cover": "covers/ep021.jpg"
   }
 ]
