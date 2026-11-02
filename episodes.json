@@ -291,5 +291,21 @@
     "vtt": "audio/ep023.vtt",
     "link": "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo",
     "cover": "covers/ep023.jpg"
+  },
+  {
+    "no": 24,
+    "date": "2026-11-02",
+    "title": "My California Ballot, 2026",
+    "summary": "Scott Alexander walks through how he is voting in Oakland, California, on state propositions, state officials, local measures and local races, with his reasoning on each. He ends by testing whether an AI could have predicted his votes, and finds it only got fifty-seven percent right.",
+    "file": "audio/ep024.mp3",
+    "bytes": 18218242,
+    "duration": "00:37:39",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep024.chapters.json",
+    "transcript": "audio/ep024.transcript.html",
+    "vtt": "audio/ep024.vtt",
+    "link": "https://www.astralcodexten.com/p/my-california-ballot-2026?publication_id=89120&post_id=222088121&isFreemail=true&r=5ohzv3&triedRedirect=true",
+    "cover": "covers/ep024.jpg"
   }
 ]
