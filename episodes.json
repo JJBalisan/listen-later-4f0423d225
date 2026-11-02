@@ -275,5 +275,21 @@
     "vtt": "audio/ep022.vtt",
     "link": "https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura",
     "cover": "covers/ep022.jpg"
+  },
+  {
+    "no": 23,
+    "date": "2026-11-02",
+    "title": "Jack Grealish: What next for England winger after 'breach of club discipline'?",
+    "summary": "Everton left Jack Grealish out of their League Cup win over Newcastle for a breach of club discipline, understood to be an unauthorised absence from training. The piece looks at what this means for the loan winger, whose mood and standing at the club appear to have shifted.",
+    "file": "audio/ep023.mp3",
+    "bytes": 2655161,
+    "duration": "00:05:13",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep023.chapters.json",
+    "transcript": "audio/ep023.transcript.html",
+    "vtt": "audio/ep023.vtt",
+    "link": "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo",
+    "cover": "covers/ep023.jpg"
   }
 ]
