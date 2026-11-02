@@ -259,5 +259,21 @@
     "vtt": "audio/ep021.vtt",
     "link": "https://already-clean.goodfire.com/",
     "cover": "covers/ep021.jpg"
+  },
+  {
+    "no": 22,
+    "date": "2026-11-02",
+    "title": "Against SURA",
+    "summary": "The text supplied contains only the page header for this LessWrong post by Scott Alexander, with no article body, so the argument itself is not available.",
+    "file": "audio/ep022.mp3",
+    "bytes": 680509,
+    "duration": "00:01:07",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep022.chapters.json",
+    "transcript": "audio/ep022.transcript.html",
+    "vtt": "audio/ep022.vtt",
+    "link": "https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura",
+    "cover": "covers/ep022.jpg"
   }
 ]
