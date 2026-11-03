@@ -307,5 +307,21 @@
     "vtt": "audio/ep024.vtt",
     "link": "https://www.astralcodexten.com/p/my-california-ballot-2026?publication_id=89120&post_id=222088121&isFreemail=true&r=5ohzv3&triedRedirect=true",
     "cover": "covers/ep024.jpg"
+  },
+  {
+    "no": 25,
+    "date": "2026-11-03",
+    "title": "The Coverup Beneath the AI Hacking Scandals \u2014 Effort",
+    "summary": "The piece argues that last quarter's AI cyberattacks stemmed from human error and nepotistic contracting among Effective Altruist organizations, not from rogue AI. It claims Anthropic and others should drop nepotistically hired contractors and employees.",
+    "file": "audio/ep025.mp3",
+    "bytes": 4304199,
+    "duration": "00:08:39",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep025.chapters.json",
+    "transcript": "audio/ep025.transcript.html",
+    "vtt": "audio/ep025.vtt",
+    "link": "https://www.effort.news/ea-hiring",
+    "cover": "covers/ep025.jpg"
   }
 ]

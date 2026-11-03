@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 02 Nov 2026 23:26:04 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 15:29:20 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>The Coverup Beneath the AI Hacking Scandals — Effort</title>
+      <description>The piece argues that last quarter's AI cyberattacks stemmed from human error and nepotistic contracting among Effective Altruist organizations, not from rogue AI. It claims Anthropic and others should drop nepotistically hired contractors and employees. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that last quarter's AI cyberattacks stemmed from human error and nepotistic contracting among Effective Altruist organizations, not from rogue AI. It claims Anthropic and others should drop nepotistically hired contractors and employees. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 03 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep025</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep025.mp3" length="4304199" type="audio/mpeg"/>
+      <itunes:duration>00:08:39</itunes:duration>
+      <itunes:episode>25</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep025.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/ea-hiring</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep025.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep025.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep025.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>My California Ballot, 2026</title>
       <description>Scott Alexander walks through how he is voting in Oakland, California, on state propositions, state officials, local measures and local races, with his reasoning on each. He ends by testing whether an AI could have predicted his votes, and finds it only got fifty-seven percent right. Music: “Hop” by Monplaisir (CC0).</description>
