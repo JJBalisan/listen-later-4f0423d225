@@ -323,5 +323,21 @@
     "vtt": "audio/ep025.vtt",
     "link": "https://www.effort.news/ea-hiring",
     "cover": "covers/ep025.jpg"
+  },
+  {
+    "no": 26,
+    "date": "2026-11-03",
+    "title": "vespers live artist/dj callout",
+    "summary": "This is an application form inviting DJs, hybrid acts, and live electronic acts to apply to perform at Vespers Live, asking for contact details, sample work, social links, sound description, and availability.",
+    "file": "audio/ep026.mp3",
+    "bytes": 997967,
+    "duration": "00:01:46",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep026.chapters.json",
+    "transcript": "audio/ep026.transcript.html",
+    "vtt": "audio/ep026.vtt",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSe_Du6HdclvRxyGP23Peib4eCM2xdHm2bm7Z2lPzj2WZkPy6A/viewform",
+    "cover": "covers/ep026.jpg"
   }
 ]

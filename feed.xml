@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 03 Nov 2026 15:29:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 15:34:38 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>vespers live artist/dj callout</title>
+      <description>This is an application form inviting DJs, hybrid acts, and live electronic acts to apply to perform at Vespers Live, asking for contact details, sample work, social links, sound description, and availability. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>This is an application form inviting DJs, hybrid acts, and live electronic acts to apply to perform at Vespers Live, asking for contact details, sample work, social links, sound description, and availability. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 03 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep026</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep026.mp3" length="997967" type="audio/mpeg"/>
+      <itunes:duration>00:01:46</itunes:duration>
+      <itunes:episode>26</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep026.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://docs.google.com/forms/d/e/1FAIpQLSe_Du6HdclvRxyGP23Peib4eCM2xdHm2bm7Z2lPzj2WZkPy6A/viewform</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep026.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep026.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep026.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>The Coverup Beneath the AI Hacking Scandals — Effort</title>
       <description>The piece argues that last quarter's AI cyberattacks stemmed from human error and nepotistic contracting among Effective Altruist organizations, not from rogue AI. It claims Anthropic and others should drop nepotistically hired contractors and employees. Music: “Hop” by Monplaisir (CC0).</description>
