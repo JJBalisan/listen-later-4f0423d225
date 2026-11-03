@@ -339,5 +339,21 @@
     "vtt": "audio/ep026.vtt",
     "link": "https://docs.google.com/forms/d/e/1FAIpQLSe_Du6HdclvRxyGP23Peib4eCM2xdHm2bm7Z2lPzj2WZkPy6A/viewform",
     "cover": "covers/ep026.jpg"
+  },
+  {
+    "no": 27,
+    "date": "2026-11-03",
+    "title": "America's Covid Fraud Totals Over $300B",
+    "summary": "The author counts likely fraud across federal and state pandemic programs at over three hundred billion dollars, mostly in small business loans and unemployment benefits. The piece argues this follows from policy choices that skipped verification and rewarded spending over prevention, and that little has been recovered.",
+    "file": "audio/ep027.mp3",
+    "bytes": 4014962,
+    "duration": "00:08:03",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep027.chapters.json",
+    "transcript": "audio/ep027.transcript.html",
+    "vtt": "audio/ep027.vtt",
+    "link": "https://www.effort.news/covidfraud",
+    "cover": "covers/ep027.jpg"
   }
 ]
