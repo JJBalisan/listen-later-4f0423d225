@@ -1,0 +1,29 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 42,
+      "title": "The placement strategy"
+    },
+    {
+      "startTime": 109,
+      "title": "The UK AI Safety Institute"
+    },
+    {
+      "startTime": 212,
+      "title": "Congress and the Horizon Fellowship"
+    },
+    {
+      "startTime": 298,
+      "title": "Sophia Brown and CAISI"
+    },
+    {
+      "startTime": 336,
+      "title": "Footnotes and appendices"
+    }
+  ]
+}

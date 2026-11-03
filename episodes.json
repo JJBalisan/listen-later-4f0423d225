@@ -355,5 +355,21 @@
     "vtt": "audio/ep027.vtt",
     "link": "https://www.effort.news/covidfraud",
     "cover": "covers/ep027.jpg"
+  },
+  {
+    "no": 28,
+    "date": "2026-11-03",
+    "title": "Effective Altruism is Buying Political Staff",
+    "summary": "The piece argues that Open Philanthropy, now Coefficient Giving, and donors Dustin Moskovitz and Sam Bankman-Fried used political spending and fellowships to place hand-picked staff in US and UK government offices. It points to the UK AI Safety Institute, the Horizon Fellowship, and a Trump administration standards center as examples.",
+    "file": "audio/ep028.mp3",
+    "bytes": 3064915,
+    "duration": "00:06:04",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep028.chapters.json",
+    "transcript": "audio/ep028.transcript.html",
+    "vtt": "audio/ep028.vtt",
+    "link": "https://www.effort.news/aisi",
+    "cover": "covers/ep028.jpg"
   }
 ]

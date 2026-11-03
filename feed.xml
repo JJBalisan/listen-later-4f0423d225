@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 03 Nov 2026 15:36:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 15:37:31 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Effective Altruism is Buying Political Staff</title>
+      <description>The piece argues that Open Philanthropy, now Coefficient Giving, and donors Dustin Moskovitz and Sam Bankman-Fried used political spending and fellowships to place hand-picked staff in US and UK government offices. It points to the UK AI Safety Institute, the Horizon Fellowship, and a Trump administration standards center as examples. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that Open Philanthropy, now Coefficient Giving, and donors Dustin Moskovitz and Sam Bankman-Fried used political spending and fellowships to place hand-picked staff in US and UK government offices. It points to the UK AI Safety Institute, the Horizon Fellowship, and a Trump administration standards center as examples. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 03 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep028</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep028.mp3" length="3064915" type="audio/mpeg"/>
+      <itunes:duration>00:06:04</itunes:duration>
+      <itunes:episode>28</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep028.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/aisi</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep028.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep028.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep028.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>America's Covid Fraud Totals Over $300B</title>
       <description>The author counts likely fraud across federal and state pandemic programs at over three hundred billion dollars, mostly in small business loans and unemployment benefits. The piece argues this follows from policy choices that skipped verification and rewarded spending over prevention, and that little has been recovered. Music: “Hop” by Monplaisir (CC0).</description>
