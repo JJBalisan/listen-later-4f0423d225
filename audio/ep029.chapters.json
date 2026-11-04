@@ -1,0 +1,21 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 91,
+      "title": "The programs and the laws"
+    },
+    {
+      "startTime": 164,
+      "title": "The money"
+    },
+    {
+      "startTime": 264,
+      "title": "The law and enforcement"
+    }
+  ]
+}
