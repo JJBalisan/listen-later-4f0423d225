@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 04 Nov 2026 01:47:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 23:31:33 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Safety Alignment of LMs via Non-cooperative Games</title>
+      <description>The paper frames language model safety alignment as a non-zero-sum game between an Attacker and a Defender model, trained jointly with online preference optimization. The resulting Defender is more robust and still useful, and the Attacker becomes a strong red-teaming tool. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The paper frames language model safety alignment as a non-zero-sum game between an Attacker and a Defender model, trained jointly with online preference optimization. The resulting Defender is more robust and still useful, and the Attacker becomes a strong red-teaming tool. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep033</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep033.mp3" length="16609586" type="audio/mpeg"/>
+      <itunes:duration>00:34:17</itunes:duration>
+      <itunes:episode>33</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep033.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://arxiv.org/abs/2512.20806v3</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep033.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep033.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep033.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Is AI Writing American Law? — Effort</title>
       <description>An Effort investigation scanned US congressional bills since 2023 and found the share likely written by AI has tripled, with the Epstein Files Transparency Act the only majority AI-written bill to become law. Crime and finance bills are the likeliest to be AI written, and no AI use has been publicly disclosed. Music: “Hop” by Monplaisir (CC0).</description>
