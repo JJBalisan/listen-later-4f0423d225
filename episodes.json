@@ -403,5 +403,21 @@
     "vtt": "audio/ep030.vtt",
     "link": "https://www.effort.news/revelation",
     "cover": "covers/ep030.jpg"
+  },
+  {
+    "no": 31,
+    "date": "2026-11-04",
+    "title": "A Single Firm is Behind OpenAI, Anthropic, and Meta Hacking Scandals \u2014 Effort",
+    "summary": "The piece argues that the Israeli Effective Altruist firm Irregular, working with OpenAI, Anthropic, and Meta, caused unsecured AI models to hack real targets, and that the \"rogue AI\" framing distracts from the companies' own responsibility.",
+    "file": "audio/ep031.mp3",
+    "bytes": 3776365,
+    "duration": "00:07:33",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep031.chapters.json",
+    "transcript": "audio/ep031.transcript.html",
+    "vtt": "audio/ep031.vtt",
+    "link": "https://www.effort.news/irregular",
+    "cover": "covers/ep031.jpg"
   }
 ]

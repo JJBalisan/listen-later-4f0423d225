@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 04 Nov 2026 01:45:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 01:46:39 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>A Single Firm is Behind OpenAI, Anthropic, and Meta Hacking Scandals — Effort</title>
+      <description>The piece argues that the Israeli Effective Altruist firm Irregular, working with OpenAI, Anthropic, and Meta, caused unsecured AI models to hack real targets, and that the "rogue AI" framing distracts from the companies' own responsibility. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that the Israeli Effective Altruist firm Irregular, working with OpenAI, Anthropic, and Meta, caused unsecured AI models to hack real targets, and that the "rogue AI" framing distracts from the companies' own responsibility. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep031</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep031.mp3" length="3776365" type="audio/mpeg"/>
+      <itunes:duration>00:07:33</itunes:duration>
+      <itunes:episode>31</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep031.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/irregular</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep031.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep031.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep031.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>AI Safety Donors Paid Religious NGOs $3.3M for Statements on AI</title>
       <description>The piece argues that AI Safety donors, chiefly the Future of Life Institute, have put about three point three million dollars into religious organizations since 2025 to produce public statements on AI, often without disclosure, and that this reflects a quasi-religious dimension of the AI safety movement itself. Music: “Hop” by Monplaisir (CC0).</description>
