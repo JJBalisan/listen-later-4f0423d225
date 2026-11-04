@@ -467,5 +467,21 @@
     "vtt": "audio/ep034.vtt",
     "link": "https://arxiv.org/abs/2512.20806v3",
     "cover": "covers/ep034.jpg"
+  },
+  {
+    "no": 35,
+    "date": "2026-11-04",
+    "title": "Three types of automated alignment work",
+    "summary": "The piece splits alignment work that could be automated into empirical, conceptual and direct work, and explains how they differ and interact. It argues that automating empirical and direct work should keep us safe long enough to automate conceptual work, and that the uncertainty over timing favours hedging across all three.",
+    "file": "audio/ep035.mp3",
+    "bytes": 5998013,
+    "duration": "00:12:11",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep035.chapters.json",
+    "transcript": "audio/ep035.transcript.html",
+    "vtt": "audio/ep035.vtt",
+    "link": "https://newsletter.forethought.org/p/three-types-of-automated-alignment?publication_id=4116210&post_id=222827782&isFreemail=true&r=5vdoja&triedRedirect=true",
+    "cover": "covers/ep035.jpg"
   }
 ]

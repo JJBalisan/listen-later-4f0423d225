@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:22.935
+Three types of automated alignment work, from Forethought.
+
+00:00:23.585 --> 00:00:39.085
+If we're thinking about automating alignment, it may help to distinguish different types of work we may wish to automate. First, empirical alignment research: design and execution of alignment-relevant experiments, for a given notion of what we're aiming for.
+
+00:00:39.085 --> 00:00:57.060
+Second, conceptual alignment research: theoretical or judgement-driven work to improve our understanding of what we're aiming for and how to achieve it, including how to measure it. Third, direct alignment work: making particular AI systems more aligned, including via inputs such as training data.
+
+00:00:57.710 --> 00:01:13.435
+These buckets are actually pretty different, in terms of what's needed for automation, what the impacts of automating are, how much damage subtle misalignment within the automated systems could do, and so on. So I've come to think that we should be tracking them separately.
+
+00:01:18.045 --> 00:01:35.070
+This is the most obvious fit for the AI capabilities we're getting at the moment. You want to know more about the relationship between some alignment-relevant variables? Great, an AI agent can design and run that experiment for you. You want to know what training methods help your alignment benchmark go up?
+
+00:01:35.070 --> 00:01:48.270
+In the not-too-distant future, AI agents will probably be able to do this too. When we have the automated capabilities researchers we seem on track for, this is exactly the kind of thing they'll likely be able to do a lot of.
+
+00:01:48.920 --> 00:02:01.395
+Note that I'm not counting the design of benchmarks, metrics and evals as part of this bucket. In current practice that's tightly intertwined with empirical alignment research, and often the hardest part of it.
+
+00:02:01.395 --> 00:02:16.920
+But for automation purposes it clusters much more with conceptual work; it's easy to imagine automating the rest of empirical research without it, as AI capabilities generally get automated; and I think its automation has different strategic upshots.
+
+00:02:17.570 --> 00:02:33.220
+The capabilities that are needed for automating empirical alignment research very heavily overlap with the capabilities needed for automating AI capabilities research. Therefore, it doesn't seem like a priority to try to accelerate this type of automation.
+
+00:02:33.870 --> 00:02:51.995
+However, the prospect of getting a lot of automated empirical alignment work before we have good versions of other types of automated alignment work increases the priority of work which complements it. Significantly, that may mean better specification of the kind of numbers we would like measured or targeted.
+
+00:02:56.605 --> 00:03:11.555
+What about automating the type of metric choice and construction that we've just said would be a good complement to automating empirical alignment work? Or more generally improving our understanding of how to think about alignment, what we're even aiming for, and so on?
+
+00:03:12.205 --> 00:03:23.080
+This is essentially theoretical research. Automating it is trickier than automating empirical work because of the lack of verifiable signal about what constitutes progress.
+
+00:03:23.730 --> 00:03:41.155
+Accelerating the automation of conceptual research is somewhat fraught, since it feeds into some dangerous technologies, but it seems helpful for a number of high-priority areas, including macrostrategy as well as conceptual alignment work. Overall it seems likely good to do, if we can.
+
+00:03:41.805 --> 00:04:07.555
+Methods for helping to automate conceptual research broadly might include: curating training data for finetuning; building scaffolds to try to elicit more research progress from current or future models; building methods to extract more signal from existing conceptual research data; and building benchmarks for conceptual research capabilities, that can be targeted by AI researchers, or potentially by automated capabilities researchers.
+
+00:04:07.555 --> 00:04:13.155
+Or just identifying good ideas for benchmarks, even if they aren't fully implemented.
+
+00:04:17.765 --> 00:04:26.290
+As well as learning more about what it takes to make systems more aligned, sometimes we want to just make our actual systems as aligned as possible.
+
+00:04:26.940 --> 00:04:36.240
+This overlaps with empirical alignment work, but the emphasis is different. Empirical alignment work is science. Direct alignment work is engineering.
+
+00:04:36.890 --> 00:04:54.265
+Automating direct alignment work could include a lot of activities which leverage scalable cognition for alignment-relevant purposes. This could include careful auditing of particular R L environments or training data, or direct monitoring and supervision of systems during training.
+
+00:04:54.265 --> 00:05:10.890
+R L A I F for alignment properties is a form of automated direct alignment work. Claude three Opus's apparent self-alignment was another, albeit accidental in that case; but if we knew how to reproduce or generalize the behaviour, perhaps it could happen deliberately.
+
+00:05:11.540 --> 00:05:29.190
+I think that the limit of automating direct alignment work would be a form of system two learning, where updates are not made blindly towards a training objective, but reflectively by an AI system that was already sufficiently aligned, and wished to become more so, whatever the deep true version of aligned should mean.
+
+00:05:29.190 --> 00:05:43.640
+Here, "sufficiently aligned" doesn't necessarily mean having robustly good values already. It means just enough genuine care about being aligned, and honesty with itself, that its reflective updates tend to move it further in that direction.
+
+00:05:43.640 --> 00:05:52.015
+Embarking on such a path could be fraught, because of difficulty in being confident that the starting conditions were in the right basin of attraction.
+
+00:05:52.015 --> 00:06:07.265
+But compared to other alignment approaches, it has the benefit that it might leverage the full strength of the AI's cognition to help, so that its "self-improvement" in an alignment direction is a closer analogue to meditation than to self-performed neurosurgery.
+
+00:06:07.915 --> 00:06:31.740
+So, accelerating the automation of direct alignment work could include: designing, and analysing, setups that can deploy AI labour to help with direct alignment work; designing paradigms, that could then be tested empirically, which allow AI to be a more active participant in its own alignment; and producing data, or scaffolds, to help improve AI taste at the alignment-relevant tasks necessary for this.
+
+00:06:36.350 --> 00:06:40.550
+These categories blur and interact in a number of different ways.
+
+00:06:41.200 --> 00:06:59.075
+Automated direct alignment techniques may be good subjects for empirical experiments. This is not completely reliant on having good metrics for alignment; developing a science of what's going on with different attempts at automated direct alignment could be useful even if we don't yet know what "good" looks like.
+
+00:06:59.075 --> 00:07:17.975
+Automated hill-climbing might get you to very strong direct alignment approaches, but this does rely on having good enough metrics. That is, we could plausibly be in a regime where we're better at reasoning about and implementing training setups that in fact lead to aligned systems than we are at accurately measuring their alignment.
+
+00:07:17.975 --> 00:07:26.950
+In that case, optimising for our best alignment metrics might produce worse alignment outcomes than following our best-guess direct alignment process.
+
+00:07:27.600 --> 00:07:44.725
+If you can do a good job of automating conceptual alignment research, you should be approximately done, "winning" on the alignment challenge. Since that should then be able to do the relevant parts of prep for automating the other types of alignment work, and being appropriately confident in your techniques for them.
+
+00:07:45.375 --> 00:08:02.000
+You could also in principle do a good enough job at direct alignment that the systems you're building are entirely safe. But I think it will be hard to have very strong confidence in that before improving our automation of the conceptual side; and so each new generation of AI might pose a challenge.
+
+00:08:02.000 --> 00:08:06.200
+Will your alignment techniques transfer, or will your luck run out?
+
+00:08:06.850 --> 00:08:24.750
+So the main goal, from an existential risk perspective, for automating empirical research and direct alignment work is to get our systems safe enough to robustly avoid catastrophe, which is "not losing", for long enough that we can automate conceptual alignment research to a very high quality level.
+
+00:08:25.400 --> 00:08:43.050
+There will likely be approaches that allow you to leverage automation of empirical research to get better automation of conceptual work. For example, taking Talkie or another LLM with only vintage training data, and working out how to get it to perform well at rederiving more modern theoretical work.
+
+00:08:47.660 --> 00:08:51.435
+There are two major uncertainties that affect priorities.
+
+00:08:52.085 --> 00:09:00.460
+The first: how much loss-of-control risk is early? If there's a bunch, then putting more energy into the "not losing" part of things makes sense.
+
+00:09:00.460 --> 00:09:23.760
+If the main misalignment risk comes when we're getting systems that can perform well even on tasks without verifiable rewards, like long-term strategy to allow them to plot sophisticated power-seeking campaigns, then it makes sense to put more energy into accelerating the "winning" part, and so perhaps move it earlier in time so that it comes before some crucial challenge that we otherwise wouldn't be able to face.
+
+00:09:23.760 --> 00:09:41.735
+Note that in this world, the win state and the biggest threats rely on capabilities that from our vantage point look quite similar, in that they require high-quality thinking about novel situations without verifiable rewards. So it's quite plausible that even a modest acceleration could change the sequencing.
+
+00:09:42.385 --> 00:10:00.735
+The second: how close might we be to decent automated conceptual alignment work, if we approach it relatively directly? If it's not hideously out of reach, then it looks more like the kind of thing where human intervention to speed it up, by building benchmarks and scaffolds, and curating data, could make the difference.
+
+00:10:00.735 --> 00:10:07.535
+If so, the full suite of activities mentioned above as precursors for conceptual alignment work looks helpful.
+
+00:10:08.185 --> 00:10:25.310
+If automated conceptual research is too hard, maybe the direct interventions don't actually do much. In this world, automated conceptual research falls out of stronger AI driving automated, empirical research programs to work out how to automate conceptual research.
+
+00:10:25.310 --> 00:10:41.685
+So trying to target conceptual alignment work directly might be obsoleted as a way to accelerate the "winning" moment, and it's a higher priority to get things safe enough that we robustly don't lose through the period where the automated capabilities research is speeding up.
+
+00:10:41.685 --> 00:10:55.110
+I'd note that building metrics and benchmarks for conceptual research, that can be targeted by later automated empirical work, looks more robust to this concern than other forms of targeting automated conceptual research.
+
+00:10:55.760 --> 00:11:11.510
+My personal guesses on these uncertainties are that most of the loss-of-control risk comes later, after AI is superhuman even at tasks that don't have verifiable rewards, and that it is possible to directly approach decent automated conceptual research.
+
+00:11:11.510 --> 00:11:18.535
+However, mostly I'm pretty uncertain, which argues in favour of hedging by investing some in all of the paths.
+
+00:11:23.145 --> 00:11:27.520
+The piece ends with a note attached to the system two learning passage.
+
+00:11:28.170 --> 00:11:43.395
+So the system would need something like the type of understanding that conceptual alignment research is aiming at. But conceptual research aims to understand things abstractly; the understanding which such a system had might be more akin to a lived experience and understanding.
+
+00:11:43.395 --> 00:11:56.770
+I say this without taking any stance on whether such AI systems would have conscious experience; it does rely on something like introspective ability, but that's something we've seen, to some extent, in L L Ms today.

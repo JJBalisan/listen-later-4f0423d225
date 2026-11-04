@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 74,
+      "title": "Empirical alignment research"
+    },
+    {
+      "startTime": 172,
+      "title": "Conceptual alignment research"
+    },
+    {
+      "startTime": 253,
+      "title": "Direct alignment work"
+    },
+    {
+      "startTime": 392,
+      "title": "Interactions"
+    },
+    {
+      "startTime": 523,
+      "title": "Priorities"
+    },
+    {
+      "startTime": 679,
+      "title": "A closing note"
+    }
+  ]
+}

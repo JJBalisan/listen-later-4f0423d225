@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 04 Nov 2026 23:35:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 23:37:19 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Three types of automated alignment work</title>
+      <description>The piece splits alignment work that could be automated into empirical, conceptual and direct work, and explains how they differ and interact. It argues that automating empirical and direct work should keep us safe long enough to automate conceptual work, and that the uncertainty over timing favours hedging across all three. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece splits alignment work that could be automated into empirical, conceptual and direct work, and explains how they differ and interact. It argues that automating empirical and direct work should keep us safe long enough to automate conceptual work, and that the uncertainty over timing favours hedging across all three. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep035</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep035.mp3" length="5998013" type="audio/mpeg"/>
+      <itunes:duration>00:12:11</itunes:duration>
+      <itunes:episode>35</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep035.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://newsletter.forethought.org/p/three-types-of-automated-alignment?publication_id=4116210&amp;post_id=222827782&amp;isFreemail=true&amp;r=5vdoja&amp;triedRedirect=true</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep035.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep035.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep035.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Safety Alignment of LMs via Non-cooperative Games</title>
       <description>The paper frames language model safety alignment as a non-zero-sum game between an Attacker and a Defender model trained jointly with online preference optimization. The resulting Defender is both safer and more useful than baselines, and the Attacker becomes a strong general-purpose red-teaming tool. Music: “Hop” by Monplaisir (CC0).</description>
