@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 04 Nov 2026 01:45:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 01:45:51 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>AI Safety Donors Paid Religious NGOs $3.3M for Statements on AI</title>
+      <description>The piece argues that AI Safety donors, chiefly the Future of Life Institute, have put about three point three million dollars into religious organizations since 2025 to produce public statements on AI, often without disclosure, and that this reflects a quasi-religious dimension of the AI safety movement itself. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that AI Safety donors, chiefly the Future of Life Institute, have put about three point three million dollars into religious organizations since 2025 to produce public statements on AI, often without disclosure, and that this reflects a quasi-religious dimension of the AI safety movement itself. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep030</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep030.mp3" length="3045923" type="audio/mpeg"/>
+      <itunes:duration>00:06:02</itunes:duration>
+      <itunes:episode>30</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep030.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/revelation</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep030.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep030.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep030.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>California's Race-Based Pregnancy Funding — Effort</title>
       <description>The piece argues that three California birth and motherhood programs restrict services by race while receiving federal Medicaid money, and that the Department of Justice could cut that funding under civil rights law. Music: “Hop” by Monplaisir (CC0).</description>

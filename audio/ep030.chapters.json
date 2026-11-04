@@ -1,0 +1,29 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 52,
+      "title": "A surprising solution"
+    },
+    {
+      "startTime": 94,
+      "title": "What the money bought"
+    },
+    {
+      "startTime": 220,
+      "title": "Outreach to the Vatican and others"
+    },
+    {
+      "startTime": 276,
+      "title": "Links to Anthropic"
+    },
+    {
+      "startTime": 314,
+      "title": "Conclusion"
+    }
+  ]
+}

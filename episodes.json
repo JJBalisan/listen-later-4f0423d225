@@ -387,5 +387,21 @@
     "vtt": "audio/ep029.vtt",
     "link": "https://www.effort.news/birth-equity",
     "cover": "covers/ep029.jpg"
+  },
+  {
+    "no": 30,
+    "date": "2026-11-04",
+    "title": "AI Safety Donors Paid Religious NGOs $3.3M for Statements on AI",
+    "summary": "The piece argues that AI Safety donors, chiefly the Future of Life Institute, have put about three point three million dollars into religious organizations since 2025 to produce public statements on AI, often without disclosure, and that this reflects a quasi-religious dimension of the AI safety movement itself.",
+    "file": "audio/ep030.mp3",
+    "bytes": 3045923,
+    "duration": "00:06:02",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep030.chapters.json",
+    "transcript": "audio/ep030.transcript.html",
+    "vtt": "audio/ep030.vtt",
+    "link": "https://www.effort.news/revelation",
+    "cover": "covers/ep030.jpg"
   }
 ]
