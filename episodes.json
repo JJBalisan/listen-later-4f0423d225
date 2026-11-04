@@ -483,5 +483,21 @@
     "vtt": "audio/ep035.vtt",
     "link": "https://newsletter.forethought.org/p/three-types-of-automated-alignment?publication_id=4116210&post_id=222827782&isFreemail=true&r=5vdoja&triedRedirect=true",
     "cover": "covers/ep035.jpg"
+  },
+  {
+    "no": 36,
+    "date": "2026-11-04",
+    "title": "Process Matters more than Output for Distinguishing Humans from Machines",
+    "summary": "The paper argues that how a system produces behavior, not just what it outputs, best distinguishes humans from machines, and shows that fine-tuning can narrow this process gap but does not transfer well across tasks.",
+    "file": "audio/ep036.mp3",
+    "bytes": 17581060,
+    "duration": "00:36:19",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep036.chapters.json",
+    "transcript": "audio/ep036.transcript.html",
+    "vtt": "audio/ep036.vtt",
+    "link": "https://arxiv.org/abs/2605.06524v3",
+    "cover": "covers/ep036.jpg"
   }
 ]

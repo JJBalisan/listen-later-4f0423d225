@@ -1,0 +1,65 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 179,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 557,
+      "title": "Output versus Process Equivalence"
+    },
+    {
+      "startTime": 594,
+      "title": "Participants and agents"
+    },
+    {
+      "startTime": 657,
+      "title": "CAPTCHA as a motivating example"
+    },
+    {
+      "startTime": 754,
+      "title": "The cognitive task battery"
+    },
+    {
+      "startTime": 860,
+      "title": "Process features reveal differences"
+    },
+    {
+      "startTime": 1028,
+      "title": "Closing the process gap"
+    },
+    {
+      "startTime": 1085,
+      "title": "Centaur"
+    },
+    {
+      "startTime": 1154,
+      "title": "Evaluation metrics"
+    },
+    {
+      "startTime": 1286,
+      "title": "Supervised fine-tuning"
+    },
+    {
+      "startTime": 1659,
+      "title": "Results"
+    },
+    {
+      "startTime": 1813,
+      "title": "Generalization tests"
+    },
+    {
+      "startTime": 1958,
+      "title": "Discussion"
+    },
+    {
+      "startTime": 2080,
+      "title": "Limitations"
+    }
+  ]
+}
