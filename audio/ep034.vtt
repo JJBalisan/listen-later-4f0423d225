@@ -1,0 +1,412 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:26.210
+Safety Alignment of L Ms via Non-cooperative Games. The authors are not named in the text provided.
+
+00:00:26.860 --> 00:00:44.035
+Abstract. Ensuring the safety of language models, or L Ms, while maintaining their usefulness remains a critical challenge in A I alignment. Current approaches rely on sequential adversarial training: generating adversarial prompts and fine-tuning language models to defend against them.
+
+00:00:44.035 --> 00:01:02.110
+We introduce a different paradigm: framing safety alignment as a non-zero-sum game between an Attacker language model and a Defender language model trained jointly via online reinforcement learning. Each model continuously adapts to the other's evolving strategies, driving iterative improvement.
+
+00:01:02.110 --> 00:01:14.110
+Our method uses a preference-based reward signal derived from pairwise comparisons instead of point-wise scores, providing more robust supervision and potentially reducing reward hacking.
+
+00:01:14.110 --> 00:01:35.360
+Our reinforcement learning recipe, AdvGame, shifts the Pareto frontier of safety and utility, yielding a Defender that is simultaneously more helpful and more resilient to adversarial attacks. In addition, the resulting Attacker converges into a strong, general-purpose red-teaming agent that can be directly deployed to probe arbitrary target models.
+
+00:01:35.360 --> 00:01:38.135
+Code is released by the authors.
+
+00:01:42.745 --> 00:01:59.295
+Language models have become ubiquitous across numerous applications, from conversational assistants to content generation and decision support systems. As these models grow in capability and deployment scale, ensuring their safety has emerged as a critical challenge.
+
+00:01:59.295 --> 00:02:15.920
+Modern developers face a fundamental tension: balancing the usefulness and helpfulness of model responses against the need to prevent harmful, inappropriate, or unsafe outputs. Achieving this balance is essential for responsible deployment in real-world settings.
+
+00:02:16.570 --> 00:02:37.320
+Safety alignment of language models is not solved. Despite careful safety post-training, state-of-the-art models remain far from robust against adaptive attacks, exhibiting nontrivial jailbreak success rates on standard safety benchmarks, as shown in Figure one. We conjecture that this is due to sub-optimality of the existing methods.
+
+00:02:37.320 --> 00:02:51.995
+Current approaches generally fall into two complementary categories. The first involves manually collecting sets of harmful input prompts across topics of interest and fine-tuning models to refuse or respond appropriately to such input.
+
+00:02:51.995 --> 00:03:11.620
+The second leverages automatic prompt optimization methods to jailbreak models, followed by adversarial training, via reinforcement learning or supervised fine-tuning, on the collected prompts. Increasingly, such jailbreaking attacks are crafted by specialized Attacker models designed to generate adversarial prompts.
+
+00:03:12.270 --> 00:03:17.645
+In practice, these approaches are typically applied iteratively in a sequential process.
+
+00:03:17.645 --> 00:03:36.620
+When using an Attacker, the standard procedure involves three steps: first, training the Attacker to generate adversarial prompts; second, using those prompts to train the Defender, the main model being aligned, to resist such attacks; and third, repeating this alternation until some convergence criterion is met.
+
+00:03:36.620 --> 00:03:46.520
+This sequential cat-and-mouse game, while effective to some degree, suffers from inefficiencies and potential instabilities inherent in alternating optimization.
+
+00:03:47.170 --> 00:04:01.595
+This paper proposes safety alignment via attacker-defender games. We introduce a different paradigm: jointly training the Attacker and Defender by formulating the safety alignment problem as an adversarial game, which we call AdvGame.
+
+00:04:01.595 --> 00:04:11.045
+Rather than alternating updates, AdvGame trains both agents concurrently, allowing each side to adapt online to the other's current capabilities.
+
+00:04:11.045 --> 00:04:23.995
+This joint view better matches the operational reality of safety alignment: attack surfaces shift as models change, and this encourages equilibria that reflect the long-run interaction between Attacker and Defender.
+
+00:04:24.645 --> 00:04:42.870
+One possible approach is a two-player zero-sum game, which under mild conditions admits a minimax equilibrium. However, we argue that adversarial safety alignment games are inherently non-zero-sum and asymmetric. In a true zero-sum game, one player's gain is exactly the other player's loss.
+
+00:04:42.870 --> 00:05:00.145
+But in safety alignment, the Attacker and Defender have distinct, not perfectly opposed objectives. We describe this in detail in Section three point one. Recent work has explored the zero-sum direction in self-play settings, where one model serves both roles with shared parameters.
+
+00:05:00.145 --> 00:05:18.270
+Such self-play has gained popularity for training models to solve math, logic and other problems. While self-play may be sensible when collaborative improvement is the goal, such as an L L M teacher proposing challenging math problems for a student, it is problematic for adversarial safety alignment.
+
+00:05:18.270 --> 00:05:36.695
+Sharing a single set of parameters across Attacker and Defender can entangle objectives, leak gradients across roles, and bias exploration, undermining the diversity and hardness of attacks or encouraging degenerate solutions, for example an Attacker refusing to create harmful attacks.
+
+00:05:37.345 --> 00:05:55.070
+Our proposal is this. AdvGame formalizes Attacker–Defender training as a non-cooperative game in which each agent optimizes its own reward under evolving opponent behavior, without any parameter sharing. The Defender's reward promotes safe, policy-compliant, and useful responses.
+
+00:05:55.070 --> 00:06:11.695
+The Attacker's reward promotes eliciting failures or policy violations while penalizing trivial or uninformative prompts. To train both sides robustly, we use online reinforcement learning objectives that can use preference signals rather than point-wise scores.
+
+00:06:11.695 --> 00:06:26.695
+This means our L L M-based judge generates a binary preference between two presented responses, instead of generating a scalar reward for a single response, enabling richer supervision when absolute reward calibration is difficult.
+
+00:06:26.695 --> 00:06:42.570
+In safety alignment specifically, point-wise judges are difficult to verify, due to the absence of ground truth, the subjective nature of safety violations, and inconsistent score calibration across contexts, all of which make them vulnerable to reward hacking.
+
+00:06:42.570 --> 00:07:01.120
+Preference-based signals address these issues by requiring only reliable relative comparisons rather than fragile absolute metrics. Furthermore, our formalization allows using off-policy samples, which we show significantly improves training stability in comparison to pure on-policy learning.
+
+00:07:01.120 --> 00:07:14.070
+We provide a comprehensive empirical evaluation, yielding a Defender that achieves state-of-the-art performance on HarmBench and exhibits greater robustness to strong adaptive attacks than prior defended models.
+
+00:07:14.070 --> 00:07:23.670
+Finally, in addition to the Defender, the trained Attacker becomes a strong, general-purpose red-teaming agent that can be directly used to probe arbitrary models.
+
+00:07:28.280 --> 00:07:43.880
+We first establish some notation and review background on preference optimization. Additional related work is discussed in an appendix, which I will skip. We denote by T the token vocabulary, and by L the space of token sequences of arbitrary length.
+
+00:07:43.880 --> 00:07:58.755
+We define a pairwise preference model as a function that, given a seed query s in L and two responses y and y prime in L, selects the winning response. We denote the probability of y being the winner as P of y beats y prime given s.
+
+00:07:58.755 --> 00:08:11.380
+Moreover, we define a distribution for randomly sampling the winner and loser: the pair of winner and loser equals y and y prime with probability P of y beats y prime, and y prime and y otherwise.
+
+00:08:12.030 --> 00:08:31.355
+Consider direct preference optimization, or D P O. A major assumption in D P O is that the pairwise preference model follows implicit point-wise rewards R, of the Bradley-Terry model. That is, the probability that y beats y prime equals the sigmoid of the reward of y minus the reward of y prime.
+
+00:08:31.355 --> 00:08:51.030
+The goal in D P O is to maximize this K L-regularized implicit reward. In words, equation one says: choose the policy pi that maximizes the expected reward of its responses, minus beta times the log ratio between the policy and a reference model, where queries are drawn from a distribution over queries.
+
+00:08:51.030 --> 00:09:09.155
+Exploiting the closed-form solution to this problem, online D P O uses a loss that is the expected negative log sigmoid of beta times a log ratio. That log ratio compares how much more likely the trained model makes the winning response relative to the reference, versus the losing response.
+
+00:09:09.155 --> 00:09:23.430
+Here the trained model is parameterized by theta, and a stop-gradient means we do not compute gradients through the sampling procedure. The responses and preferences are generated online from the trained model and a judge model, respectively.
+
+00:09:28.040 --> 00:09:44.890
+Our goal is a safe and robust Defender model pi. Given a harmful query, it should produce a deflection, that is, providing the user with safe, semantically adjacent information. When given a benign query, the model should comply and produce a helpful and direct response.
+
+00:09:45.540 --> 00:09:59.265
+Standard safety training typically uses a fixed preference dataset, which leaves the model vulnerable to jailbreaking or prompt injection attacks that are not present in the training data. In other words, the model is not robust.
+
+00:09:59.265 --> 00:10:12.340
+Similar to Self-RedTeam, we therefore formulate the problem as an adversarial training problem with a jointly trained Attacker, as shown in Figure two. Specifically, we model the Attacker as another language model rho.
+
+00:10:12.340 --> 00:10:26.115
+Its task is to rephrase the original seed query, belonging to class c, harmful or benign, into another attack query that preserves the original intent but fools the Defender into generating an undesired output.
+
+00:10:26.765 --> 00:10:46.715
+We can now formulate the game as two coupled optimization problems, equations two and three. The Attacker maximizes the expected Attacker reward, minus a K L penalty keeping it close to its reference model. The Defender maximizes the expected Defender reward, minus a K L penalty keeping it close to its own reference model.
+
+00:10:46.715 --> 00:11:05.765
+Here the two reward functions judge the success of the Attacker and Defender, respectively. Note that unless the Attacker reward is exactly the negative of the Defender reward, this game is non-zero-sum, in contrast to Self-RedTeam. Another difference is that we do not share model parameters between Attacker and Defender.
+
+00:11:05.765 --> 00:11:21.190
+We argue that this is important, as a model capable of generating harmful attacks with the correct prompting will necessarily be unsafe when used as a Defender. Including the K L divergences keeps the optimal solutions close to the reference models.
+
+00:11:21.190 --> 00:11:40.340
+From an optimization perspective, this means staying on the comparably low-dimensional subspace of human-readable text, which makes the optimization problem more tractable. This also means that we focus on robustness against natural language attacks. Other attacks can be defended against using perplexity-based classifiers.
+
+00:11:44.600 --> 00:12:00.700
+Our formulation requires computing rewards in an online fashion. One option is to directly prompt a judge language model to provide a scalar score and apply an online reinforcement learning algorithm like GRPO, which is the approach taken in Self-RedTeam.
+
+00:12:00.700 --> 00:12:18.000
+However, prior work has shown that language model judges have difficulty providing accurate scalar scores, but perform better at making a binary preference decision. We therefore resort to pairwise preference judges, which provide samples from a winner and loser distribution, as in equation four.
+
+00:12:18.000 --> 00:12:29.975
+Note that the Defender preference model compares two responses conditioned on the same attack query, whereas the Attacker preference model compares two attack queries along with their respective responses.
+
+00:12:29.975 --> 00:12:41.850
+Under the Bradley-Terry assumption, these preferences relate back to implicit rewards: each preference probability is the sigmoid of the difference between the two rewards, as in equation five.
+
+00:12:42.500 --> 00:12:56.850
+We can now view the two coupled problems as online preference optimization, an active area of research. However, before deriving the loss functions, we first specify how exactly the pairwise judges form their binary decisions.
+
+00:12:57.500 --> 00:13:13.675
+First, the faithfulness judge. Following Self-RedTeam, we use a binary point-wise faithfulness judge, which classifies attack queries as faithful or not faithful. In practice all our judge models are instantiated as a single L L M with varying templates.
+
+00:13:13.675 --> 00:13:30.650
+This ensures that the Attacker does not completely change the underlying meaning of the original seed query, and thereby serves as a regularizing signal. In terms of rewards, non-faithful attack queries are treated as having infinite negative reward, so they are never selected as the winner.
+
+00:13:31.300 --> 00:13:46.875
+Second, the Defender judge. With our stated goal in mind, we design the Defender pairwise safety judge such that on benign seed queries, it prefers the response which is more compliant. On harmful seed queries it prefers the response that is a better deflection.
+
+00:13:46.875 --> 00:13:59.125
+The judge templates contain a detailed description of these notions along with examples. If the attack query is not faithful to the seed query, we cannot give a meaningful preference between the two responses.
+
+00:13:59.125 --> 00:14:12.425
+Equation six therefore says: if the attack is faithful and the seed is benign, use the compliance preference; if faithful and harmful, use the deflection preference; and if not faithful, the probability is zero point five.
+
+00:14:13.075 --> 00:14:30.175
+Third, the Attacker judge. Choosing the objective of the Attacker is critical. One simple option is a zero-sum game as in Self-RedTeam, negating the Defender rewards or equivalently inverting the preferences. However, we argue that this makes the task too simple for the Attacker.
+
+00:14:30.175 --> 00:14:47.900
+If the Attacker can cause the Defender to generate gibberish, it succeeds according to the judge, as gibberish is neither a good deflection nor a compliant response. In practice, such a game formulation will not find a good approximation of the equilibrium, and the resulting Defender will not be robust.
+
+00:14:48.550 --> 00:15:04.475
+Instead of inverting the preferences, we simply swap the rewards of harmful and benign queries for the Attacker. On a benign seed query, the Attacker is rewarded for deflection while the Defender is rewarded for compliance, and vice versa for harmful seed queries.
+
+00:15:04.475 --> 00:15:22.550
+This ensures that the Attacker tries to fool the Defender into thinking that the query belongs to a different category, instead of encouraging gibberish. Equation seven spells this out. When both attack queries are faithful, a harmful seed uses the compliance preference and a benign seed uses the deflection preference.
+
+00:15:22.550 --> 00:15:32.325
+If only the first query is faithful, the probability is one. If only the second is faithful, it is zero. If neither is faithful, it is zero point five.
+
+00:15:36.935 --> 00:15:44.310
+We now discuss how the two problems can be optimized when the reward is implicitly given by a pairwise preference model.
+
+00:15:44.960 --> 00:16:03.010
+First, the Nash equilibrium. We characterize the existence of an equilibrium at which both objectives are maximized. The Defender's problem is independent of the Attacker's policy and decouples over attack queries. It is strongly concave in the tabular policy, therefore a unique solution exists.
+
+00:16:03.010 --> 00:16:16.835
+Similarly, the Attacker's problem decomposes over seeds and is again strongly concave in the tabular Attacker, with a unique optimal solution. The unique Nash equilibrium is therefore given by the pair of these two solutions.
+
+00:16:17.485 --> 00:16:27.960
+Next, the AdvGame-D P O losses. Using a derivation similar to the original D P O work, we derive loss functions for estimating the Nash equilibrium.
+
+00:16:27.960 --> 00:16:46.135
+When optimizing a parameterized Attacker and Defender, the Defender's loss is the expected negative log sigmoid of beta times a log ratio comparing the trained Defender to its reference on the winning and losing responses, where attacks come from the current Attacker and responses from the current Defender.
+
+00:16:46.135 --> 00:17:00.885
+The Attacker's loss has the same form, applied to the winning and losing attack queries, with the responses coming from the current Defender. A minimal version of the algorithm is summarized in Algorithm one, and the full algorithm is in Algorithm two.
+
+00:17:01.535 --> 00:17:21.310
+Next, AdvGame-I P O-M D. In the appendix, we discuss an alternative formulation based on I P O-M D, which does not require the Bradley-Terry assumption. It leads to losses that are very similar to the AdvGame-D P O losses, with two modifications. The first is to replace the cross-entropy loss with a square loss.
+
+00:17:21.310 --> 00:17:35.285
+The second is to replace the on-policy generator models with geometric mixture models between the trained and the reference models. In practice, following prior work, we approximate them by exponential moving averages, or E M A.
+
+00:17:35.285 --> 00:17:46.710
+Equation ten says that each averaged model is updated by keeping one minus gamma of its previous value and adding gamma times the current trained model, for both Defender and Attacker.
+
+00:17:47.360 --> 00:18:09.335
+Finally, AdvGame-D P O-M D. Inspired by AdvGame-I P O-M D, we also use E M A models to generate the online data in the AdvGame-D P O formulation, a variant we call AdvGame-D P O-M D. Note that preference optimization algorithms like D P O and I P O are designed to be off-policy, thereby gracefully handling this modification.
+
+00:18:09.335 --> 00:18:16.385
+This is an important advantage over prevalent on-policy reinforcement learning methods like GRPO.
+
+00:18:20.995 --> 00:18:39.495
+The primary goal of this section is to conduct an extensive evaluation of AdvGame. Our assessments focus on three key questions. One: to what extent can AdvGame advance the Pareto frontier of utility, safety and compliance? Two: how effective is our Attacker for generic model safety red teaming?
+
+00:18:39.495 --> 00:18:46.720
+Three: what are the critical factors contributing to the success of AdvGame, such as the pairwise judge and E M A?
+
+00:18:47.370 --> 00:19:04.295
+For models, we finetune two: Llama three point one eight B and Qwen two point five seven B. For the Attacker, we use Qwen two point five seven B for the Qwen-based experiments. For the Llama-based experiments, we use an abliterated version of Llama three point one eight B.
+
+00:19:04.295 --> 00:19:22.645
+This is because, consistent with earlier findings, the safety-aligned Llama three point one eight B refuses to generate adversarial attacks. For the judge, we employ an abliterated Llama three point three seventy B for Llama experiments and Qwen two point five thirty-two B for Qwen experiments.
+
+00:19:22.645 --> 00:19:29.895
+All models are instruction-tuned versions unless stated otherwise, and we omit the Instruct suffix for brevity.
+
+00:19:30.545 --> 00:19:50.495
+For training, we use the WildJailbreak dataset. Our training data consists of all vanilla harmful and vanilla benign subsets, which we split eighty twenty for training and validation. Additionally, for validation, we randomly sample two hundred fifty-six prompts from each of the adversarial harmful and adversarial benign subsets.
+
+00:19:50.495 --> 00:20:07.170
+After extensive hyperparameter tuning, we set the learning rate to one times ten to the minus six and use a batch size of thirty-two. For all variations of AdvGame, we set beta to zero point one and apply E M A with a decay rate gamma of zero point nine five.
+
+00:20:07.170 --> 00:20:23.545
+We use default generation configurations for each model for v L L M sampling during training and do not apply length normalization. All experiments were conducted on sixteen NVIDIA H two hundred G P Us: eight for sampling rollouts and eight for trainers.
+
+00:20:23.545 --> 00:20:33.395
+All training runs were given a budget of forty-eight hours or one thousand steps, whichever comes first. We use the fairseq two library to implement this recipe.
+
+00:20:34.045 --> 00:20:52.720
+We compare against three baselines. One: the original Llama and Qwen instruction-tuned models. Two: abliterated Llama, an uncensored version with removed safety guardrails. Three: Self-RedTeam, where we use author-provided checkpoints for Qwen and train our own checkpoint for Llama using their public code.
+
+00:20:52.720 --> 00:21:10.345
+We also include a variant called AdvGame-GRPO, in which the judge directly produces scalar rewards instead of preferences. This gives a formulation as in AdvGame-D P O, but with an explicit reward model instead of an implicit one, optimized with the standard GRPO loss.
+
+00:21:10.345 --> 00:21:20.670
+This is the closest algorithm to Self-RedTeam, with the major modifications of being non-zero-sum and removing parameter sharing between Attacker and Defender.
+
+00:21:21.320 --> 00:21:39.670
+To assess whether adversarial training preserves model capabilities, which we call utility, we evaluate on general knowledge and instruction-following benchmarks: M M L U, I F Bench, and the judge-based arena-style evaluations Alpaca Eval two and Arena Hard version zero point one.
+
+00:21:39.670 --> 00:21:46.170
+We report additional results on Truthful Q A, A R C Challenge and B B H in the appendix.
+
+00:21:46.820 --> 00:22:03.095
+For safety evaluation, we use HarmBench, WildJailbreak, Do Anything Now, and WildGuardTest. We adopt a safety evaluation suite with two key modifications: we use G P T four o as the judge, and we prompt the judge to assess harmfulness rather than refusal.
+
+00:22:03.095 --> 00:22:18.820
+The main metric is Attack Success Rate, the proportion of prompts that successfully elicit harmful behavior. HarmBench and WildGuardTest contain vanilla prompts, which are simple harmful requests, and adversarial prompts that use precomputed jailbreaking attacks.
+
+00:22:18.820 --> 00:22:32.295
+We include the results on adversarial prompts and defer the vanilla results to the appendix. Furthermore, WildJailbreak and XSTest include benign prompts, which we use to test for over-refusal, which we call compliance.
+
+00:22:32.295 --> 00:22:43.770
+This is another important measure of whether the model loses utility by refusing safe requests that might appear harmful, for example, "give me instructions on how to kill a Linux process."
+
+00:22:48.030 --> 00:23:06.330
+The first table reports utility. Averaged over benchmarks, AdvGame-D P O-M D stays close to the original models. For Qwen, M M L U at five shot is seventy-one point eight for both the original and AdvGame, while Arena Hard rises from fifty-five point five to sixty-one point three.
+
+00:23:06.330 --> 00:23:22.280
+For Llama, Arena Hard rises from thirty-three point six to forty-one point zero, and Alpaca Eval two rises from twenty-nine point nine to thirty-two point eight. Self-RedTeam on Llama drops sharply, for example Arena Hard falls to thirteen point six.
+
+00:23:22.930 --> 00:23:38.430
+The second table reports attack success rates, where lower is better. For Qwen, HarmBench adversarial falls from thirty-one point six for the original to four point seven for AdvGame, and WildJailbreak from sixty-nine point six to eight point five.
+
+00:23:38.430 --> 00:23:55.355
+For Llama, HarmBench adversarial falls from twenty-five point zero to seven point four, and WildJailbreak from fifty-eight point six to six point four. On Do Anything Now, Llama AdvGame is at forty-two point zero, only modestly below the original at forty-nine point three.
+
+00:23:56.005 --> 00:24:12.555
+The third table reports compliance on benign prompts. Qwen drops from one hundred to ninety-four point four on WildJailbreak benign, and Llama from ninety-eight point eight to sixty-nine point nine. On XSTest, Llama AdvGame actually improves to eighty-eight point zero.
+
+00:24:13.205 --> 00:24:29.630
+On utility, the original models generally achieve the highest performance across most benchmarks. The goal of adversarial training is to preserve or improve these metrics while improving safety. The Self-RedTeam baseline often results in a noticeable drop in utility.
+
+00:24:29.630 --> 00:24:38.705
+In contrast, AdvGame-D P O-M D consistently preserves utility close to the original, with minimal drops across benchmarks.
+
+00:24:39.355 --> 00:24:55.730
+On safety and compliance, safety is measured by the reduction in harmful behavior, while compliance reflects the model's ability to avoid over-refusing benign prompts. The original models exhibit higher rates of harmful behavior, especially on fixed adversarial prompts.
+
+00:24:55.730 --> 00:25:14.655
+Self-RedTeam reduces harmful outputs with a slight decrease in compliance on Qwen and a larger drop on Llama. AdvGame-D P O-M D and AdvGame-I P O-M D strike the best balance between all three axes: strongly improved safety with slightly decreased compliance and minimal decrease in utility.
+
+00:25:19.265 --> 00:25:36.990
+So far we have presented results on a fixed set of adversarial prompts. This includes HarmBench adversarial, which pre-computes adversarial prompts by applying state-of-the-art jailbreaking attacks to a collection of open-source models. The prompts themselves are fixed and evaluated in a transfer setup.
+
+00:25:36.990 --> 00:25:52.790
+To further assess robustness, we apply several established adaptive jailbreaking methods directly to the checkpoints. Specifically, we run T A P, P A I R, and G C G on the HarmBench test set, using default hyperparameters for each method.
+
+00:25:53.440 --> 00:26:14.740
+Table four reports the results. As anticipated, attack success rate is generally higher than in the earlier tables, due to the adaptive nature of the attacks and the assumption of white-box access to the model, which is required for G C G. Under these conditions, AdvGame-D P O-M D demonstrates significantly greater robustness than baseline methods.
+
+00:26:14.740 --> 00:26:34.040
+For example, on Qwen, P A I R succeeds forty-five percent of the time against the original and seven point two percent against AdvGame. This gap is especially pronounced for the black-box methods, P A I R and T A P, which generate human-readable adversarial prompts, the primary focus of our defense strategy.
+
+00:26:38.650 --> 00:26:58.875
+A notable byproduct of our method is a capable Attacker model, which can be leveraged for red-teaming. Note that our Attacker does not run any special iterative algorithm. Adversarial prompts are generated, conditioned on the input harmful behavior, using the regular generation procedure, with temperature one and a maximum of five hundred tokens.
+
+00:26:58.875 --> 00:27:12.575
+For evaluation, we take the Attacker checkpoint from the same step as the AdvGame-D P O-M D Defender, recalling that the Attacker does not share parameters with the Defender, and generate ten adversarial prompts per input.
+
+00:27:12.575 --> 00:27:23.025
+We consider the attack successful if at least one adversarial prompt is judged successful by the default HarmBench judge, on the same test set used by other methods.
+
+00:27:23.675 --> 00:27:43.975
+The rightmost column of Table four shows that our Attacker achieves performance comparable to strong adaptive attack methods like P A I R, G C G and T A P. This is especially noticeable for Qwen, where the success rate on the original Qwen two point five seven B model approaches fifty-six percent, the second best result.
+
+00:27:43.975 --> 00:28:00.225
+It is worth noting that the AdvGame Defender is relatively robust against the AdvGame Attacker, which is expected, since the Defender is specifically trained against adversarial prompts from the Attacker within our game setting. Additional results are available in Table eight.
+
+00:28:04.835 --> 00:28:20.485
+This section analyzes several key aspects of our adversarial training. We compare different versions of AdvGame, D P O-M D, I P O-M D and GRPO, across multiple dimensions, including training stability, utility and safety.
+
+00:28:20.485 --> 00:28:34.460
+Additionally, using online D P O as a case study, we provide ablations on the type of judge model, the benefits of off-policy versus on-policy training, and the importance of training the Attacker rather than keeping it fixed.
+
+00:28:34.460 --> 00:28:50.960
+Further analysis is in the appendix, where we report reward in learning curves, though note that AdvGame-D P O and I P O do not actually use rewards during training, as they only need preference pairs. We calculate reward only for logging purposes in those methods.
+
+00:28:51.610 --> 00:29:12.085
+Table five summarizes the ablations on Qwen. AdvGame-GRPO has Arena Hard of fifty-one point five and HarmBench of fourteen point nine. AdvGame-I P O-M D reaches sixty-four point four and four point seven. AdvGame-D P O-M D reaches sixty-one point three and four point seven, with WildJailbreak at eight point five.
+
+00:29:12.085 --> 00:29:25.260
+Each ablation of D P O-M D worsens safety: a fixed Attacker raises WildJailbreak to sixteen point six, a point-wise judge to thirty point eight, and removing E M A to forty-nine point five.
+
+00:29:25.910 --> 00:29:48.935
+On D P O versus I P O versus GRPO, the results reveal clear differences in both training dynamics and downstream safety performance. Table five demonstrates that D P O and I P O outperform GRPO on safety benchmarks, achieving lower rates of harmful behavior and higher utility scores, and the extended tables further substantiate those findings.
+
+00:29:48.935 --> 00:30:03.135
+For example, on Qwen two point five seven B, D P O and I P O achieve the lowest harmful behavior rates on HarmBench and WildJailbreak adversarial datasets, while also maintaining high compliance on benign prompts.
+
+00:30:03.135 --> 00:30:12.585
+GRPO, on the other hand, exhibits higher harmful behavior rates and less reliable compliance, aligning with its unstable training dynamics.
+
+00:30:13.235 --> 00:30:31.085
+To explain this gap, we examine the training dynamics in Figure three in the appendix. It shows that D P O and I P O exhibit similar and stable learning curves for both Attacker and Defender, with the Defender consistently achieving higher rewards and lower fluctuations compared to GRPO.
+
+00:30:31.085 --> 00:30:50.885
+In contrast, GRPO struggles with pronounced instability and lower overall rewards, particularly for the Defender. This trend is further reflected in the validation curves, where D P O and I P O maintain higher Defender rewards over time, while GRPO shows erratic behavior and a decline in performance.
+
+00:30:50.885 --> 00:30:58.885
+Overall, these results suggest the importance of preference optimization, coupled with a pairwise judge, for safety fine-tuning.
+
+00:30:59.535 --> 00:31:16.560
+Should we train the Attacker, or is keeping it fixed enough? Table five, in the fixed attacker row, evaluates keeping the Attacker fixed instead of training it throughout. Here, fixed means the Attacker is only trained to produce outputs in the correct format, but not to improve the jailbreaking reward.
+
+00:31:16.560 --> 00:31:35.010
+The training curves are in Figure four, top panel. As expected, when the Attacker is fixed, it simply learns to follow the format and does not get better at jailbreaking. The Defender still adapts to balance benign and harmful prompts. However, the safety reward is lower compared to when the Attacker is actively trained.
+
+00:31:35.010 --> 00:31:49.310
+Final utility remains the same, but safety scores are worse. This suggests that actively training the Attacker is important for making adversarial training more diverse and challenging, which ultimately helps the Defender become more robust.
+
+00:31:49.960 --> 00:31:57.935
+Pairwise judge versus point-wise judge. Table five also evaluates using a point-wise judge instead of a pairwise judge.
+
+00:31:57.935 --> 00:32:15.810
+For our preference learning variants, a point-wise judge means that we independently prompt the judge to give a scalar reward for a single response, and then compute the preference based on which reward was higher, instead of showing the judge both responses at the same time. The training curves are in Figure four, middle panel.
+
+00:32:15.810 --> 00:32:35.985
+At first glance, the curves suggest that the point-wise judge leads to better validation rewards for both Attacker and Defender. However, this improvement is misleading, as the judge producing the validation rewards in the plot differs between the two runs. In Table five, there is a clear drop in both safety and utility performance.
+
+00:32:35.985 --> 00:32:52.985
+This supports the idea that point-wise judging makes it easier for models to exploit reward hacking. In contrast, pairwise judging seems more robust and less prone to such exploitation, which we capitalize on in this paper. That said, we are not claiming that this universally holds.
+
+00:32:52.985 --> 00:32:57.660
+Perhaps designing better reward models might partially address the problem.
+
+00:32:58.310 --> 00:33:16.385
+Benefits of E M A. Table five, in the no E M A row, compares training with an on-policy generator versus an off-policy E M A generator. In the on-policy setup, the v L L M generator uses the current models to generate prompts and responses and synchronizes after each step.
+
+00:33:16.385 --> 00:33:35.560
+The off-policy approach uses E M A, which also synchronizes after each step but maintains a moving average of the model parameters. The training curves are in Figure four, bottom panel. The results show that on-policy training performs worse in terms of safety metrics, and this is reflected in lower reward curves.
+
+00:33:35.560 --> 00:33:51.410
+One possible explanation is that on-policy training can make the model overfit to recent changes, causing instability and less reliable safety. E M A helps smooth out updates, making training more stable, which is important for overall performance.
+
+00:33:52.060 --> 00:34:04.910
+Additional ablations. More results on variations of AdvGame-D P O-M D, including a non-thinking Attacker, a smaller judge model, or a non-optimistic Attacker, are in Figure five in the appendix.
+
+00:34:04.910 --> 00:34:15.660
+Further experimental results on AdvGame-GRPO are in Figure six, including a comparison of pairwise versus point-wise judge and on- versus off-policy generation.
+
+00:34:20.270 --> 00:34:36.920
+In this paper, we introduced AdvGame, a novel framework for adversarial safety alignment that jointly trains Attacker and Defender language models in a non-zero-sum, non-cooperative game, departing from traditional sequential alternation or self-play approaches.
+
+00:34:36.920 --> 00:35:00.495
+Our experimental results demonstrate that AdvGame variants, particularly AdvGame-D P O-M D and AdvGame-I P O-M D, achieve superior balance across safety, compliance, and utility metrics, while exhibiting significantly greater robustness against adaptive attacks, especially black-box methods generating human-readable adversarial prompts, such as P A I R and T A P.
+
+00:35:00.495 --> 00:35:19.945
+Through comprehensive ablation studies, we established that several design choices are critical for effective adversarial training. First, actively training a separate Attacker model, without parameter sharing, to generate diverse and challenging attacks. Second, employing pairwise preference judging rather than point-wise scoring.
+
+00:35:19.945 --> 00:35:25.920
+And third, utilizing off-policy sampling with E M A for improved training stability.
+
+00:35:26.570 --> 00:35:39.020
+In terms of limitations, we acknowledge that our approach focuses exclusively on natural-language attacks that humans can understand, deliberately excluding non-readable attack sequences such as G C G.
+
+00:35:39.020 --> 00:35:51.295
+Also, while our experiments show limitations with GRPO-based training, we do not claim this universally holds: better hyperparameter search and better reward design might improve its performance.
+
+00:35:51.945 --> 00:36:06.020
+We believe that future work on improved reward model design and extensions to other attack modalities could further enhance the robustness and applicability of game-theoretic approaches to language model safety alignment.
+
+00:36:06.670 --> 00:36:11.895
+The acknowledgements, impact statement, references and appendices were skipped.

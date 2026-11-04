@@ -451,5 +451,21 @@
     "vtt": "audio/ep033.vtt",
     "link": "https://arxiv.org/abs/2512.20806v3",
     "cover": "covers/ep033.jpg"
+  },
+  {
+    "no": 34,
+    "date": "2026-11-04",
+    "title": "Safety Alignment of LMs via Non-cooperative Games",
+    "summary": "The paper frames language model safety alignment as a non-zero-sum game between an Attacker and a Defender model trained jointly with online preference optimization. The resulting Defender is both safer and more useful than baselines, and the Attacker becomes a strong general-purpose red-teaming tool.",
+    "file": "audio/ep034.mp3",
+    "bytes": 17638696,
+    "duration": "00:36:26",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep034.chapters.json",
+    "transcript": "audio/ep034.transcript.html",
+    "vtt": "audio/ep034.vtt",
+    "link": "https://arxiv.org/abs/2512.20806v3",
+    "cover": "covers/ep034.jpg"
   }
 ]
