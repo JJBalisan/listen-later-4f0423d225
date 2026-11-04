@@ -419,5 +419,21 @@
     "vtt": "audio/ep031.vtt",
     "link": "https://www.effort.news/irregular",
     "cover": "covers/ep031.jpg"
+  },
+  {
+    "no": 32,
+    "date": "2026-11-04",
+    "title": "Is AI Writing American Law? \u2014 Effort",
+    "summary": "An Effort investigation scanned US congressional bills since 2023 and found the share likely written by AI has tripled, with the Epstein Files Transparency Act the only majority AI-written bill to become law. Crime and finance bills are the likeliest to be AI written, and no AI use has been publicly disclosed.",
+    "file": "audio/ep032.mp3",
+    "bytes": 3726687,
+    "duration": "00:07:27",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep032.chapters.json",
+    "transcript": "audio/ep032.transcript.html",
+    "vtt": "audio/ep032.vtt",
+    "link": "https://www.effort.news/ai-congress",
+    "cover": "covers/ep032.jpg"
   }
 ]

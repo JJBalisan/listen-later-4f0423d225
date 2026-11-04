@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 04 Nov 2026 01:46:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 01:47:29 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Is AI Writing American Law? — Effort</title>
+      <description>An Effort investigation scanned US congressional bills since 2023 and found the share likely written by AI has tripled, with the Epstein Files Transparency Act the only majority AI-written bill to become law. Crime and finance bills are the likeliest to be AI written, and no AI use has been publicly disclosed. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>An Effort investigation scanned US congressional bills since 2023 and found the share likely written by AI has tripled, with the Epstein Files Transparency Act the only majority AI-written bill to become law. Crime and finance bills are the likeliest to be AI written, and no AI use has been publicly disclosed. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep032</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep032.mp3" length="3726687" type="audio/mpeg"/>
+      <itunes:duration>00:07:27</itunes:duration>
+      <itunes:episode>32</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep032.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/ai-congress</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep032.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep032.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep032.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>A Single Firm is Behind OpenAI, Anthropic, and Meta Hacking Scandals — Effort</title>
       <description>The piece argues that the Israeli Effective Altruist firm Irregular, working with OpenAI, Anthropic, and Meta, caused unsecured AI models to hack real targets, and that the "rogue AI" framing distracts from the companies' own responsibility. Music: “Hop” by Monplaisir (CC0).</description>
