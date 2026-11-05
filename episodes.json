@@ -515,5 +515,21 @@
     "vtt": "audio/ep037.vtt",
     "link": "https://arxiv.org/abs/2605.09504v3",
     "cover": "covers/ep037.jpg"
+  },
+  {
+    "no": 38,
+    "date": "2026-11-05",
+    "title": "The NHS is relying more on charities - and that might be creating problems for patients",
+    "summary": "Charities are playing a growing role in delivering NHS care, often filling gaps left by stretched budgets. The article argues this raises concerns about charities subsidising the health service and about widening inequalities between conditions and communities.",
+    "file": "audio/ep038.mp3",
+    "bytes": 6542314,
+    "duration": "00:13:19",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep038.chapters.json",
+    "transcript": "audio/ep038.transcript.html",
+    "vtt": "audio/ep038.vtt",
+    "link": "https://www.bbc.co.uk/news/articles/c65yn75g9d18o",
+    "cover": "covers/ep038.jpg"
   }
 ]
