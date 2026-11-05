@@ -531,5 +531,21 @@
     "vtt": "audio/ep038.vtt",
     "link": "https://www.bbc.co.uk/news/articles/c65yn75g9d18o",
     "cover": "covers/ep038.jpg"
+  },
+  {
+    "no": 39,
+    "date": "2026-11-05",
+    "title": "Principles for Embedded Evaluations",
+    "summary": "The piece argues that outside evaluators embedded inside frontier AI developers should reduce risk, inform the public, create good incentives and be fair to both sides, and proposes a claim-based assessment design with ranked verdicts and published reports to assess scheming risks.",
+    "file": "audio/ep039.mp3",
+    "bytes": 13861815,
+    "duration": "00:28:34",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep039.chapters.json",
+    "transcript": "audio/ep039.transcript.html",
+    "vtt": "audio/ep039.vtt",
+    "link": "https://www.apolloresearch.ai/blog/principles-for-embedded-evaluations",
+    "cover": "covers/ep039.jpg"
   }
 ]

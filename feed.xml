@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 05 Nov 2026 01:06:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 15:34:28 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Principles for Embedded Evaluations</title>
+      <description>The piece argues that outside evaluators embedded inside frontier AI developers should reduce risk, inform the public, create good incentives and be fair to both sides, and proposes a claim-based assessment design with ranked verdicts and published reports to assess scheming risks. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that outside evaluators embedded inside frontier AI developers should reduce risk, inform the public, create good incentives and be fair to both sides, and proposes a claim-based assessment design with ranked verdicts and published reports to assess scheming risks. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep039</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep039.mp3" length="13861815" type="audio/mpeg"/>
+      <itunes:duration>00:28:34</itunes:duration>
+      <itunes:episode>39</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep039.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.apolloresearch.ai/blog/principles-for-embedded-evaluations</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep039.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep039.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep039.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>The NHS is relying more on charities - and that might be creating problems for patients</title>
       <description>Charities are playing a growing role in delivering NHS care, often filling gaps left by stretched budgets. The article argues this raises concerns about charities subsidising the health service and about widening inequalities between conditions and communities. Music: “Hop” by Monplaisir (CC0).</description>
