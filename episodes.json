@@ -499,5 +499,21 @@
     "vtt": "audio/ep036.vtt",
     "link": "https://arxiv.org/abs/2605.06524v3",
     "cover": "covers/ep036.jpg"
+  },
+  {
+    "no": 37,
+    "date": "2026-11-05",
+    "title": "Restricting the Model, Missing the System: Measurement and Accountability in Offensive AI Governance",
+    "summary": "The paper argues that the tools used to measure AI offensive capability overstate harm and credit models with capability that belongs to the surrounding system. Restricting access to a model is therefore necessary but not sufficient, and the duty to assess capability should fall on whoever builds and controls the system around the model.",
+    "file": "audio/ep037.mp3",
+    "bytes": 28128587,
+    "duration": "00:58:17",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep037.chapters.json",
+    "transcript": "audio/ep037.transcript.html",
+    "vtt": "audio/ep037.vtt",
+    "link": "https://arxiv.org/abs/2605.09504v3",
+    "cover": "covers/ep037.jpg"
   }
 ]

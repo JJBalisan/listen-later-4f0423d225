@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 04 Nov 2026 23:59:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:08:39 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Restricting the Model, Missing the System: Measurement and Accountability in Offensive AI Governance</title>
+      <description>The paper argues that the tools used to measure AI offensive capability overstate harm and credit models with capability that belongs to the surrounding system. Restricting access to a model is therefore necessary but not sufficient, and the duty to assess capability should fall on whoever builds and controls the system around the model. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The paper argues that the tools used to measure AI offensive capability overstate harm and credit models with capability that belongs to the surrounding system. Restricting access to a model is therefore necessary but not sufficient, and the duty to assess capability should fall on whoever builds and controls the system around the model. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep037</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep037.mp3" length="28128587" type="audio/mpeg"/>
+      <itunes:duration>00:58:17</itunes:duration>
+      <itunes:episode>37</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep037.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://arxiv.org/abs/2605.09504v3</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep037.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep037.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep037.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Process Matters more than Output for Distinguishing Humans from Machines</title>
       <description>The paper argues that how a system produces behavior, not just what it outputs, best distinguishes humans from machines, and shows that fine-tuning can narrow this process gap but does not transfer well across tasks. Music: “Hop” by Monplaisir (CC0).</description>

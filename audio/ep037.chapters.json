@@ -1,0 +1,61 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 149,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 508,
+      "title": "Background: the governance moment"
+    },
+    {
+      "startTime": 665,
+      "title": "Related work"
+    },
+    {
+      "startTime": 1010,
+      "title": "Evidence one: jailbreak metrics overstate harm"
+    },
+    {
+      "startTime": 1569,
+      "title": "Evidence two: scaffolds misattribute capability"
+    },
+    {
+      "startTime": 1847,
+      "title": "A harm-grounded success metric"
+    },
+    {
+      "startTime": 1980,
+      "title": "Capability attribution"
+    },
+    {
+      "startTime": 2107,
+      "title": "Who bears the assessment duty"
+    },
+    {
+      "startTime": 2396,
+      "title": "Why the provider cannot bear it alone"
+    },
+    {
+      "startTime": 2534,
+      "title": "Implications for procurement and regulation"
+    },
+    {
+      "startTime": 2666,
+      "title": "Objections and responses"
+    },
+    {
+      "startTime": 2873,
+      "title": "Limitations and conclusion"
+    },
+    {
+      "startTime": 3137,
+      "title": "Ethical statement"
+    }
+  ]
+}
