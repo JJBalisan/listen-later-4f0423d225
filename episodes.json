@@ -563,5 +563,21 @@
     "vtt": "audio/ep040.vtt",
     "link": "https://www.apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing",
     "cover": "covers/ep040.jpg"
+  },
+  {
+    "no": 41,
+    "date": "2026-11-05",
+    "title": "Attunement, not alignment",
+    "summary": "The captured text holds only the title, the author Asvin, a September 2026 date, and LessWrong topic tags such as agent foundations, AI control and the orthogonality thesis. The article body was not included, so its argument cannot be stated.",
+    "file": "audio/ep041.mp3",
+    "bytes": 593149,
+    "duration": "00:00:56",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep041.chapters.json",
+    "transcript": "audio/ep041.transcript.html",
+    "vtt": "audio/ep041.vtt",
+    "link": "https://www.lesswrong.com/posts/Drdpybjuj8jEx7Zjn/attunement-not-alignment",
+    "cover": "covers/ep041.jpg"
   }
 ]

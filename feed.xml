@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 05 Nov 2026 15:36:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 17:53:03 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Attunement, not alignment</title>
+      <description>The captured text holds only the title, the author Asvin, a September 2026 date, and LessWrong topic tags such as agent foundations, AI control and the orthogonality thesis. The article body was not included, so its argument cannot be stated. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The captured text holds only the title, the author Asvin, a September 2026 date, and LessWrong topic tags such as agent foundations, AI control and the orthogonality thesis. The article body was not included, so its argument cannot be stated. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep041</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep041.mp3" length="593149" type="audio/mpeg"/>
+      <itunes:duration>00:00:56</itunes:duration>
+      <itunes:episode>41</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep041.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.lesswrong.com/posts/Drdpybjuj8jEx7Zjn/attunement-not-alignment</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep041.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep041.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep041.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Embedded Evaluators are necessary for meaningful external testing</title>
       <description>The piece argues that final-checkpoint testing cannot catch risks like the Hugging Face incident, which arose early in development, and that meaningful external testing requires embedded evaluators with employee-equivalent access, along with protections for their independence. It sets out requirements, evidence that deeper access has already produced findings, and the limits of testing alone. Music: “Hop” by Monplaisir (CC0).</description>
