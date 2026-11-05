@@ -1,0 +1,37 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 48,
+      "title": "Why current access falls short"
+    },
+    {
+      "startTime": 179,
+      "title": "Why embedded evaluations are necessary"
+    },
+    {
+      "startTime": 392,
+      "title": "We might not get more warning shots"
+    },
+    {
+      "startTime": 500,
+      "title": "Embedded evaluations are feasible"
+    },
+    {
+      "startTime": 636,
+      "title": "Requirements for success"
+    },
+    {
+      "startTime": 1074,
+      "title": "Deeper access has already helped"
+    },
+    {
+      "startTime": 1292,
+      "title": "Necessary but not sufficient"
+    }
+  ]
+}

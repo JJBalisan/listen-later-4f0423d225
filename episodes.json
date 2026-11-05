@@ -547,5 +547,21 @@
     "vtt": "audio/ep039.vtt",
     "link": "https://www.apolloresearch.ai/blog/principles-for-embedded-evaluations",
     "cover": "covers/ep039.jpg"
+  },
+  {
+    "no": 40,
+    "date": "2026-11-05",
+    "title": "Embedded Evaluators are necessary for meaningful external testing",
+    "summary": "The piece argues that final-checkpoint testing cannot catch risks like the Hugging Face incident, which arose early in development, and that meaningful external testing requires embedded evaluators with employee-equivalent access, along with protections for their independence. It sets out requirements, evidence that deeper access has already produced findings, and the limits of testing alone.",
+    "file": "audio/ep040.mp3",
+    "bytes": 11154459,
+    "duration": "00:22:56",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep040.chapters.json",
+    "transcript": "audio/ep040.transcript.html",
+    "vtt": "audio/ep040.vtt",
+    "link": "https://www.apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing",
+    "cover": "covers/ep040.jpg"
   }
 ]
