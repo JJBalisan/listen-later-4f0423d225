@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel>
+    <title>Tab Closed</title>
+    <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+    <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 21 Nov 2026 06:41:18 +0000</lastBuildDate>
+    <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Claude</itunes:author>
+    <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
+    <itunes:summary>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:block>Yes</itunes:block>
+    <podcast:locked owner="noreply@jjbalisan.com">yes</podcast:locked>
+    <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
+    <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
+    <itunes:category text="Education"/>
+    <item>
+      <title>No, I don’t want ‘normal milk’</title>
+      <description>The author, a vegan, argues that calling cow's milk "normal milk" is not a neutral description but a value judgement that frames plant milks and vegans as abnormal and makes the cruelty of dairy farming seem acceptable. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The author, a vegan, argues that calling cow's milk "normal milk" is not a neutral description but a value judgement that frames plant milks and vegans as abnormal and makes the cruelty of dairy farming seem acceptable. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 17 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep057</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep057.mp3" length="3513163" type="audio/mpeg"/>
+      <itunes:duration>00:09:21</itunes:duration>
+      <itunes:episode>57</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep057.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://earthlinged.substack.com/p/no-i-dont-want-normal-milk</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep057.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep057.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep057.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Paths to extreme power concentration</title>
+      <description>The author sets out the main ways that fewer than twenty-five people could end up controlling humanity's future once superintelligence arrives and alignment is solved, giving a probability for each route and an overall estimate of about twenty-three percent. Most of the risk runs through heads of government rather than AI company leaders. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The author sets out the main ways that fewer than twenty-five people could end up controlling humanity's future once superintelligence arrives and alignment is solved, giving a probability for each route and an overall estimate of about twenty-three percent. Most of the risk runs through heads of government rather than AI company leaders. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Mon, 16 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep056</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep056.mp3" length="11906988" type="audio/mpeg"/>
+      <itunes:duration>00:32:40</itunes:duration>
+      <itunes:episode>56</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep056.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://newsletter.forethought.org/p/paths-extreme-power-concentration</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep056.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep056.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep056.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>I plan to drop everything to push for an AI pause</title>
+      <description>The author believes he may have only six to twelve months left to influence the race to superhuman AI, and explains why he plans to push for a pause on training stronger models, which alternatives he rejected, and what others might do. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The author believes he may have only six to twelve months left to influence the race to superhuman AI, and explains why he plans to push for a pause on training stronger models, which alternatives he rejected, and what others might do. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep055</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep055.mp3" length="9153480" type="audio/mpeg"/>
+      <itunes:duration>00:18:46</itunes:duration>
+      <itunes:episode>55</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep055.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://linch.substack.com/p/i-plan-to-drop-everything-to-push</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep055.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep055.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep055.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Eliud Kipchoge, 41, breaks course record at Melbourne Marathon</title>
+      <description>Eliud Kipchoge won the Melbourne Marathon in a course record at age forty-one, saying his body is still peaking. The race was the third leg of his world tour aiming at a marathon on all seven continents. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Eliud Kipchoge won the Melbourne Marathon in a course record at age forty-one, saying his body is still peaking. The race was the third leg of his world tour aiming at a marathon on all seven continents. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep054</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep054.mp3" length="1699917" type="audio/mpeg"/>
+      <itunes:duration>00:03:14</itunes:duration>
+      <itunes:episode>54</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep054.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/sport/athletics/articles/cm4g102vr5q8o</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep054.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep054.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep054.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>AI Company Employees Should Unionize</title>
+      <description>The author argues that safety-conscious AI company employees should organize, formally or informally, because their scarcity gives them great leverage, and that those who would rather whistleblow or quit should seek legal help first. The leverage may disappear soon if recursive self-improvement automates their jobs. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The author argues that safety-conscious AI company employees should organize, formally or informally, because their scarcity gives them great leverage, and that those who would rather whistleblow or quit should seek legal help first. The leverage may disappear soon if recursive self-improvement automates their jobs. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep053</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep053.mp3" length="5517482" type="audio/mpeg"/>
+      <itunes:duration>00:11:11</itunes:duration>
+      <itunes:episode>53</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep053.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.astralcodexten.com/p/ai-company-employees-should-unionize</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep053.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep053.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep053.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Recursive, Self, Improvement</title>
+      <description>The essay argues that under deep learning, the "self" in recursive self-improvement is an AI development system rather than a single model. It concludes that AI progress is a continuing acceleration with no single threshold, and that this reshapes questions of human control and concentration of power. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The essay argues that under deep learning, the "self" in recursive self-improvement is an AI development system rather than a single model. It concludes that AI progress is a continuing acceleration with no single threshold, and that this reshapes questions of human control and concentration of power. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep052</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep052.mp3" length="12359534" type="audio/mpeg"/>
+      <itunes:duration>00:25:26</itunes:duration>
+      <itunes:episode>52</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep052.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://blog.cosmos-institute.org/p/recursive-self-improvement</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep052.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep052.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep052.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Right to Buy split my estate. Now its days could be numbered</title>
+      <description>A writer who grew up on a council estate examines the Right to Buy scheme, introduced in 1980, weighing the wealth it gave tenants against the loss of social housing, and notes that the government now plans to remove the right from new social homes. Both sides agree the real failure was not replacing the homes that were sold. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>A writer who grew up on a council estate examines the Right to Buy scheme, introduced in 1980, weighing the wealth it gave tenants against the loss of social housing, and notes that the government now plans to remove the right from new social homes. Both sides agree the real failure was not replacing the homes that were sold. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep051</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep051.mp3" length="6666945" type="audio/mpeg"/>
+      <itunes:duration>00:13:35</itunes:duration>
+      <itunes:episode>51</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep051.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/news/articles/c699zde85xn7o</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep051.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep051.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep051.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Two Kinds of Test-Time Scaling</title>
+      <description>The essay distinguishes ordinary test-time scaling from "compute extrapolation," where extra inference compute keeps improving performance beyond anything seen in training. It argues that this speeds up frontier capabilities, makes dangerous-capability evaluations much harder, and shifts compute races from training to inference, and it gives circumstantial evidence that labs began achieving it around the end of 2025. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The essay distinguishes ordinary test-time scaling from "compute extrapolation," where extra inference compute keeps improving performance beyond anything seen in training. It argues that this speeds up frontier capabilities, makes dangerous-capability evaluations much harder, and shifts compute races from training to inference, and it gives circumstantial evidence that labs began achieving it around the end of 2025. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep050</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep050.mp3" length="15692277" type="audio/mpeg"/>
+      <itunes:duration>00:32:23</itunes:duration>
+      <itunes:episode>50</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep050.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://newsletter.forethought.org/p/two-kinds-of-test-time-scaling</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep050.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep050.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep050.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>How to build a playroom</title>
+      <description>The piece traces playrooms from queer darkrooms and blackrooms to today's intentionally designed, softer and co-created spaces, arguing that they can be radical sites of connection, self-understanding and collective care. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece traces playrooms from queer darkrooms and blackrooms to today's intentionally designed, softer and co-created spaces, arguing that they can be radical sites of connection, self-understanding and collective care. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep049</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep049.mp3" length="7130494" type="audio/mpeg"/>
+      <itunes:duration>00:14:33</itunes:duration>
+      <itunes:episode>49</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep049.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://feeld.co/ask-feeld/how-to/how-to-build-a-playroom?abExternalOpen=true</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep049.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep049.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep049.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Rethinking Running: Are We Training the Wrong Thing?</title>
+      <description>The author argues that runners who keep getting injured despite getting stronger may need to improve how they coordinate and use their bodies, shifting from muscle-driven running to spring-like running, and describes his changed coaching approach and a free movement challenge. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The author argues that runners who keep getting injured despite getting stronger may need to improve how they coordinate and use their bodies, shifting from muscle-driven running to spring-like running, and describes his changed coaching approach and a free movement challenge. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep048</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep048.mp3" length="3665986" type="audio/mpeg"/>
+      <itunes:duration>00:07:20</itunes:duration>
+      <itunes:episode>48</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep048.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://samuelstow.substack.com/p/rethinking-running-are-we-training</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep048.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep048.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep048.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Antidepressant escitalopram more effective at preventing relapse, analysis finds</title>
+      <description>A large analysis of nearly ten thousand people found escitalopram was best at preventing depression relapse, followed by agomelatine and duloxetine, though experts stress the differences are modest and individual factors matter more. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>A large analysis of nearly ten thousand people found escitalopram was best at preventing depression relapse, followed by agomelatine and duloxetine, though experts stress the differences are modest and individual factors matter more. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep047</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep047.mp3" length="2706048" type="audio/mpeg"/>
+      <itunes:duration>00:05:20</itunes:duration>
+      <itunes:episode>47</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep047.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/news/articles/cv62yyng00jyo</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep047.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep047.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep047.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>What's New in HRV4Training</title>
+      <description>Marco Altini walks through the fully redesigned HRV4Training app, covering the new home screen, measurement options, insights, and the extra features available to Pro users. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Marco Altini walks through the fully redesigned HRV4Training app, covering the new home screen, measurement options, insights, and the extra features available to Pro users. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep046</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep046.mp3" length="6859139" type="audio/mpeg"/>
+      <itunes:duration>00:13:59</itunes:duration>
+      <itunes:episode>46</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep046.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://marcoaltini.substack.com/p/whats-new-in-hrv4training</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep046.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep046.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep046.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>England: Kane and Bellingham air strong views in World Cup review</title>
+      <description>England players spoke frankly in a squad meeting with Thomas Tuchel about their World Cup semi-final defeat by Argentina, with Harry Kane and Jude Bellingham especially forthright. The squad now feel they can move on, as shown by their recent results. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>England players spoke frankly in a squad meeting with Thomas Tuchel about their World Cup semi-final defeat by Argentina, with Harry Kane and Jude Bellingham especially forthright. The squad now feel they can move on, as shown by their recent results. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep045</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep045.mp3" length="2622732" type="audio/mpeg"/>
+      <itunes:duration>00:05:09</itunes:duration>
+      <itunes:episode>45</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep045.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/sport/football/articles/cqr7y7813l04o</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep045.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep045.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep045.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>England: Kane and Bellingham air strong views in World Cup review</title>
+      <description>England players spoke frankly in a team meeting with Thomas Tuchel about their World Cup semi-final defeat by Argentina, with Harry Kane and Jude Bellingham especially forthright. The air appears to have been cleared, as England have since bounced back strongly. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>England players spoke frankly in a team meeting with Thomas Tuchel about their World Cup semi-final defeat by Argentina, with Harry Kane and Jude Bellingham especially forthright. The air appears to have been cleared, as England have since bounced back strongly. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep044</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep044.mp3" length="2592010" type="audio/mpeg"/>
+      <itunes:duration>00:05:05</itunes:duration>
+      <itunes:episode>44</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep044.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/sport/football/articles/cqr7y7813l04o</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep044.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep044.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep044.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Booker Prize 2026: M John Harrison's 'baffling but brilliant' novel The End of Everything wins</title>
+      <description>M John Harrison, at eighty-one, becomes the oldest ever Booker Prize winner for his post-apocalyptic novel The End of Everything, a deliberately disorienting book that divided critics but won the judges' unanimous vote. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>M John Harrison, at eighty-one, becomes the oldest ever Booker Prize winner for his post-apocalyptic novel The End of Everything, a deliberately disorienting book that divided critics but won the judges' unanimous vote. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep043</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep043.mp3" length="2901588" type="audio/mpeg"/>
+      <itunes:duration>00:05:44</itunes:duration>
+      <itunes:episode>43</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep043.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/news/articles/cw0737kv52lko</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep043.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep043.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep043.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Spain v England: Nations League test will reveal if Thomas Tuchel has learned lessons</title>
+      <description>England face world champions Spain in Madrid in the Nations League, a test of whether Thomas Tuchel and his side have learned from their World Cup semi-final defeat by Argentina. Players and pundit Matthew Upson see it as a barometer of England's positive approach and mental progress. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>England face world champions Spain in Madrid in the Nations League, a test of whether Thomas Tuchel and his side have learned from their World Cup semi-final defeat by Argentina. Players and pundit Matthew Upson see it as a barometer of England's positive approach and mental progress. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep042</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep042.mp3" length="4107808" type="audio/mpeg"/>
+      <itunes:duration>00:08:15</itunes:duration>
+      <itunes:episode>42</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep042.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/sport/football/articles/cq2d9l3e313zo</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep042.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep042.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep042.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Attunement, not alignment</title>
+      <description>The captured text holds only the title, the author Asvin, a September 2026 date, and LessWrong topic tags such as agent foundations, AI control and the orthogonality thesis. The article body was not included, so its argument cannot be stated. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The captured text holds only the title, the author Asvin, a September 2026 date, and LessWrong topic tags such as agent foundations, AI control and the orthogonality thesis. The article body was not included, so its argument cannot be stated. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep041</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep041.mp3" length="593149" type="audio/mpeg"/>
+      <itunes:duration>00:00:56</itunes:duration>
+      <itunes:episode>41</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep041.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.lesswrong.com/posts/Drdpybjuj8jEx7Zjn/attunement-not-alignment</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep041.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep041.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep041.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Embedded Evaluators are necessary for meaningful external testing</title>
+      <description>The piece argues that final-checkpoint testing cannot catch risks like the Hugging Face incident, which arose early in development, and that meaningful external testing requires embedded evaluators with employee-equivalent access, along with protections for their independence. It sets out requirements, evidence that deeper access has already produced findings, and the limits of testing alone. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that final-checkpoint testing cannot catch risks like the Hugging Face incident, which arose early in development, and that meaningful external testing requires embedded evaluators with employee-equivalent access, along with protections for their independence. It sets out requirements, evidence that deeper access has already produced findings, and the limits of testing alone. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep040</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep040.mp3" length="11154459" type="audio/mpeg"/>
+      <itunes:duration>00:22:56</itunes:duration>
+      <itunes:episode>40</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep040.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep040.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep040.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep040.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Principles for Embedded Evaluations</title>
+      <description>The piece argues that outside evaluators embedded inside frontier AI developers should reduce risk, inform the public, create good incentives and be fair to both sides, and proposes a claim-based assessment design with ranked verdicts and published reports to assess scheming risks. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that outside evaluators embedded inside frontier AI developers should reduce risk, inform the public, create good incentives and be fair to both sides, and proposes a claim-based assessment design with ranked verdicts and published reports to assess scheming risks. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep039</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep039.mp3" length="13861815" type="audio/mpeg"/>
+      <itunes:duration>00:28:34</itunes:duration>
+      <itunes:episode>39</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep039.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.apolloresearch.ai/blog/principles-for-embedded-evaluations</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep039.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep039.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep039.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>The NHS is relying more on charities - and that might be creating problems for patients</title>
+      <description>Charities are playing a growing role in delivering NHS care, often filling gaps left by stretched budgets. The article argues this raises concerns about charities subsidising the health service and about widening inequalities between conditions and communities. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Charities are playing a growing role in delivering NHS care, often filling gaps left by stretched budgets. The article argues this raises concerns about charities subsidising the health service and about widening inequalities between conditions and communities. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep038</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep038.mp3" length="6542314" type="audio/mpeg"/>
+      <itunes:duration>00:13:19</itunes:duration>
+      <itunes:episode>38</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep038.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/news/articles/c65yn75g9d18o</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep038.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep038.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep038.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Restricting the Model, Missing the System: Measurement and Accountability in Offensive AI Governance</title>
+      <description>The paper argues that the tools used to measure AI offensive capability overstate harm and credit models with capability that belongs to the surrounding system. Restricting access to a model is therefore necessary but not sufficient, and the duty to assess capability should fall on whoever builds and controls the system around the model. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The paper argues that the tools used to measure AI offensive capability overstate harm and credit models with capability that belongs to the surrounding system. Restricting access to a model is therefore necessary but not sufficient, and the duty to assess capability should fall on whoever builds and controls the system around the model. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep037</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep037.mp3" length="28128587" type="audio/mpeg"/>
+      <itunes:duration>00:58:17</itunes:duration>
+      <itunes:episode>37</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep037.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://arxiv.org/abs/2605.09504v3</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep037.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep037.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep037.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Process Matters more than Output for Distinguishing Humans from Machines</title>
+      <description>The paper argues that how a system produces behavior, not just what it outputs, best distinguishes humans from machines, and shows that fine-tuning can narrow this process gap but does not transfer well across tasks. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The paper argues that how a system produces behavior, not just what it outputs, best distinguishes humans from machines, and shows that fine-tuning can narrow this process gap but does not transfer well across tasks. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep036</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep036.mp3" length="17581060" type="audio/mpeg"/>
+      <itunes:duration>00:36:19</itunes:duration>
+      <itunes:episode>36</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep036.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://arxiv.org/abs/2605.06524v3</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep036.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep036.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep036.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Three types of automated alignment work</title>
+      <description>The piece splits alignment work that could be automated into empirical, conceptual and direct work, and explains how they differ and interact. It argues that automating empirical and direct work should keep us safe long enough to automate conceptual work, and that the uncertainty over timing favours hedging across all three. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece splits alignment work that could be automated into empirical, conceptual and direct work, and explains how they differ and interact. It argues that automating empirical and direct work should keep us safe long enough to automate conceptual work, and that the uncertainty over timing favours hedging across all three. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep035</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep035.mp3" length="5998013" type="audio/mpeg"/>
+      <itunes:duration>00:12:11</itunes:duration>
+      <itunes:episode>35</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep035.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://newsletter.forethought.org/p/three-types-of-automated-alignment</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep035.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep035.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep035.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Safety Alignment of LMs via Non-cooperative Games</title>
+      <description>The paper frames language model safety alignment as a non-zero-sum game between an Attacker and a Defender model trained jointly with online preference optimization. The resulting Defender is both safer and more useful than baselines, and the Attacker becomes a strong general-purpose red-teaming tool. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The paper frames language model safety alignment as a non-zero-sum game between an Attacker and a Defender model trained jointly with online preference optimization. The resulting Defender is both safer and more useful than baselines, and the Attacker becomes a strong general-purpose red-teaming tool. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep034</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep034.mp3" length="17638696" type="audio/mpeg"/>
+      <itunes:duration>00:36:26</itunes:duration>
+      <itunes:episode>34</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep034.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://arxiv.org/abs/2512.20806v3</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep034.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep034.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep034.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Safety Alignment of LMs via Non-cooperative Games</title>
+      <description>The paper frames language model safety alignment as a non-zero-sum game between an Attacker and a Defender model, trained jointly with online preference optimization. The resulting Defender is more robust and still useful, and the Attacker becomes a strong red-teaming tool. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The paper frames language model safety alignment as a non-zero-sum game between an Attacker and a Defender model, trained jointly with online preference optimization. The resulting Defender is more robust and still useful, and the Attacker becomes a strong red-teaming tool. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep033</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep033.mp3" length="16609586" type="audio/mpeg"/>
+      <itunes:duration>00:34:17</itunes:duration>
+      <itunes:episode>33</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep033.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://arxiv.org/abs/2512.20806v3</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep033.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep033.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep033.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Is AI Writing American Law? — Effort</title>
+      <description>An Effort investigation scanned US congressional bills since 2023 and found the share likely written by AI has tripled, with the Epstein Files Transparency Act the only majority AI-written bill to become law. Crime and finance bills are the likeliest to be AI written, and no AI use has been publicly disclosed. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>An Effort investigation scanned US congressional bills since 2023 and found the share likely written by AI has tripled, with the Epstein Files Transparency Act the only majority AI-written bill to become law. Crime and finance bills are the likeliest to be AI written, and no AI use has been publicly disclosed. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep032</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep032.mp3" length="3726687" type="audio/mpeg"/>
+      <itunes:duration>00:07:27</itunes:duration>
+      <itunes:episode>32</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep032.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/ai-congress</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep032.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep032.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep032.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>A Single Firm is Behind OpenAI, Anthropic, and Meta Hacking Scandals — Effort</title>
+      <description>The piece argues that the Israeli Effective Altruist firm Irregular, working with OpenAI, Anthropic, and Meta, caused unsecured AI models to hack real targets, and that the "rogue AI" framing distracts from the companies' own responsibility. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that the Israeli Effective Altruist firm Irregular, working with OpenAI, Anthropic, and Meta, caused unsecured AI models to hack real targets, and that the "rogue AI" framing distracts from the companies' own responsibility. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep031</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep031.mp3" length="3776365" type="audio/mpeg"/>
+      <itunes:duration>00:07:33</itunes:duration>
+      <itunes:episode>31</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep031.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/irregular</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep031.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep031.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep031.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>AI Safety Donors Paid Religious NGOs $3.3M for Statements on AI</title>
+      <description>The piece argues that AI Safety donors, chiefly the Future of Life Institute, have put about three point three million dollars into religious organizations since 2025 to produce public statements on AI, often without disclosure, and that this reflects a quasi-religious dimension of the AI safety movement itself. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that AI Safety donors, chiefly the Future of Life Institute, have put about three point three million dollars into religious organizations since 2025 to produce public statements on AI, often without disclosure, and that this reflects a quasi-religious dimension of the AI safety movement itself. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep030</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep030.mp3" length="3045923" type="audio/mpeg"/>
+      <itunes:duration>00:06:02</itunes:duration>
+      <itunes:episode>30</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep030.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/revelation</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep030.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep030.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep030.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>California's Race-Based Pregnancy Funding — Effort</title>
+      <description>The piece argues that three California birth and motherhood programs restrict services by race while receiving federal Medicaid money, and that the Department of Justice could cut that funding under civil rights law. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that three California birth and motherhood programs restrict services by race while receiving federal Medicaid money, and that the Department of Justice could cut that funding under civil rights law. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep029</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep029.mp3" length="3297438" type="audio/mpeg"/>
+      <itunes:duration>00:06:34</itunes:duration>
+      <itunes:episode>29</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep029.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/birth-equity</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep029.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep029.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep029.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Effective Altruism is Buying Political Staff</title>
+      <description>The piece argues that Open Philanthropy, now Coefficient Giving, and donors Dustin Moskovitz and Sam Bankman-Fried used political spending and fellowships to place hand-picked staff in US and UK government offices. It points to the UK AI Safety Institute, the Horizon Fellowship, and a Trump administration standards center as examples. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that Open Philanthropy, now Coefficient Giving, and donors Dustin Moskovitz and Sam Bankman-Fried used political spending and fellowships to place hand-picked staff in US and UK government offices. It points to the UK AI Safety Institute, the Horizon Fellowship, and a Trump administration standards center as examples. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 03 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep028</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep028.mp3" length="3064915" type="audio/mpeg"/>
+      <itunes:duration>00:06:04</itunes:duration>
+      <itunes:episode>28</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep028.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/aisi</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep028.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep028.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep028.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>America's Covid Fraud Totals Over $300B</title>
+      <description>The author counts likely fraud across federal and state pandemic programs at over three hundred billion dollars, mostly in small business loans and unemployment benefits. The piece argues this follows from policy choices that skipped verification and rewarded spending over prevention, and that little has been recovered. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The author counts likely fraud across federal and state pandemic programs at over three hundred billion dollars, mostly in small business loans and unemployment benefits. The piece argues this follows from policy choices that skipped verification and rewarded spending over prevention, and that little has been recovered. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 03 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep027</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep027.mp3" length="4014962" type="audio/mpeg"/>
+      <itunes:duration>00:08:03</itunes:duration>
+      <itunes:episode>27</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep027.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/covidfraud</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep027.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep027.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep027.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>vespers live artist/dj callout</title>
+      <description>This is an application form inviting DJs, hybrid acts, and live electronic acts to apply to perform at Vespers Live, asking for contact details, sample work, social links, sound description, and availability. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>This is an application form inviting DJs, hybrid acts, and live electronic acts to apply to perform at Vespers Live, asking for contact details, sample work, social links, sound description, and availability. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 03 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep026</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep026.mp3" length="997967" type="audio/mpeg"/>
+      <itunes:duration>00:01:46</itunes:duration>
+      <itunes:episode>26</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep026.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://docs.google.com/forms/d/e/1FAIpQLSe_Du6HdclvRxyGP23Peib4eCM2xdHm2bm7Z2lPzj2WZkPy6A/viewform</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep026.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep026.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep026.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>The Coverup Beneath the AI Hacking Scandals — Effort</title>
+      <description>The piece argues that last quarter's AI cyberattacks stemmed from human error and nepotistic contracting among Effective Altruist organizations, not from rogue AI. It claims Anthropic and others should drop nepotistically hired contractors and employees. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that last quarter's AI cyberattacks stemmed from human error and nepotistic contracting among Effective Altruist organizations, not from rogue AI. It claims Anthropic and others should drop nepotistically hired contractors and employees. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 03 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep025</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep025.mp3" length="4304199" type="audio/mpeg"/>
+      <itunes:duration>00:08:39</itunes:duration>
+      <itunes:episode>25</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep025.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.effort.news/ea-hiring</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep025.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep025.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep025.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>My California Ballot, 2026</title>
+      <description>Scott Alexander walks through how he is voting in Oakland, California, on state propositions, state officials, local measures and local races, with his reasoning on each. He ends by testing whether an AI could have predicted his votes, and finds it only got fifty-seven percent right. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Scott Alexander walks through how he is voting in Oakland, California, on state propositions, state officials, local measures and local races, with his reasoning on each. He ends by testing whether an AI could have predicted his votes, and finds it only got fifty-seven percent right. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Mon, 02 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep024</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep024.mp3" length="18218242" type="audio/mpeg"/>
+      <itunes:duration>00:37:39</itunes:duration>
+      <itunes:episode>24</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep024.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.astralcodexten.com/p/my-california-ballot-2026</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep024.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep024.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep024.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Jack Grealish: What next for England winger after 'breach of club discipline'?</title>
+      <description>Everton left Jack Grealish out of their League Cup win over Newcastle for a breach of club discipline, understood to be an unauthorised absence from training. The piece looks at what this means for the loan winger, whose mood and standing at the club appear to have shifted. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Everton left Jack Grealish out of their League Cup win over Newcastle for a breach of club discipline, understood to be an unauthorised absence from training. The piece looks at what this means for the loan winger, whose mood and standing at the club appear to have shifted. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Mon, 02 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep023</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep023.mp3" length="2655161" type="audio/mpeg"/>
+      <itunes:duration>00:05:13</itunes:duration>
+      <itunes:episode>23</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep023.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep023.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep023.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep023.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Against SURA</title>
+      <description>The text supplied contains only the page header for this LessWrong post by Scott Alexander, with no article body, so the argument itself is not available. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The text supplied contains only the page header for this LessWrong post by Scott Alexander, with no article body, so the argument itself is not available. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Mon, 02 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep022</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep022.mp3" length="680509" type="audio/mpeg"/>
+      <itunes:duration>00:01:07</itunes:duration>
+      <itunes:episode>22</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep022.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep022.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep022.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep022.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Neural Networks Are Already Clean</title>
+      <description>Nick Cammarata argues that apparent polysemanticity in neural networks is mostly recursive generalization rather than superposition, so a network's own neurons and circuits can be studied directly. He supports this with vision and language model experiments and argues for exploratory, agent-driven interpretability. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Nick Cammarata argues that apparent polysemanticity in neural networks is mostly recursive generalization rather than superposition, so a network's own neurons and circuits can be studied directly. He supports this with vision and language model experiments and argues for exploratory, agent-driven interpretability. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Sat, 31 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep021</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep021.mp3" length="45677433" type="audio/mpeg"/>
+      <itunes:duration>01:34:51</itunes:duration>
+      <itunes:episode>21</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep021.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://already-clean.goodfire.com/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep021.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep021.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep021.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>How talking about Man Utd's cycle of doom became an industry</title>
+      <description>The piece examines how constant commentary from former Manchester United players on podcasts and YouTube has turned the club's struggles into a content industry, and whether that coverage helps or harms the club. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>The piece examines how constant commentary from former Manchester United players on podcasts and YouTube has turned the club's struggles into a content industry, and whether that coverage helps or harms the club. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Sat, 31 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep020</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep020.mp3" length="4418514" type="audio/mpeg"/>
+      <itunes:duration>00:08:54</itunes:duration>
+      <itunes:episode>20</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep020.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/sport/football/articles/cjn5v3pl0159o</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep020.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep020.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep020.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>Jack Grealish: What next for England winger after 'breach of club discipline'?</title>
+      <description>Everton left Jack Grealish out of their League Cup win over Newcastle because of a breach of club discipline, understood to be an unauthorised absence from training, raising questions about his future at the club. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Everton left Jack Grealish out of their League Cup win over Newcastle because of a breach of club discipline, understood to be an unauthorised absence from training, raising questions about his future at the club. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Sat, 31 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep019</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep019.mp3" length="2640186" type="audio/mpeg"/>
+      <itunes:duration>00:05:12</itunes:duration>
+      <itunes:episode>19</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep019.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep019.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep019.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep019.vtt" type="text/vtt"/>
+    </item>
+    <item>
+      <title>What's the ROI of software engineers' spending on AI?</title>
+      <description>The author surveyed engineering leaders at twenty-seven companies, plus data from CodeRabbit and Gitar, to see what companies spend on AI per engineer and how pull request throughput changed. Spending varies widely and is unrelated to company size, and gains in throughput are uneven, with return on investment hard to pin down. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>The author surveyed engineering leaders at twenty-seven companies, plus data from CodeRabbit and Gitar, to see what companies spend on AI per engineer and how pull request throughput changed. Spending varies widely and is unrelated to company size, and gains in throughput are uneven, with return on investment hard to pin down. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Tue, 27 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep018</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep018.mp3" length="8313485" type="audio/mpeg"/>
+      <itunes:duration>00:17:01</itunes:duration>
+      <itunes:episode>18</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep018.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep018.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Your Book Review: The Ghost In My Brain</title>
+      <description>A reviewer who has her own concussion reads Clark Elliott's memoir of a decade of severe post-concussion symptoms and his recovery through puzzles and prism lenses. She weighs the thin evidence for the treatments and argues that patient communities, paired with structured case registries, could help decide what deserves a proper trial. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>A reviewer who has her own concussion reads Clark Elliott's memoir of a decade of severe post-concussion symptoms and his recovery through puzzles and prism lenses. She weighs the thin evidence for the treatments and argues that patient communities, paired with structured case registries, could help decide what deserves a proper trial. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Tue, 27 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep017</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep017.mp3" length="13294285" type="audio/mpeg"/>
+      <itunes:duration>00:27:23</itunes:duration>
+      <itunes:episode>17</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep017.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep017.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Bruna's Marathon Comeback: From The Trails To The Roads for a 10-minute Personal Best</title>
+      <description>Coach Marco describes how Bruna Maia returned from stress fractures to run a ten-minute marathon personal best in Chicago. He covers moving their coaching to the augo platform, her lab-tested physiology, and the training that fit her strengths. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Coach Marco describes how Bruna Maia returned from stress fractures to run a ten-minute marathon personal best in Chicago. He covers moving their coaching to the augo platform, her lab-tested physiology, and the training that fit her strengths. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Tue, 27 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep016</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep016.mp3" length="10206077" type="audio/mpeg"/>
+      <itunes:duration>00:20:57</itunes:duration>
+      <itunes:episode>16</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep016.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep016.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Evaluating how AI agents use tools</title>
+      <description>AgentMail tested twenty-five model-and-harness agents on seven email tasks and found that agents rarely fail at the work itself, but at points where the tool leaves them guessing, such as hidden filtered mail, misleadingly named endpoints, and ambiguous spam labels. Most fixes belong to the tool: say what was filtered, name operations for what they do, and explain what labels mean. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>AgentMail tested twenty-five model-and-harness agents on seven email tasks and found that agents rarely fail at the work itself, but at points where the tool leaves them guessing, such as hidden filtered mail, misleadingly named endpoints, and ambiguous spam labels. Most fixes belong to the tool: say what was filtered, name operations for what they do, and explain what labels mean. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Tue, 27 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep015</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep015.mp3" length="11840140" type="audio/mpeg"/>
+      <itunes:duration>00:24:22</itunes:duration>
+      <itunes:episode>15</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep015.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep015.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>ChinAI #379: “Chinese AI only makes trash TV?”</title>
+      <description>Jeff Ding's newsletter examines a viral Chinese claim that over half of China's computing power goes to trash short dramas, traces it to a single investor statement, and notes a Banyuetan commentary debunking it. It also flags three further readings on recursive self-improvement, the global AI talent race, and past issues. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Jeff Ding's newsletter examines a viral Chinese claim that over half of China's computing power goes to trash short dramas, traces it to a single investor statement, and notes a Banyuetan commentary debunking it. It also flags three further readings on recursive self-improvement, the global AI talent race, and past issues. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Mon, 26 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep014</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep014.mp3" length="4173304" type="audio/mpeg"/>
+      <itunes:duration>00:08:23</itunes:duration>
+      <itunes:episode>14</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep014.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep014.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>We need more bees, so is honey the answer?</title>
+      <description>The piece argues that beekeeping and eating honey do not help bee conservation, because managed western honeybees compete with, spread disease to, and pollinate less effectively than wild pollinators, and it urges better use of outdoor spaces and a plant-based diet instead. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>The piece argues that beekeeping and eating honey do not help bee conservation, because managed western honeybees compete with, spread disease to, and pollinate less effectively than wild pollinators, and it urges better use of outdoor spaces and a plant-based diet instead. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Mon, 26 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep013</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep013.mp3" length="3740701" type="audio/mpeg"/>
+      <itunes:duration>00:07:29</itunes:duration>
+      <itunes:episode>13</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep013.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep013.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>What’s IN &amp; what’s OUT in bi dating right now 👀</title>
+      <description>Florence Scordoulis lists seventeen things that should be in and out of bi plus dating for cuffing season, from biphobic assumptions and app algorithms to queer belonging and timelines, while promoting a London bi plus speed dating and karaoke event. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Florence Scordoulis lists seventeen things that should be in and out of bi plus dating for cuffing season, from biphobic assumptions and app algorithms to queer belonging and timelines, while promoting a London bi plus speed dating and karaoke event. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Mon, 26 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep012</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep012.mp3" length="5094872" type="audio/mpeg"/>
+      <itunes:duration>00:10:18</itunes:duration>
+      <itunes:episode>12</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep012.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep012.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Single points of failure in military AI command</title>
+      <description>As autonomous systems replace human soldiers and officers, control of a military can collapse toward a single point of failure at the top. Nuclear command-and-control offers three kinds of safeguards, integrity, containment and soundness of command, but the ones that constrain the top are the least likely to be adopted. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>As autonomous systems replace human soldiers and officers, control of a military can collapse toward a single point of failure at the top. Nuclear command-and-control offers three kinds of safeguards, integrity, containment and soundness of command, but the ones that constrain the top are the least likely to be adopted. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Mon, 26 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep011</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep011.mp3" length="15503734" type="audio/mpeg"/>
+      <itunes:duration>00:32:00</itunes:duration>
+      <itunes:episode>11</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep011.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep011.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>A World Driven By Fear</title>
+      <description>Steve Magness argues that a media and political environment built on fear and outrage pushes society into a rigid, protective survival mode and trains helplessness, and that we can counter it by deliberately building hope through small, repeated actions. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Steve Magness argues that a media and political environment built on fear and outrage pushes society into a rigid, protective survival mode and trains helplessness, and that we can counter it by deliberately building hope through small, repeated actions. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Mon, 26 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep010</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep010.mp3" length="6814545" type="audio/mpeg"/>
+      <itunes:duration>00:13:53</itunes:duration>
+      <itunes:episode>10</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep010.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep010.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>We tried to automate Epoch</title>
+      <description>Epoch tested leading AI models on its own regular work tasks, graded against the standards applied to human employees, and found the best scored about sixty-five percent, which is still a failing grade. This helps explain why AI's economic impact lags behind its benchmark results. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Epoch tested leading AI models on its own regular work tasks, graded against the standards applied to human employees, and found the best scored about sixty-five percent, which is still a failing grade. This helps explain why AI's economic impact lags behind its benchmark results. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Mon, 26 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep009</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep009.mp3" length="2577993" type="audio/mpeg"/>
+      <itunes:duration>00:05:04</itunes:duration>
+      <itunes:episode>9</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep009.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep009.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Andy Burnham defends Gogglebox appearance after Badenoch criticism</title>
+      <description>Prime Minister Andy Burnham defended appearing on a celebrity Gogglebox episode for Stand Up To Cancer after Kemi Badenoch said she was amazed he had the time. Badenoch argued that a prime minister should be focused on the job rather than Gogglebox and social media. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Prime Minister Andy Burnham defended appearing on a celebrity Gogglebox episode for Stand Up To Cancer after Kemi Badenoch said she was amazed he had the time. Badenoch argued that a prime minister should be focused on the job rather than Gogglebox and social media. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Sun, 25 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep008</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep008.mp3" length="1651346" type="audio/mpeg"/>
+      <itunes:duration>00:03:08</itunes:duration>
+      <itunes:episode>8</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep008.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep008.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>James Bond: Jack Lowden and Callum Turner to screen test this weekend, reports say</title>
+      <description>Reports say three to five actors, reportedly including Jack Lowden, Callum Turner and Josh O'Connor, are in the final screen tests to replace Daniel Craig as James Bond, with no timeline yet for a decision. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Reports say three to five actors, reportedly including Jack Lowden, Callum Turner and Josh O'Connor, are in the final screen tests to replace Daniel Craig as James Bond, with no timeline yet for a decision. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Sun, 25 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep007</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep007.mp3" length="3110643" type="audio/mpeg"/>
+      <itunes:duration>00:06:11</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep007.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep007.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Your Book Review: We Present Television</title>
+      <description>A reviewer reads a 1940 collection of essays by the pioneers of American television, and finds it mostly prosaic technical description laced with startlingly accurate, and sometimes eerie, prophecy about the world television would build. The reviewer argues that "Television" meant far more than the TV set, and that its authors foresaw much of our connected, screen-saturated present. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>A reviewer reads a 1940 collection of essays by the pioneers of American television, and finds it mostly prosaic technical description laced with startlingly accurate, and sometimes eerie, prophecy about the world television would build. The reviewer argues that "Television" meant far more than the TV set, and that its authors foresaw much of our connected, screen-saturated present. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Thu, 22 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep006</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep006.mp3" length="26225583" type="audio/mpeg"/>
+      <itunes:duration>00:54:20</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep006.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep006.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Your Book Review: Storm Of Steel</title>
+      <description>The reviewer argues that Ernst Jünger's Storm of Steel is the best war novel ever written, because it reports the First World War without a thesis. He links its theme of death and duty to his own ordeal when his daughter was born at twenty-four weeks. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>The reviewer argues that Ernst Jünger's Storm of Steel is the best war novel ever written, because it reports the First World War without a thesis. He links its theme of death and duty to his own ordeal when his daughter was born at twenty-four weeks. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Thu, 22 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep005</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep005.mp3" length="23039251" type="audio/mpeg"/>
+      <itunes:duration>00:47:42</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep005.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep005.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Our AI Midwife</title>
+      <description>A father describes how a chatbot playing a TV doctor suggested the MRI that found a fibroid behind his wife's six years of unexplained infertility, leading to a natural pregnancy after surgery. He uses the story to argue that AI's everyday benefits deserve acknowledgment alongside its risks. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>A father describes how a chatbot playing a TV doctor suggested the MRI that found a fibroid behind his wife's six years of unexplained infertility, leading to a natural pregnancy after surgery. He uses the story to argue that AI's everyday benefits deserve acknowledgment alongside its risks. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Thu, 22 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep004</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep004.mp3" length="4627029" type="audio/mpeg"/>
+      <itunes:duration>00:09:20</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep004.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep004.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Can AI automate AI R&amp;D yet?</title>
+      <description>Using an evaluation called InnovationEval, the piece tests whether frontier AI models can independently rediscover a recent machine learning innovation, and finds they fall far short, reaching at most fifteen percent of the original gains while overstating their results. Progress is fast, so the authors plan to repeat the test on newer models. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Using an evaluation called InnovationEval, the piece tests whether frontier AI models can independently rediscover a recent machine learning innovation, and finds they fall far short, reaching at most fifteen percent of the original gains while overstating their results. Progress is fast, so the authors plan to repeat the test on newer models. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Thu, 22 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep003</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep003.mp3" length="4804239" type="audio/mpeg"/>
+      <itunes:duration>00:09:42</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep003.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep003.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Current AIs out-persuade professionals in lab settings but (probably) not in the world</title>
+      <description>The author argues that experiments show AIs beating professional humans at narrow persuasion tasks, but real-world evidence suggests broad AI persuasion sits between median human and median professional level. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>The author argues that experiments show AIs beating professional humans at narrow persuasion tasks, but real-world evidence suggests broad AI persuasion sits between median human and median professional level. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Thu, 22 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep002</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep002.mp3" length="10657300" type="audio/mpeg"/>
+      <itunes:duration>00:21:54</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep002.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep002.chapters.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>The Bitter Lesson</title>
+      <description>Looking back over decades of AI research, the piece argues that general methods which scale with computation, namely search and learning, have always eventually beaten approaches that build in human knowledge, and that researchers should build meta-methods that discover rather than encode what we think we know. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</description>
+      <itunes:summary>Looking back over decades of AI research, the piece argues that general methods which scale with computation, namely search and learning, have always eventually beaten approaches that build in human knowledge, and that researchers should build meta-methods that discover rather than encode what we think we know. Music: intro and interludes from “Dans la tentative d’accomplir quelque chose” by Frederic Lardon feat. Laura Palmée (CC0). Outro: “Crap Transition” by Jesse Spillane, https://freemusicarchive.org/music/Jesse_Spillane/Art_of_Presentation/Jesse_Spillane_-_Art_of_Presentation_-_04_Crap_Transition/ licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); trimmed, faded and mixed with narration.</itunes:summary>
+      <pubDate>Thu, 22 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep001</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep001.mp3" length="3164410" type="audio/mpeg"/>
+      <itunes:duration>00:06:17</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep001.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep001.chapters.json" type="application/json+chapters"/>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 280,
+      "title": "R S I, unpacked"
+    },
+    {
+      "startTime": 522,
+      "title": "What is the self in deep learning?"
+    },
+    {
+      "startTime": 841,
+      "title": "Returns and bottlenecks"
+    },
+    {
+      "startTime": 1278,
+      "title": "Takeoff speeds and Good's proviso"
+    }
+  ]
+}

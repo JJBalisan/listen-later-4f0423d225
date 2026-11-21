@@ -1,0 +1,415 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:23.160
+Paths to extreme power concentration, from Forethought.
+
+00:00:23.810 --> 00:00:33.910
+AI could let a very small group of people take control of humanity's future. This post sets out the main ways that could happen and gives my probability for each.
+
+00:00:34.560 --> 00:00:51.035
+I put the overall chance that fewer than twenty-five people end up controlling the future at about twenty-three percent. This assumes superintelligence arrives this century and the alignment problem is solved, so AI systems reliably do what the people controlling them intend.
+
+00:00:51.035 --> 00:00:59.335
+The ranges are wide, and they mix my gut estimates with a simple model, which itself takes as input more fine-grained gut estimates.
+
+00:00:59.985 --> 00:01:19.285
+A majority of this risk involves a head of government. The two largest routes are an autocracy overtaking the democracies in AI, which I call A one, and a democratic head of government teaming up with a leading AI company, which I call D two. Routes involving an AI company leader only add up to about eight percent.
+
+00:01:19.285 --> 00:01:27.385
+That's mainly because a company has to get past its own government, which can see it becoming too powerful and has the means to stop it.
+
+00:01:28.035 --> 00:01:36.985
+A table in the original summarizes the routes. The rest of the post explains each one, and ends with the questions that would most change my estimates.
+
+00:01:41.595 --> 00:02:01.170
+Unconstrained control over sufficiently powerful AI technology could give a single person or small group of people a decisive strategic advantage. That means enough of an edge to defeat or dominate everyone else, for example through wildly superior military technology, which they could use to take over the rest of the world.
+
+00:02:01.170 --> 00:02:08.195
+The capabilities that would let a misaligned AI take over could let whoever controls aligned AI do the same.
+
+00:02:08.845 --> 00:02:21.170
+I focus on the leaders of the most advanced autocracy, the most advanced democracy, and frontier AI companies, because they have plausible paths to world domination, given current conditions.
+
+00:02:21.170 --> 00:02:34.745
+I obviously cannot rule out other actors, such as terrorist groups, single intelligence and military officers, or international organizations, but I assign them lower probabilities, so I left them out for simplicity.
+
+00:02:34.745 --> 00:02:50.945
+In this post, I will generally talk about individual leaders, but you can treat them as stand-ins for a group of fewer than twenty-five people at the top of these organizations. I map routes by how each actor could take power, in sections A to C, with coalitions covered in section D.
+
+00:02:51.595 --> 00:03:03.070
+Many of the mechanisms, and much of the analysis, are already in the AI-enabled coups paper and in Rose Hadshar's Eighty Thousand Hours problem profile on extreme power concentration.
+
+00:03:03.070 --> 00:03:14.945
+This post gives a more concise overview, adds a probability estimate for each route, and adds a route those pieces don't cover: a deal between the leaders of the most powerful states, which is D one.
+
+00:03:15.595 --> 00:03:18.745
+A few notes on my probability estimates.
+
+00:03:19.395 --> 00:03:31.745
+All estimates are conditional on superintelligence happening by the end of the century and on the alignment problem being solved in time, meaning AI systems reliably do what the people controlling them intend.
+
+00:03:32.395 --> 00:03:41.795
+Each number is my probability that the route ends with one person or a small group in control of the future trajectory of human civilization.
+
+00:03:42.445 --> 00:03:58.770
+By small group I mean something like fewer than twenty-five people. For coalitions, in section D, the threshold applies to everyone in the coalition combined, not to each partner. With a narrower definition, say fewer than five people, the numbers would be correspondingly lower.
+
+00:03:59.420 --> 00:04:13.195
+I count a group as in control if it can choose the long-run direction of civilization and no one can remove it. This includes cases where a small group sets the goals of the AI systems that end up running things and then steps back.
+
+00:04:13.195 --> 00:04:22.170
+I set aside worlds where power concentrates without anyone deliberately seizing it, such as gradual economic or epistemic disempowerment.
+
+00:04:22.820 --> 00:04:37.870
+I set each range using both my gut estimates and a simple quantitative model I built to cover all possible routes. The model still takes as input more fine-grained gut estimates. Each range is roughly where I'd put most of my credence for that route.
+
+00:04:38.520 --> 00:04:53.220
+To get the total, I added the middle of each range. With that, my estimates come out to an overall chance of around twenty-three percent for groups of fewer than twenty-five people. With ranges this wide, the total could reasonably be a few points lower.
+
+00:04:53.870 --> 00:05:05.420
+If I account for some set of other less likely routes I don't cover here, and a catch-all "other" category, the overall number might go up to around twenty-five percent, but it's hard to be precise here.
+
+00:05:06.070 --> 00:05:20.370
+I do not directly discuss the chance of moving from control of a single country to control of the future in this post. Instead, I treat it as a background input, since it works roughly the same across almost all routes, except D one.
+
+00:05:20.370 --> 00:05:32.620
+I currently assign about seventy percent to a country achieving a decisive strategic advantage, but I remain fairly uncertain about this. Higher or lower numbers could change the total significantly.
+
+00:05:33.270 --> 00:05:44.645
+Estimates like this are obviously not the only input into prioritization. Routes and end states differ a lot in how bad they would be, and in how tractable and neglected work on them is.
+
+00:05:49.255 --> 00:06:03.805
+The leader of an autocratic state already faces few checks on their power, has strong control over their military, and could somewhat easily assert direct control over AI systems developed domestically. How could they seize control of the future?
+
+00:06:08.415 --> 00:06:25.415
+The route: they build an AI system capable of taking over the world before any other country does. Since they currently lag at least somewhat behind the frontier in most aspects of the technology, this requires them to overtake the countries ahead of them. Here are some tactics they may use to achieve this.
+
+00:06:25.415 --> 00:06:44.115
+Theft of model weights and algorithmic secrets. Sabotage of competitors' AI development. Leapfrogging via alternative technical approaches. Faster diffusion and adoption, including in government, for example of military technology. Massive state-directed investment with fewer regulatory constraints.
+
+00:06:44.115 --> 00:06:58.490
+And outgrowing the rest of the world in an industrial explosion. Tom Davidson thinks a democratic bloc is the likeliest candidate for that last one, but the mechanism is in principle open to any state with enough industrial capacity.
+
+00:06:59.140 --> 00:07:16.340
+Key obstacles. Autocratic countries are currently behind in most respects when it comes to AI, but by how much depends on the measure. And any tactics they employ may be met with countermeasures, such as export controls, increased security, cyberattacks, or increased state investment.
+
+00:07:16.990 --> 00:07:19.990
+My estimate is two to ten percent.
+
+00:07:20.640 --> 00:07:36.565
+In longer-timeline worlds, industrial and state capacity could end up mattering a lot. I expect that autocratic states will be at an advantage here, for example with higher savings rates and fewer regulatory barriers, and might then overtake democratic countries.
+
+00:07:37.215 --> 00:07:49.265
+If they end up in a dominant position, I expect that they would be strongly incentivized to lock in control, either militarily or by taking a defensive posture and simply outgrowing other countries.
+
+00:07:49.915 --> 00:08:05.065
+In autocracies, state control is already very centralized. AI will make further centralization increasingly easy, and could plausibly shrink the ruling coalition even further, because loyal AI systems can replace the human "winning coalition".
+
+00:08:09.675 --> 00:08:28.775
+The route has four steps. First, the autocracy's intelligence service gains covert access to the training pipeline of the leading foreign AI developer. Second, they compromise the training process to install a secret loyalty, and make sure it carries over to successor systems. This compromise remains undetected.
+
+00:08:28.775 --> 00:08:38.025
+Third, the compromised systems are at some point in a position to take over on behalf of the autocracy. Fourth, they seize control of the rival country.
+
+00:08:38.675 --> 00:08:58.325
+Key obstacles. Instilling sufficiently sophisticated secret loyalties has not yet been shown in frontier systems. Simple backdoors survive safety training and can be planted by poisoning a small number of public documents, and researchers have recently trained narrow and more general secret loyalties into open-weight models.
+
+00:08:58.325 --> 00:09:08.900
+But a loyalty that acts sensibly at a key moment needs much more than a trigger phrase. Under the assumption of alignment being solved in some way, this may become easier, though.
+
+00:09:09.550 --> 00:09:22.450
+Companies and governments will be testing their systems very rigorously for such loyalties, and their tests should work reasonably well if the alignment problem has been solved in some way. Failed attempts would heighten security.
+
+00:09:22.450 --> 00:09:31.075
+And this might require success across multiple developers, if developers audit each other's systems and their capabilities are roughly equal.
+
+00:09:31.725 --> 00:09:35.400
+My estimate is zero point one to one percent.
+
+00:09:36.050 --> 00:09:56.025
+My main reason for this low number is that pulling off such a conjunctive plan from a trailing position just seems incredibly difficult. Even if their conventional hacking and spying, including recruiting insiders, are strong, they will likely have weaker AI-enabled cyber tools, weaker alignment techniques, and few chances to test such a plan.
+
+00:09:56.025 --> 00:10:01.350
+They can't easily check whether it worked, and being caught would trigger countermeasures.
+
+00:10:02.000 --> 00:10:11.750
+A note: I remain generally confused about the feasibility of creating sufficiently sophisticated secret loyalties, given my lack of technical expertise.
+
+00:10:16.360 --> 00:10:31.335
+A democratic leader in a country with frontier AI capabilities would need to gain personal control of an AI system that is capable of taking over the country, or at least indefinitely entrenching their rule by overriding the existing checks.
+
+00:10:31.335 --> 00:10:48.635
+Tom Davidson, Lukas Finnveden, and Rose Hadshar previously discussed both routes in their paper on AI-enabled coups: the military route, which I cover in B one, and an "executive coup", in which the head of government takes personal control of the leading AI project, which I cover in B two.
+
+00:10:49.285 --> 00:11:01.435
+An enabler is democratic backsliding. Both routes I discuss below become significantly easier if democratic checks have already been eroded, since there would then be fewer independent powerholders.
+
+00:11:02.085 --> 00:11:20.960
+AI systems themselves could supercharge existing backsliding tactics, such as surveillance, prosecution of opposition, undermining trust in media and institutions, loyalty screening, and manufactured crises. They could also be used to replace disloyal officials directly. I won't go into further detail here.
+
+00:11:25.220 --> 00:11:36.945
+A self-coup is a seizure of power by someone already in office. The basic idea is a sitting head of government using automated military force to establish autocratic rule for themselves.
+
+00:11:37.595 --> 00:11:52.320
+The route has four steps. First, AI enables the construction of an autonomous military force that is able to stage a coup. At the extreme, that means being able to defeat the human military, but a far smaller force probably suffices.
+
+00:11:52.320 --> 00:12:10.270
+Second, this autonomous force executes arbitrary orders when commanded, including currently illegal ones, either by design or through illegal modification. Third, the head of government can command this force directly. That is very unusual, but not clearly illegal, depending on the jurisdiction.
+
+00:12:10.270 --> 00:12:17.770
+Fourth, they command a takeover of the country, ignoring all constitutional, political, and institutional constraints.
+
+00:12:18.420 --> 00:12:32.395
+Key obstacles. Most military procurement is slow and visible, with lots of advance warning and many stakeholders involved. There are exceptions, and how much they matter depends on how expensive and visible this technology would be.
+
+00:12:32.395 --> 00:12:42.920
+That also means that this route would happen late in an intelligence explosion, which buys time, visibility, and better AI capabilities to alert the relevant people.
+
+00:12:43.570 --> 00:12:57.070
+Many officers, officials, legislators, and advisers who understood the implications would probably refuse to go along with such a plan. It would only work if they had all been replaced by loyalists or AI systems first.
+
+00:12:57.720 --> 00:13:10.345
+Staging a de facto military coup of your own country is not something that all democratically elected leaders would do. That said, political leaders are selected for seeking power, and many try to keep it.
+
+00:13:10.345 --> 00:13:21.145
+An AI-enabled coup may also be predictably bloodless, if the capability asymmetry is sufficiently big and they can promise unprecedented wealth in exchange for submission.
+
+00:13:21.795 --> 00:13:24.895
+My estimate is one to five percent.
+
+00:13:25.545 --> 00:13:43.020
+In some ways, this is the default path for AI adoption in the military, which will happen in time. In the United States and similar presidential systems, the head of government has sole command over the armed forces, and legal and ethical judgment is thought to come from people, not machines.
+
+00:13:43.020 --> 00:13:54.045
+So, at the point where all other people in the chain of command have been replaced with AI systems, the head of government would find themselves in control of an unquestioningly loyal robot army.
+
+00:13:54.695 --> 00:14:14.570
+The legislature typically controls the money for weapons programs by program line, and a new program generally needs its approval before it starts. But it doesn't approve individual contracts, and on national security it usually defers to the executive. In principle, the executive could also simply ignore certain requirements.
+
+00:14:15.220 --> 00:14:25.645
+That being said, the reason my number isn't higher is that I think the autonomy and force integration required for pulling off an almost fully autonomous coup are really quite steep.
+
+00:14:25.645 --> 00:14:42.970
+That means extremely capable autonomous drones with sufficiently strong AI edge systems to counter jamming, replacement of generals with autonomous command-and-control systems, and so on. This will be later in the tech tree than other possibilities, and it will come with further procurement delays.
+
+00:14:42.970 --> 00:14:52.470
+All these factors give others more time to intervene, which they would have extremely strong incentives to do, unless checks were already seriously eroded.
+
+00:14:57.080 --> 00:15:12.355
+The route has five steps. First, the head of government creates a near-monopoly on frontier AI development, for example by establishing a single government-led project, or by using their executive powers to favor one competitor over all others.
+
+00:15:12.355 --> 00:15:26.755
+Second, they limit access to frontier capabilities to the leading project and the executive, on national security or safety grounds, denying equally capable models to rival companies, the opposition, courts, and the legislature.
+
+00:15:26.755 --> 00:15:40.330
+Third, they ensure the loyalty of key executives in the leading project, for example by selecting which company to favor in the first place, placing cronies on the board of the project, or using coercion to replace key executives.
+
+00:15:40.330 --> 00:15:58.280
+Fourth, they are able to control development of, or access to, the most capable system in a way that leaves them with sole control of it without any guardrails. This is the step I am most confused and uncertain about. Fifth, they use this exclusive access to enshrine indefinite personal rule of the country.
+
+00:15:58.930 --> 00:16:18.280
+Key obstacles. Courts and legislatures would push back on the most extreme applications of the executive powers required. I doubt that straightforward applications of current executive levers would suffice for this kind of scenario, so they would need to rely on legislation or aggressive interpretations, both of which may be blocked.
+
+00:16:18.930 --> 00:16:37.905
+Executives, researchers, and investors of frontier companies would likely also push back against such aggressive, centralized state control. If the head of government attempted to replace key executives, many employees might threaten to leave, as happened when OpenAI's board fired Sam Altman in twenty twenty-three.
+
+00:16:38.555 --> 00:16:52.530
+For a head of government, asserting personal control over AI development seems hard unless the loop of recursive self-improvement has been fully closed. Otherwise, they would have to rely on intermediaries who may double-cross them.
+
+00:16:53.180 --> 00:16:56.280
+My estimate is one to five percent.
+
+00:16:56.930 --> 00:17:12.755
+Unless the process moves too fast for the government to react, de facto state control of frontier AI development is fairly likely during the intelligence explosion. The stakes are just so high: governments stand to be effectively disempowered by a corporation.
+
+00:17:13.405 --> 00:17:26.605
+However, turning state control into unchecked personal control seems a lot harder. State control would not proceed in secret, because so many actors are following its development closely, unlike the Manhattan Project.
+
+00:17:26.605 --> 00:17:36.055
+That means at least a few other powerholders would have the visibility and incentive to prevent this outcome, unless checks were already very seriously eroded.
+
+00:17:40.665 --> 00:17:55.315
+The leaders of frontier AI companies already control frontier AI capabilities directly. They need to maintain this control and ultimately translate it into takeover capabilities, such as military power. What could this look like?
+
+00:17:55.965 --> 00:18:14.515
+An enabler is an intelligence explosion. All of the routes below assume the company achieves and maintains a lead over rivals big enough to evade detection and exploit the resulting power asymmetry. The main path to such a lead is recursive self-improvement, leading to a software-only intelligence explosion.
+
+00:18:14.515 --> 00:18:21.740
+Otherwise, the diffusion pressures, such as leaks, distillation, and government intervention, are just too strong in my view.
+
+00:18:22.390 --> 00:18:41.565
+Even a company with a big capability lead over its rivals can still be shut down, broken up, or taken over by the government. To actually gain control over the future, it needs to do so before the government stops it. Again, this is most likely if capabilities increase so sharply that the government can't react in time.
+
+00:18:41.565 --> 00:18:52.065
+The company may also be able to use its much more advanced AI capabilities for political lobbying, regulatory evasion, and spreading fear, uncertainty and doubt.
+
+00:18:56.675 --> 00:19:13.225
+The route has four steps. First, the company leader gains sufficient unmonitored access to the training pipeline. Second, they compromise the training process to install a secret loyalty, including propagation to successor systems. This compromise remains undetected.
+
+00:19:13.225 --> 00:19:31.775
+Third, the compromised systems are deployed in the military or in critical government functions to the point where they are able to take over the country on the company leader's behalf. Fourth, the compromised systems seize control of the country. The company leader now finds themselves in a similar position to the head of government in B one.
+
+00:19:32.425 --> 00:19:52.200
+Key obstacles. The same technical obstacles as in A two apply, except that a company leader has legitimate access to training and is not behind technologically. If solving alignment makes loyalties easier to train, it helps here more than in A two. Failed attempts would also cause a lot of pushback, and possibly the leader's removal.
+
+00:19:52.850 --> 00:19:56.525
+My estimate is zero point five to two percent.
+
+00:19:57.175 --> 00:20:13.975
+I put this quite a bit higher for a company leader than for a foreign intelligence service, in A two, because the former has legitimate reasons to have access to the training pipeline and will not be trailing behind technologically. As with A two, I'm unsure about the technical feasibility here.
+
+00:20:18.585 --> 00:20:38.135
+The route has three steps. First, the company builds up independent coercive capacity, such as autonomous weapons, or weapons powered by completely novel technology. It may do this in secret, or at the behest of its government without sufficient oversight. At some point, it controls a force sufficiently strong to stage a coup.
+
+00:20:38.135 --> 00:20:44.335
+Second, the leader has personal control over this capacity. Third, they actually stage the coup.
+
+00:20:44.985 --> 00:21:02.485
+Key obstacles. Such a build-up likely requires physical infrastructure and supply chains that are hard to hide. Manufacturing military hardware at scale is highly visible. That said, there may be novel technologies that have a much less visible physical footprint while still being extremely powerful.
+
+00:21:02.485 --> 00:21:14.660
+If this takes place during an industrial explosion, a period when AI and robots rapidly scale up physical production, the physical footprint may also be lost among all the other crazy developments.
+
+00:21:15.310 --> 00:21:31.960
+The leader would have to be in personal control, which would require either secret loyalties, as in C one, or that they had effectively replaced all other executives and employees. They would also have to overcome the regular armed forces' extreme initial advantage in weapons technology.
+
+00:21:31.960 --> 00:21:37.985
+And such actions seem far outside the psychological frame of most technology executives.
+
+00:21:38.635 --> 00:21:42.410
+My estimate is less than zero point five percent.
+
+00:21:43.060 --> 00:21:56.910
+There just seem to be a lot of barriers, and the required actions are really quite extreme. I don't think I'm well calibrated at the lower end here. The probability may be much lower still, but I don't think it matters much for practical purposes.
+
+00:22:01.520 --> 00:22:15.545
+The route has five steps. First, a company with a decisive AI lead comes to run a large share of the economy, without any deal with the government. Second, the leader of the company has personal control over its AI systems.
+
+00:22:15.545 --> 00:22:33.770
+Third, the government could step in early but doesn't, for example because the growth is popular, the danger isn't obvious, politics is divided, or the company maneuvers well. Fourth, by the time it wants to act, acting costs too much. Breaking up or seizing the company would cripple the economy, and possibly the military.
+
+00:22:33.770 --> 00:22:48.320
+Or the company has already handed off all control to its AI systems outside the reach of the government, for example in space. Fifth, the company locks in control of the future, for example by controlling the industry that expands into space.
+
+00:22:48.970 --> 00:23:07.720
+Key obstacles. Rival companies may catch up, as Tom Davidson discusses. The government will have a lot of incentive to rein in the power of this company, which could otherwise disempower the government. And in almost all cases, the government can probably still try to take over the company, by force if necessary.
+
+00:23:07.720 --> 00:23:13.645
+If the company has sufficient means to resist this, we find ourselves in C two instead.
+
+00:23:14.295 --> 00:23:18.070
+My estimate is less than zero point five percent.
+
+00:23:18.720 --> 00:23:32.395
+Tom Davidson says this scenario is unlikely but "strikingly plausible". My estimate is probably somewhat lower than his. Tom also sees government intervention as a key obstacle; I probably just weight it more heavily.
+
+00:23:32.395 --> 00:23:42.795
+Host states just seem to have such strong incentives, and capacity, to rein in the leading company, because it might develop the capability to take over the government itself.
+
+00:23:47.055 --> 00:24:07.055
+The routes above all describe one actor coming out on top of every other. This section covers routes in which multiple actors form a coalition to share power instead. I don't cover collusion between companies, since such an analysis would not add much beyond section C if we model a coalition of companies as a single company with a significant lead.
+
+00:24:07.055 --> 00:24:14.755
+That seems reasonable to me, but is overall less likely as a reason for a big lead compared to an intelligence explosion.
+
+00:24:19.365 --> 00:24:37.990
+This route is basically the "dark twin" of proposals for great-power deals to share post-AGI power, and for multilateral AGI projects. What separates them is whether the deal is made by institutions that keep their domestic checks, or by leaders who have already escaped them to enshrine joint personal rule.
+
+00:24:38.640 --> 00:24:51.865
+The route has three steps. First, the leaders of the most powerful states agree to cooperate rather than compete over advanced AI. This could happen from the start, or after one side tried to win outright and failed.
+
+00:24:51.865 --> 00:25:07.115
+Second, they jointly and personally control the most capable systems, or divide the world between them, with the division enforced by superintelligent AI. Third, other countries, and the checks inside each partner country, can no longer constrain them.
+
+00:25:07.765 --> 00:25:18.065
+Key obstacles. There would likely be deep distrust between the most powerful states, so the requirements for verification would be steep, especially with the stakes this high.
+
+00:25:18.715 --> 00:25:28.515
+If there's a democratic state involved, a deal that hands control of the future to a small group of leaders would have to get past legislatures, courts, and the public.
+
+00:25:28.515 --> 00:25:40.165
+For that to be conceivable, we'd first need fairly extreme democratic backsliding, or the democratic leader would need to have already taken personal control of the democracy, as in section B.
+
+00:25:40.815 --> 00:25:43.815
+My estimate is one to four percent.
+
+00:25:44.465 --> 00:26:02.390
+Suppose AI never gives a single country a decisive strategic advantage, for example because the leading countries agree to slow down together, and the only countries at the frontier have effectively come to be run by a few individuals. Then a deal between those individuals seems like the most plausible outcome.
+
+00:26:03.040 --> 00:26:17.590
+That being said, it does require something like the routes in section B to occur first, without the last step of being able to take over the rest of the world. It also requires a lot of trust, and verification technology that doesn't exist yet.
+
+00:26:22.200 --> 00:26:27.625
+This is a coalition of a democratic head of government and an AI company leader.
+
+00:26:28.275 --> 00:26:43.050
+The route has three steps. First, a single AI company achieves a dominant position. Second, the leader of the company and the head of government strike a deal for joint control, for example a joint project, or AI systems secretly loyal to both.
+
+00:26:43.050 --> 00:27:00.125
+The company leader gets their leverage from access to the technology, which they can use to influence the economy, elections, government capacity, and so on. The head of government gets theirs from control of the executive, particularly law enforcement, intelligence, surveillance, and the armed forces.
+
+00:27:00.125 --> 00:27:08.325
+Third, they use their joint control to effectively take over the country, for example by deploying loyal AI systems in government.
+
+00:27:08.975 --> 00:27:25.750
+Key obstacles. Each partner does better by cutting the other out if it can. The state can coerce the company. The company may control the models the state depends on. It's hard in both directions to check whose orders the models really follow, so neither side can fully trust the other.
+
+00:27:26.400 --> 00:27:42.925
+This coalition still has to evade democratic checks: elections, term limits, courts, and the legislature. A national-security partnership can look legitimate, but enshrining personal control by a small number of people probably still needs significant democratic backsliding.
+
+00:27:43.575 --> 00:27:53.925
+People below the top have to go along. Company staff could leak or quit en masse, and officials and officers could refuse. This holds at least until AI can replace them.
+
+00:27:54.575 --> 00:27:57.575
+My estimate is two to ten percent.
+
+00:27:58.225 --> 00:28:15.625
+In sections B and C, companies and the government were mutual checks on each other. In this route, they collude, which makes it more plausible in my view, particularly because early steps can look legitimate, for example a national-security partnership, which makes the process harder to notice and resist.
+
+00:28:16.275 --> 00:28:33.800
+However, I'm unsure whether coalitions like this are stable, given the trust problem above. It's hard to check whose orders an AI really follows, so neither partner can fully trust the other. This risk of defection makes this kind of coalition less likely. I find it hard to say how much weight to give this.
+
+00:28:33.800 --> 00:28:39.500
+It could be that under the assumptions of this post, verification has become much easier.
+
+00:28:40.150 --> 00:28:53.900
+That said, overturning democracy against the will of everybody else is still a tall order. Everybody else has lots of incentive to prevent it, and it likely could not proceed in secret, or at least significant parts of it could not.
+
+00:28:58.510 --> 00:29:14.860
+Most of the risk of extreme power concentration, as I see it currently, runs through states. Routes involving a head of government, which are A one, A two, B one, B two, D one, and D two, make up about twenty-one of my twenty-three percentage points. That's around ninety percent.
+
+00:29:14.860 --> 00:29:31.410
+Routes involving an AI company leader only make up about eight percent. This is primarily because a company has to get past its host government, which can see it becoming too powerful and has the means to stop it. A head of government already controls the military and the law.
+
+00:29:32.060 --> 00:29:50.985
+This is a contested view, and my sense is that some reasonable people disagree with me. My guess is that the disagreement comes down to the question of how likely it is that there will be a sudden explosion of AI capabilities, and how likely the host government is to notice and react to this, including because the company might tell them.
+
+00:29:51.635 --> 00:29:57.010
+More broadly, I expect the following questions to drive future changes in my views.
+
+00:29:57.660 --> 00:30:14.885
+Will there be an intelligence explosion, and how fast will it be if so? A faster intelligence explosion means less oversight and more sudden shifts in power, which could be exploited by power-seekers. It also influences who will reach superintelligence first, and many of the questions below.
+
+00:30:15.535 --> 00:30:30.360
+How big a lead does it take to control a country, and then the world? I'm confident that some level of technological superiority affords both. The question is how large the lead has to be for them to become available, which I still feel very uncertain about.
+
+00:30:31.010 --> 00:30:45.785
+How power-seeking are the leaders who could seize control of humanity's future? Power-seeking and scruples differ between leaders. For example, some routes require threats of immense violence against fellow citizens, which some leaders would find easier than others.
+
+00:30:46.435 --> 00:31:05.535
+How much will the checks and balances of key democracies be eroded during the intelligence explosion? This determines how easy it will be for the head of government to assert personal control, or strike a personal deal with the leadership of rival states or AI companies. So it is an important background factor for many scenarios.
+
+00:31:06.185 --> 00:31:24.685
+How hard is it to hide a sufficiently sophisticated secret loyalty in an AI system? Solving alignment cuts both ways. It probably makes it easier to train in secret loyalties, but it probably also means that we have better audits for alignment that could catch them, since they would need to catch emergent schemers, too.
+
+00:31:24.685 --> 00:31:35.160
+Which wins probably depends mostly on whether the testers have models as good as the attacker's, which in turn probably depends somewhat on how fast the intelligence explosion is.
+
+00:31:35.810 --> 00:31:53.660
+How much does the possibility of secret loyalties undermine the formation of coalitions? Leaders may be incentivized to collude with others instead of taking over alone. However, if they cannot be assured that the frontier AI system has not been compromised by their rival, they might be unable to agree to a deal.
+
+00:31:54.310 --> 00:32:10.710
+Even after all this uncertainty, my overall number is uncomfortably high. Conditional on superintelligence arriving this century and alignment being solved, I put the chance that fewer than twenty-five people end up controlling the future at a little over one in five.
+
+00:32:10.710 --> 00:32:25.460
+You could think my numbers are several times too high and still be left with a few percent chance that a handful of people decide the entire future. I imagine you still would not find that level of risk acceptable. You can do things now to address these risks.

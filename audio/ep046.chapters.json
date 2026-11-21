@@ -1,0 +1,69 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 81,
+      "title": "Home screen"
+    },
+    {
+      "startTime": 132,
+      "title": "Measuring"
+    },
+    {
+      "startTime": 212,
+      "title": "The most accurate setup"
+    },
+    {
+      "startTime": 250,
+      "title": "Subjective data"
+    },
+    {
+      "startTime": 281,
+      "title": "Insights"
+    },
+    {
+      "startTime": 343,
+      "title": "Population values and lactate threshold"
+    },
+    {
+      "startTime": 390,
+      "title": "What's new for Pro users"
+    },
+    {
+      "startTime": 410,
+      "title": "Baseline-based advice"
+    },
+    {
+      "startTime": 482,
+      "title": "History and how you feel"
+    },
+    {
+      "startTime": 527,
+      "title": "Baseline page"
+    },
+    {
+      "startTime": 548,
+      "title": "Acute HRV changes and normalized HRV"
+    },
+    {
+      "startTime": 626,
+      "title": "What drives your HRV"
+    },
+    {
+      "startTime": 692,
+      "title": "Race time estimates"
+    },
+    {
+      "startTime": 731,
+      "title": "Web platform and closing"
+    },
+    {
+      "startTime": 781,
+      "title": "Coaching, book and support"
+    }
+  ]
+}

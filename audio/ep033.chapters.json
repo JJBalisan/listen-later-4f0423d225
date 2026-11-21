@@ -1,0 +1,53 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 97,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 451,
+      "title": "Background and Notation"
+    },
+    {
+      "startTime": 570,
+      "title": "Method"
+    },
+    {
+      "startTime": 707,
+      "title": "The Preference Judge"
+    },
+    {
+      "startTime": 931,
+      "title": "The AdvGame Algorithm"
+    },
+    {
+      "startTime": 1088,
+      "title": "Experimental Setup"
+    },
+    {
+      "startTime": 1347,
+      "title": "Main Results: Utility and Safety"
+    },
+    {
+      "startTime": 1452,
+      "title": "Robustness Against Adaptive Attacks"
+    },
+    {
+      "startTime": 1531,
+      "title": "How Good Is the Attacker?"
+    },
+    {
+      "startTime": 1619,
+      "title": "Analysis and Discussion"
+    },
+    {
+      "startTime": 1929,
+      "title": "Conclusion"
+    }
+  ]
+}

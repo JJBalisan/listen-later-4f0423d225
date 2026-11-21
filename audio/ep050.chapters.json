@@ -1,0 +1,37 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 124,
+      "title": "Compute Extrapolation"
+    },
+    {
+      "startTime": 612,
+      "title": "Consequences"
+    },
+    {
+      "startTime": 1128,
+      "title": "Recent History"
+    },
+    {
+      "startTime": 1253,
+      "title": "Academic Evidence"
+    },
+    {
+      "startTime": 1501,
+      "title": "Historical Evidence"
+    },
+    {
+      "startTime": 1665,
+      "title": "Multi-Agent Scaling"
+    },
+    {
+      "startTime": 1798,
+      "title": "Conclusion"
+    }
+  ]
+}

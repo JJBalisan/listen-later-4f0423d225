@@ -1,0 +1,29 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 46,
+      "title": "The expected reaction"
+    },
+    {
+      "startTime": 119,
+      "title": "What the Anthropic report shows"
+    },
+    {
+      "startTime": 171,
+      "title": "Ties to the funders"
+    },
+    {
+      "startTime": 250,
+      "title": "Legal exposure"
+    },
+    {
+      "startTime": 308,
+      "title": "Footnotes and supporting material"
+    }
+  ]
+}

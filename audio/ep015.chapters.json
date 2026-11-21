@@ -1,0 +1,53 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 36,
+      "title": "Executive summary"
+    },
+    {
+      "startTime": 104,
+      "title": "The question"
+    },
+    {
+      "startTime": 274,
+      "title": "Where agents fail"
+    },
+    {
+      "startTime": 504,
+      "title": "Where agents differ"
+    },
+    {
+      "startTime": 658,
+      "title": "What the docs do"
+    },
+    {
+      "startTime": 706,
+      "title": "What it means"
+    },
+    {
+      "startTime": 767,
+      "title": "What we're changing in AgentMail"
+    },
+    {
+      "startTime": 863,
+      "title": "How we tested"
+    },
+    {
+      "startTime": 909,
+      "title": "The seven tasks"
+    },
+    {
+      "startTime": 1169,
+      "title": "How a run is scored"
+    },
+    {
+      "startTime": 1310,
+      "title": "Full results"
+    }
+  ]
+}

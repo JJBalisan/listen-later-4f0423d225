@@ -1,0 +1,259 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:22.735
+I plan to drop everything to push for an AI pause.
+
+00:00:23.385 --> 00:00:33.185
+I might have less than a year left to affect the insane, reckless, Faustian race to A S I, and I plan to spend that time doing everything I can to push for a pause.
+
+00:00:33.835 --> 00:00:46.285
+I currently think there's a decently high chance that by default, there's six to twelve months left before my personal point of no return: the point after which my own actions no longer plausibly affect the future.
+
+00:00:46.285 --> 00:00:58.485
+This is different from other people's points of no return: for example, people like Dario Amodei, the CEO of Anthropic, or Donald Trump may have slightly longer times to wake up and change course.
+
+00:00:58.485 --> 00:01:12.110
+This is also different from other timelines that people sometimes throw around, like timelines to A G I or A S I or fully automated remote-worker or whatever. However, it is the most important for my own decisions.
+
+00:01:12.760 --> 00:01:22.410
+I do not defend this position here. Other people have written partial explanations that I like. I may also write more accessible explainers in the near future.
+
+00:01:23.060 --> 00:01:34.460
+Regardless, humanity is absolutely not ready for what comes next, whether that's human extinction, complete loss of control to rogue AIs or a few oligarchs, or something far weirder.
+
+00:01:35.110 --> 00:01:52.085
+While I don't have strong confidence that I actually only have six to twelve months left, I think very few people are working on this by default, and AI Safety is growing very quickly, though still far smaller than needed, and newcomers to the field can cover the scenarios where we have more time.
+
+00:01:52.735 --> 00:02:12.960
+Given this, I think my best strategy is to push hard for a pause on training AI: specifically a complete moratorium on training stronger AI models than the ones we currently have and severe limitations on AI R and D, until scientists, policymakers, and the general public have more time to understand what's going on and catch up.
+
+00:02:13.610 --> 00:02:29.485
+I think pushing for a pause would be the best use of my time. While it'd be very difficult to execute, it is less robustly doomed than trying to make things better on the margin and slightly increasing the chances that the crazy race to superhuman AI is conducted safely.
+
+00:02:29.485 --> 00:02:38.460
+I'm not very confident in this position and do not defend it in detail here, though I wrote some other strategies I've considered below in the next section.
+
+00:02:39.110 --> 00:02:54.585
+I'm less opinionated about what happens after a pause. Reasonable options range from resuming carefully under real engineering standards to pausing indefinitely, if humanity collectively decides that the risks posed by superhuman AI is too high.
+
+00:02:55.235 --> 00:03:02.535
+Regardless, we should not be sleepwalking into disaster. A pause gives humanity time to regroup and rethink things.
+
+00:03:07.145 --> 00:03:11.545
+This is the strategy. What are tactics? What should I concretely do?
+
+00:03:12.195 --> 00:03:26.295
+Here I am less certain. Right now, in the next, uncertain but limited, number of days, I'm dropping all my research and writing projects to re-orient myself to this new reality and think through what I can do to increase the odds of a pause.
+
+00:03:26.945 --> 00:03:45.295
+Current candidate options for what seems live to me: A, moving to Sacramento and providing evidence and arguments for the California government to mandate a pause. B, doing something similar in D C. C, serving as a research and writing assistant for more prominent public intellectuals pushing for a pause.
+
+00:03:45.295 --> 00:03:54.095
+D, helping advocacy and protest movements working towards a pause. Or E, spearheading long-shot plans to increase the odds of a pause.
+
+00:03:54.745 --> 00:03:57.920
+And of course, just writing a lot online.
+
+00:03:58.570 --> 00:04:01.395
+Extremely open to other ideas!
+
+00:04:06.005 --> 00:04:09.230
+What are other strategies I could be pursuing?
+
+00:04:09.880 --> 00:04:22.480
+Is pausing the best strategy? I think so, but I'm not confident. Here are three options that I've considered and tentatively rejected. I've also considered other options, but they seem even more doomed, at least for me.
+
+00:04:23.130 --> 00:04:27.580
+First, help key decisionmakers "manage the transition better."
+
+00:04:28.230 --> 00:04:37.105
+If a pause won't happen, I'd rather the transition to superhuman AI be done well, or okay, or at least poorly, rather than disastrously.
+
+00:04:37.755 --> 00:04:51.055
+I considered trying to join Anthropic or OpenAI. I currently think I wouldn't be a good fit. I dislike the organizations too much, and working on a doomsday machine to make it slightly less doomed just doesn't sit well with me.
+
+00:04:51.055 --> 00:04:59.380
+I might still re-consider it if nonconflicted people argued me into believing that the impact is high enough, and I should swallow my disgust.
+
+00:05:00.030 --> 00:05:11.780
+I also considered working to help government people re-orient and make better non-pause decisions. This still seems like a live option to me, and I will continue looking for potentially good options.
+
+00:05:12.430 --> 00:05:19.380
+Second, macrostrategy automation and trying to solve non-alignment AI issues with AI assistance.
+
+00:05:20.030 --> 00:05:34.005
+Under some models of AI progress, the most urgent time isn't now but several months in the future, when we'll have three to six months of rapidly accelerated non-technical research due to AI assistance, before my own irrelevance.
+
+00:05:34.005 --> 00:05:46.805
+Maybe I'd have a five to one hundred times speedup on non-alignment problems that matter a lot, like how to counteract the effects of AI propaganda or making sure humanity doesn't go insane through the transition.
+
+00:05:47.455 --> 00:05:56.305
+Preparing for that time seems somewhat competitive, and there are a relatively small number of people who can do this well, myself marginally included.
+
+00:05:56.955 --> 00:06:07.055
+I currently feel less excited about this than working towards a pause, but I will continue thinking about it and talking to my colleagues at Forethought about this possibility.
+
+00:06:07.705 --> 00:06:12.705
+Third, focus on counteracting AI persuasion in short-timelines worlds.
+
+00:06:13.355 --> 00:06:26.455
+An angle that I feel somewhat excited about and drawn to is trying to help harden specific decision-makers and decision-making against future AI superhuman persuasion, which is my research area this year.
+
+00:06:26.455 --> 00:06:49.380
+While somewhat less likely with faster timelines than slower ones, I still think there are significant worlds where superhuman AI persuasion will be a big part of AI takeover attempts, and hardening within-AI-company and U S government decision processes against AI persuasion seems fairly competitive with other options, and plays well into my research interests and backgrounds.
+
+00:06:50.030 --> 00:06:55.205
+I can imagine doing this either within or outside of the existing institutions.
+
+00:06:59.815 --> 00:07:02.115
+Other personal updates.
+
+00:07:02.765 --> 00:07:17.240
+Emotionally it's not been great. But I've been handling this re-orientation better than I personally expected, so far. My dominant feeling is more like determination plus light anxiety than deep fear, dread, or resigned acceptance.
+
+00:07:17.890 --> 00:07:29.540
+I'm consciously aware that there's probably only enough time left to make a single medium-sized career pivot, likely still in the researcher and writer space. Not many more pivots left from here on out.
+
+00:07:30.190 --> 00:07:44.565
+I plan to not do much in field-building or mentorship, other than continuing existing relationships or maybe upskilling people who are highly experienced in other fields into AI safety and AI macrostrategy. Time is too short.
+
+00:07:45.215 --> 00:08:00.190
+I'm slightly worried about going crazy in the next year, partially due to the situation seeming increasingly insane, and partially due to actual Claude psychosis as the models get stronger. Not sure what to do about it. Just flagging it as a risk.
+
+00:08:00.840 --> 00:08:14.715
+I'm comparatively more worried about just hiding away or shutting down, and living an unendorsed life of being depressed and internet and media distractions. I've set up some safeguards with friends to reduce this risk, and plan to do more.
+
+00:08:15.365 --> 00:08:35.390
+I plan to stop doing difficult personal and professional growth stuff unless it's in-the-moment enjoyable, extremely critical, or very AI related. The basic model is that I already had over thirty years to grow, more than a decade as an adult, so the likely gains of further growth are unlikely to be worth the time and attention costs.
+
+00:08:35.390 --> 00:08:55.190
+I can do more growth after the singularity, or after a pause. AI-related stuff is an exception because squeezing in crazy uplift seems plausible. I honestly feel kind of sad about this; I'm someone for whom personal growth is important, or at least someone who likes to imagine themselves as someone for whom personal growth is important.
+
+00:08:55.840 --> 00:09:06.965
+I plan to be more open with my information and be less discreet with semi-private information, unless I think they're other people's secrets or I explicitly promised confidentiality.
+
+00:09:06.965 --> 00:09:25.465
+Openness is critical to the world orienting better, there's just less time left for information hazards and attention hazards to backfire, and the AIs are going to figure out most secrets anyway. That is among the information I actually have, to be clear. It's not like I have the plans for a working bioweapon stored in my head.
+
+00:09:25.465 --> 00:09:27.690
+Your mileage may vary.
+
+00:09:28.340 --> 00:09:37.415
+Will be less critical of other safety people's plans going forwards. Time is too short. Generally want to be less of a roadblock to good things happening.
+
+00:09:38.065 --> 00:09:42.490
+Planning to postpone elective surgeries I was vaguely considering.
+
+00:09:43.140 --> 00:09:53.565
+I plan to get in less internet fights, except occasionally with popular points or important people. Honestly this is going to be really hard for me, but I'll try my best!
+
+00:09:54.215 --> 00:09:58.315
+I no longer look both ways before crossing a one-way street.
+
+00:10:02.575 --> 00:10:07.875
+What should other people do? First, for people currently working in AI safety.
+
+00:10:08.525 --> 00:10:21.150
+If you currently work in technical AI safety, AI macrostrategy, AI policy, and so on, presumably you've already heard of some of these arguments and updates and already think they're somewhat important.
+
+00:10:21.800 --> 00:10:39.525
+If you haven't already done so, you should definitely think about this and talk to your colleagues, both internally and externally, about the updates towards shorter timelines and what it means for you and your organization! My guess is that there are a lot of things most people in the field should be changing about their work.
+
+00:10:40.175 --> 00:10:48.150
+I don't have strong opinions about what specifically you should be changing to, without knowing more of your specific situation and context.
+
+00:10:48.800 --> 00:11:04.875
+Technical people should be split between some combination of: A, providing evidence of risk and why a pause is critical. B, working out the technical details of a pause. C, emergency alignment and interpretability techniques that just might work if we can't pause.
+
+00:11:04.875 --> 00:11:16.825
+And D, more long-run alignment, interpretability, control and similar strategies that work only conditional upon us succeeding on getting a pause, or if I am wrong about how much time we have left.
+
+00:11:17.475 --> 00:11:33.950
+If you're non-technical, obvious options include: A, persuading and pressuring AI companies to unilaterally pause. B, lobbying Congress, if you're a Democrat, or C, the Executive Branch, if you're a Republican, for a pause. D, lobbying California to mandate a pause.
+
+00:11:33.950 --> 00:11:39.925
+Or E, raising awareness and increasing public demand and political will for a pause.
+
+00:11:40.575 --> 00:12:02.625
+Other options include pushing other states to demand the AI companies pause, most saliently Delaware but I think other states have leverage too, building momentum in China to pause if the US does so, which is delicate; if you're in a situation to do so presumably you know more than me on how to do so, and increasing international pressure on a global AI moratorium.
+
+00:12:07.235 --> 00:12:11.085
+Now, for people not currently working on AI safety.
+
+00:12:11.735 --> 00:12:35.010
+A very important strategic consideration here is that because time to the point of no return might be very short but we can't know for sure, and we likely may never know for sure until it's too late, the safety field should likely bifurcate strategies, where some people work on the assumption of very short, under one year, time to have an impact, and other people work on the assumption of more time to have an impact.
+
+00:12:35.660 --> 00:12:52.610
+Since the field is growing very quickly but it takes people time to get up to speed, a natural bifurcation is for most people currently in the field to work under the roughly one year clock, and most people currently outside of it to get up to speed and do things that are more promising given more time.
+
+00:12:53.260 --> 00:13:10.660
+All things considered, I think those worlds are still very salient, either because we're wrong about the future speed of automation of AI research, or because the pause actually worked. However, I don't have advice for how to join the AI safety effort later on, over and beyond the standard advice.
+
+00:13:11.310 --> 00:13:16.785
+With that in mind, here are things I think people not currently in AI safety should do.
+
+00:13:17.435 --> 00:13:36.285
+For some people: think of highly context-specific and long-shot plans to increase the odds of a pause. My guess is that for the right people in the right places, that's your individual highest bet of making sure we don't die from AI. I don't know what your context is so it's hard to say what plans can and can't have a chance of working.
+
+00:13:36.285 --> 00:13:51.110
+But for example I don't have special connections with the Vatican, and they might actively dislike me, but other people more connected with the Vatican or other faith leaders might have ideas on how faith leaders can sound the alarm and call for a moratorium.
+
+00:13:51.110 --> 00:14:05.435
+Similarly for people with connections to ASML or the Netherlands government, TSMC or the Taiwanese government, mass media, compute providers like Amazon, other tech leaders, other members of civil society, and so on.
+
+00:14:06.085 --> 00:14:20.585
+If you do have a plan that you think has some chance of working, please don't hesitate to reach out! I'm available over Substack direct messages, and can either give some feedback or connect you with other people better suited to evaluating those strategies.
+
+00:14:21.235 --> 00:14:35.160
+To be clear, please don't do, or plan, or threaten, anything violent! Violence predictably backfires in almost all circumstances, will not stop the suicidal race to A S I, and makes the jobs of all the rest of us harder.
+
+00:14:35.810 --> 00:14:48.185
+Next, get oriented. Learn more about AI and AI safety and understand or consider more durable ways you can contribute, whether on technical AI safety, on policy, or something else.
+
+00:14:48.835 --> 00:15:04.635
+Next, join protests and other forms of direct action against the reckless, madcap, Faustian race to A G I. Do not just accept the race as a fact of nature. Get involved with organizations like Do Not Accept A I, Humans In Control, and Who Decides A I.
+
+00:15:05.285 --> 00:15:23.485
+At some point, if things go okay, AI protests will be so popular that each individual in a protest will be less important, and there are more impactful ways to get involved in AI safety. But we're, sadly, still in the early part of the exponential for AI saliency and worries about AI risk.
+
+00:15:24.135 --> 00:15:40.010
+I will go to an AI Treaty March myself this Saturday. I'm highly uncertain whether this march will actually increase the odds of a US-China treaty, but I want to go partially so there's momentum behind future marches, and partially to build the muscle for protests myself.
+
+00:15:40.660 --> 00:15:52.435
+Next, call or email your political leaders and demand action. Especially for Americans. This mad race must end, and the American Congress and the Executive Branch can make it happen.
+
+00:15:53.085 --> 00:16:08.210
+Finally, slacktivism. If nothing else, it's pretty good to understand the issues well enough, and be correct, polite, and kind in online discussions of AI and AI risk. Make the stakes as clear as you can and link to ways people can contribute.
+
+00:16:08.860 --> 00:16:29.160
+A final, personal, message: This is deep and heavy stuff. I wish I could offer more emotional solace or reassurance. I don't think I'm the right person, or this is the right situation, for that. What I could say is that I truly believe the fight is well worth it. We must not accept the industry's framing of this mad, suicidal, race as inevitable.
+
+00:16:29.160 --> 00:16:32.110
+We can and must do our best to end it.
+
+00:16:36.720 --> 00:16:41.270
+Options that seem salient to me right now for what comes after a pause.
+
+00:16:41.920 --> 00:16:55.970
+A, unpause and proceed ahead on an "AI as normal engineering" assumption, except we take normal engineering safety standards seriously, rather than the slapdash "safety" and "security" measures that currently plague those companies.
+
+00:16:55.970 --> 00:17:11.595
+A note on this: treating AI risks as solvable normal engineering feels doomed to me, but not as completely doomed as treating them as solvable by normal engineering and then not applying normal engineering safety standards, which is the current default.
+
+00:17:12.245 --> 00:17:24.495
+B, unpause and proceed according to an international verified slowdown between the US and China, with total research transparency and extensive checks on safety between each development cycle.
+
+00:17:25.145 --> 00:17:43.420
+C, don't unpause until companies have safety cases that they can constrain the risk of further AI development below a manageable threshold, those safety cases are verified by external evaluators and openly communicated and debated, and humanity agrees that unpausing is worth the risk.
+
+00:17:44.070 --> 00:17:55.595
+D, pause for six months, decide whether the risks of unpausing outweigh the benefits, if not, pause for one year, then do this again, pause for two years, then four, then ten, perhaps, and so forth.
+
+00:17:56.245 --> 00:18:06.645
+E, do limited AI research into safety, and don't unpause until we discover AI architectures that are provably or demonstrably much safer than the status quo.
+
+00:18:07.295 --> 00:18:20.295
+F, unpause with a focus on specialized AI architectures for specific tasks, like self-driving cars and medicine, and don't do AI research into R S I or other dangerous scary general AI.
+
+00:18:20.945 --> 00:18:31.420
+And finally, don't unpause, period, until humanity changes our minds; the technology for supplanting all of human labor and cognition is too dangerous for Man.

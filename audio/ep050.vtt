@@ -1,0 +1,421 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:21.785
+Two Kinds of Test-Time Scaling.
+
+00:00:22.435 --> 00:00:36.510
+Test-time scaling trades compute for performance at test time. Its adoption, chiefly via long R L V R-trained chains-of-thought, has likely been responsible for a speed-up in the rate of progress of general A I capabilities.
+
+00:00:37.160 --> 00:00:50.560
+One can make a distinction between two different possible kinds of test-time scaling. One kind lets you trade more compute for more performance per task, but only up to the maximum quantity of per-task compute used during training.
+
+00:00:50.560 --> 00:01:05.885
+The other kind lets you trade more compute for more performance per task, and lets you do so up to quantities of compute, and performance, that never occurred during training. Scaling methods that permit this latter change display what I call "compute extrapolation."
+
+00:01:06.535 --> 00:01:19.560
+I currently believe that compute extrapolation likely accelerates the speed of advance of the most impressive A I capabilities, makes dangerous capability evaluations much harder, and changes A I race dynamics.
+
+00:01:20.210 --> 00:01:37.835
+I also believe it is a more recent phenomenon than general test-time scaling, and one still being mastered by A I labs. It's likely that the ceiling and slope of compute extrapolation will improve in the future through better L L M context management, multi-agent scaling, and other advances.
+
+00:01:38.485 --> 00:01:46.860
+And I believe it is a broadly important thing to notice and measure, and one that is likely being actively tracked by labs because of the above.
+
+00:01:47.510 --> 00:02:03.810
+It is possible that the impact of test-time scaling with compute extrapolation will be larger than the impact of test-time scaling considered simply. In this essay, I make this distinction, describe some ways it might impact the world, and describe some ways we could react to it.
+
+00:02:08.420 --> 00:02:14.595
+The first section asks what compute extrapolation is, and how it relates to test-time scaling.
+
+00:02:15.245 --> 00:02:20.245
+Test-time scaling methods trade more compute at test-time for better performance.
+
+00:02:20.895 --> 00:02:28.645
+Many of the most effective such methods are learned rather than applied "externally" at test-time, like plurality voting.
+
+00:02:28.645 --> 00:02:42.345
+For example, some learned forms of test-time scaling include the length of chain-of-thought, for an L L M trained with R L V R; the number of loops, for a looped Transformer; and the number of agents, in a multi-agent L L M swarm.
+
+00:02:42.995 --> 00:03:00.270
+Such learned methods will use a maximum amount of compute per task over the course of training. So, for instance, during training they will use a maximum length of chain-of-thought, or a maximum number of loops within a looped Transformer, or a maximum number of agents in an L L M swarm, and so on.
+
+00:03:00.270 --> 00:03:09.620
+This training-time maximum quantity of compute could then either limit, or not limit, the useful maximum test-time quantity of compute per task.
+
+00:03:10.270 --> 00:03:24.320
+Consider the case where a train-time maximum limits the effective test-time maximum. To use the easiest example, imagine that during R L some L L M was trained with a maximum of one hundred thousand chain-of-thought tokens.
+
+00:03:24.320 --> 00:03:43.195
+More tokens would then improve its performance at test-time only up to one hundred thousand tokens; one million or a billion tokens would not help. As I'll discuss later, there's pretty good evidence this is the state that L L Ms such as o one or R one were in when trained with the earliest R L V R methods.
+
+00:03:43.845 --> 00:04:01.770
+But consider the case where a train-time maximum does not limit the effective test-time maximum. So, again, imagine that during R L some L L M learned with a maximum of one hundred thousand chain-of-thought tokens; but a million or a billion tokens keep improving its performance at test-time.
+
+00:04:01.770 --> 00:04:14.620
+I call this kind of test-time scaling compute extrapolation, and, as I will discuss below, evidence suggests that labs only started to master this within the last twelve months, and perhaps only in some domains.
+
+00:04:15.270 --> 00:04:30.595
+So far as I can tell, this distinction is not often made in discussions about test-time scaling. One reason people might not make this distinction is that it is mostly invisible to lab outsiders, who do not know the per-task training compute distribution.
+
+00:04:30.595 --> 00:04:39.420
+But, as I discuss later, the overall effect of compute extrapolation could be very large regardless of low initial external visibility.
+
+00:04:40.070 --> 00:04:51.370
+Before I describe ways to measure compute extrapolation, let me amend the above definition slightly. Right now, it is too sensitive to per-task compute outliers during training.
+
+00:04:52.020 --> 00:05:09.245
+Imagine a training run where all tasks spend ten to the seventeen FLOPs per task. If one can improve performance through some method by spending ten to the twenty-one FLOPs per task at test-time, then, given the above definition, this method displays a large amount of compute extrapolation.
+
+00:05:09.245 --> 00:05:27.120
+Now, imagine a training run where all tasks but one spend ten to the seventeen FLOPs per task, but one spends ten to the twenty-one FLOPs. Now, by the above definition, the ability to spend ten to the twenty-one FLOPs per task at test-time is no longer an example of compute extrapolation.
+
+00:05:27.120 --> 00:05:43.670
+But this is undesirable, because an A I is unlikely to have learned much from a single task on which a great deal of compute is spent. And it's also undesirable because this definition makes measurements of compute extrapolation very sensitive to the outliers during training.
+
+00:05:44.320 --> 00:05:53.995
+To fix this, I define compute extrapolation so that it exists relative to the per-task compute at the ninety-ninth percentile of total compute usage.
+
+00:05:53.995 --> 00:06:10.220
+So suppose that when training some neural network, ninety-nine percent of the total training compute is spent on tasks that individually use at most N FLOPs per task; and so at most one percent of total compute is devoted to tasks spending more than N FLOPs per task.
+
+00:06:10.220 --> 00:06:23.670
+If you can then use ten times N or one thousand times N FLOPs per task, with the same method, at test time, and continue to increase performance by doing so, this method has some degree of compute extrapolation.
+
+00:06:23.670 --> 00:06:33.545
+The important thing here is not the specific ninety-nine percent number; for my purposes, ninety-eight percent or ninety-nine point nine percent would work about as well.
+
+00:06:33.545 --> 00:06:46.195
+What matters is that, first, there is negligible compute use during training above this task size, and second, the overwhelming majority of learning done by the neural network happens below this task size.
+
+00:06:46.845 --> 00:06:55.895
+In any event, given this notion of compute extrapolation, how can you characterize it, and "how good" it might be? Consider two characteristics.
+
+00:06:56.545 --> 00:07:13.770
+The first is the ceiling. As you increase per-task compute past N at test time, at what multiple of N does performance cease rising? If performance keeps going up until you've used twenty times N compute per task, and then improvements stop, then there is a twenty-times extrapolation ceiling.
+
+00:07:13.770 --> 00:07:27.070
+Obviously, the exact ceiling will be fuzzy, measuring it might depend on noise, and so on. In many cases, I believe there will be no absolute ceiling, or that it might be extremely high, somewhere between one thousand and one million.
+
+00:07:27.720 --> 00:07:36.395
+The second is the slope. Consider a function from FLOPs to performance, which has been fit to the empirical FLOP-to-performance curve beneath N.
+
+00:07:36.395 --> 00:07:52.620
+For every point past the ninety-ninth percentile compute-weighted per-task compute N, ask what is the closest real number p such that performance at N, plus p times the further gain the fitted function predicts beyond N, matches the performance actually observed at that point.
+
+00:07:52.620 --> 00:08:04.020
+Such an extrapolation slope would probably decrease as FLOPs increased far past N, but could be useful for characterizing how much worse scaling works past the training-time compute limit.
+
+00:08:04.670 --> 00:08:18.670
+In general, these numbers might vary by domain. It's likely easier to get high ceilings on tasks where it is easy to recognize incremental progress, like math or cyber, than on tasks where it's hard to recognize incremental progress.
+
+00:08:18.670 --> 00:08:30.295
+And so it's also likely that compute extrapolation itself will extend to new domains as A Is get the ability to discern fine-grained differences in quality and subtle progress in them.
+
+00:08:30.945 --> 00:08:38.370
+Let me disambiguate a few points, and connect compute extrapolation to some closely related but distinct concepts.
+
+00:08:39.020 --> 00:08:51.620
+Compute extrapolation is a broad enough category that it can apply to many ways of varying compute per-task, such as number of tokens in chain-of-thought, number of agents in multi-agent scaling, and so on.
+
+00:08:52.270 --> 00:09:10.795
+Compute extrapolation on non-general, non-L L M A Is is likely much easier to produce than on general, L L M A Is. AlphaGo Zero, for instance, was trained using one thousand six hundred simulations per move during training time, but could use far more at test time while continuing to improve.
+
+00:09:11.445 --> 00:09:26.595
+Compute extrapolation could overlap with, but is conceptually distinct from, horizon-length generalization in Cotra's bioanchors report. This report discusses horizon-length generalization as something that could hasten the arrival of transformative A I.
+
+00:09:26.595 --> 00:09:43.795
+That is, if transformative A I requires acting on certain long-horizon tasks, then transformative A I will arrive sooner if one can train on a mixture of short-horizon and long-horizon tasks, or entirely on short-horizon tasks, while learning to act well on long-horizon tasks.
+
+00:09:43.795 --> 00:09:57.195
+This would be a form of compute extrapolation, granted that long-horizon tasks take more compute than short-horizon tasks. But not all forms of compute extrapolation necessarily involve horizon-length generalization.
+
+00:09:57.195 --> 00:10:11.995
+You can imagine compute extrapolation that works via increasing the number of loops through the layers of a Transformer, which improves performance on some particular short-horizon tasks but might not increase the horizon of the tasks that some L L M can do.
+
+00:10:16.255 --> 00:10:19.130
+Next, what would its consequences be?
+
+00:10:19.780 --> 00:10:28.505
+Consider a world that moves from test-time scaling without compute extrapolation to test-time scaling with compute extrapolation.
+
+00:10:28.505 --> 00:10:44.205
+And let's suppose that the extrapolation has a relatively high ceiling and slope, such that it might make economic sense to spend one hundred times or ten thousand times as much compute per-task at test-time as was spent per-task at training-time. What changes?
+
+00:10:44.855 --> 00:11:05.130
+It seems likely that, first, the ceiling of impressive A I capabilities will advance much faster; second, it becomes significantly harder to run evaluations of A Is that rule out whether they have dangerous capabilities; and third, we start seeing huge inference-time compute expenditures, as labs race to reach certain goals.
+
+00:11:05.780 --> 00:11:15.130
+First, the most impressive L L M capabilities, at the upper percentiles of test-time compute intensiveness, likely start advancing much faster.
+
+00:11:15.780 --> 00:11:18.605
+The line of reasoning here is simple.
+
+00:11:18.605 --> 00:11:40.855
+Without compute extrapolation, if some company wishes to be able to spend ten to the twenty-four FLOPs on a highly consequential task at test-time, such as solving Navier-Stokes or, most importantly for a software intelligence explosion, finding more efficient machine-learning algorithms, they would need to have spent ten to the twenty-four FLOPs individually on many such tasks at training time.
+
+00:11:40.855 --> 00:12:00.405
+But ten to the twenty-four FLOPs of compute, although relatively cheap as a price for an important single result, is still quite expensive in aggregate for tasks performed at training-time, whose only long-term result is the learning they enable. So releasing this constraint allows vastly more to be invested in large test-time scale-ups.
+
+00:12:01.055 --> 00:12:12.180
+By analogy, consider superhuman Go algorithms, like AlphaGo Zero. AlphaGo Zero was able to use more compute per move at test-time than it ever spent at training-time.
+
+00:12:12.180 --> 00:12:27.980
+During training, AlphaGo Zero was permitted about zero point four seconds of thought per move; during one kind of evaluation, it was given five seconds; and during a tournament, it was given about a minute, as the original AlphaGo Lee was given during competition.
+
+00:12:27.980 --> 00:12:45.805
+So this algorithm exhibits a compute extrapolation ceiling of at least one hundred times. If it had required training with this amount of compute-per-move, then the per-move costs of training would have gone up by one hundred times, although total training costs would have gone up by slightly less because it might have learned more per move.
+
+00:12:45.805 --> 00:13:01.080
+My estimate is that it would have taken ten to fifty times more to train AlphaGo Zero to the same level of performance without compute extrapolation as it in fact took to train it with compute extrapolation. I believe the same thing is happening with L L Ms.
+
+00:13:01.730 --> 00:13:09.730
+On the other hand, why might you not see the ceiling of the most impressive tasks L L Ms can do increase in its speed of advance?
+
+00:13:10.380 --> 00:13:25.580
+It could be the case that, even without compute extrapolation, tasks of every size that some L L Ms could in theory do fall easily within the training budget of an L L M. I think such a case is theoretically possible, but extremely unlikely.
+
+00:13:25.580 --> 00:13:33.005
+The presence of hard upper limits to per-task compute in those training runs that have been made public also points against it.
+
+00:13:33.655 --> 00:13:42.130
+Or, compute extrapolation on some domains might be much easier to obtain than others, and the extrapolatable domains might not matter.
+
+00:13:42.130 --> 00:14:00.180
+It's true that the domain-specificity of compute extrapolation is very relevant; extrapolation in domains where progress is easy to identify, or where relevant state is easy to track, will be easier than in domains where progress is hard to identify, or where relevant state is hard to track.
+
+00:14:00.180 --> 00:14:13.330
+But even if there is domain-dependent difficulty, compute extrapolation will still save compute on those domains; and when it does arrive in harder but highly consequential domains like A I algorithms it still might matter.
+
+00:14:13.980 --> 00:14:24.430
+All in all, I still expect the increase in the size of the largest tasks that A Is can perform to be very consequential. All other consequences are downstream of this.
+
+00:14:25.080 --> 00:14:37.580
+Second, compute extrapolation means that dangerous-capability evaluations, aimed at establishing the upper limits of some A I's capabilities, by default become impossible or very expensive.
+
+00:14:38.230 --> 00:14:55.130
+Suppose you wish to know whether an A I is able to do some dangerous task, for instance one relating to C B R N capabilities. Without compute extrapolation, then to check this empirically you only need to spend up to the maximum amount of compute spent per-task in training.
+
+00:14:55.780 --> 00:15:08.730
+But with compute extrapolation, then to check this empirically you might need to spend arbitrary quantities of test-time compute. It is not strictly necessary for you to spend arbitrary amounts, if you can find some other way.
+
+00:15:08.730 --> 00:15:29.830
+For instance, if you can look at the scaling curves of the A I on smaller tasks or sub-tasks, it might be possible to determine some A I's upper limits without actually trying to spend up to some potentially unknown compute extrapolation ceiling. But such theory-based reasoning is mostly not, at the moment, how such capabilities evaluations proceed.
+
+00:15:29.830 --> 00:15:39.905
+So dangerous-capabilities evaluation could become prohibitively expensive, or prohibitively expensive outside of all but the most important areas.
+
+00:15:40.555 --> 00:15:51.480
+As the U K A I S I has already noted, as L L Ms get smarter, good evaluations of dangerous capabilities require spending more money on inference compute.
+
+00:15:51.480 --> 00:16:08.355
+Ultimately compute extrapolation likely terminates in a world where evaluations can only determine the absence of dangerous capabilities beneath some particular spending budget, and evaluators can only afford to actually spend such budgets in a few high importance domains.
+
+00:16:09.005 --> 00:16:15.955
+Third, compute extrapolation implies that races in compute spending move from training-time to test-time.
+
+00:16:16.605 --> 00:16:34.605
+Some kinds of research offer outsized returns to the first entity who advances the frontier. This can happen in the case of patentable research, prestigious research, or, perhaps most importantly, areas of research that promise to speed the future speed of advance of research and technology generally.
+
+00:16:34.605 --> 00:16:44.655
+Improved A I R and D is a subset of the kind of research on which it might be rational to burn almost arbitrary quantities of money in order to be the first.
+
+00:16:45.305 --> 00:17:04.330
+Without compute extrapolation, it makes sense to spend most money towards this purpose on training compute, or on research that improves training compute. There's no reason to spend more per-task than was spent per-task in training; in order to accomplish more impressive test-time tasks, training-time compute has to be scaled up.
+
+00:17:04.980 --> 00:17:13.030
+By contrast, given compute extrapolation, it might make sense to spend millions of dollars on some task during test-time.
+
+00:17:13.030 --> 00:17:28.180
+Even if some such task in A I R and D might be possible for ten percent or zero point one percent of the cost using subsequent generations of models, the value of being first could still make it rational to spend much more on inference compute using earlier generations of A I.
+
+00:17:28.180 --> 00:17:42.005
+So, granted compute extrapolation, we will likely see increasingly large sums of money being spent on inference for A I moonshots, and increasingly large sums of money dissipated in failed bets on the possibility of such findings.
+
+00:17:42.655 --> 00:17:54.880
+Finally, although this is not a consequence of compute extrapolation, I think it's also important to note that A Is displaying compute extrapolation is evidence of better generalization in general.
+
+00:17:55.530 --> 00:18:16.755
+That is, imagine that the per-task compute use during R L V R involves tasks using from ten to the fifteen to ten to the nineteen FLOPs, that is, spanning four orders of magnitude. Good compute extrapolation might mean that this R L V R will then generalize to tasks using, for instance, ten to the twenty or ten to the twenty-one FLOPs per task.
+
+00:18:16.755 --> 00:18:33.505
+But by the same token, the ability to generalize in this way likely implies that there will be generalization even within the distribution on which training actually occurs, that is, generalization from tasks at ten to the sixteen to tasks at ten to the eighteen, for instance.
+
+00:18:33.505 --> 00:18:48.330
+If this is so, then good compute extrapolation is also a sign of just having a generically efficient learning mechanism, and the externally-visible existence of compute extrapolation is evidence for an underlying improvement in learning generally.
+
+00:18:52.940 --> 00:19:04.140
+It is likely that reinforcement learning with verifiable rewards, as first implemented at the end of twenty twenty-four, did not display significant degrees of compute extrapolation.
+
+00:19:04.790 --> 00:19:25.515
+But a year later, at around the end of twenty twenty-five, progress in "L L M compaction," and other forms of L L M context management, probably started producing significant compute extrapolation. Such extrapolation has probably been responsible in part for the explosion in compute use by OpenAI and Anthropic researchers.
+
+00:19:26.165 --> 00:19:32.915
+It is difficult to show directly that compute extrapolation started around the end of twenty twenty-five.
+
+00:19:32.915 --> 00:19:51.090
+Leading L L M companies such as Anthropic and OpenAI do not release information about the distribution of per-task compute during training runs, so we cannot make direct inferences about compute extrapolation merely from their models' efficacy at using per-task compute during test time.
+
+00:19:51.090 --> 00:20:01.840
+Even comparatively open Chinese models tend to only release very coarse-grained information about training runs. So the evidence below is necessarily circumstantial.
+
+00:20:02.490 --> 00:20:15.040
+Nevertheless, I think that the indirect evidence that L L M compaction introduced effective compute extrapolation, at least around the end of twenty twenty-five, within some domains, is suggestive.
+
+00:20:15.690 --> 00:20:29.615
+I will first discuss academic evidence from papers on open-weight models illustrating how standard R L V R does not produce compute extrapolation with a high ceiling, but that R L V R through layers of compaction does.
+
+00:20:29.615 --> 00:20:40.165
+Then I'll discuss circumstantial evidence that locates the start of compute extrapolation for Anthropic and OpenAI's models around the end of twenty twenty-five.
+
+00:20:40.815 --> 00:20:53.015
+Note that I currently think that compute extrapolation is much better in some domains than in others; it's likely that many future forms of progress in A I will consist in extending it to new domains.
+
+00:20:57.275 --> 00:21:05.275
+The first piece of evidence is academic, and concerns L L M compaction as a way of increasing compute extrapolation.
+
+00:21:05.925 --> 00:21:25.550
+"The Markovian Thinker" describes two methods of training with R L V R, with results measured on competition math, for example A I M E. One of these produces very little compute extrapolation; the other produces a great deal. I'll spend some time describing the methods and results of this paper, because they are very clear.
+
+00:21:25.550 --> 00:21:31.825
+And then I'll briefly mention some other work that supports the conclusions of this paper in broad strokes.
+
+00:21:32.475 --> 00:21:49.850
+The first method of training with R L V R over chain-of-thought allows the L L M to generate up to twenty-four thousand tokens of chain-of-thought during training without interruption; the generated "thinking" tokens get appended to the context until the L L M comes to the answer.
+
+00:21:49.850 --> 00:21:57.925
+This corresponds to the standard, classic way of training with policy gradient as first publicly described in DeepSeek's R one.
+
+00:21:58.575 --> 00:22:13.700
+The second method trains with "chunked thinking," or "Delethink." The harness permits the L L M to generate eight thousand tokens, then deletes all of the chain-of-thought but the last four thousand tokens, and then continues the chain-of-thought from this chunk.
+
+00:22:13.700 --> 00:22:33.575
+An L L M so trained might naturally learn to summarize or compact the state relevant to the problem at the end of these four thousand tokens, although it's not directly incentivized. During training time, the authors only permit this generation-pruning cycle up to five times, but during inference time, they permit it up to thirty times or more.
+
+00:22:34.225 --> 00:22:50.350
+Figure two b of the paper plots performance against test-time thinking budget for the two methods. When so trained, the second method continues to improve with more test-time compute, long past the maximum amount of per-task train-time compute; while the first method does not.
+
+00:22:51.000 --> 00:23:01.200
+So, it looks like the "compaction" or "chunked thinking" allows the L L M to think past four times its maximum per-task training-time compute and to keep improving.
+
+00:23:01.200 --> 00:23:12.450
+Notably, there is no clear extrapolation ceiling in this paper; the score is still visibly improving as the thinking budget is extended, so the paper gives only a lower bound on the ceiling.
+
+00:23:13.100 --> 00:23:24.825
+Notably, Delethink also uses fewer total FLOPs per training step than the standard method, and also has better performance than the standard method at equal steps of reinforcement learning.
+
+00:23:25.475 --> 00:23:32.325
+Other papers also broadly support the idea that chunked thinking helps extend compute extrapolation.
+
+00:23:32.975 --> 00:23:42.100
+"Reasoning Cache" alternates between explicit instructions to summarize prior chain-of-thought and continuations that think from these summaries.
+
+00:23:42.100 --> 00:23:58.350
+Using this technique, it extrapolates from training on up to sixteen thousand total generated tokens to a half-million generated tokens, and finds performance continuing to increase with this scaling at test-time, despite never using so many tokens at training-time.
+
+00:23:59.000 --> 00:24:11.750
+"Scaling L L M Multi-turn R L with End-to-end Summarization-based Context Management" shows similar chunked context management and summarization can improve performance in an agentic context.
+
+00:24:12.400 --> 00:24:27.700
+There is some contrary evidence. For instance "E three: Learning to Explore Enables Extrapolation of Test-Time Compute" shows that it's possible to produce compute extrapolation without chunked thinking or explicitly requiring "hard" summarization.
+
+00:24:27.700 --> 00:24:46.075
+But it's worth noting that it requires other changes to the training procedure, and also only enables "two point five times extrapolation," per the abstract. They also do experiments showing that several open-weight L L Ms do not benefit from allowing spending more tokens at test-time than were used at training time.
+
+00:24:46.725 --> 00:25:01.325
+Overall, I don't think chunking or context management is absolutely required for allowing test-time compute extrapolation. But I think the more Markovian nature of the loop provides a good prior that incentivizes strong generalization.
+
+00:25:05.935 --> 00:25:09.885
+Now for historical evidence of compute extrapolation.
+
+00:25:10.535 --> 00:25:29.785
+We don't know how OpenAI or Anthropic allocate training-time compute between tasks. We also don't know how many thinking and compaction cycles they train on. However, we can note the calendar time at which models started to seem to keep improving across an almost unlimited number of thinking and compaction cycles, at least in some domains.
+
+00:25:29.785 --> 00:25:35.560
+Such a time is a good candidate for when they reached compute extrapolation in these domains.
+
+00:25:36.210 --> 00:25:45.335
+You can make a rough and approximate case that, for Anthropic, this time was around the release of Opus four point six, in February twenty twenty-six.
+
+00:25:45.985 --> 00:26:03.860
+First, the preliminary blog post on MirrorCode, a benchmark in which A Is reimplement existing software programs from scratch, over very long runs, indicates that Opus four point one and four point five were prone to hallucinate time constraints and time limits, even when none existed.
+
+00:26:03.860 --> 00:26:21.910
+But Opus four point six was able to persevere without such hallucinations through multiple rounds of compaction. Opus four point six was still improving its reimplementation of pkl at the end of a billion-token budget, including about two million generated tokens and tens of compactions.
+
+00:26:21.910 --> 00:26:34.485
+Training on such tasks might introduce severe off-policy gradient update issues. So this is weak evidence that compute extrapolation, given this kind of a harness and domain, had started by this time.
+
+00:26:35.135 --> 00:26:46.285
+Second, Toby Ord analyzed data from the U K A I S I showing how A I performance scales with longer chains-of-thought relative to how human performance scales with more time.
+
+00:26:46.285 --> 00:26:59.810
+With large error bars, the data indicates that Opus four point five needs three hundred seventy times more tokens in chain-of-thought to gain the same increase in performance that a human gains by thinking for ten times longer.
+
+00:26:59.810 --> 00:27:12.260
+But Opus four point six only needs forty-six times more tokens in chain-of-thought to do the same, which is a huge proportional gain, and the largest leap between the Opuses in the, very small, dataset.
+
+00:27:12.910 --> 00:27:30.935
+And you can make a similar case for OpenAI's GPT five point one Codex Max, released in November twenty twenty-five, which they advertised as the "first model natively trained to operate across multiple context windows through a process called compaction." Evidence is ambiguous here, though.
+
+00:27:30.935 --> 00:27:44.710
+METR notably reports that compaction does not increase the time horizon for this model at this time. But it also represents a large leap in efficiency at scaling with further chain-of-thought on the U K A I S I chart.
+
+00:27:49.320 --> 00:27:54.270
+Finally, consider future compute extrapolation from multi-agent scaling.
+
+00:27:54.920 --> 00:28:06.970
+I think it's plausible that multi-agent scaling will permit further extension of the ceiling and slope of compute extrapolation. I don't have strong evidence for this. Some weak evidence I have is as follows.
+
+00:28:07.620 --> 00:28:13.670
+First, we don't know how many cooperating agents OpenAI trained on in their multi-agent training.
+
+00:28:13.670 --> 00:28:31.070
+But we do know that they were able to cooperate with on the order of one thousand agents, the H F swarm, cooperating by accident, or ten thousand agents, the Navier-Stokes swarm, cooperating intentionally, albeit Noam Brown attributes little of their efficacy to having such a huge swarm.
+
+00:28:31.070 --> 00:28:42.045
+But it seems likely that during training they were using far fewer agents as a maximum, ten to one hundred, which would give a compute extrapolation horizon of at least ten to one thousand.
+
+00:28:42.695 --> 00:28:55.445
+Second, hierarchies and networks where each member maintains a bounded number of connections to other members are likely to be self-similar across a huge variety of scales and forms of information distribution.
+
+00:28:55.445 --> 00:29:13.620
+But a single linear chain-of-thought that has to handle an arbitrarily increasing quantity of context and action seems less likely to have this kind of self-similar and scale-free structure. I think this suggests that compute extrapolation will work better for multi-agent swarms than for single-agent chain-of-thought.
+
+00:29:14.270 --> 00:29:34.470
+Third, at a minimum, there's a strong limit to the practical compute extrapolation of single-agent systems imposed by time. A single agent that thinks for several months becomes increasingly unwieldy to use; for many problems you want an answer faster than that, if only to get an answer before your A I is superseded by smarter agents.
+
+00:29:34.470 --> 00:29:43.695
+Multi-agent scaling allows cognition to be parallelized over many agents, which is much easier to scale up over hardware than speed of cognition.
+
+00:29:43.695 --> 00:29:58.145
+So regardless of how far compute extrapolation could be, hypothetically, extended for a single agent in a world without time pressure, multi-agent scaling probably allows it to be extended much further in a real world with time pressure.
+
+00:30:02.755 --> 00:30:19.980
+Compute extrapolation extends the reach of inference-time compute, by letting L L Ms spend more compute on test-time problems, that people actually care about, relative to training-time problems, whose existence has no point, apart from being the catalyst for A I capabilities.
+
+00:30:20.630 --> 00:30:33.080
+The currently intensifying increase in compute extrapolation, and its spread to new domains, will speed A I capabilities, particularly those at the top percentile of test-time compute expenditure.
+
+00:30:33.080 --> 00:30:43.755
+In general, compute extrapolation in some domains means that it could become prohibitively or impossibly expensive to know the top level of performance in some domain.
+
+00:30:44.405 --> 00:30:48.580
+Further questions relevant to this area include the following.
+
+00:30:49.230 --> 00:31:01.430
+Would it make sense to ask A I companies to release information about the most compute-intensive training-time tasks in various domains, which could serve as a baseline for measuring compute extrapolation?
+
+00:31:01.430 --> 00:31:11.355
+Would such information about generalization from low to high compute be as important for them to release as information about cross-domain generalization?
+
+00:31:12.005 --> 00:31:26.080
+High ceilings and slopes for compute extrapolation are probably easier to obtain in domains like math or offensive cyber, because in these domains it is easier to recognize incremental progress as incremental progress.
+
+00:31:26.080 --> 00:31:45.855
+What other domains have this property, or other properties relevant to compute extrapolation, and what does it look like for an L L M to acquire the skill of recognizing incremental progress? In particular, what does it look like to acquire the skills relevant for recognizing incremental progress in algorithmic progress and A I R and D?
+
+00:31:46.505 --> 00:31:55.430
+How would we know if high levels of compute extrapolation started to extend to algorithmic taste and machine learning research? What would be the first sign?
+
+00:31:56.080 --> 00:32:08.605
+Would it make sense for efforts to understand the likelihood of R S I to require very high-compute evaluations, spending one hundred thousand dollars or one million dollars per task on algorithmic research?

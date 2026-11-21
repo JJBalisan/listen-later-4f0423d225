@@ -1,0 +1,1180 @@
+WEBVTT
+
+00:00:16.500 --> 00:00:20.275
+Neural Networks Are Already Clean, by Nick Cammarata.
+
+00:00:20.925 --> 00:00:26.075
+The Short Version. I think I have good news about the nature of neural networks.
+
+00:00:26.725 --> 00:00:41.225
+After many months studying neurons and circuits in image and language models, I've come to believe a network's own mechanisms are its legible building blocks, and that the outlook for mechanistic interpretability may be far better than I'd feared.
+
+00:00:41.225 --> 00:00:58.250
+The canonical evidence of polysemanticity and superposition that convinced much of the field, including me, that networks pack concepts arbitrarily was misread. What looked like arbitrary packing was mostly a motif I'll call recursive generalization, which is much less concerning.
+
+00:00:58.250 --> 00:01:05.550
+This means we can study networks directly, instead of first untangling them. Neural networks are already clean.
+
+00:01:06.200 --> 00:01:23.175
+There are at least two ways to approach mechanistic interpretability. The first is rapid normal science on the network itself: look at a network's neurons and circuits, study how they relate, watch data flow through them, and run experiments at agentic scale to test explanations.
+
+00:01:23.175 --> 00:01:34.500
+The second starts from a list of hypothesized features and tries to extract them all, designing increasingly sophisticated reconstruction objectives and usually ignoring the original.
+
+00:01:35.150 --> 00:01:52.150
+The field began with the first approach and fell back to the second because neural networks seemed to be tangled knots. We had canonical examples of polysemantic neurons, the broad name for a neuron that appears to have multiple unrelated jobs or that looks impossible to understand.
+
+00:01:52.150 --> 00:02:09.625
+The most famous one, in an image model, responded to both cat faces and the fronts of cars. And the last layer of the early field's model organism, Inception V one, seemed so full of arbitrary mixtures it wasn't clear how to study it: almost none of the neurons were easily interpretable.
+
+00:02:10.275 --> 00:02:27.150
+The leading explanation for polysemanticity was superposition. This proposed a new learning principle: when a neural network runs out of neurons, it stops grouping related things together and instead begins folding unrelated things together, simply because they don't interfere.
+
+00:02:27.150 --> 00:02:39.675
+The result is a kind of knot: the network could have folded in many almost equally good ways, so which things a neuron groups together tells you almost nothing. You have to unfold the knot before you can study anything.
+
+00:02:39.675 --> 00:02:54.025
+In practice that means training a second model, a decomposition such as a sparse autoencoder, to approximate the network as it would look unfolded and studying that instead. If the network really is knotted, there may be no alternative.
+
+00:02:54.675 --> 00:03:09.350
+One main result is that superposition was the wrong explanation for Inception V one. Architectural problems made later layers overflow. Weak interpretability tools amplified these problems, making the late layers seem incoherent.
+
+00:03:09.350 --> 00:03:23.975
+Since then, architectural changes designed to help deep layers learn better have had the unintended effect of making them more interpretable. When we first studied Inception V one, we found almost no interpretable neurons in its last layer.
+
+00:03:23.975 --> 00:03:41.700
+But with these ordinary improvements, and no change to model size or training data, ninety-nine to a hundred percent of neurons in that last layer are easily interpretable and the model is broadly legible the whole way through. It's the first non-trivial neural network I feel I mostly understand.
+
+00:03:41.700 --> 00:04:02.100
+I trained versions of it across a three-hundred-times range in size, and it's broadly legible at every scale. With less room, the network doesn't fold unrelated things together; its neurons just cover coarser-grained concepts, like one car neuron covering many kinds of car. With more room, that neuron differentiates into many specific cars.
+
+00:04:02.100 --> 00:04:10.775
+So the problem wasn't the presence of a second learning principle, it was just an ordinary learning failure of the first one, and it's easy to fix.
+
+00:04:11.425 --> 00:04:29.550
+The canonical vision examples of polysemanticity and superposition were errors too. In twenty nineteen, Chris Olah and I found the circuit that was originally introduced as the superposition phenomenon in the paper Zoom In. It showed a car feature appearing to spread into a set of unrelated dog neurons.
+
+00:04:29.550 --> 00:04:46.925
+It was the only one we showed, and the only one I ever saw. We read it as the network placing the car in a high-dimensional hiding place, for downstream neurons to read back out. But nothing reads that combination. It wasn't hiding anything; it was ordinary generalization and composition.
+
+00:04:46.925 --> 00:04:51.275
+To my knowledge, no one has published a second circuit with the right shape.
+
+00:04:51.925 --> 00:05:09.875
+Modern language models are also far more interpretable than generally believed. Anthropic's Towards Monosemanticity, from twenty twenty-three, studying a small one-layer model, gave the median neuron a zero on its rubric out of a possible fourteen, meaning the rater couldn't form any hypothesis.
+
+00:05:09.875 --> 00:05:21.475
+The automated interpretability project I started at OpenAI, also in twenty twenty-three, found about one point seven percent of neurons interpretable by our most generous measure.
+
+00:05:22.125 --> 00:05:42.625
+With better tools and modern models, the situation looks quite different. In preliminary audits of Qwen three, thirty-two B, we estimate that roughly ninety percent of neuron poles have one main job, often with small related offshoots; another roughly seven percent have two related jobs; and only about two to four percent are not yet understood.
+
+00:05:43.275 --> 00:05:54.975
+A note on this number: the share of neurons with one job varies depending on how you set the threshold for counting weak activations, depth, density of sub-circuits, and what you view as "one thing".
+
+00:05:55.625 --> 00:06:14.500
+How far to go into weak activations is a big factor here. There's a section describing weak activations below. It tends to increase how many "related things" there are, more than whether the neuron is a judgement of something legible. For instance, the Trump neuron's weak activations bring in MAGA hats and people related to him.
+
+00:06:14.500 --> 00:06:23.100
+The Titanic neuron's weak activations bring in stories of more general voyages, or steam engines and other technologies of the era.
+
+00:06:23.750 --> 00:06:43.100
+There's also the question of whether to care about activation percentiles, or fraction of the strongest activations. In general I think what the neuron learns should be trusted, its natural sparsity and activation ranges and so on. Which I used to mostly not believe! I'm somewhat against trying to standardize things across all neurons.
+
+00:06:43.100 --> 00:06:48.100
+Percentiles are more common today, I think because they're easier to think about.
+
+00:06:48.750 --> 00:07:07.850
+It goes the other way too. For instance, when you look at the Titanic neuron's "unrelated jobs," it's often detecting that "boat" comes next. The tool missed this because it only looked backward when judging context. When we look at these "unrelated jobs" in depth, it's almost always this kind of thing. It's easy to build an imperfect tool.
+
+00:07:08.500 --> 00:07:28.075
+Overall, I don't think coming to a single score is actually that important. But when it was taken out, early reviewers felt unanchored without even a rough number. In the sets I've looked at more closely, considering strong activations, it's closer to ninety-seven percent non-arbitrary mixtures, but these are relatively small samples.
+
+00:07:28.725 --> 00:07:41.700
+Overall distilling everything into one "cleanliness" score should be taken as a broad pointer to the regime a neural network is in, rather than something precise to either optimize directly or hold too tightly.
+
+00:07:41.700 --> 00:07:57.450
+A lot of this essay is for being less dimensionality reduced, treating each neuron and circuit differently, according to their motifs, depth, role and so on. Despite this, a rough number can be useful. Dense and Mixture of Experts models seem roughly similar.
+
+00:07:57.450 --> 00:08:06.025
+We found similar results in models up to trillions of parameters, like Kimi K three, which the companion paper will cover in more detail.
+
+00:08:06.025 --> 00:08:23.025
+These percentages compress a high-dimensional picture into a few numbers, and the precise number depends on where you set thresholds for what counts as "one thing", like whether you lump together closely related idioms in two languages. I don't think much in interpretability hangs on that question.
+
+00:08:23.025 --> 00:08:27.575
+What matters a lot more is why things share a neuron in the first place.
+
+00:08:28.225 --> 00:08:47.875
+Most of the remaining apparent polysemanticity seems to be a motif I call recursive generalization. It's simple: as a neuron grows, it sprouts offshoots the way a tree branch sprouts sub-branches. For instance, one neuron that detected "i y" grew to detect "d i y," and then "do it yourself," which doesn't contain "i y" at all.
+
+00:08:47.875 --> 00:09:04.875
+This idea first appeared in a forgotten subsection of a paper I worked on called Multimodal Neurons, from twenty twenty-one. At the time, I hadn't watched neurons grow over training. Now it's easier, and it holds up everywhere I've seen. Even the original Inception V one wasn't knotted.
+
+00:09:04.875 --> 00:09:17.675
+When I retrain its original architecture, which still produces messy deep layers, and follow the least legible neurons I can find, they turn out to be overgrowing locally into reasonable, adjacent territory.
+
+00:09:18.325 --> 00:09:38.825
+So there were two explanations for polysemanticity, and I helped propose both. In some ways, they're opposites: generalization groups similar things together and superposition groups unrelated things together. Superposition is the one the field bet on and, until recently, so did I. But I now think recursive generalization was basically right.
+
+00:09:38.825 --> 00:09:53.900
+That leaves one learning principle after all. It's still generalization, but it turns out generalization is fractal. That's far less concerning: there's something to learn from the way things were grouped, and nothing to learn from two items in superposition.
+
+00:09:53.900 --> 00:10:11.225
+And since the generalization itself is fractal, our explanations can be too: start with a basic explanation, then zoom in when you want to understand more. In that sense, almost the entire network is interpretable if we look closely enough, especially if we look at how it grew over training.
+
+00:10:11.875 --> 00:10:16.875
+Why was the gap so large? I think several ordinary problems compounded.
+
+00:10:16.875 --> 00:10:39.150
+The explainer models of twenty twenty-three couldn't run the loop of conjecture and test; the tools and metrics were weak, rewarding explanations that could simulate activations rather than ones that were right, which often come apart; no one knew what language neuron motifs to expect, and people broadly looked for the wrong kinds of things; and most studies used small or simplified models.
+
+00:10:39.150 --> 00:10:56.575
+In a sense, those models really had run out of room, which made superposition the natural explanation. But a network short on room doesn't switch learning principles; its neurons just get broader, as in the small vision models. Broad neurons are usually easy to break down once you know what to look for.
+
+00:10:56.575 --> 00:11:01.525
+Without that knowledge, and with primitive tools, they look like arbitrary mixtures.
+
+00:11:02.175 --> 00:11:14.875
+Interpretability has a surprising amount of momentum: like a jigsaw puzzle or crossword, any understanding you gain starts constraining the rest of the system. At first, you're looking at a single neuron.
+
+00:11:14.875 --> 00:11:29.775
+If you can't understand it, little else helps: circuits and attribution graphs only explain a neuron in terms of other neurons you don't understand yet. This can make getting started hard. Once the map starts to fill in, though, it goes surprisingly well.
+
+00:11:29.775 --> 00:11:47.625
+If you don't understand exactly what a neuron does, you can study what it connects to, the ecosystem around it, and, in a mixture-of-experts model, what its expert specializes in. As with a puzzle coming together, every piece comes with many clues, and they're well structured and easy to run experiments against.
+
+00:11:47.625 --> 00:11:53.875
+That's why nearly empty and mostly filled in aren't surprising places to be; they're the natural anchors.
+
+00:11:54.525 --> 00:12:07.525
+Take a neuron that tracks "a sense of righteousness when a bargain purchase turns out to work better than the expensive alternative". Neurons that track a feeling or social cue like this are some of the most common we've found.
+
+00:12:07.525 --> 00:12:27.325
+Imagine finding this one with no knowledge of language neuron motifs and no circuits to lean on, because few neighboring neurons are explained yet. Most humans and agents expect neurons to detect nouns by firing on them, which they mostly don't. Look at where this one fires most strongly, and you see a pile of seemingly unrelated commas.
+
+00:12:27.975 --> 00:12:46.800
+Now imagine the map is mostly filled in. You know many neurons detect subtle feelings or social contexts, and that they often fire not on the words that carry the feeling but on punctuation, like commas, where the model summarizes what a sentence meant, or on the word just before the feeling matters for predicting what comes next.
+
+00:12:46.800 --> 00:13:00.500
+So you read the surrounding sentences instead, and check its steering effects, meaning what the model writes when you turn the neuron up, which line up closely. You look upstream at how it's built and downstream at what it does, and both line up.
+
+00:13:00.500 --> 00:13:17.950
+You check its negative pole, what pushes it strongly negative, and find a subtle variant of the same cue, or the moment the social context ends. You can run specific tests, like checking which store brands it responds to. Any of these could break the explanation, yet they keep pointing to the same place.
+
+00:13:17.950 --> 00:13:31.675
+And understanding this neuron sharpens the broader motif: after thousands of subtle-feeling and social-context detectors, you start to know what to expect from the next one, which is part of why the map fills in faster as it goes.
+
+00:13:32.325 --> 00:13:42.900
+It works on the tools too. When you can see two percent of a network, you can't tell where your tools are broken; when you can see most of it, the unexplained remainder points straight at them.
+
+00:13:42.900 --> 00:13:55.300
+That's how some coworkers and I found a double-negative regime in SwiGLU neurons that, as far as we know, no one had noticed, and that a decomposition mixing many neurons together would likely have hidden.
+
+00:13:55.950 --> 00:14:12.425
+The bad news about modern neural networks is that they're enormous. The good news is that the enormity helps: as the map fills in, every explanation is tightly constrained by everything around it, and bigger models learn narrower neurons that are easier to recognize in the first place.
+
+00:14:13.075 --> 00:14:25.125
+In this sense, understanding the whole network may be easier than understanding just the parts we care about most. First, it's hard to know how to think like a neural network until you've studied it closely.
+
+00:14:25.125 --> 00:14:44.825
+For instance, "deception" is a useful initial frame, but the building blocks that contribute to deceptive behavior by models probably have alignment-relevant microstructure that will be hard to know without going in and looking. Second, targeting a small set of mechanisms is like working on one row of an otherwise empty crossword.
+
+00:14:44.825 --> 00:14:56.500
+It's doable, and might work, but without the crossings it's hard to know whether you're right. It may be easier to solve the whole thing, or at least the broader parts of the network these mechanisms connect to.
+
+00:14:57.150 --> 00:15:15.575
+When I ran this process on modern convolutional networks, it basically worked. Agents can map out neurons and circuits, build explorable microscopes and explore them, test explanations thoroughly, and track hundreds of thousands of attribution graphs. There was never a point where rapid normal science broke down.
+
+00:15:15.575 --> 00:15:34.750
+I now feel I basically understand these models, at least enough to know where I'd start asking any question I had; eventually, the crossword just got filled in. So far it has worked in language models too, up to trillions of parameters. Those aren't close to solved due to sheer size, but I'm optimistic about scaling the process.
+
+00:15:35.400 --> 00:15:49.725
+All of this has brought me back to an old hope: understanding a neural network directly, by studying its mechanisms and the data flowing between them, without first trying to fix or untangle it. Put together, the argument has four steps.
+
+00:15:50.375 --> 00:16:01.000
+One. Networks use one learning principle, not two, if not everywhere, then nearly enough that it doesn't matter for study, so there's no blocker to beginning ordinary science on them.
+
+00:16:01.650 --> 00:16:07.575
+Two. With modern models and tools, that science goes much better than most people expect.
+
+00:16:08.225 --> 00:16:17.250
+Three. Understanding compounds, so it gets easier as the map fills in. At minimum, then, a network's own mechanisms should be part of the toolkit.
+
+00:16:17.900 --> 00:16:27.100
+Four. Highly speculative: this might be most of what we need, and interpretability might be far more tractable, possibly in the near term, than we've assumed.
+
+00:16:27.750 --> 00:16:43.925
+That's been the pattern for deep learning in general: the simple thing at absurd scale beats the clever one. Rich Sutton called it the bitter lesson. Maybe there's a bitter lesson for interpretability too: scaling ordinary investigation beats engineering a clever new decomposition.
+
+00:16:44.575 --> 00:17:03.550
+A technical companion paper will offer a more detailed account of language model neuron experiments, such as what we've found about the different regimes of modern non-linearities and what kinds of circuit motifs show up at different depths. This essay glances at many places and conjectures about where it all might be pointing.
+
+00:17:09.070 --> 00:17:28.670
+The most famous polysemantic neuron is neuron four E, fifty-five, of Inception V one, which looked like an arbitrary mixture of cats and cars. It's been brought up as evidence that neurons might not be the right unit of study in several of the field's most widely read papers, from Feature Visualization in twenty seventeen to Zoom In.
+
+00:17:28.670 --> 00:17:36.120
+In Zoom In, which I co-authored, we said outright that it "isn't responding to some commonality of cars and cat faces".
+
+00:17:36.770 --> 00:17:40.245
+In Multimodal Neurons we came very close.
+
+00:17:40.245 --> 00:17:58.695
+We asked whether the neuron might be responding to some shared feature, "perhaps cat eyes and car lights look similar," then decided from the feature visualization's whiskers and chrome that it was "genuinely O R of cat, car." We were right to look for a shared shape, but I think we underestimated how far generalization reaches.
+
+00:17:58.695 --> 00:18:16.420
+The shared feature was the V. I think the whiskers misled us because generalization happens inside high-level patterns. The V neuron really does take in cat circuitry, and feature visualization's job is to raise the activation, so once it finds the cat route it adds everything that route brings.
+
+00:18:16.420 --> 00:18:34.595
+The whiskers come along for the ride, even if the neuron doesn't "want" them. Downstream, the car readers do get a little cat signal through the V neuron, but it barely reaches the output: one cat detector firing does little on its own, since many work together, so the network never needs a negative weight to cancel it.
+
+00:18:34.595 --> 00:18:41.545
+To see the shared pattern, you have to visualize what the neuron's inputs have in common, not the neuron on its own.
+
+00:18:42.195 --> 00:18:51.220
+After months of seeing clean neurons, I wondered if we'd misinterpreted some early prominent examples of polysemanticity and superposition.
+
+00:18:51.220 --> 00:19:05.770
+The canonical polysemantic neuron seemed like the obvious place to check, so I opened up the cat and car image grid I'd seen hundreds of times before and did something I'd never done: I spent a few seconds wondering what one thing this might be.
+
+00:19:05.770 --> 00:19:13.170
+Almost instantly it was obvious: it's bringing things together because of a shared V shape, or bilateral pointed shape.
+
+00:19:13.820 --> 00:19:32.545
+A note, revised October thirtieth, twenty twenty-six. An earlier version said "it's not a cat and car neuron, it's a V-shape neuron." That was too strong: a one-letter overcompression. It does detect the objects in the grid: it's a one-by-one convolution neuron, so it brings in upstream cat, fox, and car detectors.
+
+00:19:32.545 --> 00:19:48.770
+The question is why it brings those ones in. The essay's claim is that it isn't an arbitrary mixture, and especially not of maximally unrelated things to avoid interference between them. I hope to release a fuller study of this neuron. Thanks to Liv Gorton for pushing on this.
+
+00:19:49.420 --> 00:20:05.970
+The cats and foxes all had this shape in their faces or pointy snouts, and the cars were almost all at similar angles, with a particular V shape that also showed up in the feature visualization. The same was true of pool tables, the Shinkansen train, and many other objects.
+
+00:20:06.620 --> 00:20:22.970
+I looked at its circuit connections: V-shaped flames, V-shaped water jets from a fireboat, V-shaped fox faces. I looked at its negative pole: an O, round where the V is pointed. Why would an arbitrary mixture of cats and cars need to connect so strongly to a flame?
+
+00:20:22.970 --> 00:20:42.945
+Finally, I clustered the items coming in, feature visualized their intersection, and it showed a pointy shape. This is the "generic feature visualization" image. Visualizing the intersection and differences between groups of inputs to a neuron became a helpful general tool for understanding shared patterns, and I hope to write more about it.
+
+00:20:43.595 --> 00:21:00.870
+Then I went to the canonical superposition circuit I first found in twenty nineteen. I found it while building my first Circuits interface, which only had feature visualization and weights connecting their neurons. Then I took them to Chris Olah and asked why the car would be going into these dogs like this.
+
+00:21:00.870 --> 00:21:16.420
+We came to the conclusion it must be doing a kind of folding, and called it superposition. It was an intuitive explanation for what we saw, so it didn't prompt diving more into the tools, which would have revealed feature visualization reward hacking and various other things.
+
+00:21:16.420 --> 00:21:31.995
+It being placed into a high-dimensional space felt like a reasonable answer. The V neuron and this circuit were Zoom In's two main examples of why its picture of neurons, that nearly every one turns out to be understandable if you look seriously, might be "overly rosy".
+
+00:21:32.645 --> 00:21:43.045
+The circuit appeared to show a car going into a bunch of unrelated dogs, as if the dogs were a kind of high-dimensional storage place where the car could be recovered later as needed.
+
+00:21:43.695 --> 00:22:01.545
+But that's not what the car was doing. Cars and dogs were being brought together because of shared pose. Inception V one has more than a hundred of these generalized pose neurons, each one its own clean detector of a pose shared across cars, dogs and other objects, and to my knowledge no one had noticed them.
+
+00:22:01.545 --> 00:22:16.645
+Later layers keep building on them, all the way to the end of the model. The car was not being stored in an obscure place, and nothing directly reads out the combination. It's the opposite: it's continuing to differentiate into car specialists and finer poses.
+
+00:22:17.295 --> 00:22:30.045
+Part of the reason was not knowing about generalized pose neurons, and part of the reason is that the technique we use to render icons of images, feature visualization, ends up being reward hacked in deeper layers.
+
+00:22:30.045 --> 00:22:49.320
+The intent is to find an image that maximizes the neuron, but the way that's done is through gradient descent, and it takes the easiest path, which in Inception V one often means dogs. There are lots of dogs in Inception V one's training data and a lot of dog neurons, and the early optimization falls into them and never recovers.
+
+00:22:49.320 --> 00:22:58.820
+If you even lightly bias it toward the natural paths the top images take, most of them are cars, and some are both dogs and cars, because of shared pose.
+
+00:22:59.470 --> 00:23:15.170
+It can be tempting to discount this generalization, under the assumption that the dogs and cars are only together because there's not enough space. Maybe it "really wanted" separate dog-pose and car-pose neurons, and a bigger model with more space would have separated them.
+
+00:23:15.170 --> 00:23:23.045
+It's true that bigger models tend to have more narrow neurons, but when networks scale up, they can do it in counterintuitive ways.
+
+00:23:23.695 --> 00:23:37.820
+Looking at DINO V two, which is more than ten times the size and about ten years of architecture later, it has more pose neurons, but many of them are still generalized. I've seen this in every vision model I've looked at, of any size.
+
+00:23:38.470 --> 00:23:53.595
+Both human and automated interpreters seem strongly biased toward describing neurons as detectors for groups of nouns, like cats and cars, rather than for a shared pattern, like a V. Sometimes a neuron really does respond to a group of nouns.
+
+00:23:53.595 --> 00:24:00.545
+In my experience, though, it's more often a shared pattern, and the neuron is better understood as a verb than a noun.
+
+00:24:00.545 --> 00:24:16.245
+Its job isn't to name what's in the input but to draw a distinction downstream neurons can use: it separates two subtle patterns at its positive and negative poles, a V versus an O, and pushes the flow of activations toward different neurons accordingly.
+
+00:24:16.895 --> 00:24:33.595
+I can often unblock my understanding of a neuron by asking: if I couldn't use groups of nouns at all, how would I describe this neuron to someone else? Usually the shared pattern pops out right away, and it's easy to test on more groups of nouns, for the V: Shinkansens, pool tables.
+
+00:24:33.595 --> 00:24:47.545
+I suspect this is the largest source of misattributed polysemanticity in mid-layer neurons. Many explanations I've seen that call a neuron polysemantic look to me like a single pattern described as a list of nouns.
+
+00:24:48.195 --> 00:25:01.045
+We should treat a neuron that means two or three things as one neuron with a few grouped meanings. The grouping probably wasn't a problem for the network: the meanings sit together because, from the network's point of view, they're similar.
+
+00:25:01.045 --> 00:25:16.045
+That makes the grouping a clue to how the network thinks, and following it can turn up generalizations we didn't know about, as cats and cars did here. Often the extra meanings also melt away on closer inspection, turning out to be minor and rarely active.
+
+00:25:16.045 --> 00:25:32.520
+Finally, some apparent meanings are just our tools being bad, and this essay has several examples: the double-negative regime of SwiGLU, an unread saliency knob that makes the residual stream hard to visualize, and the reward hacking in feature visualization we just saw.
+
+00:25:32.520 --> 00:25:43.545
+Keeping the original neuron whole keeps these errors visible, so the error correction can continue. If we'd used optimization to get a cleaner list, we might have lost many of these hints.
+
+00:25:49.295 --> 00:26:02.320
+The story of interpretability, as I see it, has largely been one of finding out that what was under the microscope was better than we thought. The microscope just wasn't tuned right, and what needed tuning was often pretty subtle.
+
+00:26:02.970 --> 00:26:21.245
+Modern neural network interpretability arguably started with feature visualization, which renders a synthetic image of what a neuron responds to most: the famous psychedelic pictures. For a while they didn't look very good. You could reasonably conclude the neurons had learned something, just nothing very clean.
+
+00:26:21.245 --> 00:26:29.045
+It turned out the method was missing transformation robustness. Once researchers added it, the same neurons came out crisp.
+
+00:26:29.695 --> 00:26:45.070
+But that only gets you so far into the model. Near the end, feature visualization starts to break down again, for two reasons: the reward hacking we saw with the car circuit, and regularizations that weren't quite right. Fixing it didn't require anything fancy.
+
+00:26:45.070 --> 00:26:53.145
+A few subtle tweaks to reasonable settings, and now we can see much deeper into the network. Same neurons, better microscope.
+
+00:26:53.795 --> 00:27:04.845
+But it wasn't all the microscope. The model needed to be tuned too. Inception V one, the early model organism of the field, was totally uninterpretable in the late layers.
+
+00:27:04.845 --> 00:27:18.395
+One estimate said, "To the best of my knowledge, there are essentially no interpretable neurons on Inception V one's final layer," which is close to my own recollection, I'd have maybe said five percent. This is what they looked like.
+
+00:27:19.045 --> 00:27:33.170
+The leading explanation as far as I knew was that there were too many high-layer features needed to be represented for the number of neurons and parameters there were, so it started packing ones that don't belong together arbitrarily, since they don't collide.
+
+00:27:33.170 --> 00:27:39.720
+The early layers were monosemantic because not as many early layer features needed to be represented.
+
+00:27:40.370 --> 00:27:54.095
+But this wasn't the right explanation. Here's a more modern convolutional network with the same number of parameters and dataset, but with residual connections, LayerNorm, and a couple other improvements. The last layer is beautiful.
+
+00:27:54.745 --> 00:28:06.195
+So two things were required. First, the neural network needed to learn well, using an architecture designed by people fully focused on that goal and with no interest in interpretability.
+
+00:28:06.195 --> 00:28:20.520
+The residual stream is one example: it was introduced to help learn deeper neural networks, and it also seems to help the deeper layers be conceptually clean, which may be related. Second, we needed tools strong enough to see them clearly.
+
+00:28:21.170 --> 00:28:40.295
+The last layer of Inception V one was one of the main pieces of evidence that neural networks were almost fundamentally uninterpretable, since the way they learn overlaps unrelated mixtures. Replacing the neurons seemed like the only option. I put it around five percent with tools of that era, others at about zero percent.
+
+00:28:40.295 --> 00:28:56.045
+With better interpretability tools, meaning fixed feature visualization, methods for visualizing attribution and so on, it's more like fifty percent on the same network. This is all with the twenty fourteen model whose checkpoints and training details were lost to time.
+
+00:28:56.045 --> 00:29:07.345
+Retraining the same architecture with more reasonable modern regularization it's more like seventy percent. In the ConvNeXt of the same size, it's about ninety-nine percent.
+
+00:29:12.245 --> 00:29:29.345
+So we've shown the last layer was fixable. But what was it doing before it was fixed? Even before the architectural improvements, it wasn't putting things together arbitrarily. When we retrained the model and watched a neuron form, it started on yellow flowers, in photos that sometimes included a dog.
+
+00:29:29.345 --> 00:29:44.595
+Then it grew along each facet of those photos: toward other kinds of nature, toward green objects like balls, and toward dogs without any flowers. This is true of every neuron I looked at. The improved architecture shows the same pattern, but much less of it.
+
+00:29:45.245 --> 00:30:00.020
+We call this recursive generalization: a neuron generalizing along more than one axis, often first along one axis, then sprouting outwards in ways that are easy to follow locally, but stop it from being "monosemantic" in the end.
+
+00:30:00.670 --> 00:30:11.545
+For instance, a language-model neuron responds to "i y," including in "Miyazaki," then to "d i y," and then to "do it yourself," which no longer contains "i y" at all.
+
+00:30:12.195 --> 00:30:22.195
+There are examples all over the place in both image and language models. Like a geology neuron that generalizes into Cesium, a geology JavaScript library.
+
+00:30:22.845 --> 00:30:41.295
+Usually it's very obvious what happened, to an extent where it's hard to know whether to just call it normal generalization or not. Like an enemy neuron that fires for a Russian poem about enemies. Sometimes it's less clear but still plausible. A Srinivasen neuron also lightly fires for the UniProt protein database.
+
+00:30:41.295 --> 00:30:46.895
+The project has several Srinivasens associated with it, but it's hard to know for sure.
+
+00:30:47.545 --> 00:30:56.920
+We'll talk about these recursively generalized offshoots and how much they matter in the language model section. Here we just want to talk about what the motif is.
+
+00:30:57.570 --> 00:31:09.795
+We first hinted at this in Multimodal Neurons, calling them "conjoined features." I'd forgotten until I went back through the field's most famous models, months into studying recursive generalization.
+
+00:31:09.795 --> 00:31:28.370
+As far as I can remember, no one, including me, suggested it might be the general explanation, for instance for what was wrong with Inception V one's last layer. Without training checkpoints we couldn't watch it form, but the explanation was basically right. The appendix explains why I think the new name is more accurate.
+
+00:31:33.200 --> 00:31:48.575
+Recursive generalization isn't a particularly bold explanation, it's arguably just what we should expect out of ordinary generalization. But there's also a much bolder explanation that has been proposed for polysemanticity, a new learning principle.
+
+00:31:49.225 --> 00:32:05.725
+The main learning principle we see everywhere is generalization. With generalization, things are put together because of a shared pattern that it's useful to have in one place, so it can be built on. With superposition, unrelated things are placed together because they don't interfere.
+
+00:32:05.725 --> 00:32:15.050
+These have opposite predictions: generalization should be local, superposition should be non-local, since it would want very different things to be near each other.
+
+00:32:15.700 --> 00:32:28.950
+Generalization would want a floppy ear dog neuron, which can be thought of as lots of slightly different floppy ears at different angles and kinds together. Superposition would want a floppy ear dog plus Latin poetry neuron.
+
+00:32:29.600 --> 00:32:38.800
+The definitions get tangled here. Along with superposition, Zoom In introduced the idea of features as the fundamental unit of neural networks.
+
+00:32:38.800 --> 00:32:56.200
+Depending on where you look, superposition then means either "more features than dimensions," which even a fully monosemantic network would satisfy, because its neurons compose, or a learning principle like the one above, applied sometimes to what neurons learn and sometimes to where features go.
+
+00:32:56.850 --> 00:33:10.300
+For instance, Inception V one's layer four B has basically monosemantic neurons for car parts like windows, car bodies, and wheels, which the next layer assembles into a car neuron, four C, four forty-seven.
+
+00:33:10.300 --> 00:33:30.225
+In the feature view, it's reasonable to say the "car feature" isn't just in that car neuron, but also in the combination of four B neurons that builds it. So there are two car features in adjacent layers, sharing almost exactly the same mechanics. In the "more features than dimensions" view, the first is in superposition and the second may not be.
+
+00:33:30.225 --> 00:33:51.325
+In the sense of the informal note Distributed Representations: Composition and Superposition, the first is distributed, but by composition, and the second isn't distributed at all. This is part of why I find hypothesized features hard to think with, and why I usually prefer specific mechanisms, like neurons, and specific pieces of data.
+
+00:33:51.975 --> 00:34:07.800
+So "superposition" is itself in superposition between several common uses. We focus on the learning principle applied to the mechanisms like neurons, because whether it forms holds such a disproportionate share of the good or bad news for interpretability.
+
+00:34:07.800 --> 00:34:17.975
+It's also fairly easy to test: recursive generalization and superposition predict nearly opposite things, and you can watch a neuron grow and see which one happens.
+
+00:34:18.625 --> 00:34:29.725
+When I say superposition in this essay, I'm referring to this version, and we'll address the question of "more features than dimensions", which I basically don't think is bad news, later.
+
+00:34:35.595 --> 00:34:44.795
+Polysemanticity is often more a claim about the observer than the neuron. It says there's no good explanation yet. There are a few reasons that could be.
+
+00:34:45.445 --> 00:34:49.770
+One. Bad tools: our lens or microscope isn't good enough.
+
+00:34:50.420 --> 00:34:54.095
+Two. Bad explanations, created from those tools.
+
+00:34:54.745 --> 00:35:01.195
+Three. Bad learning: the network learned poorly due to bad architecture, training data, or something else.
+
+00:35:01.845 --> 00:35:08.845
+Four. Recursive generalization: while generalizing, the neuron branched off in a few related directions.
+
+00:35:09.495 --> 00:35:18.295
+Five. Superposition: a change in learning principle where the network packs unrelated things into the same neurons because they rarely collide.
+
+00:35:18.945 --> 00:35:38.320
+For years I was a staunch superposition believer. I started studying language model neurons not out of any interest in neurons or superposition, but because I was interested in whether agents had research taste! I wanted to see if they'd ask good questions as they tested explanations, and started with neurons only as a baseline.
+
+00:35:38.320 --> 00:35:57.945
+I expected them to run into intractable feature fragments in superposition. That would produce a new baseline for how clean neurons really are, then the agents could continue with some cleaner learned basis. But it never came, because the neurons kept coming, resolving to a simple explanation that made surprising predictions that held.
+
+00:35:58.595 --> 00:36:15.670
+In a frontier language model, I found a neuron that mostly fired on "p r", but also on a bunch of Base sixty-four URL strings as well as some Bengali. I thought this must finally be an arbitrary mixture. But decode the URLs: "p r" words. Translate the Bengali: "p r".
+
+00:36:16.320 --> 00:36:35.095
+In a dense Qwen model, a coworker came across a neuron that standard top-k automated interpretability lists as a "polysemantic comma neuron". But looking more closely, it turned out to track Colorado: phone numbers, slang, and connections to other Colorado neurons. Steering it made the model want to go hiking.
+
+00:36:35.095 --> 00:36:49.620
+The commas were where it stored a running summary of the Colorado context so far. In general attention seems to collect on the punctuation, which we call the summary motif. Once you know it, a lot of similar neurons get easier to understand.
+
+00:36:50.270 --> 00:37:02.395
+Other times, we just didn't have enough data. At first we didn't include long context, two paragraphs felt like enough. But this accidentally made all the long-context neurons look polysemantic.
+
+00:37:03.045 --> 00:37:17.520
+In another case a neuron looked like an arbitrary mess, with nothing firing strongly. It turns out it looked for specific signs within pages of health S E O spam, and once we had a sufficiently broad dataset, it was understandable.
+
+00:37:18.170 --> 00:37:35.920
+Across hundreds of cases like these, nothing shook my belief in superposition. It just kept moving. If the strong activations came back clean, superposition would move to the weak ones, or to combinations of neurons, or to the neurons I hadn't looked at yet. Or maybe across layers themselves.
+
+00:37:36.570 --> 00:37:50.545
+But eventually I wondered what was going on. Unless this was some dramatic extended case of selection bias, something wasn't matching the early model organisms. So I went back, the original evidence fell, and that led to this essay.
+
+00:37:51.195 --> 00:38:02.570
+I now think I was making superposition the null hypothesis when it should have been the last hypothesis, since it's the most radical and the least testable. It just looks like things that don't make sense.
+
+00:38:02.570 --> 00:38:20.795
+But that's also what bad tools look like, as with feature visualization reward hacking, or recursive generalization you haven't followed yet, as with the "i y" neuron, or a bad architecture, as with layer five B of Inception V one, or generalization you haven't understood yet, as with cat and car.
+
+00:38:21.445 --> 00:38:26.220
+I think part of what was going on was that superposition just felt right.
+
+00:38:26.220 --> 00:38:43.745
+Anthropic's Softmax Linear Units paper said as much in twenty twenty-two: "In the mechanistic interpretability community, superposition is often treated as the default hypothesis simply because it seems intuitively more compelling than other explanations, but there is little evidence."
+
+00:38:44.395 --> 00:38:50.220
+In the next sentence, the paper says its own results are moderate evidence for superposition.
+
+00:38:50.220 --> 00:39:09.470
+That evidence is circumstantial, in the paper's own word: SoLU suppresses activations spread across many neurons, an extra LayerNorm restores performance, and after the LayerNorm a neuron's weak activations looked less related to its main job, which the paper reads as features being smuggled through small activations.
+
+00:39:09.470 --> 00:39:20.945
+We read it as evidence about distributed representation in an architecture built to suppress it, rather than about neurons packing unrelated things together, which is the sense we care about.
+
+00:39:20.945 --> 00:39:40.920
+Telling the two apart in weak activations is hard even with today's tools, since meaning shifts in every direction at once as activations weaken, and it was harder still in twenty twenty-two, for all of us. The paper also notes that its discussion of superposition has been superseded by Toy Models of Superposition, which we address in the appendix.
+
+00:39:40.920 --> 00:39:53.595
+We bring it up not as a criticism of either paper, but because it's the only place we know of where someone said plainly how little real-world evidence there was, and we think people still often assume there's more than there is.
+
+00:39:54.245 --> 00:40:01.245
+To my knowledge, no one has found a superposition circuit in a real network since my original one, which was an error.
+
+00:40:01.245 --> 00:40:14.495
+I don't see anything like it in real models, despite expecting to, and I think the bar for claiming it should be high, since it's such a radical explanation and would be big news, terrible news, for how we should study neural networks.
+
+00:40:15.145 --> 00:40:27.395
+Of course, this risks the opposite error, an explanation of the gaps: assuming every neuron must have a sensible story. Two things make it less worrying. First, each of the other causes can be tested.
+
+00:40:27.395 --> 00:40:47.220
+A better tool either resolves the neuron or it doesn't; retraining with a better architecture shows whether learning was the problem; and recursive generalization can be watched as it grows, in small steps. Superposition's only symptom is that something doesn't make sense. Second, real explanations tend to be narrow and easily testable.
+
+00:40:47.220 --> 00:41:02.545
+Once you suspect a neuron is a Colorado neuron, steer it and see what it says. If a neuron fires for some narrow TV trope, the set of things that could count as that explanation is tiny, while "something that doesn't make sense" covers everything outside it.
+
+00:41:03.195 --> 00:41:22.045
+Also, we don't have to force an explanation we don't have. If a neuron might do a couple unrelated things and you're not sure, it's fine to say so. I think recursive generalization should be high on the list of things to suspect, and it's easy to check if you have training checkpoints. I now think superposition should be far down the list.
+
+00:41:27.445 --> 00:41:42.170
+Small image models may seem obsolete, but I think they matter a lot to this question because we can see them so clearly. They're also where much of the original worry came from: there we saw what looked like high-resolution chaos, not low-resolution ambiguity.
+
+00:41:42.170 --> 00:41:59.370
+Language models are massive, we don't have tools like feature visualization which make our life easier, attention mixes different kinds of mechanisms together, and many of their motifs are surprising. As I showed above, even vision motifs can be counter-intuitive, and language is worse.
+
+00:41:59.370 --> 00:42:12.445
+Each one of these deficiencies can make a monosemantic neuron look polysemantic. If you're looking at a blurry image trying to figure out if it's a dog or a cat, the blur makes it harder, but it doesn't favor either answer.
+
+00:42:12.445 --> 00:42:31.070
+If you're looking at a blurry image and trying to decide if the image itself is blurry or if you're just looking badly, every flaw in your eyesight gets counted as blur in the image. If we want to study how neurons change with scale, compression pressure, activation strength, and depth, it's better to start where we can see clearly.
+
+00:42:31.720 --> 00:42:47.670
+I trained three ConvNeXt models spanning roughly three hundred times in size: a small one with ninety-two thousand parameters, a medium one with seven point oh six million, the same size as Inception V one, and a large one with twenty-eight point six million.
+
+00:42:47.670 --> 00:42:57.145
+We'll look at those, and also Inception V one, to try to understand what neurons do in different situations, and try to find places packing may form.
+
+00:42:57.795 --> 00:43:18.170
+How I think about neurons. I used to think of neurons as human-shaped nouns: one is a car, another is a curve. Now I think of them more as control flow. A neuron is less about what it sees than about what it does to the flow coming in, and often its job is to gate a region of the network. Seen this way, monosemanticity is almost the wrong question.
+
+00:43:18.170 --> 00:43:22.345
+A better one is what a neuron lets through and what it keeps out.
+
+00:43:22.995 --> 00:43:37.795
+Pixels come in, and the network begins grouping and distinguishing things. Cars and dogs might be grouped together because they share a pose. Further along there are specific car detectors, for taxis, ambulances and the like, and they don't want dogs.
+
+00:43:37.795 --> 00:43:58.545
+So a neuron in front of them acts as a gate: it responds positively to cars and negatively to dogs, and its negative side keeps the dogs out. The dogs go on to their own area, which doesn't have to worry about cars. Later neurons build on this, specializing further: an ambulance neuron might have a taxi on its negative pole, and a taxi an ambulance.
+
+00:43:58.545 --> 00:44:10.845
+In a larger model, these distinctions can become finer still, separating one view of a taxi from another. Smaller models may stop at coarser distinctions, with something closer to a general "car" neuron.
+
+00:44:11.495 --> 00:44:26.695
+Here's a real sports car, followed through the last five blocks of our large model. Partway through, it's grouped with other rectangular shapes, like tables and cabinets, against snakes and dogs. By the last block, the split is convertibles against station wagons.
+
+00:44:27.345 --> 00:44:44.895
+The negative side of neurons matters almost as much as positives for understanding them, even in ReLU networks where the negative side is cut off. A neuron is built from votes: each input weight votes for its positive side or its negative side, and the votes add up before the nonlinearity.
+
+00:44:44.895 --> 00:44:53.295
+The negative side never gets gradient on its own, but the individual votes do whenever the neuron is on, so it's shaped by learning too.
+
+00:44:53.295 --> 00:45:06.420
+The negative side's meaning depends on context: when a neuron in the sports car's path separates it from snakes and dogs, it isn't calling cars and dogs opposites, just gating out things that were usefully grouped earlier.
+
+00:45:06.420 --> 00:45:16.570
+The negative side tells us what distinction matters at this point in the circuit, which also makes it a quick check on whether a grouping is real: the V neuron's negative side is an O.
+
+00:45:17.220 --> 00:45:27.820
+If we look at the last layer, we see high-level patterns and what they're being distinguished from: taxis from ambulances, broccoli from cauliflower, and spoonbills from flamingos.
+
+00:45:28.470 --> 00:45:45.795
+When we look at our smallest model, we see the neurons get coarser. Its last layer ends at cars, trains, and carts in one neuron, with boats, planes, and a water-based ox-cart, which I didn't know even existed, on its negative side. It's still differentiating, but more coarsely, and it ends early.
+
+00:45:46.445 --> 00:45:59.120
+What neurons do under pressure. Early layers in most vision models are monosemantic. As I understood it, the standard explanation is because there's not that many early vision features that need to be represented.
+
+00:45:59.120 --> 00:46:13.295
+On its surface, it's a bit strange that every model, from AlexNet, to ResNets, to Inception V one, to CLIP all have the right ratio of early features to early neurons, since they have such different ratios of dataset to parameter size.
+
+00:46:13.945 --> 00:46:29.270
+One layer we can focus on is three B of Inception V one, the layer with curve neurons and high-low frequency neurons, which are among the most fundamental in my opinion. This model has no residual stream, so there's no way to "flow around" the neurons.
+
+00:46:29.270 --> 00:46:37.620
+So we can test what happens to neurons when there's not enough space by reducing the amount from four hundred eighty to ten and retraining.
+
+00:46:38.270 --> 00:46:51.895
+If it switched to superposition, we should see overlapping mixtures on top of each other, like a curve plus an orange spiral plus spider webs and several other texture detectors. We've crushed it forty-eight times so it should be dramatic!
+
+00:46:52.545 --> 00:47:05.720
+But that's not what we see. The neurons stay interpretable and generalized, but coarser: one "curves and loops" neuron instead of ten curve detectors, two circle neurons instead of several circle types, and so on.
+
+00:47:06.370 --> 00:47:22.670
+We can test curves explicitly to see what happened to them. If they were placed in some high dimensional combination of neurons, we should be able to extract them. So we can train an SAE on this crushed layer and compare them to the originals. We don't see anything like clean curve neurons!
+
+00:47:23.320 --> 00:47:41.220
+The figure here compares the original ten curve detectors, the single squeezed layer, and the best matching sparse autoencoder features. The detectors are narrow and silent at the opposite angle, while the autoencoder features are broad and keep responding at the opposite angle, so they are not clean curve neurons.
+
+00:47:41.220 --> 00:47:45.320
+The detailed table and controls for this experiment are skipped.
+
+00:47:45.970 --> 00:48:05.620
+I think this is a good test of whether we can turn a monosemantic layer I know well superposed. But in some ways it's not ideal, since people mostly suspected superposition in the last layers. So we can take our medium size ConvNeXt, crush the last layer, stop it from routing around the residual stream, and see what it learns.
+
+00:48:05.620 --> 00:48:08.520
+We see the same pattern of it broadening.
+
+00:48:09.170 --> 00:48:15.645
+This is also what we see with the small ConvNeXt, which in some ways is a very similar test.
+
+00:48:16.295 --> 00:48:26.445
+Late circuits. We can also look at circuits in the late layers, to rule out any chance that the last layer is somehow special. We see that it's organized the whole way through.
+
+00:48:27.095 --> 00:48:42.645
+What dictionaries learn. If combinations of neurons were hiding things, a dictionary, for example a sparse autoencoder, should find building blocks the neurons lack. So I trained several on these layers and went looking, myself and with agents. I didn't find any.
+
+00:48:43.295 --> 00:49:00.595
+Mostly, the two looked like what they mechanistically are: the neurons like building blocks, the SAE units like those blocks grouped by context. It was clearest with spiders. The SAE units were spiders in different settings; the neurons were leg patterns and webs. They didn't disagree much.
+
+00:49:01.245 --> 00:49:20.720
+SAEs did help with "what's in this image?" They helped most in the smallest model, whose neurons are coarse. At medium size I slightly preferred them; at large, I think I prefer the neurons. But I care more about understanding the network than about any one image, and I never saw the SAE grasp something fundamental the neurons didn't.
+
+00:49:20.720 --> 00:49:30.770
+If a model at a particular size failed to understand baseball players, so did its SAE. When the model finally understood a baseball player, it was on a neuron.
+
+00:49:31.420 --> 00:49:50.695
+What did the SAE find that didn't already have a clear neuron counterpart? On the last layer, eighty-eight percent of its activity is near-copies of single neurons, and the rest is faint: removing every dictionary direction that matches no neuron leaves accuracy unchanged, and the few answers it flips were already near-ties.
+
+00:49:50.695 --> 00:50:01.445
+Additionally, if you search the rotations of a layer for the one where a handful of units carry the most activity, starting from a random one, you land back on the neurons, in every block.
+
+00:50:01.445 --> 00:50:15.570
+Among the few features strong enough to look at, what the SAE added was loose groupings built from existing neurons, like animals at the water's surface or pale, lumpy food. Nothing we found there looked like a fundamentally new building block.
+
+00:50:16.220 --> 00:50:29.820
+Rare things and memorization. A lot of the worry about hidden features comes from rare things. They seldom collide with anything, and they may not seem worth a neuron of their own. So we looked at rare things every way we could think of.
+
+00:50:29.820 --> 00:50:46.420
+Rare classes are often more consolidated: you need a lot of dog patterns for ImageNet, but only one Triceratops neuron. When I removed weak activations in the last stage, no class stood out. The adversarial examples we traced used normal semantic circuit routes.
+
+00:50:47.070 --> 00:51:05.070
+I looked at the images whose representations in the last layers are furthest from any other image. They end up being entertaining, weird images that the model misreads with ordinary neurons: a hummingbird seen as ice cream, a giant banana seen as a vault, and a guy in a fallen wheelbarrow seen as a lawn mower.
+
+00:51:05.070 --> 00:51:23.620
+I also trained an ImageNet model to map random noise to random labels, and even that was partly semantic: it partially leaned on wool textures and the texture of distant trees, which are high-frequency, a bit like high frequency noise. I didn't fully audit the model, but thought it was interesting that it used them at all.
+
+00:51:23.620 --> 00:51:35.695
+Across all experiments in language and vision, memorization tends to want to sit as close to the output as possible, since all it has to do is look the answer up, and the late layers did most of the work.
+
+00:51:36.345 --> 00:51:46.095
+We can also make a rare route ourselves, by teaching our seven point oh six million parameter model something nonsensical: that a photo of an umbrella is a bee.
+
+00:51:46.095 --> 00:52:04.695
+You could imagine this memorization not relying on anything else: a hidden feature that latches onto this exact set of pixels and says "bee," cut off from the rest of the network because it doesn't need it. That would be pretty bad news, but it's not at all what happens. In nine training steps, the top guess went from umbrella to maypole to bee.
+
+00:52:04.695 --> 00:52:14.495
+The umbrella neurons faded and existing bee neurons came on, nearly all of it in the last three blocks: swap just those into the original model, and it says "bee."
+
+00:52:15.145 --> 00:52:32.395
+This is in comparison to learning some sort of hidden umbrella feature separate from any other normal umbrella or bee route. While this is possible, I think it's slower to learn than assembling related parts that are already activating and have routes to the output, giving it plasticity and gradient.
+
+00:52:32.395 --> 00:52:36.170
+It's also more fragile, and isn't what we see anywhere.
+
+00:52:36.820 --> 00:52:46.120
+Do weak activations matter? When people ask whether weak activations matter, I think there are several questions mixed together, and they have different answers.
+
+00:52:46.770 --> 00:53:04.220
+Are they generalization or superposition? Unsurprisingly, I think it's generalization. Imagine you're a packed, unrelated feature trying not to collide with what's in a main neuron. Weak activations are vastly denser, so you'd be colliding with orders of magnitude more things, for little upside.
+
+00:53:04.870 --> 00:53:19.345
+But maybe you hide in the weak activations of many neurons at once. What we see is that you can ablate almost all the weak activations of the network for almost no cost. The places where removing them costs the most are some of the easiest to understand.
+
+00:53:19.345 --> 00:53:27.995
+In language models, they include the last layer, which is largely used to suppress single tokens, for what we call a "say or just think" motif.
+
+00:53:27.995 --> 00:53:44.995
+In vision models, it's the early layers, which function like dials: the difference between slightly bright and medium bright matters, but for a later detector, like king penguin, low or very low evidence doesn't. So critical common things can't be in the weak activations, since we can remove them.
+
+00:53:45.645 --> 00:54:01.845
+We can also look at what we lose when we cut weak activations. Across several kinds of studies, it's usually fine distinctions between things the neural network is already confused about. And the faint activations that tip them come from the semantically related neurons you'd expect.
+
+00:54:02.495 --> 00:54:07.595
+This leaves rare data and strong but not extremely strong activations.
+
+00:54:08.245 --> 00:54:24.970
+Rare things, as we saw earlier, have grown on related circuits in every experiment we've run, since they aren't strong enough to form niches of their own. The ablation above points the same way: if rare cases lived in the weak activations, cutting them should have broken some answers outright.
+
+00:54:24.970 --> 00:54:29.970
+Instead, every change was small, a near-tie tipping one way or the other.
+
+00:54:30.620 --> 00:54:49.620
+And the strong-but-not-extreme activations we can just look at. In every case I know of, they radiate outward semantically: for CLIP's Trump neuron, photos of Trump, then art and people related to him, then Fox News studios. The further down you go, the easier it is to be fooled by something that seems unrelated but isn't.
+
+00:54:49.620 --> 00:54:56.920
+At minimum, look at the circuits a datapoint flowed through; what fired weakly here may have fired strongly one layer back.
+
+00:54:57.570 --> 00:55:14.545
+Here's every strong firing of five neurons in a language model. The center is each neuron's maximum, as it radiates out it becomes more distantly related. Gray is where it's hard to place, usually these are still connected but require more work to understand, since it's more distant.
+
+00:55:14.545 --> 00:55:20.770
+In the interactive version you can open any one up and see which circuits each activation came from.
+
+00:55:21.420 --> 00:55:40.445
+Percentiles or raw activations? I used to think in percentiles, since they're easy to think in and standardize across neurons. But I've come to think a neuron's raw shape is telling us something. Some neurons hold their meaning far down the range; others drop off a cliff, like the Christmas neuron above at about five percent of its max.
+
+00:55:40.445 --> 00:55:52.270
+Some fire a few times a book, others a few times a page. Percentiles flatten that, and it's often what tells you whether you're looking at a dial, where the middle matters, or a detector, where it mostly doesn't.
+
+00:55:52.920 --> 00:56:08.095
+Percentiles also mess with intuition. The ninety-ninth percentile sounds high, but one token in a hundred is about a quarter of a page, and a neuron for a niche feeling or social context, which are all over language models, shouldn't come up four times a page.
+
+00:56:08.095 --> 00:56:17.595
+Thinking in pages helps: the ninety-nine point ninth percentile is every two or three pages, the ninety-nine point ninety-ninth every twenty-five or thirty.
+
+00:56:18.245 --> 00:56:34.120
+Do you need them to label a neuron? Usually not. After looking at thousands of language model attribution graphs by hand, it's hard to overstate how much neurons are analogizers. If you're talking about voyaging on a boat, the model might judge that a bit Titanic-ish.
+
+00:56:34.120 --> 00:56:50.545
+I don't think it's usually helpful to think of a "naval voyage feature" spread across the weak activations of the Titanic neuron and others. Instead, there's a Titanic-ish mechanism: whenever something is Titanic-ish, it fires, and its weights are votes for Titanic-ish things.
+
+00:56:50.545 --> 00:57:06.795
+So you look at the top activations, see that it's Titanic-ish, and that label usually holds up through the rest of your audits. If you ever really care about a particular activation, you can follow its pathways, ablate the circuits, and keep zooming in to almost arbitrary resolution.
+
+00:57:07.445 --> 00:57:24.470
+My main takeaway: if a weak activation looks unrelated, don't be too worried unless you've looked at it carefully. Of the probably hundreds I've followed by hand, almost all turned out to be related, coming through a reasonable circuit; it just wasn't visually obvious until I traced it.
+
+00:57:25.120 --> 00:57:44.420
+Many were clever, like a Zen koan neuron that fires weakly on recursion in math: many koans turn on the same kind of self-reference, looking for the observer. Others were more distant and ugly, not always the connection I would have drawn, but you could usually follow how it got there. I suspect most, possibly almost all, are like this.
+
+00:57:49.320 --> 00:57:59.745
+This section was done with Curt Tigges, and brings in experiments from our forthcoming technical paper studying language neurons in depth, so I'll use "we" for this section.
+
+00:58:00.395 --> 00:58:20.195
+Language models are so big that it's hard to validate claims about neural mechanisms precisely, but we can check whether the simple story holds there too. We start with a medical diagnostic attribution graph we liked from Anthropic's Circuit Biology paper. They were studying Claude three point five Haiku using crosslayer transcoder features.
+
+00:58:20.195 --> 00:58:24.945
+It turns out the same works with neurons in Qwen three, thirty-two B.
+
+00:58:25.595 --> 00:58:40.070
+Since it's the original model, there's no reconstruction loss and doesn't require any further training to get. Their largest transcoder predicts the same next word as the original only half the time, and their graphs need error nodes for what it misses.
+
+00:58:40.720 --> 00:58:54.045
+The diagnosis hub is just four neurons, and if you remove them the model asks about itching instead. Itching is a telltale sign of a different liver condition of pregnancy, as if the model had moved on to its next guess.
+
+00:58:54.695 --> 00:59:08.245
+We've also added a few other attribution graphs we liked. There's a few other graphs if you'd like to see them. Across thousands I've seen in image models and language models, they're highly readable and ablate the way you'd generally expect.
+
+00:59:08.895 --> 00:59:25.345
+The neuron's negative side matters about as much as its positive. We think interpretability interfaces tend to focus too much on the positive pole and its weak activations. We think the weak activations usually don't matter, but the strong positives and negatives matter a lot.
+
+00:59:25.995 --> 00:59:29.370
+For instance, Santa lives on the negative pole.
+
+00:59:30.020 --> 00:59:49.095
+In the figure's Santa graph, standard top-k automated interpretability labels can look like "capital cities" because they ignore the negative side corresponding to Santa lore. Remove the eight neurons with a Santa negative side and Santa falls from near-certain to six percent, with Qwen blaming the pet instead.
+
+00:59:49.095 --> 00:59:55.995
+Remove the twenty neurons actually labeled Christmas or Santa and it only falls to seventy-six percent.
+
+00:59:56.645 --> 01:00:15.170
+Here's an attribution graph from Kimi K three using only neurons. As far as we know, it's the first published attribution graph of a multiple trillion parameter model. Asked what to do with a wallet it found, it links the wallet, the cash and the owner's ID to lost property and honesty, and answers "return".
+
+01:00:15.170 --> 01:00:23.045
+We haven't begun full audits of this scale yet, and hope to soon, but so far most things have been intuitively interpretable.
+
+01:00:23.695 --> 01:00:41.195
+We might intuitively expect packing with things like bi-grams or names, simply because there's so many of them. What we find is that it's ordinary generalization and composition. Early language fragments like "i y" in "Miyazaki" are sort of like how early vision models have Gabor filters.
+
+01:00:41.845 --> 01:00:57.120
+In the appendix we address Neurons in a Haystack, which thought they may have found superposition in a "social security" direction, but that direction is unused by the network. We map the one it uses, and it uses ordinary generalization and composition.
+
+01:00:57.770 --> 01:01:11.045
+Here are a thousand neuron papers, detailed investigations into individual neurons, chosen randomly, from Qwen three, thirty-two B and a Qwen three point six, thirty-five B mixture-of-experts model.
+
+01:01:11.695 --> 01:01:30.770
+What we see is about ninety percent of neurons having basically one job, with recursive generalization offshoots that are usually related. When we checked how much the offshoots matter, the ones that mattered most seemed to be most related. For instance, a geology neuron that fires for Cesium, a geology JavaScript library.
+
+01:01:30.770 --> 01:01:40.295
+A lot of the remaining ones have two or three. I've never seen a neuron with something like ten unrelated things it does. There's a lot more detail in the other paper.
+
+01:01:40.945 --> 01:01:57.545
+The offshoots don't seem to be particularly important hidden features. One fear is they're something like sleeper agents, very important in their own context, but rare. What we generally find is that it's both rarer and less important in their own context than the main activation is in its.
+
+01:01:58.195 --> 01:02:16.370
+A big source of noise was the double negative SwiGLU. Modern neurons have both a gate and value. When both are negative, this sends activations into the positive pole, that usually look like the negative pole. Usually this "echo" is small, but for about four percent of neurons, it's the whole top of the list.
+
+01:02:16.370 --> 01:02:33.395
+Ablating them across the whole network ups most benchmarks, but lowers some reasoning ones. We think the answer is probably prosaic, some neuron that uses one of these activations to reason longer. But we haven't looked into it deeply. Architecture designers, we think you should look into fixing this!
+
+01:02:34.045 --> 01:02:47.220
+An example shows the problem. A neuron's strongest positive activations, the way a top-k dashboard shows them, are all on the book of Colossians, and the automated label says "references to the book of Colossians".
+
+01:02:47.220 --> 01:03:03.770
+But in every one of those firings the gate is closed, so it's a small sign-flipped leak of the value, under eight percent of the neuron's peak. Separating the leak out, the firings where the gate is actually open are on things like "Speak russian in that case" and Russian words in other scripts.
+
+01:03:03.770 --> 01:03:09.395
+The neuron's real job is the token that completes "Russia" or "Russian," in any script.
+
+01:03:10.045 --> 01:03:27.470
+Looking at SwiGLU neurons in vision models where we understand things better, the value tends to learn broader things, and gate more specific things. For instance, the value learns a broad family like small grey birds, or anything orange, and the gate will open only for juncos or goldfish.
+
+01:03:28.120 --> 01:03:40.620
+Experts are far more specialized than previously reported. Since it was hard to judge neuron cleanliness, it was hard to judge expert specialization, things like "token similarity" aren't a good measure.
+
+01:03:41.270 --> 01:03:54.820
+Like neurons, they get narrower with depth. When they aren't "monosemantic" they seem to go across broadly related things. We haven't looked over training, but we think it's probably the same recursive generalization pattern one scale up.
+
+01:03:54.820 --> 01:04:11.145
+In general, we've started to think of the neural network as being the same kind of organizing principle but at multiple layers, from weights, neurons, experts, and circuits. Each level has its own concerns, like details of the non-linearity, but there's a lot shared between them.
+
+01:04:11.795 --> 01:04:26.070
+It's also interesting to think of experts as an anti-superposition architecture. Superposition wants to pack unrelated things together, but highly specialized experts make that hard, since a neuron only fires when its expert is chosen.
+
+01:04:26.070 --> 01:04:44.270
+A packing-minded expert wouldn't want to be devoted entirely to bosses in RPG board games, and one is; it would want to be ten thousand unrelated things packed together. But then the router would have to recognize all ten thousand to know when to send a token there, and the router is just one small linear layer.
+
+01:04:44.920 --> 01:05:03.545
+Explanations that can lose. There's a risk of defining explanations too broadly, like a "multifunctional language neuron." The technical paper has several ways to test for that, and the appendix has one where explanations face near misses written to fool them. One we found particularly useful is blind maximum.
+
+01:05:03.545 --> 01:05:21.920
+One agent investigates a neuron and writes a short explanation; a second sees only that explanation and writes an example meant to activate it maximally. The result is usually a simple, readable sentence, and it can activate the neuron more strongly than any example we found in ten billion tokens.
+
+01:05:22.570 --> 01:05:41.995
+It's tempting to think of a neuron's activation as just a number, and of blind maximum as a way to make it bigger. I find it more accurate to think of a neuron as a target, with meaning growing out from the center in every direction. Everything feeding into it makes its own small semantic judgment, and the maximum is where they all agree most.
+
+01:05:41.995 --> 01:05:55.170
+So hitting it isn't about a bigger number; it's about landing closer to the center of what the neuron is looking for. Ten billion real tokens had their chance, and a sentence written from the explanation alone got closer.
+
+01:05:55.820 --> 01:06:10.645
+One limit is that a blind maximum tests the neuron's center, not its breadth. If a neuron has several jobs, even related ones, a single blind maximum may only reach one. So we also cluster the attribution flowing into the neuron.
+
+01:06:10.645 --> 01:06:31.545
+For a pet-microchip neuron, this gives bundles of upstream neurons for animal tagging, lost pets and rescue, and microchip and R F I D identification: three directions out from the same center. We then run a blind maximum for each bundle, ablating all the others, and compare it against the strongest corpus example under the same ablation.
+
+01:06:31.545 --> 01:06:45.395
+A bundle that had been packed in rather than grown would show up here as an explanation unrelated to the others that still drives the neuron. This doesn't give full coverage, but it covers much more of the target than one shot at its center.
+
+01:06:46.045 --> 01:07:00.395
+There are also general tests, like predicting activations and circuits from an explanation. To be honest, I trust these only up to a point. "Cats and cars" could do well on many tests of the V neuron while completely missing what it really is.
+
+01:07:00.395 --> 01:07:20.595
+You can break it by noticing it connects to flames, or in many other ways, but they all take creativity and judgment rather than a summary statistic. Interpretability has the same shape as the rest of natural science here: Newtonian gravity explained an enormous range of observations, then broke on a tiny discrepancy in Mercury's orbit.
+
+01:07:20.595 --> 01:07:24.095
+The best criticism is specific to the conjecture.
+
+01:07:28.575 --> 01:07:48.200
+Just as we looked back at early vision model organisms, we can look back at early language models to see why people had a hard time understanding them. One I know better is GPT two X L, the model in the original automated interpretability project I started at OpenAI, where fewer than two percent of its neurons came out clean.
+
+01:07:48.200 --> 01:08:07.950
+We went back and made five hundred neuron papers with almost no iteration. Now about seventy percent look like roughly one thing, some with a residual that looks like recursive generalization. The amount of pristine ones are still low, about five percent. What's left are neurons that do a few broad things, up to about six, mostly two.
+
+01:08:07.950 --> 01:08:27.350
+The scoring isn't identical to the original project. On the activation reconstruction task we used back then we're able to do several multiples better with no iteration, but I no longer think it's a great metric for explanations; see On Simulation Scores in the appendix. There's more detail in our forthcoming technical paper.
+
+01:08:27.350 --> 01:08:34.225
+But in general, smaller models have broader neurons, with more residual generalization than modern models.
+
+01:08:34.875 --> 01:08:51.900
+Something similar may have happened with the neuron in the introduction of Towards Monosemanticity, which several people, and agents, pointed us to when we said neurons might be clean. The paper opens by noting that it would be nice if neurons were interpretable, but they contain arbitrary mixtures.
+
+01:08:51.900 --> 01:09:03.975
+It cites the cat-and-car neuron, along with a neuron from its one-layer language model that fires for "a mixture of academic citations, English dialogue, HTTP requests, and Korean text."
+
+01:09:04.625 --> 01:09:19.525
+I think it may be a "don't say a dot" neuron, a motif we see all over language models. Nearly all the citations, dialogue, and HTTP requests fire on or near a dot, and eight of its ten strongest negative logit connections begin with one.
+
+01:09:19.525 --> 01:09:38.050
+That leaves the Korean examples, which all fire about two-thirds of the way through an unfinished syllable, a reasonable place not to want a dot. Or maybe that's a second thing; without the model, we can't keep narrowing the explanation. Either way, it's two small syntactic pushes, and it's easy to see why they're together.
+
+01:09:38.700 --> 01:09:53.825
+I think this example is useful because it's a famous arbitrary mixture that turns out to sit in the middle ground, at least for now, since we don't have the model to keep checking. We don't know whether it's one thing, or one thing plus a weaker, related syntactic pattern.
+
+01:09:53.825 --> 01:10:05.250
+But either is a much narrower and more hopeful explanation than four unrelated things, and "polysemantic" lumps them all together, even though they're very different levels of interpretability.
+
+01:10:05.900 --> 01:10:24.025
+In twenty twenty-three, during the time of the first automated interpretability project, I thought small simplified models would be the best starting place for interpretability, since there's fewer bells and whistles to think about, and small size means fewer things to study. But now I think it may be the opposite.
+
+01:10:24.025 --> 01:10:40.125
+The bells and whistles are there to help the neural network learn better, like the residual stream Inception V one never had, and by simplifying it's easy to make neurons learn less well. And bigger models tend to have more narrow neurons, so it's more easy to spot patterns and motifs.
+
+01:10:40.125 --> 01:10:55.375
+At least for GPT two, I was often looking at multiple motifs together, neither of which I knew, which made things hard. By adopting the architectures and scale the field wanted anyway, we may have been slouching towards monosemanticity without knowing it.
+
+01:11:01.245 --> 01:11:19.695
+The worry with the residual stream isn't that there are more things we care about than dimensions. It's a continuous version of packing: manifolds woven through each other, accepting some interference in exchange for room to store more. Ruling that out entirely may not be possible. But in practice it hasn't been a bottleneck.
+
+01:11:19.695 --> 01:11:30.820
+We can read what neurons write to the residual stream and what they read from it, attribution graphs come out clean, and we don't see the stream accumulating interference only to undo it later.
+
+01:11:31.470 --> 01:11:41.695
+In vision models, we could also check this by eye. For years I couldn't visualize the residual stream of convolutional networks: every map came out as one big arc.
+
+01:11:41.695 --> 01:11:56.745
+It turned out the network was putting almost all of its activation mass into a single unread dimension, which it can change to scale all the other dimensions that are read through LayerNorm. Once we understood that, removing it was easy, and the maps made sense.
+
+01:11:56.745 --> 01:12:13.320
+The technical details of how it works, or even what it's doing, are less important than the more general pattern throughout this essay: find what the architecture is doing and work with it, rather than fighting the network. It also pointed toward something the field ended up building anyway: attention.
+
+01:12:13.970 --> 01:12:30.220
+We don't know whether language models need a similar fix. When we've visualized their residual streams, it has mostly just worked. Judging whether a whole map of text makes sense is much harder than glancing at a map of images, though, which is why we did most of this work in vision.
+
+01:12:30.220 --> 01:12:47.295
+A single global map may not be the best tool for language models anyway. Whatever the right view turns out to be, whether submanifolds, what neurons read and write, or lens-style readouts, everything we've tried has worked, and we haven't hit a part of the residual stream we couldn't make sense of.
+
+01:12:47.945 --> 01:13:04.920
+We also tried crushing the residual stream itself, much like our layer-crushing experiments. We retrained our seven million parameter medium ConvNeXt with a stream four and eight times narrower, down to just forty-six dimensions in the last block, while keeping all of its neurons.
+
+01:13:04.920 --> 01:13:22.470
+Accuracy fell from seventy-two percent to sixty and thirty-nine percent, but compared with a normal-width model the crushed stream's map looks quite similar, just a bit messier. Nothing looks cleverly interleaved. Neuron reads and writes tell the same story: things get noisier, but what leaks in is the same kind of thing.
+
+01:13:22.470 --> 01:13:28.820
+A dark-bird-on-water neuron also fires on alligators and a swimming retriever, not on clocks.
+
+01:13:29.470 --> 01:13:45.695
+We care more about active bottlenecks to understanding neural networks than about proofs of what the residual stream can or can't contain. If interference isn't showing up in the maps or in what neurons read and write, even when we take away the room, we think we're in a pretty good spot.
+
+01:13:46.345 --> 01:14:05.520
+That leaves the concern that there are more features than dimensions in the residual stream. A stream can hold far more than it has dimensions just by placing things in the right directions, so this alone isn't packing. It mostly matters if you want a big list of all the model's features, and people often go to the stream for exactly that.
+
+01:14:05.520 --> 01:14:15.870
+As we discuss in Zooming Out, we don't think a big list is the right end goal. But if you want one, the directions neurons write to and read from are a good place to start.
+
+01:14:15.870 --> 01:14:33.295
+So are continuous submanifolds, like those the block-sparse featurizers of Fel and colleagues find, which seem especially natural here since the residual stream has no privileged basis. So far all of these have worked well: they find sensible subspaces, and we can follow them across layers.
+
+01:14:33.945 --> 01:14:45.845
+We've looked at language models' residual streams less, but what we've seen fits the same story. For understanding higher-level structure and motifs, nothing in the residual stream has blocked us so far.
+
+01:14:51.595 --> 01:15:06.170
+We've made less progress on attention than on neurons, and it's mostly outside the scope of this essay. To be honest, I'm not sure anyone understands attention well enough to confidently say that illegibility is a superposition in the sense we care about.
+
+01:15:06.170 --> 01:15:17.370
+Distinguishing it from all the other things it could be is hard, and a change in learning principle shouldn't be near the top of the list of hypotheses for why new mechanisms are hard to understand.
+
+01:15:18.020 --> 01:15:22.120
+A lot of attention's value seems to be in the easier parts.
+
+01:15:22.770 --> 01:15:31.495
+We can break down attention into a few questions: where is it looking, what is it looking for, what does it do when it finds it, and why is it doing this.
+
+01:15:32.145 --> 01:15:49.695
+Where it looks is relatively easy. It basically comes for free, and it already tells you a lot. In the preeclampsia graph it does two separate things. First it gathers the facts of the case onto "she," where the model works out the medical question. Then the question's wording decides what to actually say next.
+
+01:15:50.345 --> 01:15:59.995
+We can also understand what it's looking for, and what it does when it finds it, in terms of neurons. We think this gives you a lot of the benefit of what attention is doing.
+
+01:16:00.645 --> 01:16:16.195
+For instance, take the comma after "headache." in the preeclampsia example. Three layer thirty attention heads read directly from the residual stream, but if we follow what is written in those directions, we see a headache neuron, a migraine neuron, and a brain neuron.
+
+01:16:16.195 --> 01:16:29.445
+What they write lands mostly on the preeclampsia neuron at the comma and some neighbors like eclampsia and hypertension. Ablating these heads drops preeclampsia by a quarter. Stopping them from looking at pain and nothing changes.
+
+01:16:30.095 --> 01:16:39.370
+It also works the other way. Some neurons are much easier to see once you can see the attention around them, and some heads only make sense through their neurons.
+
+01:16:40.020 --> 01:16:59.620
+Overall, we don't think attention and neurons are so separable. Understanding where attention is putting information is quite helpful for understanding the neurons that then work with that information. Even simple things like motifs around where information tends to be placed, like the ends of numbers, or on commas, have been helpful.
+
+01:17:00.270 --> 01:17:17.070
+In my experience, seeing which neurons a head reads from, which ones it affects, and where it's looking gives you a lot. One main thing it doesn't give you is a global name for each attention head. It'd be nice to have them, but it hasn't been a big bottleneck on exploring neurons or attribution graphs.
+
+01:17:17.070 --> 01:17:26.595
+After looking at quite a lot of them I guessed that the marginal "explanatory residual" of having global attention head names might be about five percent.
+
+01:17:26.595 --> 01:17:44.595
+Then I had an agent do the same, looking at a hundred attribution graphs without my guess, and it also put it about five percent, split about equally into "position heads" that are relatively easier to name, since they do things like look one token backwards, and everything else, which is of course varied and harder.
+
+01:17:45.245 --> 01:18:02.370
+It's hard to judge the value of knowledge you don't have yet, so these estimates could be pretty far off. But so far even without global attention head labels I think we can go quite far in discovering high level structure and motifs with just local attention flow and global neuron explanations.
+
+01:18:02.370 --> 01:18:17.795
+My low-confidence prediction is that attention heads will turn out to be broad and recursively generalized, like neurons in small models, since there are far fewer of them: a few thousand heads in Qwen three, thirty-two B, against more than a million neurons.
+
+01:18:22.695 --> 01:18:39.095
+When I say neural networks are already clean, I mean something deeper than neuron monosemanticity, although even by that standard, I think things look much better than the field expects. I mean that a network's parts are built to be read, and built upon, by its downstream readers.
+
+01:18:39.095 --> 01:18:56.220
+In this sense, a neural network is almost a fractal of explanations, of coherent, useful groupings: at the macro scale, in its mechanisms, and at the micro scale, where recursive generalization shapes each one. That points to a goal for interpretability: become another reader.
+
+01:18:56.870 --> 01:19:09.345
+The more we read it the way its own readers do, the more interpretable I think it will look. We should be wary of reading it too much like a human, and concluding it's messy just because it doesn't fit our preconceived concepts.
+
+01:19:09.995 --> 01:19:29.845
+I think the reason things end up so organized is partially because it was faster to build that way. Once you have a car area of the neural network with car parts, it's easier to add the marginal car there than to build a second car area somewhere else. I think this is closely related to ideas of circuit racing and gradient starvation.
+
+01:19:30.495 --> 01:19:47.745
+We normally consider interpretable and monosemantic to be nearly synonyms. I think this is partly because these ideas grew out of a model organism, Inception V one, that was almost bimodal. Early layers were interpretable and monosemantic, late ones seemed like arbitrary mayhem.
+
+01:19:47.745 --> 01:19:56.195
+But what we see in language models is somewhere in the middle, with most neurons meaning mostly one thing, some meaning a few. How bad is that?
+
+01:19:56.845 --> 01:20:08.870
+There are two broad styles of interpretability. One we can call enumerative interpretability. The goal is to have a big list of features to audit, to make sure we haven't missed some meaningful pattern.
+
+01:20:08.870 --> 01:20:19.620
+A big concern within this view is avoiding the curse of dimensionality, or a combinatorial explosion of items connected to other items, where each one means more than one thing.
+
+01:20:20.270 --> 01:20:37.695
+Another style we can call exploratory interpretability. It starts with questions. It can explore any part of the neural network, zooming in and out fluidly like Google Maps across attribution graphs, and mechanisms like neurons or attention heads. We pick up more questions along the way.
+
+01:20:37.695 --> 01:20:52.195
+The mechanisms like neurons are a good place to start, but it's not about neurons being some final solution to everything, though I do think it's closer to that than most people realize. This approach is far more resilient to polysemanticity.
+
+01:20:52.195 --> 01:21:01.470
+It is also broadly fine ignoring lots of the neural network, in the same way someone studying a city would ignore areas irrelevant to their analysis.
+
+01:21:02.120 --> 01:21:21.420
+I think exploratory approaches will be more fruitful. My sense is that the field is moving in this direction already, but I'm not sure it has been written down clearly. This view has a couple implications. Questions like "are there more features than dimensions?" are mostly irrelevant. We don't have to define features, which is famously difficult.
+
+01:21:21.420 --> 01:21:32.570
+We can focus mostly on mechanisms like neurons and attention heads which are part of the model, data flowing through it, and then groups of both and motifs that recur across all of this.
+
+01:21:33.220 --> 01:21:39.145
+The big feature list was always a means to an end. There may be other paths that don't require them.
+
+01:21:39.795 --> 01:21:42.945
+Motifs over monosemanticity.
+
+01:21:42.945 --> 01:22:04.120
+If I could push a button and make every neuron perfectly monosemantic, or instead understand the circuit motifs behind a few questions I care about, such as the right way to ask about an agent's psychology, how circuits connect to the persona selection model, how an agent thinks about its goals and the boundary between itself and others, I'd take the motifs in a minute.
+
+01:22:04.770 --> 01:22:19.870
+Imagine an interpretability researcher arriving from a hundred years in the future, who knows not just the answers to our questions but which questions we should have been asking. What would they tell us? I can't know, but I've been in a small version of their position once.
+
+01:22:19.870 --> 01:22:27.220
+I now feel like I mostly understand a vision model, which makes me something like a future researcher to myself eight years ago.
+
+01:22:27.870 --> 01:22:43.820
+Here's what I'd tell myself then. Pay attention to the giant pose circuit right in front of you. Think of negative poles as gates in a circuit, not a neuron's opposite. Feature visualization reward hacks in late layers, so some of the mess there is the tool's, not the network's.
+
+01:22:43.820 --> 01:22:57.470
+The last layer is messy partly because of a bad architecture; that's a sign, so don't paper over it. And whenever you see polysemanticity, look harder. The noise that stands out usually points to an explanation you don't have yet.
+
+01:22:58.120 --> 01:23:09.045
+Almost none of this is a list of features. Short of handing my past self this advice, the best thing I could give is the original neurons and circuits, with a note to look harder at them.
+
+01:23:09.695 --> 01:23:26.545
+This is why the difference between recursive generalization and superposition matters so much. Following the noise only works if the noise has something to teach. A grouping that grew from generalization does. A grouping of things packed together because they don't belong together would teach almost nothing.
+
+01:23:27.195 --> 01:23:42.545
+So my best guess of the future researcher's advice would look somewhat similar. They might hand us a set of motifs that look obvious to them but not to us. But short of that, they'd say keep looking at the original neural network. Don't fracture it too much. Learn how to see it.
+
+01:23:42.545 --> 01:23:59.120
+It's a bit like The Hitchhiker's Guide to the Galaxy, where the answer, forty-two, is known, and the search is for the question. The network is the answer, and interpretability is largely the search for the right question. It's hard to find a better guide to that question than the network itself.
+
+01:23:59.120 --> 01:24:03.320
+That's the deeper sense in which I mean the network is already clean.
+
+01:24:03.970 --> 01:24:23.095
+A city versus a knot. A bigger system isn't necessarily harder to navigate. In a small town, asking for the financial district barely makes sense. Whatever exists is scattered: a bank on one street, an insurance office on another, maybe an accountant with a home office. In New York, you could find it on a map in a minute.
+
+01:24:23.095 --> 01:24:37.295
+We saw a small version of this in our ConvNeXts: agents found labeled dog-ear neurons faster in the larger models, where pale, wavy, and head-side ear neurons all feed one hanging-ears neuron, a natural place to start.
+
+01:24:37.945 --> 01:24:54.045
+Interpretability will need better maps. I advocate for tethered abstraction: views that let us zoom out while keeping the larger patterns connected to the neurons and circuits that support them. Our ConvNeXt atlas, inspired by Activation Atlas, is one example.
+
+01:24:54.045 --> 01:25:11.745
+Start at the model's decision for a killer whale, check a key neuron against its real images, and zoom back out. The family turns out to be three separate routes: one for whales, one for sharks and rays, and one for fish held up by anglers. A map doesn't need to be visual, though, and no single map is the point.
+
+01:25:11.745 --> 01:25:19.495
+There should be many maps and many agents, all working toward explanations that stay tethered to individual neurons and circuits.
+
+01:25:20.145 --> 01:25:39.320
+Of course, even if the map is understandable, that doesn't mean you've understood it. We still have to do the ordinary science of conjecture and criticism: guess what something is, try to break the guess, and keep what survives. The network is strange, but its strangeness repeats, so a guess that survives scrutiny often pays off many times over.
+
+01:25:39.970 --> 01:26:00.145
+We should worry both about imposing our own ideas too strongly, and fracturing the network. Imagine arriving in Tokyo knowing New York well. "Where's the Brooklyn of Tokyo?" could be a useful starting question. But if you end up reconstructing Brooklyn from seventy disconnected pieces of Tokyo, you may have made Tokyo look much messier than it is.
+
+01:26:00.145 --> 01:26:14.545
+That's a bit like what happened with the V neuron. Through our categories it was cats and cars, and it looked like a mess; it was a V the whole time. An SAE trained on the layer fractures it the same way, splitting the V into a car feature and a cat feature.
+
+01:26:14.545 --> 01:26:31.770
+I'm not against sparse dictionaries in general, but here, it takes us further from what the neuron does. Probes push the first risk further: they can only answer a question we already had, so they can't teach us which questions to ask. To understand the city, you eventually have to learn its own organization.
+
+01:26:32.420 --> 01:26:48.770
+Higher-level structures like probes and sparse dictionaries can still be useful, but they belong at the end, not the start. Everything of this kind I've run breaks down into highly interpretable neurons, as do the changes training makes, including on-policy self-distillation.
+
+01:26:48.770 --> 01:27:05.645
+The neurons cover the abstractions and the data covers the particular cases, so what's left in between is smaller than people expect, and I'd study it the same way: with a general scientific agent moving between the neurons, data, and groups of both, not a fixed optimization.
+
+01:27:05.645 --> 01:27:16.045
+As Anthropic's Joshua Batson put it when he read a draft, those missing pieces "will fit into the initial puzzle, rather than being totally randomly splayed on top."
+
+01:27:16.695 --> 01:27:34.845
+Solving interpretability may share something with achieving A G I: the goalposts move as you get closer. There's always another weak activation to point to. In Curve Detectors, we wrote forty pages of experiments on ten neurons precisely to identify at least one sure case of a monosemanticity.
+
+01:27:34.845 --> 01:27:50.895
+Years later, some researchers told me they still doubted any of the examples were monosemantic. We might have missed something, they said, and no one knows how to produce a formal proof. By that standard, it's overclaiming to say even a single monosemantic neuron exists.
+
+01:27:51.545 --> 01:28:07.795
+Behind doubts about small errors in neurons is a fear that safety will come down to some activation we missed, the place where deception hides. The risk I worry about is different: like being in a well-organized city and not knowing how to think about it, because we aren't native to it.
+
+01:28:07.795 --> 01:28:24.770
+Every error discussed in this essay was something hiding in plain sight that we didn't know how to read, or that our tools read incorrectly. None was a hidden activation we missed. Deception might hide from someone reading a model's outputs, but it has no reason to hide from the model's own circuitry.
+
+01:28:24.770 --> 01:28:36.195
+It needs to be accessible to its readers, and if we become a reader, it should be accessible to us too. My fear is that deception will be right there, in plain sight, and we won't know how to read it.
+
+01:28:36.845 --> 01:28:55.020
+Over time, my approach to individual mechanisms has become less focused on this kind of proof, and more holistic. Instead of trying to nail every detail of one neuron, I look around it: what flows into it, what it feeds, how attention moves information to and from it, and what it looks like zoomed in and zoomed out.
+
+01:28:55.020 --> 01:29:12.620
+When I worked on automated interpretability, a neuron firing a few tokens away from its main topic seemed like a big problem. But over time it was clear that attention moves things to reliable places, which then have neurons that activate near the "appropriate token" rather than on it.
+
+01:29:12.620 --> 01:29:28.445
+That's how understanding has felt to me: less like clearing a bar for each piece and more like a fog-of-war map filling in at several levels at once. Attribution graphs help explain neurons, neurons help explain attention, and attention explains neurons in turn.
+
+01:29:29.095 --> 01:29:48.970
+Neural networks rarely get stuck during training, since in a high dimensional space there's almost always a way downhill. In my experience, clearing the fog of war works the same way. There's always another experiment to run, another explanation to narrow, another attribution graph to check, another neuron to watch grow over training.
+
+01:29:49.620 --> 01:30:08.270
+This is why I've focused on whether there's any level of abstraction where things break down, where you stop being able to learn anything and have to take the network apart into something else. I haven't found one. And when each new motif clears fog in many places at once, perfecting a single neuron probably isn't the best use of effort.
+
+01:30:08.270 --> 01:30:21.795
+There's a kind of faith in it: you note something strange, and over time it usually fills in. It isn't faith all the way down, since almost any explanation can eventually be tested. Just faith that something strange is a good pointer.
+
+01:30:21.795 --> 01:30:40.445
+The V in the car and cat neuron isn't hard to see, it took me about five seconds, and most people I've shown the image grid to and say "what's the shared pattern here" see it too, but it took believing that the neuron had found something real. For years I've heard this neuron come up in almost every discussion of polysemanticity.
+
+01:30:40.445 --> 01:30:53.570
+It was almost always described in reference to neural networks being almost invalid objects of direct natural science. That's what I was saying too, until I looked more closely. It didn't take a lot of faith, but it took a little.
+
+01:30:54.220 --> 01:31:07.170
+The little faith is important because the mistakes aren't symmetric. If you assume a network is clean and you're wrong, a messy neuron is a lead: you investigate it, and over time normal science sharpens your explanation.
+
+01:31:07.170 --> 01:31:20.695
+If you assume it's packed, not worth studying directly, and you're wrong, a messy neuron is the end, because you stop studying it. I made that second assumption for years, and it explained away the evidence that would have overturned it.
+
+01:31:20.695 --> 01:31:33.545
+I could have improved my tools, watched the mixtures keep dissolving, and built up a prior that the neurons could be trusted. Instead, I spent most of a decade figuring out how to look at a model rather than looking at it.
+
+01:31:34.195 --> 01:31:47.045
+For the medium ConvNeXt, the map is mostly filled in. Eight years ago, I would have called that a reasonable solution to interpretability for that model. I can investigate most questions I have about it.
+
+01:31:47.045 --> 01:31:57.620
+Getting there took many small things and a handful of motifs, plus architecture changes the field made anyway, but no interpretability-specific fixing of the network at all.
+
+01:31:58.270 --> 01:32:14.345
+My guess is that frontier networks are where those vision models were eight years ago: legible, but waiting on many small fixes. If we learn to see them properly, follow the noise, and test explanations through many lenses, I think we'll get there too. We may not have years to do it.
+
+01:32:14.345 --> 01:32:32.320
+But we've always had the best laboratory in natural science: every neuron can be read, every intervention made, every experiment rerun on an identical copy. What we did not always have is many automated scientists to work in it, far faster and in far greater numbers than we can. Now we do.
+
+01:32:32.320 --> 01:32:39.245
+They may be able to do in months in frontier language models what took humans most of a decade for vision models.
+
+01:32:39.895 --> 01:32:57.570
+I think the simple story from introductory textbooks is basically right: neurons generalize, work together, and build abstractions over layers. Somewhere along the way we overcomplicated that picture, but looking harder brought it back. If the network isn't a knot, untangling it can make it look like one.
+
+01:32:58.220 --> 01:33:16.895
+What a solution might look like. We usually imagine ambitious interpretability as an incredibly hard problem, maybe too hard to solve in time to matter. What if it isn't? The network is enormous, but it may already have done almost all the work of preparing itself to be understood, not for us, but for its own readers.
+
+01:33:16.895 --> 01:33:20.695
+If we can become another reader, it's ready for us too.
+
+01:33:21.345 --> 01:33:36.745
+The solution might look like a laboratory run by automated scientists who watch the network through training and inference. Each step is simple, labeling neurons, finding motifs and testing them, following data through circuits, and the pieces already exist.
+
+01:33:36.745 --> 01:33:45.545
+Capable agents were built for other work, and modern architectures were chosen because they learn well. Both happen to serve interpretability.
+
+01:33:46.195 --> 01:33:49.845
+So maybe all we have to do is plug one into the other.
+
+01:33:50.495 --> 01:34:01.920
+Alignment is supposed to be hard too, and it may well be. But the usual arguments assume we can't see inside models. We assume we get one training setup, and it has to be right in advance.
+
+01:34:01.920 --> 01:34:18.445
+If we can read and understand the system, maybe we can make simple, careful changes instead, like removing an R L environment that turns out to be toxic, without pushing gradients through the very tools we use to see. Each fix might be simple too. There might just be a lot of them.
+
+01:34:19.095 --> 01:34:25.595
+This is the history of deep learning. It may also be the history of understanding and aligning what it builds.
+
+01:34:26.245 --> 01:34:36.120
+The essay continues with an appendix of further experiments, definitions, and notes, followed by acknowledgments, prior work, and references. Those were skipped here.

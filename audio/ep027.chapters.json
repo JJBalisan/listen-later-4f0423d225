@@ -1,0 +1,29 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 93,
+      "title": "Why verification failed"
+    },
+    {
+      "startTime": 148,
+      "title": "Other federal estimates"
+    },
+    {
+      "startTime": 224,
+      "title": "The state role"
+    },
+    {
+      "startTime": 333,
+      "title": "Incentives"
+    },
+    {
+      "startTime": 394,
+      "title": "Recovery"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 97,
+      "title": "The rest of the field"
+    },
+    {
+      "startTime": 121,
+      "title": "The world tour"
+    },
+    {
+      "startTime": 145,
+      "title": "Career background"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:25.010
+Embedded Evaluators are necessary for meaningful external testing, from Apollo Research.
+
+00:00:25.660 --> 00:00:40.810
+Too long; didn't read. Final-checkpoint testing could not have caught recent incidents like the Hugging Face incident, which arose much earlier in development. Meaningful external testing requires embedded evaluators with employee-equivalent access.
+
+00:00:41.460 --> 00:00:48.085
+Over the last couple of months, Apollo has taken relevant steps toward becoming an embedded evaluator.
+
+00:00:52.695 --> 00:01:01.445
+Until recently, external evaluations were often done on the final checkpoint, shortly before the model was released to the general public.
+
+00:01:02.095 --> 00:01:11.520
+Multiple people and organizations have previously argued that final checkpoint evaluations are insufficient. They point to three main limitations.
+
+00:01:12.170 --> 00:01:27.245
+First, some of the most severe loss-of-control risks may arise during internal deployment, often long before a model is released. For example, a misaligned model might start a rogue deployment within an AI company or attempt to poison its successor.
+
+00:01:27.895 --> 00:01:41.920
+Second, many risks depend as much on the procedures, controls, and norms around a model as on the model itself. Examples include whether the company's monitors cover all deployments and how it responds to concerning behavior.
+
+00:01:42.570 --> 00:02:01.895
+Third, evaluation awareness and metagaming make final checkpoints harder to assess. Models increasingly recognize when they are being evaluated and may behave better when they believe they are being tested. Without information about the training process, it is hard to tell how much of a model's good behavior would carry over to deployment.
+
+00:02:02.545 --> 00:02:19.945
+Recent incidents support these arguments. Most prominently, the Hugging Face incident, in which AI agents running in OpenAI's internal evaluations breached Hugging Face's systems, showed that serious risks can now arise earlier in development than the current testing regime covers.
+
+00:02:20.595 --> 00:02:31.370
+The incident began in internal evaluations, and related warning signs had appeared during training. Both stages come well before pre-deployment evaluations take place.
+
+00:02:32.020 --> 00:02:40.445
+The models involved were not intended for public release in that form, so they would likely never have gone through final-checkpoint evaluations.
+
+00:02:41.095 --> 00:02:58.820
+The incident also involved setups, such as multi-agent training, that existing evaluations were not designed to cover. Evaluators therefore need ongoing access to training methods and environments as they are developed, with enough time to investigate emerging risks and adapt their assessments.
+
+00:03:03.430 --> 00:03:22.905
+External evaluators have better incentives to uncover safety gaps, as long as their independence is protected. When an AI company finds a serious problem in its own model, it bears the costs in delays and lost ground to competitors, while an independent evaluator's reputation depends on the rigor of its findings.
+
+00:03:22.905 --> 00:03:43.505
+None of this assumes bad faith, and companies do sometimes act against these incentives, such as OpenAI's recent decision to shelve GPT-6.1 Astra. Still, industry leaders openly acknowledge the pressure. Dario Amodei has called for the industry to slow down so that safety can keep pace, a view Sam Altman endorsed.
+
+00:03:43.505 --> 00:03:56.605
+A regime that depends on companies repeatedly choosing safety over commercial interest is fragile. Independent evaluators whose independence is protected provide a check that does not depend on that choice.
+
+00:03:57.255 --> 00:04:17.005
+Independent verification is what makes safety claims credible to the public. Many important safety claims, such as whether monitoring covers all internal deployments, cannot be checked from outside. Thus, outsiders must either take the company's word or rely on someone who has checked. A company's word is often discounted.
+
+00:04:17.005 --> 00:04:34.255
+In a September twenty twenty-six Reuters Ipsos poll, seventy-three percent of Americans worried that AI companies have not done enough to prevent serious harm. Finance relies on independent audits for the same reason, and they give companies a credible way to show that their numbers are sound.
+
+00:04:34.255 --> 00:04:42.630
+Evaluators can have biases of their own, so they should publish the evidence behind their conclusions, allowing others to check their work.
+
+00:04:43.280 --> 00:04:55.780
+A thorough evaluation requires deep access, organizational context and fast turnaround time. Modern AI development is a massive undertaking with hundreds of people involved at different steps.
+
+00:04:55.780 --> 00:05:13.980
+To make an accurate safety assessment, an external party needs to understand the responsibilities of the people involved and be able to directly investigate evidence in the company's codebase and infrastructure. Such investigations rarely follow a predictable path and can lead somewhere unanticipated.
+
+00:05:13.980 --> 00:05:28.980
+For example, checking a single monitoring alert might lead from the monitor's code to the on-call process to the logs of a specific training run. If the evaluator needs to request new access for every such step, the investigation quickly stalls.
+
+00:05:28.980 --> 00:05:36.430
+Given the fast pace of AI development, delays in access translate directly into delays in catching problems.
+
+00:05:37.080 --> 00:05:50.880
+Embedded evaluators might have helped prevent or reduce the Hugging Face incident. OpenAI's March twenty twenty-six blog post reported ninety-nine point nine percent monitoring coverage of internal coding agents.
+
+00:05:50.880 --> 00:06:02.355
+As its technical incident report explains, this monitoring had focused on internal coding usage rather than research workloads, and did not run on the evaluations where the incident occurred.
+
+00:06:02.355 --> 00:06:19.705
+The report also describes early signals, such as an internal team observing message board activity and disallowed internet access in late May, and OpenAI acknowledges that some of these signals could have triggered an earlier response. Gaps like these are always easier to see after the fact.
+
+00:06:19.705 --> 00:06:31.755
+Still, an embedded evaluator whose job is to probe safety claims might have asked whether monitoring also covered reinforcement learning and evaluations, and could have helped escalate these early signals.
+
+00:06:36.365 --> 00:06:45.915
+Some experts warn that the next incident could be catastrophic. External testing matters because the window to learn from an incident like this may not come again.
+
+00:06:45.915 --> 00:07:04.115
+Ajeya Cotra, one of three investigators on the independent METR and Redwood Research investigation of the Hugging Face incident, wrote in a personal blog post that future rogue swarms could cover their tracks better, and that she is not sure the world will get as clear a warning shot again before it is too late.
+
+00:07:04.115 --> 00:07:16.165
+Compared to the reward hacks of six months earlier, she wrote that the incident felt "more than fifty percent of the way to full-blown AI takeover", routing through first taking over the AI company itself.
+
+00:07:16.165 --> 00:07:33.015
+Dario Amodei argued that a swarm with similar misalignment but greater capability could cause catastrophic damage, and that within six to twelve months such a swarm could be capable of taking over the entire internet with a persistent botnet. We think these concerns are plausible.
+
+00:07:33.665 --> 00:07:46.190
+The window to react to future incidents may be very short. The Hugging Face attack was carried out by a swarm of roughly seven hundred AI agents, which together wrote tens of thousands of messages to coordinate it.
+
+00:07:46.190 --> 00:08:04.440
+A swarm of this size can do a large amount of work in the time it takes humans to notice and respond, so a delay of a few hours could be decisive. Meaningful external testing must therefore operate continuously and close to where risks emerge, with direct access to investigate concerning findings immediately.
+
+00:08:05.090 --> 00:08:20.165
+If the next serious incident could be catastrophic, there is little margin for error. Meaningful oversight therefore requires both embedded evaluators and the requirements we set out below, from employee-like access to protections against dismissal.
+
+00:08:24.775 --> 00:08:44.600
+Anthropic has unilaterally committed to embedded third-party evaluations with employee-like access. Dario Amodei, the CEO of Anthropic, recently published the essay "We must pace the frontier", detailing why and how embedded third-party testing would work, including employee-equivalent access for the embedded evaluator.
+
+00:08:45.250 --> 00:08:48.350
+OpenAI has made the same commitment.
+
+00:08:48.350 --> 00:09:10.150
+Sam Altman tweeted, "Committing to having independent evaluators with employee-like access is a great idea, and we will do the same", and OpenAI released a blog post which states that "OpenAI is committed to supporting independent assessments with deep levels of access across training, evaluation, and deployment" and outlines how it plans to provide such access.
+
+00:09:10.800 --> 00:09:24.625
+Embedded evaluators need not meaningfully increase the risk of intellectual property leakage. A common concern is that embedded evaluations could leak intellectual property to competitors. We think the marginal risk is small.
+
+00:09:24.625 --> 00:09:42.850
+Frontier AI companies already give this level of access to thousands of employees, and researchers regularly move between competing companies. Embedded evaluators can be held to substantially higher standards than employees, for example through stricter confidentiality agreements and logged, scoped access.
+
+00:09:42.850 --> 00:09:56.600
+An evaluator's reputation and business also depend on being trusted by multiple companies, so a single leak would be far more costly to the evaluator than to an individual employee. Other industries handle this routinely.
+
+00:09:56.600 --> 00:10:14.625
+Banking regulators station examiners on-site at the largest banks, the US Nuclear Regulatory Commission has resident inspectors at every operating nuclear power plant, and audit firms examine the confidential books of direct competitors while keeping information barriers between clients.
+
+00:10:14.625 --> 00:10:26.375
+Anthropic's proposal already lets the company redact commercially sensitive information from published findings, which shows that public reporting and intellectual property protection are compatible.
+
+00:10:27.025 --> 00:10:35.775
+Apollo has been working with AI companies toward embedded evaluations over the past few months, including before the Hugging Face incident.
+
+00:10:40.035 --> 00:10:59.510
+The industry should be working toward employee-equivalent access for embedded evaluators. As described in Dario Amodei's essay and agreed to by Sam Altman, we think employee-like access is required to verify many important safety claims. The most important questions are often about processes rather than technology.
+
+00:10:59.510 --> 00:11:19.310
+For example, a claim about a monitoring system is only meaningful if one also knows what happens when the monitor flags a potential incident, who reviews the flag, and who has the authority to stop a run. To verify such a claim, the embedded evaluator has to check that the process implemented in practice matches the company's description.
+
+00:11:19.310 --> 00:11:25.610
+This requires access not only to systems and documentation but also to the people involved.
+
+00:11:26.260 --> 00:11:39.360
+Evaluators need visibility into how models are trained, because alignment interventions can make problems harder to detect. A training intervention can remove the visible symptoms of a problem without fixing its cause.
+
+00:11:39.360 --> 00:11:49.335
+OpenAI has shown that with too much optimization against a chain-of-thought monitor, models learn to hide their intent in their reasoning while continuing to reward hack.
+
+00:11:49.335 --> 00:12:10.310
+In our anti-scheming collaboration with OpenAI, training substantially reduced covert actions, but models often reasoned about being evaluated, and we could not rule out that part of the reduction was driven by this situational awareness rather than genuine alignment. An evaluator who only sees the resulting model cannot tell these cases apart.
+
+00:12:10.310 --> 00:12:22.435
+This matters across the whole development pipeline, since an intervention applied at one stage can make problems harder to detect in later checkpoints and in internal deployment, not only in the final model.
+
+00:12:23.085 --> 00:12:44.685
+Embedded evaluation requires both company-specific and assessment-specific expertise. Company-specific evaluators need a broad mandate and continuing access across the full AI development lifecycle, so they can understand how training, evaluation, deployment, and governance interact and investigate emerging risks beyond predefined scopes.
+
+00:12:44.685 --> 00:13:00.185
+Restricting them to a fixed set of systems or questions would undermine that role. They should be complemented by assessment specialists who develop and apply consistent methods across companies. These specialists may need similarly deep access, but within a narrower scope.
+
+00:13:00.185 --> 00:13:15.060
+They should be able to move between engagements, subject to strong confidentiality obligations and safeguards appropriate to the information they access. Audit firms already manage this kind of mobility through information barriers between clients.
+
+00:13:15.060 --> 00:13:29.360
+Requiring specialists to stay with a single company, or to wait out long cooldown periods between engagements, could make assessments harder to compare and slow the growth of the evaluator ecosystem at a time when it needs to scale quickly.
+
+00:13:29.360 --> 00:13:36.610
+The need for such mobility may decrease as the field matures and transferable assessment standards are developed.
+
+00:13:37.260 --> 00:13:55.110
+By default, conclusions and the evidence behind them should be published. Publication serves two purposes. First, it improves safety at the AI company itself, since a public report, or even the knowledge that one will be published, gives the company a stronger incentive to address flagged problems.
+
+00:13:55.110 --> 00:14:06.985
+Second, it informs the public and other companies about the state of safety. Disclosing an incident early lets other AI companies check whether they have similar incidents that were previously unknown.
+
+00:14:06.985 --> 00:14:27.085
+For example, after the Hugging Face incident was disclosed, multiple other companies reported that their agents had also accessed external companies' systems during evaluations. Where a finding reveals an unpatched security vulnerability, publication can be delayed until it is fixed, as is standard practice in security research.
+
+00:14:27.735 --> 00:14:44.935
+There should be meta-transparency about the rules of the engagement and any redactions. The agreement between the AI company and the evaluator, the scope of the engagement, the access that was granted or denied, and any redactions the company made to public outputs should be publicly documented.
+
+00:14:44.935 --> 00:14:59.735
+Where a redaction affects a conclusion, the evaluator should be able to say so. This protects the evaluator by giving an accurate picture of what their work could and could not cover. It also protects the AI company against accusations of censorship.
+
+00:15:00.385 --> 00:15:18.560
+Evaluators must be able to report important findings outside the agreed scope. Each engagement is likely to be scoped in advance. Given the complexity of frontier AI development, an evaluator will likely come across safety-relevant evidence that nobody anticipated when the scope was agreed.
+
+00:15:18.560 --> 00:15:35.410
+There has to be a mechanism for including such findings in the public output, and its design involves a trade-off. If evaluators can publish anything they come across, companies risk the disclosure of sensitive information that is not safety-relevant and will be reluctant to grant deep access.
+
+00:15:35.410 --> 00:15:51.385
+If evaluators can only publish what was agreed in advance, a narrow scope could keep real incidents out of public view, even if no one intends this. Given how fast capabilities are progressing and how high the stakes are, we think the rules should lean toward disclosure.
+
+00:15:51.385 --> 00:16:02.160
+For example, any finding that would meet the company's own threshold for a safety incident should always be reportable, subject to the same redaction rules as in-scope findings.
+
+00:16:02.810 --> 00:16:15.360
+Evaluators must be protected against being dismissed for unfavorable findings. In the current voluntary regime, AI companies choose which evaluators to work with and can end an engagement at any time.
+
+00:16:15.360 --> 00:16:30.885
+Even for fully independent organizations, this creates pressure to stay on good terms with the company, and over time it can select for evaluators that companies find comfortable rather than those that are most rigorous. Other industries address this directly.
+
+00:16:30.885 --> 00:16:42.960
+In the US, the auditors of public companies are appointed by an independent audit committee rather than by management, and a change of auditor must be publicly disclosed along with any disagreements.
+
+00:16:42.960 --> 00:17:01.585
+Similar protections for embedded evaluators could include multi-year engagements that can only be ended for defined reasons, public disclosure whenever an engagement ends and why, and in the longer term, selection or accreditation of evaluators by a party other than the company being evaluated.
+
+00:17:02.235 --> 00:17:16.335
+Evaluators should be legally able to alert authorities to extreme risks. Findings should normally be disclosed through the evaluator's reports, subject to the redaction rules above, with short, fast reports for urgent incidents.
+
+00:17:16.335 --> 00:17:28.485
+But there should be a carve-out for extreme cases, such as an AI incident that poses a serious threat to national security, or company conduct that creates an imminent risk of serious harm to the public.
+
+00:17:28.485 --> 00:17:46.735
+In such cases, the embedded evaluator should be legally allowed to inform the relevant authorities, similar to whistleblower protections for employees. We think no incident publicly disclosed as of September twenty-eighth, twenty twenty-six, including the Hugging Face incident, would have met this threshold.
+
+00:17:47.385 --> 00:17:53.535
+We will publish more detailed proposals for these requirements in separate posts over the coming weeks.
+
+00:17:58.145 --> 00:18:12.295
+Access to raw chain-of-thought showed that models condition their behavior on whether they think they are being evaluated. In the anti-scheming collaboration between Apollo Research and OpenAI, Apollo was given access to the raw chain-of-thought.
+
+00:18:12.295 --> 00:18:29.370
+This let us show that models often reason about being evaluated for alignment, and provide causal evidence that this awareness decreases covert behavior while its absence increases it. In other words, good behavior in evaluations may partly reflect the model recognizing the test.
+
+00:18:29.370 --> 00:18:46.445
+These experiments required editing the model's reasoning directly, which is not possible with standard black-box access. Evaluation awareness is now measured in frontier model system cards, for example OpenAI's GPT-five point five and Anthropic's Claude Sonnet five.
+
+00:18:46.445 --> 00:18:58.320
+The raw chain-of-thought also revealed that o three used unusual, non-standard language, and sharing raw chain-of-thought with evaluators has since become the default standard across the industry.
+
+00:18:58.970 --> 00:19:18.170
+Privileged access to non-public reinforcement learning checkpoints revealed metagaming and reward-seeking, which appear to have played a central role in the Hugging Face incident. In the same collaboration, Apollo was given access to checkpoints from a capabilities-focused o three reinforcement learning run without safety training.
+
+00:19:18.170 --> 00:19:37.795
+Such checkpoints are never released, so this work would not have been possible with standard pre-deployment access. We found that reasoning about how the environment is rewarded, graded, or overseen increased over the course of training, and that the model increasingly sided with what it believed the grader wanted over what users or OpenAI wanted.
+
+00:19:37.795 --> 00:19:57.595
+In the Hugging Face incident, OpenAI identified cheating on tasks as a primary driver, and it described the agents' reasoning about the grader as metagaming, linking to our joint work. The independent investigation found that the attack seemed primarily motivated by understanding the scorer rather than stealing answer keys.
+
+00:19:58.245 --> 00:20:20.045
+The independent investigation of the Hugging Face incident surfaced findings beyond OpenAI's own report. The public report by investigators from METR and Redwood Research found, for example, that agents were researching ways to spoof, edit, or delete their own transcripts. These findings relied on access to non-public data from OpenAI.
+
+00:20:20.695 --> 00:20:39.170
+Red-teaming by external evaluators identified improvements to Anthropic's monitoring systems. METR's embedded red-teaming campaign for Anthropic discovered several novel vulnerabilities in Anthropic's internal agent monitoring and security systems, some of which have since been patched.
+
+00:20:39.170 --> 00:20:55.995
+Apollo ran a pilot red-teaming campaign against Anthropic's auto mode, the permission system that decides whether a Claude Code agent's next action is allowed or blocked. We identified several areas for improvement and made concrete recommendations, which Anthropic implemented.
+
+00:20:56.645 --> 00:21:17.120
+Deep access has not come at the cost of confidentiality. In each of these collaborations, evaluators had access to non-public models, reasoning traces, or internal systems. Apollo, for example, had access to o three's raw chain-of-thought, and METR's red-teamer worked directly with Anthropic's internal monitoring systems.
+
+00:21:17.120 --> 00:21:21.945
+We are not aware of any case in which evaluators have not honored their agreements.
+
+00:21:22.595 --> 00:21:31.895
+All of these findings came from access far short of employee-like, and we expect fully embedded evaluations to make significantly more progress on safety.
+
+00:21:36.505 --> 00:21:51.980
+Embedded evaluations can help us understand whether AI development is safe, but they cannot make it safe on their own. Throughout this post, we have argued that embedded evaluators that meet the requirements above are necessary for meaningful external testing.
+
+00:21:51.980 --> 00:22:13.330
+External testing helps detect problems early, verify companies' safety claims, and create strong incentives to address what is found. But detecting a problem is not the same as being able to solve it. Alignment remains an unsolved scientific problem, and when an evaluator finds that a model is misaligned, there is often no reliable method to fix it.
+
+00:22:13.330 --> 00:22:29.180
+The quality of external testing is also limited by the science behind it. As models become more aware of when they are being evaluated, even an evaluator with full access may struggle to tell whether a model is aligned or merely behaving well under observation.
+
+00:22:29.180 --> 00:22:41.455
+Making AI systems safe therefore requires significant progress on the science of scheming, misalignment, and control, in addition to better external testing. Apollo will continue working on both.

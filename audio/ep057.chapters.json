@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 85,
+      "title": "Why the word matters"
+    },
+    {
+      "startTime": 172,
+      "title": "Normality and the bandwagon effect"
+    },
+    {
+      "startTime": 267,
+      "title": "The power of subtle language"
+    },
+    {
+      "startTime": 308,
+      "title": "Normal and abnormal as value judgements"
+    },
+    {
+      "startTime": 428,
+      "title": "The ethical concern"
+    },
+    {
+      "startTime": 514,
+      "title": "Conclusion"
+    }
+  ]
+}

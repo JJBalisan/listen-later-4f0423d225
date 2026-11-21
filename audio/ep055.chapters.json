@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 183,
+      "title": "Tactics"
+    },
+    {
+      "startTime": 242,
+      "title": "Other strategies"
+    },
+    {
+      "startTime": 415,
+      "title": "Personal updates"
+    },
+    {
+      "startTime": 598,
+      "title": "For people in AI safety"
+    },
+    {
+      "startTime": 723,
+      "title": "For everyone else"
+    },
+    {
+      "startTime": 992,
+      "title": "What happens after a pause"
+    }
+  ]
+}

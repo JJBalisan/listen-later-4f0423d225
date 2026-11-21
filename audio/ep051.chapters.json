@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 160,
+      "title": "A property-owning democracy"
+    },
+    {
+      "startTime": 348,
+      "title": "A double charge for taxpayers?"
+    },
+    {
+      "startTime": 522,
+      "title": "The ownership premium"
+    },
+    {
+      "startTime": 676,
+      "title": "Limits of reform"
+    }
+  ]
+}

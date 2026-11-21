@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 77,
+      "title": "The hiring pattern"
+    },
+    {
+      "startTime": 140,
+      "title": "The attacks"
+    },
+    {
+      "startTime": 211,
+      "title": "Irregular"
+    },
+    {
+      "startTime": 305,
+      "title": "Company responses"
+    },
+    {
+      "startTime": 382,
+      "title": "Credentials and policy"
+    },
+    {
+      "startTime": 468,
+      "title": "Conclusion"
+    }
+  ]
+}

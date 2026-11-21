@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 66,
+      "title": "Background on depression"
+    },
+    {
+      "startTime": 121,
+      "title": "What is escitalopram?"
+    },
+    {
+      "startTime": 176,
+      "title": "What the experts say"
+    },
+    {
+      "startTime": 243,
+      "title": "Side effects and alternatives"
+    }
+  ]
+}

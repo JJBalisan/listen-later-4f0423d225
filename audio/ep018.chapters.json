@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 174,
+      "title": "Stats from CodeRabbit and Gitar"
+    },
+    {
+      "startTime": 244,
+      "title": "AI spending patterns of twenty-seven companies"
+    },
+    {
+      "startTime": 341,
+      "title": "High spenders"
+    },
+    {
+      "startTime": 987,
+      "title": "AI spend at Big Tech"
+    }
+  ]
+}

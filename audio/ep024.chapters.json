@@ -1,0 +1,45 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 60,
+      "title": "Housing and budget propositions"
+    },
+    {
+      "startTime": 297,
+      "title": "Campaign finance and recalls"
+    },
+    {
+      "startTime": 576,
+      "title": "Bonds and voter ID"
+    },
+    {
+      "startTime": 770,
+      "title": "The wealth tax fight"
+    },
+    {
+      "startTime": 983,
+      "title": "Taxes, unions, and CEQA"
+    },
+    {
+      "startTime": 1123,
+      "title": "State officials"
+    },
+    {
+      "startTime": 1712,
+      "title": "Local ballot measures"
+    },
+    {
+      "startTime": 2078,
+      "title": "Local officials"
+    },
+    {
+      "startTime": 2205,
+      "title": "Asking the AI"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 48,
+      "title": "Many bee species"
+    },
+    {
+      "startTime": 126,
+      "title": "Competition for food"
+    },
+    {
+      "startTime": 227,
+      "title": "Disease and pollination"
+    },
+    {
+      "startTime": 292,
+      "title": "Expert warnings"
+    },
+    {
+      "startTime": 383,
+      "title": "What we should do instead"
+    }
+  ]
+}

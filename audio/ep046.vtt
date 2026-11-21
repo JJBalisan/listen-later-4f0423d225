@@ -1,0 +1,193 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:23.035
+What's New in HRV4Training, by Marco Altini.
+
+00:00:23.685 --> 00:00:41.585
+We have been busy rebuilding the HRV4Training app. It's been fourteen years since I coded the first version, and the new one, already available for iPhone and Android, is a complete redesign, with improved usability and new features, together with a number of bug fixes. Thank you for your patience!
+
+00:00:42.235 --> 00:00:52.435
+We also have a new website that acts as an index for much of our content here on Substack as well, for example, in the FAQ, under the Science of HRV section.
+
+00:00:53.085 --> 00:00:59.460
+In this post, I go through a few of the new screens one by one, so that it can be used as a guide to the app.
+
+00:01:00.110 --> 00:01:11.085
+This guide is structured as follows. First, App: the new design and what's new for everyone, from measuring to insights. Second, Pro: what changes in the app when you have a Pro account.
+
+00:01:11.735 --> 00:01:20.635
+The app is now available in English, Italian, Spanish, German, French, Portuguese, and Japanese. Below, we look at the new design and features.
+
+00:01:25.245 --> 00:01:34.295
+The home screen shows today's HRV and resting heart rate against your normal range, to highlight the ideal scenario: a stable response.
+
+00:01:34.945 --> 00:01:54.370
+The normal range is drawn differently from before. Instead of a bar that fills up, your normal range is a band on the bar, and today's value is a dot on it. This makes it clearer that what you want is to be within your normal range, that is, in a stable physiological condition, and that a higher HRV is not necessarily better.
+
+00:01:54.370 --> 00:02:02.920
+The same applies to heart rate, the other way around: lower is not necessarily better. For example, it could represent acute fatigue.
+
+00:02:03.570 --> 00:02:12.120
+When a value is outside its normal range, it is highlighted, so it stands out at a glance, as shown for heart rate in the example image.
+
+00:02:16.730 --> 00:02:24.730
+As you might know, we recommend morning measurements as we think they are a better way to capture our stress response, especially for athletes.
+
+00:02:25.380 --> 00:02:40.330
+In this context, the app allows you to measure with your phone camera or with a chest strap. Both measurement screens have been redesigned, and Bluetooth connection with chest straps has been improved on iPhone and Android. The camera measurement is similar to before.
+
+00:02:40.980 --> 00:02:52.980
+The chest strap screen has been further improved to show potential artifacts that the app has corrected during the measurement, as well as the R R interval series received from the E C G device.
+
+00:02:53.630 --> 00:03:05.705
+Personally, I've been recommending using a chest strap for a while now. New iPhones have the camera and flash quite far apart, while Android has all sorts of different combinations of hardware and software.
+
+00:03:05.705 --> 00:03:19.705
+So, while the camera measurement can work wonderfully under certain circumstances, typically on all iPhones but the latest Pro and Max ones, where the flash is too far, there is no better way to measure your HRV than using a chest strap.
+
+00:03:20.355 --> 00:03:32.105
+In fact, using a chest strap is the only way to measure your HRV instead of your P R V, pulse rate variability, as only with a chest strap you look at the electrical activity of the heart.
+
+00:03:36.715 --> 00:03:57.365
+Backing what I just wrote, an independent study showed that HRV4Training with a Polar H ten chest strap had the lowest error of all apps and devices tested against E C G: four point one percent for r M S S D, ahead of the Oura ring at six point eight percent, and Elite HRV with the same strap at seven point seven percent.
+
+00:03:57.365 --> 00:04:00.090
+This is our recommended setup.
+
+00:04:00.740 --> 00:04:09.715
+On the iPhone tested, our camera measurement had an average difference of three milliseconds from E C G, still better than most alternatives.
+
+00:04:14.325 --> 00:04:24.500
+Another aspect we put care into redesigning, and bringing in more features, is subjective data, which is essential context. More on this later in the Pro section.
+
+00:04:25.150 --> 00:04:33.200
+We have now also introduced numeric scales with the sliders, something that had been requested many times. Thank you for your feedback.
+
+00:04:33.850 --> 00:04:40.425
+Questions ask about yesterday, so that they can be compared with this morning's measurement in various insights.
+
+00:04:45.035 --> 00:05:00.860
+All analyses are now in one place, grouped in sections: your body, your training, and your fitness, each with today's summary. HRV trends, training load, weekly and monthly summaries, training intensity distribution, and V O two max are all in this menu.
+
+00:05:01.510 --> 00:05:04.185
+Below we show only a few of them.
+
+00:05:04.835 --> 00:05:24.735
+HRV trends combine your r M S S D, heart rate, and coefficient of variation baselines to detect your current physiological response in the medium term: stable, coping well with training, maladaptation, or accumulated fatigue. Each baseline is shown over the last thirty days, with an explanation of what it means.
+
+00:05:25.385 --> 00:05:42.910
+The correlations page has been improved and now shows how each thing you log relates to your morning r M S S D and heart rate, without having to cycle through them individually. Stronger relationships are highlighted. Keep in mind that these are correlations, and don't imply a causal relationship.
+
+00:05:47.520 --> 00:06:02.495
+Here you can see how your r M S S D and resting heart rate compare with HRV4Training users of your age and sex. We have updated this analysis and graphs based on reference values from our paper looking at about nine million measurements.
+
+00:06:03.145 --> 00:06:18.920
+For runners using Strava and a heart rate monitor, the app estimates your lactate threshold pace and training zones from your runs, with no specific tests required. We have improved this analysis to use laps from your workouts, also in the app and not only in Pro.
+
+00:06:19.570 --> 00:06:29.920
+You can force a data read of your Strava laps from the app feature, and it should then update your threshold with a more accurate result. The modeling is still based on our published paper.
+
+00:06:34.530 --> 00:06:44.580
+With the latest update, we made a few changes also for Pro users. Keep in mind that you can now also get Pro directly from the app, on iPhone and Android.
+
+00:06:45.230 --> 00:06:49.805
+If you are a Pro user, well, thank you; you are the reason we are still here.
+
+00:06:54.415 --> 00:07:10.590
+To start with, with Pro, you can also see your daily HRV, baseline and normal range in terms of r M S S D, by selecting r M S S D under HRV View in Settings. Normally, what we call HRV is a logarithmic transformation of this value.
+
+00:07:11.240 --> 00:07:19.940
+Sleep, soreness, motivation, and your other subjective scores are shown against what is usual for you, in History, Baseline and the homepage.
+
+00:07:20.590 --> 00:07:35.090
+Then, you can swipe the home screen to get baseline-based advice as opposed to the typical advice based on the daily score. I hesitated for a while to make this change, even though I think this is the direction we should go towards. Hence, here it is.
+
+00:07:35.740 --> 00:07:51.640
+The home screen in Pro can now show your seven-day HRV and heart rate baselines with respect to their normal range, and these drive the advice. Day-to-day changes are still shown, but they don't override the advice based on your baseline, unless you tagged yourself as sick.
+
+00:07:52.290 --> 00:08:01.640
+This is the direction the research has taken, and it is also how I coach, that is, being less reactive to day-to-day changes and looking more at the big picture.
+
+00:08:05.900 --> 00:08:19.850
+History shows your week day by day: each morning against your normal range, your training coloured by intensity, and sleep, soreness, and motivation as better or worse than usual. Tap a day to see its training and that morning's measurement.
+
+00:08:20.500 --> 00:08:29.150
+This improved view should make it easier to contextualize your physiology with respect to your subjective data logged with the questionnaire.
+
+00:08:29.800 --> 00:08:46.575
+Apart from the view just shown, subjective scores are shown next to your physiology: on the home screen, in History, and as a heatmap on the baseline page, always compared with your own usual, and together with other tags you might be tracking, for example alcohol intake, your period, and so on.
+
+00:08:51.185 --> 00:09:02.785
+The baseline page with Pro shows your normal range, and lets you color-code the data based on the detected trend. Below, it will show your tags as well as your subjective data as heatmaps.
+
+00:09:03.435 --> 00:09:08.060
+The one shown is probably one of the most useful long-term views in the app.
+
+00:09:12.670 --> 00:09:22.720
+In the acute HRV changes view, you can see how each of your tags, for example alcohol, travel, or a hard training, changes your HRV the next morning.
+
+00:09:23.370 --> 00:09:29.270
+I have discussed a few times how Normalized HRV can be something worth paying attention to.
+
+00:09:29.920 --> 00:09:44.695
+When your heart beats faster, the time between beats gets shorter, and there is less room for those intervals to vary. Part of any HRV change can be a mechanical consequence of a change in heart rate. Normalized HRV tries to separate the two.
+
+00:09:44.695 --> 00:09:57.270
+In particular, normalized HRV is r M S S D divided by the average R R interval, so that it is independent of heart rate. It is expressed in milliseconds, with its own normal range.
+
+00:09:57.920 --> 00:10:16.970
+If r M S S D drops but normalized HRV does not, the change is mostly heart-rate driven. If normalized HRV drops too, the change is independent of heart rate, and something more is going on. For each tag, the app labels the average change as "mostly heart-rate driven" or "independent of heart rate".
+
+00:10:16.970 --> 00:10:20.595
+Sickness is the clearest example of the second case.
+
+00:10:21.245 --> 00:10:25.945
+Normalized HRV is now part of the Insights for Pro users.
+
+00:10:30.555 --> 00:10:39.330
+We have built a new model of what drives your HRV, showing how much each factor, for example sleep time, contributed to today's value.
+
+00:10:39.980 --> 00:10:57.080
+The way this works is that instead of looking at one tag at a time, we fit a small model on your own data that looks at everything you log together, and estimates how much each factor moves your HRV. The target is each morning's r M S S D minus the average of your previous thirty mornings.
+
+00:10:57.080 --> 00:11:13.730
+So the model explains your day-to-day swings around your baseline, not the baseline. Inputs are yesterday's training load, your tags, once you have at least four days with and four without, and your morning questionnaire. The model uses up to twelve months of data and needs about three weeks to start.
+
+00:11:14.380 --> 00:11:32.280
+In the app you see "Today versus your typical", a breakdown of this morning's value, and "Biggest drivers", how much your morning r M S S D changes for a typical change in each factor. The model shows associations, not causes, and part of the daily variation will always remain unexplained.
+
+00:11:36.890 --> 00:11:53.015
+If you run, HRV4Training already estimates your lactate threshold from your runs. With Pro, we use that estimate to predict your race times over five kilometers, ten kilometers, half marathon, and marathon, using the same models as the web platform.
+
+00:11:53.015 --> 00:12:10.765
+For the marathon, the number of long runs, thirty kilometers or more, in the last ninety days and your V O two max estimate are also included. Each estimate comes with a range that reflects the typical error of the model. As mentioned earlier, we recommend linking Strava for the most accurate estimates.
+
+00:12:15.375 --> 00:12:22.925
+The web platform is also accessible for Pro users, and is getting a complete redesign, which should be available soon.
+
+00:12:23.575 --> 00:12:35.225
+Coaches and teams, keep an eye out for the new coach panel, which will also integrate objective and subjective data to make it much easier to keep track of how your athletes are responding to stress.
+
+00:12:35.875 --> 00:12:42.150
+I hope you'll find the new app useful to better contextualize and interpret your physiological data.
+
+00:12:42.800 --> 00:12:47.450
+If you do not have the app yet, you can find it for iPhone and Android.
+
+00:12:48.100 --> 00:12:56.275
+If you do have the app and find the update and improvements useful, please take a few minutes to review it positively. It makes a difference.
+
+00:12:56.925 --> 00:13:00.550
+For any issues, contact us, and we'll help. Thank you!
+
+00:13:05.160 --> 00:13:10.985
+Personal coaching for runners is available if you are interested in working with me. Thank you!
+
+00:13:11.635 --> 00:13:16.735
+Our book is out and available for purchase from Human Kinetics, or on Amazon.
+
+00:13:17.385 --> 00:13:37.985
+No paywalls here. All my content is and will remain free. As an HRV4Training user, the best way to help is to sign up for HRV4Training Pro, now available directly in the app on iPhone and Android. Pro subscriptions allow us to keep building HRV4Training and maintain this small business independent. Thank you for your support.
+
+00:13:38.635 --> 00:13:44.635
+Users, coaches, and teams can also check out the HRV4Training Pro web platform.

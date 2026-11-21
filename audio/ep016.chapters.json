@@ -1,0 +1,41 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 100,
+      "title": "augo"
+    },
+    {
+      "startTime": 151,
+      "title": "Communication"
+    },
+    {
+      "startTime": 262,
+      "title": "Workout and Training Block Planning"
+    },
+    {
+      "startTime": 469,
+      "title": "Workout Analysis"
+    },
+    {
+      "startTime": 610,
+      "title": "Lab Testing and True Individualization"
+    },
+    {
+      "startTime": 860,
+      "title": "Actionability for Training and Race Fueling"
+    },
+    {
+      "startTime": 977,
+      "title": "How We Trained"
+    },
+    {
+      "startTime": 1164,
+      "title": "The Race"
+    }
+  ]
+}
