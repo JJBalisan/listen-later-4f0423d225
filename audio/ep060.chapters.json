@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 114,
+      "title": "Alignment in human society"
+    },
+    {
+      "startTime": 454,
+      "title": "Lessons for AI alignment"
+    },
+    {
+      "startTime": 664,
+      "title": "No boundaries on firm boundaries"
+    },
+    {
+      "startTime": 1073,
+      "title": "The everything marketplace"
+    }
+  ]
+}
