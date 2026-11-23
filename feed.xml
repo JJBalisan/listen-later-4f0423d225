@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 21 Nov 2026 06:41:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 05:36:40 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>AI's Future Is Still a Choice</title>
+      <description>Panelists at a Stanford discussion said most businesses are struggling to turn AI capabilities into real productivity gains, and that whether workers share in the benefits depends on choices made by companies and society. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Panelists at a Stanford discussion said most businesses are struggling to turn AI capabilities into real productivity gains, and that whether workers share in the benefits depends on choices made by companies and society. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Mon, 23 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep058</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep058.mp3" length="1148166" type="audio/mpeg"/>
+      <itunes:duration>00:02:46</itunes:duration>
+      <itunes:episode>58</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep058.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://hai.stanford.edu/news/ais-future-is-still-a-choice</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep058.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep058.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep058.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>No, I don’t want ‘normal milk’</title>
       <description>The author, a vegan, argues that calling cow's milk "normal milk" is not a neutral description but a value judgement that frames plant milks and vegans as abnormal and makes the cruelty of dairy farming seem acceptable. Music: “Hop” by Monplaisir (CC0).</description>

@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 22,
+      "title": "The Future of Work"
+    },
+    {
+      "startTime": 71,
+      "title": "Entry-Level Jobs"
+    },
+    {
+      "startTime": 103,
+      "title": "Accuracy"
+    },
+    {
+      "startTime": 120,
+      "title": "A Matter of Choice"
+    }
+  ]
+}

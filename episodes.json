@@ -835,5 +835,21 @@
     "vtt": "audio/ep057.vtt",
     "link": "https://earthlinged.substack.com/p/no-i-dont-want-normal-milk",
     "cover": "covers/ep057.jpg"
+  },
+  {
+    "no": 58,
+    "date": "2026-11-23",
+    "title": "AI's Future Is Still a Choice",
+    "summary": "Panelists at a Stanford discussion said most businesses are struggling to turn AI capabilities into real productivity gains, and that whether workers share in the benefits depends on choices made by companies and society.",
+    "file": "audio/ep058.mp3",
+    "bytes": 1148166,
+    "duration": "00:02:46",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep058.chapters.json",
+    "transcript": "audio/ep058.transcript.html",
+    "vtt": "audio/ep058.vtt",
+    "link": "https://hai.stanford.edu/news/ais-future-is-still-a-choice",
+    "cover": "covers/ep058.jpg"
   }
 ]
