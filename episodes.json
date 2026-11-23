@@ -851,5 +851,21 @@
     "vtt": "audio/ep058.vtt",
     "link": "https://hai.stanford.edu/news/ais-future-is-still-a-choice",
     "cover": "covers/ep058.jpg"
+  },
+  {
+    "no": 59,
+    "date": "2026-11-23",
+    "title": "ChinAI #383: China's struggling robotics companies",
+    "summary": "Jeff Ding translates and discusses a Huxiu article showing that many Chinese robotics firms, including DeepBlue and Yinghe, are failing because their technology does not match real demand, while funding is cooling. He also points to his Foreign Affairs piece arguing the United States leads China in AI diffusion.",
+    "file": "audio/ep059.mp3",
+    "bytes": 2706127,
+    "duration": "00:07:06",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep059.chapters.json",
+    "transcript": "audio/ep059.transcript.html",
+    "vtt": "audio/ep059.vtt",
+    "link": "https://chinai.substack.com/p/chinai-383-chinas-struggling-robotics-e5a?publication_id=2660&post_id=226230541&isFreemail=true&r=6z3t7c&triedRedirect=true",
+    "cover": "covers/ep059.jpg"
   }
 ]

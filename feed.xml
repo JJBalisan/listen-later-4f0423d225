@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 23 Nov 2026 05:36:40 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 20:41:32 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>ChinAI #383: China's struggling robotics companies</title>
+      <description>Jeff Ding translates and discusses a Huxiu article showing that many Chinese robotics firms, including DeepBlue and Yinghe, are failing because their technology does not match real demand, while funding is cooling. He also points to his Foreign Affairs piece arguing the United States leads China in AI diffusion. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Jeff Ding translates and discusses a Huxiu article showing that many Chinese robotics firms, including DeepBlue and Yinghe, are failing because their technology does not match real demand, while funding is cooling. He also points to his Foreign Affairs piece arguing the United States leads China in AI diffusion. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Mon, 23 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep059</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep059.mp3" length="2706127" type="audio/mpeg"/>
+      <itunes:duration>00:07:06</itunes:duration>
+      <itunes:episode>59</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep059.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://chinai.substack.com/p/chinai-383-chinas-struggling-robotics-e5a?publication_id=2660&amp;post_id=226230541&amp;isFreemail=true&amp;r=6z3t7c&amp;triedRedirect=true</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep059.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep059.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep059.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>AI's Future Is Still a Choice</title>
       <description>Panelists at a Stanford discussion said most businesses are struggling to turn AI capabilities into real productivity gains, and that whether workers share in the benefits depends on choices made by companies and society. Music: “Hop” by Monplaisir (CC0).</description>

@@ -1,0 +1,25 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 25,
+      "title": "Opening"
+    },
+    {
+      "startTime": 58,
+      "title": "Feature translation"
+    },
+    {
+      "startTime": 148,
+      "title": "Key takeaways"
+    },
+    {
+      "startTime": 359,
+      "title": "ChinAI links"
+    }
+  ]
+}
