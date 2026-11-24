@@ -1,0 +1,57 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 239,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 288,
+      "title": "What Recent Investigations Revealed"
+    },
+    {
+      "startTime": 587,
+      "title": "Gaps in Current Regimes"
+    },
+    {
+      "startTime": 766,
+      "title": "EU Laws"
+    },
+    {
+      "startTime": 1032,
+      "title": "Near Misses"
+    },
+    {
+      "startTime": 1352,
+      "title": "Internal Use"
+    },
+    {
+      "startTime": 1516,
+      "title": "Independent Investigations"
+    },
+    {
+      "startTime": 1852,
+      "title": "Agent Attribution"
+    },
+    {
+      "startTime": 2187,
+      "title": "Data Preservation"
+    },
+    {
+      "startTime": 2588,
+      "title": "Safe Harbor"
+    },
+    {
+      "startTime": 2848,
+      "title": "Fixes and Sharing"
+    },
+    {
+      "startTime": 3126,
+      "title": "Conclusion"
+    }
+  ]
+}

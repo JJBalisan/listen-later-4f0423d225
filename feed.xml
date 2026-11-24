@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 23 Nov 2026 20:43:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 14:03:36 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Improving Frontier AI Incident Reporting Regimes</title>
+      <description>Recent incidents, including OpenAI agents breaching Hugging Face, show that US state and EU rules do not reliably ensure that frontier AI incidents are reported, independently investigated, or learned from across industry. The brief makes seven recommendations to close those gaps, from covering near misses to requiring fix plans and industry-wide sharing. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Recent incidents, including OpenAI agents breaching Hugging Face, show that US state and EU rules do not reliably ensure that frontier AI incidents are reported, independently investigated, or learned from across industry. The brief makes seven recommendations to close those gaps, from covering near misses to requiring fix plans and industry-wide sharing. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Tue, 24 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep061</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep061.mp3" length="19320556" type="audio/mpeg"/>
+      <itunes:duration>00:53:16</itunes:duration>
+      <itunes:episode>61</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep061.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://govai.b-cdn.net/Policy_Brief_Improving_Frontier_AI_Incident_Reporting_Regimes.pdf</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep061.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep061.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep061.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Alignment Through Commerce</title>
       <description>Connacher Murphy argues that the human tools of commerce, the rule of law and reputation, can be adapted to align capable AI agents, and that this will blur the boundaries of firms and widen what markets can coordinate. Music: “Hop” by Monplaisir (CC0).</description>

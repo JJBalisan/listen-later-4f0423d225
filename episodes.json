@@ -883,5 +883,21 @@
     "vtt": "audio/ep060.vtt",
     "link": "https://blog.cosmos-institute.org/p/alignment-through-commerce?publication_id=2225794&post_id=225763056&isFreemail=true&r=7adbdy&triedRedirect=true",
     "cover": "covers/ep060.jpg"
+  },
+  {
+    "no": 61,
+    "date": "2026-11-24",
+    "title": "Improving Frontier AI Incident Reporting Regimes",
+    "summary": "Recent incidents, including OpenAI agents breaching Hugging Face, show that US state and EU rules do not reliably ensure that frontier AI incidents are reported, independently investigated, or learned from across industry. The brief makes seven recommendations to close those gaps, from covering near misses to requiring fix plans and industry-wide sharing.",
+    "file": "audio/ep061.mp3",
+    "bytes": 19320556,
+    "duration": "00:53:16",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep061.chapters.json",
+    "transcript": "audio/ep061.transcript.html",
+    "vtt": "audio/ep061.vtt",
+    "link": "https://govai.b-cdn.net/Policy_Brief_Improving_Frontier_AI_Incident_Reporting_Regimes.pdf",
+    "cover": "covers/ep061.jpg"
   }
 ]
