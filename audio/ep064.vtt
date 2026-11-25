@@ -1,0 +1,118 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:24.860
+The IPO money is coming. How much of it will actually have impact? From Metaculus.
+
+00:00:25.510 --> 00:00:45.585
+Anthropic listed on Nasdaq today at a market cap of about one point two seven trillion dollars. Many Anthropic employees, including the seven cofounders, have pledged to give much of their new wealth away, and the company has pledged to match donations. For organizations hoping to benefit from this philanthropic windfall, the clock just started.
+
+00:00:46.235 --> 00:01:04.585
+Per the S-1, ten percent of employee shares unlocked at listing. Another thirty-five percent unlock after full-year twenty twenty-six results, and the rest at first-quarter twenty twenty-seven results or day one hundred eighty, whichever comes first. Cofounders wait longer, up to a year for most of their stake.
+
+00:01:04.585 --> 00:01:10.035
+OpenAI is still forecast to list around the second quarter of twenty twenty-seven.
+
+00:01:14.645 --> 00:01:21.195
+Our first maps asked: one, how much of this reaches charity, and two, which cause areas it would go to.
+
+00:01:21.195 --> 00:01:37.395
+Then three Metaculus Pro Forecasters each picked up a different thread: on whether AI Safety can spend its share, how the split changes if the windfall is small or large, and what happens to one tiny cause area, for example AI Welfare, when the money does show up.
+
+00:01:38.045 --> 00:01:47.145
+So we asked the Pro Forecasters to take it a step further in a new series of maps. They built three, and all hit the same wall from different directions.
+
+00:01:51.755 --> 00:01:56.030
+Map number three: Can AI Safety spend the IPO money?
+
+00:01:56.680 --> 00:02:09.880
+MaxA built this map. He focused on AI safety from our cause-split map, which had a central estimate of about thirty-seven billion dollars by the end of twenty thirty-one, and asked whether the field can actually grant it.
+
+00:02:10.530 --> 00:02:29.180
+That depends on people more than money. Coefficient Giving, who has thus far made some of the largest investments in AI Safety, reports that staff time is what limits its grantmaking. And across the whole field, about one hundred forty people make AI Safety grants full-time, seventy-five of them at Coefficient Giving.
+
+00:02:29.830 --> 00:02:48.680
+For twenty twenty-eight, MaxA forecasts seven point nine billion dollars of windfall money aiming at AI safety, with the field able to effectively absorb five point seven billion. That's roughly two thirds, with the rest sitting in donor-advised funds, or DAFs, or moving to weaker projects and higher salaries.
+
+00:02:49.330 --> 00:02:56.305
+If instead looking out to twenty thirty-one, however, there's a fifty-two percent chance that the field can place all of it.
+
+00:02:56.955 --> 00:03:12.355
+This question depends a lot on Coefficient Giving's share of grantmaking within the field. It was about seventy-two percent in twenty twenty-five and about fifty-four percent in twenty twenty-six, and the map estimates around forty-one percent in twenty twenty-eight.
+
+00:03:12.355 --> 00:03:24.280
+A smaller share means more grantmakers elsewhere, which means fewer staffing bottlenecks. Longview, Macroscopic, and the OpenAI Foundation have publicly announced plans to grow over the next year.
+
+00:03:24.930 --> 00:03:44.630
+Some money can also go out in big pieces that don't need many grantmakers: compute for safety research, endowing new institutes, prizes, advocacy campaigns. The map estimates about one point four billion dollars a year could be delivered this way. Some people argue it could be several billion a year; but others doubt it's possible at all.
+
+00:03:49.240 --> 00:03:53.615
+Map number four: What changes if the windfall is small, or huge?
+
+00:03:54.265 --> 00:04:03.590
+ADQ's map is more qualitative. In it, he runs a low and high scenario side by side and asks how each one impacts the cause-area split.
+
+00:04:04.240 --> 00:04:19.365
+There's a big delta between those scenarios. Forecasters put Anthropic's market cap at the end of lockup around two trillion dollars and OpenAI's around one point seven six trillion; the low and high scenarios end up more than an order of magnitude apart.
+
+00:04:20.015 --> 00:04:23.090
+The following patterns emerge in this map.
+
+00:04:23.740 --> 00:04:36.640
+AI Safety likely gets a larger share when money is tight, that is, donors who think it's most urgent will front-load it, and a smaller share when money is abundant, because the ecosystem can only absorb so much.
+
+00:04:37.290 --> 00:04:46.640
+Climate and general science operate the opposite way. Pathways are well developed and they can soak up massive sums, so they gain in the high scenario.
+
+00:04:47.290 --> 00:04:55.440
+Biosecurity gains in the low scenario and loses in the high scenario, because it is hard to scale and raises dual-use worries.
+
+00:04:56.090 --> 00:05:01.290
+Animal welfare loses ground either way, more so when money is abundant.
+
+00:05:01.940 --> 00:05:10.115
+Personal causes take a larger slice of a small pie, and then contract as donors refocus once their pet projects are funded.
+
+00:05:10.765 --> 00:05:20.615
+So Map four lands in the same ballpark as Map three, but by intuition instead of arithmetic; AI Safety's share is capped by how much it can actually use.
+
+00:05:25.225 --> 00:05:30.400
+Map number five: How will the small field of AI welfare meet this big wave?
+
+00:05:31.050 --> 00:05:45.525
+Sergio zoomed in on one niche: money for AI welfare, meaning research, applied work and governance on whether AI systems have interests that matter. The author's rough estimate is that the field currently gets ten to thirty million dollars per year.
+
+00:05:46.175 --> 00:06:00.925
+The map's primary estimate is about two hundred eighty million dollars per year in documented giving across twenty twenty-seven and twenty twenty-eight, or five hundred sixty-five million dollars total, which is roughly ten to thirty times what it gets now.
+
+00:06:01.575 --> 00:06:19.350
+A handful of people could decide most of this. Each of Anthropic's seven cofounders holds roughly five to eight percent of the company's pledged giving. So if just one cofounder sent twelve to twenty percent of their giving to AI welfare, that alone would be one percent of everything Anthropic insiders give.
+
+00:06:19.350 --> 00:06:26.600
+The map also gives Anthropic's Public Benefit Fund a thirty-five percent chance of funding AI welfare at all.
+
+00:06:27.250 --> 00:06:43.425
+But as with AI Safety, there's only so much AI Welfare can absorb. The author puts the field's capacity at about eight hundred thirty million dollars in commitments over those two years. Past that, only about forty percent of extra money is assumed to land.
+
+00:06:44.075 --> 00:06:58.450
+The map is honest about uncertainty. The headline blends the bottom-up model, at seventy percent, with the author's direct forecast, at thirty percent, and every node is tagged as a forecast, an estimate of the present, or a modelling shortcut.
+
+00:07:03.060 --> 00:07:05.585
+What the three maps say together.
+
+00:07:06.235 --> 00:07:14.785
+Each map adopts a different focus, and in aggregate they push the question a step further: once the money arrives, can anyone use it well?
+
+00:07:15.435 --> 00:07:30.735
+For big fields with longstanding pathways and vehicles, the answer is probably yes. For AI Safety, a lot depends on hiring grantmakers. For a field as small as AI Welfare, the windfall could comprise most of the field's money within two years.
+
+00:07:31.385 --> 00:07:47.810
+If you're building plans around this money, the factors worth watching are: Coefficient Giving's hiring; whether Longview and Macroscopic hit their targets; how fast insiders move pledged shares out of donor-advised funds; and what Anthropic's Public Benefit Fund decides to fund.
+
+00:07:52.420 --> 00:07:54.120
+What do you think?
+
+00:07:54.770 --> 00:08:08.570
+These maps run on live forecasts and stated assumptions, with the authors' reasoning clearly laid out. If you disagree with something in a map, open it, find the node you trust least, and fork it. Share it with us in the comments if you do.
+
+00:08:09.220 --> 00:08:24.420
+And forecast the questions underneath them: Coefficient Giving's AI safety funding, Coefficient Giving's total grantmaking growth, METR's contributions, and the rest of the AI Lab IPOs series. OpenAI also hasn't listed yet.

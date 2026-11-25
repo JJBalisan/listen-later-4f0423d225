@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 25 Nov 2026 04:09:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 23:46:06 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>The IPO money is coming. How much of it will actually have impact?</title>
+      <description>Three forecaster-built maps ask whether AI safety and AI welfare can actually absorb the philanthropic windfall from the Anthropic IPO, and how the cause split shifts if the windfall is small or large. They find that people and absorptive capacity, not money, are the main limit. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>Three forecaster-built maps ask whether AI safety and AI welfare can actually absorb the philanthropic windfall from the Anthropic IPO, and how the cause split shifts if the windfall is small or large. They find that people and absorptive capacity, not money, are the main limit. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 25 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep064</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep064.mp3" length="3259504" type="audio/mpeg"/>
+      <itunes:duration>00:08:39</itunes:duration>
+      <itunes:episode>64</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep064.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://metaculus.substack.com/p/anthropic-ipo-money-impact-philanthropy-donors?publication_id=8484979&amp;post_id=226407586&amp;isFreemail=true&amp;r=831wrt&amp;triedRedirect=true</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep064.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep064.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep064.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Alignment as Jurisprudence</title>
       <description>The essay argues that AI alignment and jurisprudence share the same structure and problems, so that legal theories like Dworkin's interpretivism and Sunstein's analogical reasoning can improve approaches such as Constitutional AI and case-based reasoning. It also argues that AI can in turn help legal theory and the working of the law. Music: “Hop” by Monplaisir (CC0).</description>

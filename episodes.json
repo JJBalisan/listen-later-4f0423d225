@@ -931,5 +931,21 @@
     "vtt": "audio/ep063.vtt",
     "link": "https://arxiv.org/abs/2605.08416",
     "cover": "covers/ep063.jpg"
+  },
+  {
+    "no": 64,
+    "date": "2026-11-25",
+    "title": "The IPO money is coming. How much of it will actually have impact?",
+    "summary": "Three forecaster-built maps ask whether AI safety and AI welfare can actually absorb the philanthropic windfall from the Anthropic IPO, and how the cause split shifts if the windfall is small or large. They find that people and absorptive capacity, not money, are the main limit.",
+    "file": "audio/ep064.mp3",
+    "bytes": 3259504,
+    "duration": "00:08:39",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep064.chapters.json",
+    "transcript": "audio/ep064.transcript.html",
+    "vtt": "audio/ep064.vtt",
+    "link": "https://metaculus.substack.com/p/anthropic-ipo-money-impact-philanthropy-donors?publication_id=8484979&post_id=226407586&isFreemail=true&r=831wrt&triedRedirect=true",
+    "cover": "covers/ep064.jpg"
   }
 ]
