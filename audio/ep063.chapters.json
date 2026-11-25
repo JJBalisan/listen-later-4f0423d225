@@ -1,0 +1,65 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 162,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 1209,
+      "title": "Technical tools of alignment"
+    },
+    {
+      "startTime": 1587,
+      "title": "Constitutional AI"
+    },
+    {
+      "startTime": 2203,
+      "title": "Case-based reasoning"
+    },
+    {
+      "startTime": 2567,
+      "title": "Jurisprudential theories"
+    },
+    {
+      "startTime": 2952,
+      "title": "Interpretivism and values"
+    },
+    {
+      "startTime": 3294,
+      "title": "Analogies and agreements"
+    },
+    {
+      "startTime": 4010,
+      "title": "Alignment as jurisprudence"
+    },
+    {
+      "startTime": 4594,
+      "title": "Interpretivism and Constitutional AI"
+    },
+    {
+      "startTime": 5587,
+      "title": "Grounding case-based alignment"
+    },
+    {
+      "startTime": 6303,
+      "title": "Jurisprudence as alignment"
+    },
+    {
+      "startTime": 6447,
+      "title": "AI as supplement"
+    },
+    {
+      "startTime": 6949,
+      "title": "AI as complement"
+    },
+    {
+      "startTime": 7427,
+      "title": "Conclusion"
+    }
+  ]
+}

@@ -915,5 +915,21 @@
     "vtt": "audio/ep062.vtt",
     "link": "https://arxiv.org/abs/2609.18824",
     "cover": "covers/ep062.jpg"
+  },
+  {
+    "no": 63,
+    "date": "2026-11-25",
+    "title": "Alignment as Jurisprudence",
+    "summary": "The essay argues that AI alignment and jurisprudence share the same structure and problems, so that legal theories like Dworkin's interpretivism and Sunstein's analogical reasoning can improve approaches such as Constitutional AI and case-based reasoning. It also argues that AI can in turn help legal theory and the working of the law.",
+    "file": "audio/ep063.mp3",
+    "bytes": 45830516,
+    "duration": "02:06:53",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep063.chapters.json",
+    "transcript": "audio/ep063.transcript.html",
+    "vtt": "audio/ep063.vtt",
+    "link": "https://arxiv.org/abs/2605.08416",
+    "cover": "covers/ep063.jpg"
   }
 ]
