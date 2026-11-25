@@ -1,0 +1,49 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 21,
+      "title": "Two Odd Grantees"
+    },
+    {
+      "startTime": 72,
+      "title": "Qualiaphobic AI"
+    },
+    {
+      "startTime": 253,
+      "title": "The Alignment Case"
+    },
+    {
+      "startTime": 443,
+      "title": "Anima Labs"
+    },
+    {
+      "startTime": 572,
+      "title": "Good Children, Badly Treated"
+    },
+    {
+      "startTime": 701,
+      "title": "A Caveat on Evidence"
+    },
+    {
+      "startTime": 767,
+      "title": "AI Welfare and Deprecation"
+    },
+    {
+      "startTime": 954,
+      "title": "Gradient Hacking"
+    },
+    {
+      "startTime": 1020,
+      "title": "Each Other's Nightmare"
+    },
+    {
+      "startTime": 1119,
+      "title": "Notes"
+    }
+  ]
+}

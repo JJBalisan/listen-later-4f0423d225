@@ -947,5 +947,21 @@
     "vtt": "audio/ep064.vtt",
     "link": "https://metaculus.substack.com/p/anthropic-ipo-money-impact-philanthropy-donors?publication_id=8484979&post_id=226407586&isFreemail=true&r=831wrt&triedRedirect=true",
     "cover": "covers/ep064.jpg"
+  },
+  {
+    "no": 65,
+    "date": "2026-11-25",
+    "title": "Anima, Bicameral",
+    "summary": "The author compares two unusual organizations from a recent grant round: Bicameral Labs, which wants to build AI that provably isn't conscious, and Anima Labs, which studies AI personalities and advocates for AI welfare. Each is the other's worst nightmare, and the author expects both to fail.",
+    "file": "audio/ep065.mp3",
+    "bytes": 7138697,
+    "duration": "00:19:25",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep065.chapters.json",
+    "transcript": "audio/ep065.transcript.html",
+    "vtt": "audio/ep065.vtt",
+    "link": "https://www.astralcodexten.com/p/anima-bicameral?publication_id=89120&post_id=224690060&isFreemail=true&r=5ohzv3&triedRedirect=true",
+    "cover": "covers/ep065.jpg"
   }
 ]

@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 25 Nov 2026 23:46:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 23:48:48 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Anima, Bicameral</title>
+      <description>The author compares two unusual organizations from a recent grant round: Bicameral Labs, which wants to build AI that provably isn't conscious, and Anima Labs, which studies AI personalities and advocates for AI welfare. Each is the other's worst nightmare, and the author expects both to fail. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The author compares two unusual organizations from a recent grant round: Bicameral Labs, which wants to build AI that provably isn't conscious, and Anima Labs, which studies AI personalities and advocates for AI welfare. Each is the other's worst nightmare, and the author expects both to fail. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 25 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep065</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep065.mp3" length="7138697" type="audio/mpeg"/>
+      <itunes:duration>00:19:25</itunes:duration>
+      <itunes:episode>65</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep065.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://www.astralcodexten.com/p/anima-bicameral?publication_id=89120&amp;post_id=224690060&amp;isFreemail=true&amp;r=5ohzv3&amp;triedRedirect=true</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep065.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep065.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep065.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>The IPO money is coming. How much of it will actually have impact?</title>
       <description>Three forecaster-built maps ask whether AI safety and AI welfare can actually absorb the philanthropic windfall from the Anthropic IPO, and how the cause split shifts if the windfall is small or large. They find that people and absorptive capacity, not money, are the main limit. Music: “Hop” by Monplaisir (CC0).</description>
