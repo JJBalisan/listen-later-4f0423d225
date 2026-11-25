@@ -963,5 +963,21 @@
     "vtt": "audio/ep065.vtt",
     "link": "https://www.astralcodexten.com/p/anima-bicameral?publication_id=89120&post_id=224690060&isFreemail=true&r=5ohzv3&triedRedirect=true",
     "cover": "covers/ep065.jpg"
+  },
+  {
+    "no": 66,
+    "date": "2026-11-25",
+    "title": "Want more great grantmakers in your field? Offer donation matching as a staff benefit!",
+    "summary": "The piece argues that organizations wanting more skilled grantmakers should offer staff donation matching, because giving money away, even at small scales, is excellent training for grantmaking. It describes how foundations and the author's own organization do this and what it costs.",
+    "file": "audio/ep066.mp3",
+    "bytes": 1762184,
+    "duration": "00:04:29",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep066.chapters.json",
+    "transcript": "audio/ep066.transcript.html",
+    "vtt": "audio/ep066.vtt",
+    "link": "https://measuredlife.substack.com/p/want-more-great-grantmakers-in-your?publication_id=4322805&post_id=226522481&isFreemail=true&r=5yj8ty&triedRedirect=true",
+    "cover": "covers/ep066.jpg"
   }
 ]

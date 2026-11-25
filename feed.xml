@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 25 Nov 2026 23:48:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 23:50:16 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Want more great grantmakers in your field? Offer donation matching as a staff benefit!</title>
+      <description>The piece argues that organizations wanting more skilled grantmakers should offer staff donation matching, because giving money away, even at small scales, is excellent training for grantmaking. It describes how foundations and the author's own organization do this and what it costs. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The piece argues that organizations wanting more skilled grantmakers should offer staff donation matching, because giving money away, even at small scales, is excellent training for grantmaking. It describes how foundations and the author's own organization do this and what it costs. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 25 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep066</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep066.mp3" length="1762184" type="audio/mpeg"/>
+      <itunes:duration>00:04:29</itunes:duration>
+      <itunes:episode>66</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep066.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://measuredlife.substack.com/p/want-more-great-grantmakers-in-your?publication_id=4322805&amp;post_id=226522481&amp;isFreemail=true&amp;r=5yj8ty&amp;triedRedirect=true</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep066.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep066.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep066.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Anima, Bicameral</title>
       <description>The author compares two unusual organizations from a recent grant round: Bicameral Labs, which wants to build AI that provably isn't conscious, and Anima Labs, which studies AI personalities and advocates for AI welfare. Each is the other's worst nightmare, and the author expects both to fail. Music: “Hop” by Monplaisir (CC0).</description>
