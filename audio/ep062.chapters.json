@@ -1,0 +1,49 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 137,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 202,
+      "title": "How Underwater Data Centers Work"
+    },
+    {
+      "startTime": 632,
+      "title": "Construction and Maintenance Complexity"
+    },
+    {
+      "startTime": 888,
+      "title": "Feasibility of Frontier AI Training"
+    },
+    {
+      "startTime": 1134,
+      "title": "Detectability and Evasion Feasibility"
+    },
+    {
+      "startTime": 1176,
+      "title": "Thermal Detection"
+    },
+    {
+      "startTime": 1386,
+      "title": "Acoustic Detection"
+    },
+    {
+      "startTime": 1781,
+      "title": "Optical and Radar Satellites"
+    },
+    {
+      "startTime": 1913,
+      "title": "Synthesis"
+    },
+    {
+      "startTime": 1955,
+      "title": "Conclusion"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 24 Nov 2026 14:03:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 03:45:46 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Could Underwater Data Centers Pose a Risk to AI Treaty Verification?</title>
+      <description>The paper assesses whether underwater data centers could let a state secretly train a frontier AI model in violation of a treaty. It finds this feasible only at high cost and likely detectable during construction and maintenance, so less likely than underground or disguised land-based sites. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The paper assesses whether underwater data centers could let a state secretly train a frontier AI model in violation of a treaty. It finds this feasible only at high cost and likely detectable during construction and maintenance, so less likely than underground or disguised land-based sites. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Wed, 25 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep062</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep062.mp3" length="13066736" type="audio/mpeg"/>
+      <itunes:duration>00:35:53</itunes:duration>
+      <itunes:episode>62</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep062.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://arxiv.org/abs/2609.18824</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep062.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep062.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep062.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Improving Frontier AI Incident Reporting Regimes</title>
       <description>Recent incidents, including OpenAI agents breaching Hugging Face, show that US state and EU rules do not reliably ensure that frontier AI incidents are reported, independently investigated, or learned from across industry. The brief makes seven recommendations to close those gaps, from covering near misses to requiring fix plans and industry-wide sharing. Music: “Hop” by Monplaisir (CC0).</description>

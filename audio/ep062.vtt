@@ -1,0 +1,415 @@
+WEBVTT
+
+00:00:19.060 --> 00:00:26.860
+Could Underwater Data Centers Pose a Risk to AI Treaty Verification? A research paper, author not named in the text.
+
+00:00:27.510 --> 00:00:40.560
+Abstract. Proposals for international agreements that limit frontier AI development depend on verification, and a central challenge is detecting undeclared compute facilities used to evade restrictions.
+
+00:00:40.560 --> 00:00:52.685
+Underwater data centers, or U D Cs, have been suggested as one such evasion vector, but their feasibility at frontier scale and their detectability have not been seriously assessed.
+
+00:00:52.685 --> 00:01:07.185
+The authors examine current U D C deployments, evaluate construction and maintenance complexity relative to land-based facilities, and analyse the feasibility of a one hundred thousand H one hundred equivalent training run underwater.
+
+00:01:07.835 --> 00:01:26.760
+They find that power delivery and cooling are tractable, but interconnect and the hands-on maintenance that large training runs require are severe obstacles. These are surmountable only by a well-resourced state actor accepting large cost and schedule penalties, and only where concealment, rather than efficiency, is the objective.
+
+00:01:26.760 --> 00:01:44.110
+They then assess detectability through thermal, acoustic, optical and synthetic-aperture-radar surveillance. Thermal detection of an operational pod is unlikely outside shallow, calm water. Acoustic detection is marginally more effective, but faces limitations in attribution.
+
+00:01:44.110 --> 00:01:57.260
+Optical and radar monitoring is most powerful during construction and maintenance, when the pressure-vessel fabrication base and the cable-laying fleet create distinctive signatures for ship-tracking by A I S transponders.
+
+00:01:57.260 --> 00:02:12.910
+They conclude that U D Cs are a comparatively unlikely evasion route relative to underground or industrially disguised land-based facilities, but the residual risk is non-zero and warrants operationalising the detection modalities discussed.
+
+00:02:13.560 --> 00:02:16.485
+Appendices were skipped in this reading.
+
+00:02:21.095 --> 00:02:38.395
+Most proposals for international agreements that place restrictions on frontier AI development require robust verification mechanisms to monitor compliance. Likewise, even without international agreements, deterrence regimes depend upon the ability to locate a rival's compute.
+
+00:02:38.395 --> 00:02:47.520
+A critical challenge for such agreements is detecting undeclared, or "dark compute," facilities that states might deploy to evade such restrictions.
+
+00:02:48.170 --> 00:03:04.045
+Underwater data centers have been proposed as a possible evasion vector. However, the technical feasibility of deploying them at the scale required for training frontier models remains unclear, and their detectability has not been seriously investigated.
+
+00:03:04.045 --> 00:03:22.045
+The paper examines the state of current deployments, evaluates construction complexity relative to traditional data centers, and investigates their feasibility for large-scale AI training. It then assesses the detectability of subsea clusters via thermal, acoustic, and visual surveillance.
+
+00:03:26.655 --> 00:03:43.255
+Underwater data centers are sealed capsules of computing infrastructure deployed on the seabed, using cold ocean water for cooling instead of conventional systems. This section covers their cooling methods, physical design, operational reliability, and current deployments.
+
+00:03:43.905 --> 00:04:02.580
+Cooling. U D Cs use two primary cooling methods. In the first, cold seawater is piped through heat exchangers positioned behind the server racks. In the second, servers are immersed in a dielectric fluid that absorbs heat directly from the chips, which is then dissipated to the surrounding seawater.
+
+00:04:02.580 --> 00:04:18.705
+Both approaches eliminate the chillers, cooling towers, and H V A C systems that dominate the energy budgets of land-based, air-cooled facilities, where H V A C has historically accounted for roughly twenty-five to forty percent of electricity consumption.
+
+00:04:19.355 --> 00:04:37.655
+Importantly, existing U D Cs have been deployed at nine to thirty-six metre depths in a seasonally mixed surface layer, rather than the stable, near-freezing water that deep seawater cooling relies on, which starts at around one hundred metres. Even at these shallow depths the thermal advantage is substantial.
+
+00:04:37.655 --> 00:04:50.805
+Project Natick held cooling overhead to three percent of total facility power at eleven metres. Greater depths would offer a colder and more stable heat sink, but at the cost of greater structural and installation demands.
+
+00:04:51.455 --> 00:05:11.980
+Physical design. The basic design is a sealed, pressure-resistant steel cylinder for multi-year unmanned operation, sometimes referred to as "lights-out" deployment. Each capsule is connected to shore by a submarine cable bundle that carries electrical power and fibre-optic data links, functioning as an extension of a land-based network.
+
+00:05:11.980 --> 00:05:24.880
+Deployment and retrieval are handled by crane barges or similar marine vessels, which lower the capsules and anchor them to the seabed, and reverse the process when a unit reaches end of life or requires servicing.
+
+00:05:25.530 --> 00:05:44.930
+Two main design families have emerged, each pairing a pressure strategy with a corresponding cooling approach. Sealed capsules, as used in Project Natick, maintain one atmosphere of internal pressure and are filled with dry nitrogen, which eliminates the oxygen and humidity that drive corrosion in conventional facilities.
+
+00:05:44.930 --> 00:05:57.805
+Heat is moved from the servers to the ocean via fans and seawater piped through internal heat exchangers. Pressure-equalised pods, as proposed by Subsea Cloud, match internal pressure to the surrounding ocean.
+
+00:05:57.805 --> 00:06:14.380
+Because gases compress at depth, pressure equalisation requires filling the enclosure with a nearly incompressible dielectric fluid, which doubles as the immersion coolant. Servers sit directly in the fluid, and heat transfers through the container walls to the surrounding seawater.
+
+00:06:14.380 --> 00:06:21.805
+In principle, this reduces structural requirements, since the walls no longer need to withstand the full pressure differential.
+
+00:06:22.455 --> 00:06:33.505
+Reliability. Over its two-year deployment, Natick recorded less than one percent of servers failing, approximately one eighth the rate of equivalent land-based facilities.
+
+00:06:33.505 --> 00:06:47.455
+This improvement has been attributed to the inert nitrogen atmosphere inside the capsule and the absence of human-induced disruptions like accidental bumps, cable pulls, and maintenance errors that are common in staffed facilities.
+
+00:06:48.105 --> 00:07:03.805
+However, because the capsules are sealed and inaccessible during operation, individual server failures could not be repaired in place like in land-based data centers, where full repairs can be completed within hours and training continuity can be restored within minutes.
+
+00:07:03.805 --> 00:07:13.930
+Instead, workloads are redistributed across remaining healthy nodes, and failed hardware stays offline until the capsule is retrieved at the end of its operational cycle.
+
+00:07:13.930 --> 00:07:33.255
+For sustained deployments spanning two years or longer, these individual failures could compound, likely rendering the long-term performance of U D Cs progressively worse than equivalently provisioned land-based clusters, at least until a reliable mechanism for conducting repairs whilst pods remain operational is found.
+
+00:07:33.905 --> 00:07:54.505
+Current and past deployments. Microsoft's Project Natick was the first U D C project. Phase one deployed a single rack off the California coast from August to December twenty fifteen. Phase two, a full-scale module of eight hundred and sixty-four servers, operated on the seabed off Orkney from June twenty eighteen to July twenty twenty.
+
+00:07:54.505 --> 00:08:07.830
+Natick was formally discontinued in twenty twenty-four, with the difficulty of servicing, upgrading and replacing sealed hardware widely suggested as the reason, a concern that the project lead had earlier dismissed.
+
+00:08:08.480 --> 00:08:15.755
+Highlander, via its subsidiary HiCloud, is the only company currently operating commercial U D Cs.
+
+00:08:15.755 --> 00:08:33.055
+Its Hainan cluster has grown incrementally toward a long-term target of one hundred modules: from initial tests in twenty twenty-one, to a first commercial module deployed in twenty twenty-three, and a second commercial module in February twenty twenty-five, adding roughly four hundred servers.
+
+00:08:33.055 --> 00:08:53.630
+Its Shanghai facility completed Phase one construction in October twenty twenty-five and entered operation in May twenty twenty-six, making it the first U D C directly linked to an offshore wind farm. Phase one was operating at two point three megawatts in May twenty twenty-six, against a twenty-four megawatt power capacity in the full build-out.
+
+00:08:53.630 --> 00:09:01.355
+Importantly, the Shanghai facility is not completely submerged, and will therefore not be the focus for the remainder of the paper.
+
+00:09:02.005 --> 00:09:16.030
+Subsea Cloud, a US based company, has announced Jules Verne, a demonstration pod near Port Angeles, Washington, and Project OTTO, a rolling trial off south-west Norway whose first phase was scheduled for twenty twenty-four.
+
+00:09:16.030 --> 00:09:32.655
+The Jules Verne design is a twenty-foot container that uses dielectric immersion cooling, holding sixteen racks and roughly eight hundred servers at nine metres depth, and drawing roughly one megawatt, though the company advertises a range of zero point five to one point eight megawatts.
+
+00:09:32.655 --> 00:09:40.205
+Importantly, the authors could not find independent verification of any operating U D Cs from Subsea Cloud.
+
+00:09:40.855 --> 00:09:55.630
+NetworkOcean, a Y Combinator-backed startup, has announced a zero point five megawatt test capsule for San Francisco Bay but has faced regulatory obstacles, with two California agencies flagging a lack of required permits.
+
+00:09:55.630 --> 00:10:06.855
+It plans to submerge the capsule a few metres below the surface for an hour, claiming the capsule would eliminate on-site water consumption and reduce power usage by up to thirty percent.
+
+00:10:07.505 --> 00:10:26.705
+Table one compares these deployments. It shows that Natick's two phases were small, with the second drawing two hundred and forty kilowatts and using no GPUs. It also shows that the commercial and announced systems range from about one megawatt to a planned two hundred megawatts or more, with most hardware details undisclosed.
+
+00:10:26.705 --> 00:10:32.230
+Most are powered from the shore grid, except Shanghai, which draws mainly on offshore wind.
+
+00:10:36.490 --> 00:10:52.140
+Building a U D C draws on a different industrial base than building a data center on land. A conventional facility requires concrete, structural steel, and H V A C contractors, industries with tens of thousands of qualified firms worldwide.
+
+00:10:52.140 --> 00:11:07.115
+An underwater facility requires pressure-vessel fabrication, submarine cable installation, and marine engineering capability, and faces severe limitations in maintenance, hardware refresh, and potential vulnerability to sabotage.
+
+00:11:07.765 --> 00:11:23.115
+Hull fabrication. Currently, the core structural element of a U D C is a sealed, corrosion-resistant steel pressure vessel. Approximately fourteen to seventeen countries currently possess the capability to design and build full-sized submarines.
+
+00:11:23.115 --> 00:11:42.990
+Major yards are in China, France, South Korea, Japan, Germany and Sweden, and several others including India, Italy, and Turkey. This makes pressure-vessel fabrication a strong supply-chain chokepoint: the activity is concentrated in a small number of known, large shipyards and is inherently visible to satellite observation.
+
+00:11:42.990 --> 00:12:01.565
+However, this bottleneck may not be permanent. With significant investment in scaling pressure-vessel fabrication, the capsules may become factory-built modular units produced in serial production across multiple yards, eroding both the cost premium and the monitoring advantage of supply-chain concentration.
+
+00:12:02.215 --> 00:12:20.365
+Submarine cabling. Every U D C requires at least one submarine cable bundle carrying both electrical power and fibre-optic data links from shore. Installing and maintaining these cables requires specialised cable-laying vessels, of which it is estimated there are around sixty globally.
+
+00:12:20.365 --> 00:12:38.690
+Not all sixty are equivalent: many are smaller repair vessels or fibre-only ships. Power cable installation, which is what an underwater data center requires, needs larger vessels with higher-capacity carousels and tensioners, further narrowing the available fleet to perhaps twenty to thirty ships.
+
+00:12:38.690 --> 00:12:48.765
+The major operators are a known and small set of companies, and their vessels, as commercial shipping, carry A I S transponders and are therefore trackable in principle.
+
+00:12:49.415 --> 00:13:02.215
+Marine operations. Activities such as cable laying, seabed preparation, pod deployment via crane barge, and umbilical connection account for a substantial share of total U D C project cost.
+
+00:13:02.215 --> 00:13:15.015
+This is plausibly the single largest cost premium over land-based construction, where site preparation and utility connection, while slow, draw on abundant and inexpensive civil engineering resources.
+
+00:13:15.665 --> 00:13:32.815
+Maintenance and hardware refresh. In the current generation of U D Cs, hardware failures such as a dead GPU or a failed network switch cannot be repaired until the entire pod is retrieved. Subsea Cloud claims retrieval in four to sixteen hours for its lighter, pressure-equalised pods.
+
+00:13:32.815 --> 00:13:51.465
+This is an unverified vendor figure, reported at the company's twenty twenty-two announcement and covering transit to the site as well as the recovery itself. It has not been independently demonstrated at scale. Similarly, the hardware refresh cycle could also be a significant bottleneck for U D C economics.
+
+00:13:51.465 --> 00:14:01.865
+GPU generations evolve every twelve to eighteen months, and sealed pods designed for three to five year deployment cycles cannot accommodate mid-cycle upgrades.
+
+00:14:02.515 --> 00:14:07.415
+Sabotage. A final point is the vulnerability to physical sabotage.
+
+00:14:07.415 --> 00:14:25.690
+Off-the-shelf underwater speakers, tuned to a hard-drive resonant frequency of about five kilohertz, within a measured range of two point zero to eight point nine kilohertz, can displace drive read and write heads far enough to degrade RAID throughput and force nodes out of a distributed filesystem within minutes.
+
+00:14:25.690 --> 00:14:29.765
+This sits alongside other kinetic forms of sabotage.
+
+00:14:29.765 --> 00:14:47.715
+The twenty twenty-two Nord Stream attacks, which Denmark, Germany and Sweden jointly confirmed to the U N Security Council were caused by deliberate explosions, demonstrate both the feasibility of striking state-scale subsea infrastructure and the difficulty of attributing responsibility afterwards.
+
+00:14:52.325 --> 00:15:10.250
+Power delivery and cooling for such a training run appear quite feasible. One hundred thousand H one hundreds draw roughly seventy megawatts at the GPUs alone, but server overhead, meaning CPUs, network cards and power supplies, and switch fabric push this toward roughly one hundred and fifty megawatts.
+
+00:15:10.250 --> 00:15:22.425
+A frontier cluster in the relevant three to five year window may also require denser hardware, such as H two hundreds or B two hundreds, suggesting two hundred megawatts as a plausible high end.
+
+00:15:22.425 --> 00:15:43.250
+Submarine H V D C power cables routinely carry gigawatt-scale loads, so delivering one hundred and fifty to two hundred megawatts via a dedicated submarine power cable is well within proven engineering. Cooling is where U D Cs have an advantage over land-based clusters, so it is unlikely that this would constitute a bottleneck.
+
+00:15:43.900 --> 00:16:04.600
+Interconnect is a plausible limitation. For one, the network fabric itself is physically massive. Beyond the GPU racks, a one hundred thousand H one hundred equivalent cluster also needs hundreds of leaf switches and dozens of spine switches, each consuming tens of kilowatts, each requiring precisely structured cabling to every other switch.
+
+00:16:04.600 --> 00:16:15.900
+In a reference eight thousand one hundred and ninety-two GPU design, two hundred and fifty-six leaf switches connect to thirty-six spine switches housed in dedicated spine racks.
+
+00:16:15.900 --> 00:16:32.750
+This likely increases the required power delivery, already accounted for above, and more importantly, means substantial additional engineering effort beyond what U D Cs are currently designed for. While it may not be economical, this appears solvable for a motivated actor.
+
+00:16:33.400 --> 00:16:48.650
+Cable distance is another aspect of networking that could constitute a bottleneck. Between racks, direct-attach copper works up to about three metres, with active optical cables and multimode fibre extending reach to roughly fifty metres for the leaf layer.
+
+00:16:48.650 --> 00:16:58.350
+This means the physical layout must be extremely dense and precisely arranged, which likely implies additional engineering effort and risk of malfunction.
+
+00:16:59.000 --> 00:17:12.350
+The most significant obstacle from the networking side appears to be the required maintenance. Common maintenance tasks such as unplugging and reseating an InfiniBand transceiver are fundamentally hands-on operations.
+
+00:17:12.350 --> 00:17:50.750
+The most common operational issues in GPU clusters are "flapping I B transceivers, GPUs falling off the bus, GPU H B M errors, and silent data corruption," and resolution often requires "unplugging and plugging back in the InfiniBand transceiver or cleaning the dust off of fiber cables." Meta's four hundred and five billion parameter training run for Llama three provides the most detailed public data point: over fifty-four days on sixteen thousand three hundred and eighty-four H one hundred GPUs, the cluster experienced four hundred and nineteen unexpected interruptions, approximately one every three hours.
+
+00:17:50.750 --> 00:18:11.550
+Optical failures, arguably the most severe reliability problem, also do not get reduced by a less corrosive atmosphere the way chip failures themselves are. This means that conducting a large training run in a U D C will either require very difficult underwater maintenance or massive redundancy to route connections around points of failure.
+
+00:18:12.200 --> 00:18:26.950
+Overall, interconnect is where the constraints are most severe, though not because the fabric itself is unbuildable. The switching layer, the cabling density it demands and the additional power it draws are all tractable for an actor willing to absorb the cost.
+
+00:18:26.950 --> 00:18:46.275
+The binding constraint is that this fabric requires continual hands-on maintenance: reseating transceivers, cleaning optics, and swapping failed links. A state actor could substitute capital for access, through heavy link redundancy and overprovisioned spare capacity, but even this would constitute a severe scheduling penalty.
+
+00:18:46.275 --> 00:18:53.475
+Whether U D Cs constitute a viable dark-compute pathway therefore turns on the probability of detection.
+
+00:18:58.085 --> 00:19:16.835
+The detection modalities most applicable to operational U D Cs are thermal infrared imaging and acoustic surveillance, whilst optical and synthetic aperture radar imaging are capable of detecting the logistics and infrastructure activity associated with building and installing a U D C cluster.
+
+00:19:16.835 --> 00:19:35.785
+This section will show that the effectiveness of thermal infrared imaging is likely negligible given the effects of heat dispersion in coastal waters; acoustic detection is physically plausible but faces significant operational bottlenecks; and optical and radar monitoring are most powerful during the deployment window.
+
+00:19:40.395 --> 00:19:59.770
+A frontier-scale U D C cluster drawing roughly one hundred and fifty to two hundred megawatts would continuously reject waste heat into the surrounding water column through seawater heat exchangers or immersion-fluid systems. The relevant question is whether this produces a detectable sea-surface-temperature anomaly.
+
+00:19:59.770 --> 00:20:15.470
+At the roughly thirty-five metre deployment depths of current commercial U D Cs, and given that frontier-scale training would likely require an area on the order of one point seven to nine hectares, detection is unlikely in the majority of open coastal conditions.
+
+00:20:15.470 --> 00:20:27.520
+Waste heat expelled at this depth would need to rise through a coastal water column before reaching the surface, where current velocity usually sits well above zero point one seven metres per second.
+
+00:20:27.520 --> 00:20:41.145
+That implies a sea-surface temperature change below the standard deviation of natural variability, which is plus or minus zero point three to zero point five degrees Celsius in lower-variability ocean basins.
+
+00:20:41.795 --> 00:20:57.645
+Conventional thermal infrared imaging satellites, such as Landsat eight, offer coarse resolution, one hundred metres, relative to the scale of a U D C's likely thermal signature, and are often limited by cloud cover, creating persistent monitoring gaps.
+
+00:20:57.645 --> 00:21:18.395
+Whilst Ahn and colleagues demonstrated in two thousand six that satellite thermal-infrared imagery could track the warm-water plume from Korea's roughly fifty-nine hundred megawatt Younggwang nuclear plant up to one hundred kilometres from the outfall, this discharge enters the sea from a concentrated point at the surface rather than being dispersed at depth.
+
+00:21:18.395 --> 00:21:24.095
+A U D C's smaller, deeper discharge would not produce a comparable surface signature.
+
+00:21:24.745 --> 00:21:43.170
+A newer commercial thermal satellite does not close this gap either. SatVu's HotSat-two offers day-and-night imaging at three point five metre resolution, yet its imager operates in the mid-wave infrared, approximately three point seven to five micrometres, rather than the longwave thermal-infrared band.
+
+00:21:43.170 --> 00:22:02.970
+Absolute sea-surface-temperature retrieval requires the paired thermal-infrared channels near eleven and twelve micrometres used by sensors such as VIIRS, MODIS and Sentinel-three SLSTR, whose brightness-temperature difference corrects for atmospheric water-vapour absorption, and which have much coarser resolution.
+
+00:22:03.620 --> 00:22:19.720
+The three key variables affecting detectability are therefore depth, dispersion and location. Deeper and more widely dispersed pods will reduce the thermal signal at the sea surface, as discharge rises through a more stratified water column and over a greater volume.
+
+00:22:19.720 --> 00:22:35.820
+The additional costs and engineering constraints of deeper and more dispersed pods can be offset by building U D Cs in waters with increased current velocity, significantly reducing the likelihood of a detectable anomaly from shallower or denser clusters.
+
+00:22:35.820 --> 00:22:48.520
+This effectively rules out U D C construction in calmer waters, such as coves, sheltered inlets, or inland waters such as lakes, where covert construction and operation may initially appear simpler.
+
+00:22:48.520 --> 00:23:06.295
+Operators seeking to evade thermal detection would therefore have strong incentives to deploy as deep as is structurally and economically feasible, as distributed as interconnect constraints allow, and in waters as turbulent as a hull can feasibly withstand without compromising efficiency.
+
+00:23:10.555 --> 00:23:30.805
+Both U D C design families generate an acoustic signature, but only one source is common to both: power conversion. A cluster fed by a submarine alternating-current link steps voltage down locally, and the transformers radiate a stable tone at twice the supply frequency, one hundred or one hundred and twenty hertz, with harmonics.
+
+00:23:30.805 --> 00:23:43.080
+An order-of-magnitude scaling estimate places the total signature at roughly one hundred and twenty-seven to one hundred and forty-seven decibels relative to one micropascal at one metre.
+
+00:23:43.730 --> 00:23:56.330
+Sealed capsules, as demonstrated by Project Natick, move heat with fans, adding shaft-rate tones of roughly twenty to one hundred and fifty hertz and blade-passing tones an order of magnitude higher.
+
+00:23:56.330 --> 00:24:11.530
+For simplicity, and following scepticism from reviewers that sealed capsules would be used for frontier training runs, the authors focus on the acoustic signature of power conversion equipment, which also covers dielectric immersion-cooled U D Cs.
+
+00:24:11.530 --> 00:24:26.205
+Additionally, whilst immersion pods have no fan noise, their internal sources sit in a fluid whose acoustic impedance is much closer to seawater than the gas-to-steel boundary of a sealed hull, so the power-conversion tone couples out more efficiently.
+
+00:24:26.205 --> 00:24:33.855
+The authors expect, in principle, for these features to place both design families at a similar level of acoustic signature.
+
+00:24:34.505 --> 00:24:49.980
+Unlike submarines, which are moving targets that use active noise-reduction engineering, U D Cs are stationary, continuously operating industrial facilities, suggesting that they may be easier to track via traditional acoustic surveillance systems.
+
+00:24:49.980 --> 00:25:04.980
+However, the US Navy's primary detection mechanism for submarines is the SOSUS network: arrays of hydrophones positioned to exploit the SOFAR channel, whose axis at mid-latitudes lies at roughly six hundred to twelve hundred metres.
+
+00:25:04.980 --> 00:25:15.830
+The system is capable of passively detecting acoustic power of less than one watt at ranges of several hundred kilometres, but it depends on coupling into that deep waveguide.
+
+00:25:15.830 --> 00:25:27.580
+Current U D C deployments at thirty to thirty-five metres sit in shallow coastal waters, where propagation losses are substantially higher and bottom reverberation masks nearby targets.
+
+00:25:28.230 --> 00:25:38.830
+Without the monitored state's cooperation on naval monitoring, acoustic detection of a frontier-scale U D C would therefore likely require the covert deployment of sensors.
+
+00:25:38.830 --> 00:25:55.305
+Existing civilian infrastructure, such as oceanographic moorings or research hydrophone arrays, could provide data without active sensor deployments, but coverage near specific coastal sites cannot be assumed and would require deliberate pre-positioning under scientific cover.
+
+00:25:55.305 --> 00:26:14.405
+A purpose-built sensor such as the AN slash S S Q fifty-three DIFAR sonobuoy can operate for up to eight hours by transmitting data back by radio link, covers the transformer frequency range and harmonics, and can provide directional bearings to a source, such that two sonobuoys can triangulate a contact.
+
+00:26:14.405 --> 00:26:32.280
+Given the source level estimated above, and the transmission losses characteristic of thirty-five metre underwater depths, a sonobuoy would need to be positioned within roughly five to twenty kilometres of the cluster to achieve detection, with the upper end of that range dependent on bottom type and sea state.
+
+00:26:32.930 --> 00:26:46.055
+The practical implication is that passive acoustic monitoring would likely require the deployment of sensors inside the boundary of the target state's twelve nautical mile, or twenty-two kilometre, territorial sea.
+
+00:26:46.055 --> 00:26:55.280
+They could be deployed from a covert submarine, lowered from a surface vessel under civilian cover, or dropped from altitudes up to thirty thousand feet.
+
+00:26:55.280 --> 00:27:13.305
+However, each method carries significant risk: a state concealing a U D C would plausibly monitor the surrounding water and likely approach routes for intruding submarines and suspicious foreign objects, and track anomalous surface-vessel activity using satellite A I S and coastal radar.
+
+00:27:13.955 --> 00:27:34.230
+A further limit is that detection is not the same as attribution. The mains-frequency tone that dominates the U D C signature is radiated by every shore-connected alternating-current installation in a coastal region: ships' generators, offshore platforms, wind farms and pumping stations all produce energy in the same narrow band.
+
+00:27:34.230 --> 00:27:53.530
+Detecting acoustic energy at one hundred or one hundred and twenty hertz therefore identifies very little on its own. Discrimination would rest on the harmonic structure of the source, on its spatial stationarity, and on the absence of any declared installation at that position, none of which a single passive sensor establishes.
+
+00:27:54.180 --> 00:28:04.080
+Confirming that a contact is a data center rather than ordinary marine infrastructure would therefore, in practice, likely require the use of active sonar.
+
+00:28:04.080 --> 00:28:21.680
+Small autonomous underwater vehicles, or A U Vs, such as the REMUS six hundred used for seabed survey work, can image a strip of seabed with side-scan sonar in a single pass, so a cluster spanning roughly one point seven to nine hectares could be covered in a modest number of transects.
+
+00:28:21.680 --> 00:28:32.205
+A U Vs have many advantages over sonobuoys, such as producing a clear image rather than an inferred contact, and much greater efficiency in area covered over time.
+
+00:28:32.205 --> 00:28:50.430
+Against an alert host, however, this is not reliably stealthy, since active sonar pings the seabed, the vehicle's noise is highly detectable by purpose-built intruder sonar, and its launch and recovery would expose deployers to the same risks as using any other vessel for conducting physical inspections.
+
+00:28:50.430 --> 00:28:55.030
+Both are intrusive enough to need express provision in the agreement itself.
+
+00:28:55.680 --> 00:29:06.405
+Acoustic detection is therefore possible in principle, but its feasibility is heavily dependent on the specific geography and the counterintelligence posture of the monitored state.
+
+00:29:06.405 --> 00:29:23.905
+With that said, the more aggressive the countermeasures a state deploys, such as restricting fishing vessels, imposing exclusion zones, or deploying acoustic decoys, or the more restrictive a state is over the monitoring regimes a treaty may permit, the more suspicion those measures themselves attract.
+
+00:29:23.905 --> 00:29:41.105
+For example, if a state rejected a treaty clause mandating the bilateral deployment of seabed hydrophone networks or regular A U V surveys, akin to International Atomic Energy Agency inspection protocols, this would generate significant suspicions of concealment effort.
+
+00:29:45.715 --> 00:30:00.965
+Neither optical satellites nor synthetic aperture radar, or SAR, can detect an operational U D C directly. Optical sensors require reflected sunlight, which attenuates rapidly in seawater from thirty to thirty-five metre depths.
+
+00:30:00.965 --> 00:30:11.690
+SAR uses targeted microwave pulses which, while capable of penetrating cloud cover and operating at night, produce near-zero radar return from submerged objects.
+
+00:30:11.690 --> 00:30:23.765
+While SAR techniques have been used to detect bottom topography and depth gradients via surface-wave modulation, a U D C would likely not produce a SAR-detectable perturbation in the local wave field.
+
+00:30:24.415 --> 00:30:43.190
+Optical and SAR imaging are nonetheless relevant as deployment-phase detection tools. As noted earlier, there are approximately sixty ships worldwide capable of laying submarine cables, with only a small subset capable of deploying the power cables required to deliver hundreds of megawatts to a seabed cluster.
+
+00:30:43.190 --> 00:31:00.540
+SAR can be used to identify and classify specific vessel types, which can be fused with satellite Automatic Identification System data to flag vessels that have disabled or modified their transponders, a technique already used in sanctions enforcement and fishing regulation.
+
+00:31:00.540 --> 00:31:11.440
+Similarly, optical and SAR satellites have been used in open-source-intelligence contexts to monitor shipyard activity, track construction progress, and infer production rates.
+
+00:31:11.440 --> 00:31:25.140
+Assuming the pool of shipyards capable of manufacturing pressure vessels for U D Cs is twenty to thirty globally, the same methodology would allow monitors to track abnormal production volumes or unscheduled deployments.
+
+00:31:25.790 --> 00:31:41.140
+The key limitation for optical and SAR monitoring is timing: a cable installation completed before a verification regime came into force, or conducted in a manner consistent with other commercial activity, would not generate a distinguishing signature.
+
+00:31:41.140 --> 00:31:53.165
+However, given the maintenance required for frontier training that was outlined earlier, it is likely that a recurring surface signature would be generated and detected throughout a cluster's operational cycle.
+
+00:31:57.775 --> 00:32:18.400
+Taken together, these three modalities suggest that an operational, frontier-scale U D C could potentially be concealed completely. However, it is much more likely that a U D C would be detected during construction or maintenance if SAR and optical satellites are actively used for surveillance of the cable-laying vessel fleet and fabrication yards.
+
+00:32:18.400 --> 00:32:34.525
+Whilst thermal detection is unlikely to be viable for anything other than operational U D Cs in very shallow or calm waters, acoustic detection could also be valuable as a verification mechanism depending on the inspection rights an agreement establishes.
+
+00:32:39.135 --> 00:32:51.710
+Underwater data centers are technically feasible as a dark-compute pathway for one hundred thousand H one hundred equivalent training runs, but only under demanding and strategically distinctive conditions.
+
+00:32:51.710 --> 00:33:02.385
+The predominant obstacle seems to be the large amount of hands-on maintenance currently required during large AI training runs, which is incredibly difficult underwater.
+
+00:33:02.385 --> 00:33:19.360
+A state actor willing to absorb significant cost and timeline premiums could plausibly overcome this, but the resulting facility is strategically uneconomic, one that makes sense only if the operator's primary objective is concealment rather than cost or performance efficiency.
+
+00:33:19.360 --> 00:33:29.710
+One important implication is that U D Cs built for commercial purposes and U D Cs built for evasion have very distinct engineering signatures.
+
+00:33:30.360 --> 00:33:48.210
+No single detection modality forecloses the U D C evasion pathway, but a layered approach raises the bar substantially. Deployment-phase surveillance of the small pressure-vessel fabrication pool and the A I S-tracked power-cable-laying vessel fleet are the most effective detection pathways.
+
+00:33:48.210 --> 00:34:02.460
+Working in conjunction with supply-chain-focused measures, satellite imagery is likely powerful at tracking U D C buildout. Detecting a U D C once it has been built will be much harder, but the maintenance might still be clearly detectable.
+
+00:34:02.460 --> 00:34:22.860
+Small hydrophones and A U Vs provide a promising pathway to detection and verification, especially if parties to an agreement mutually agree to host them in areas where U D Cs may possibly be built. Overall, the detection methodologies discussed work best in a layered approach, where one layer compensates for the weaknesses of another.
+
+00:34:23.510 --> 00:34:42.835
+How feasible a path to dark compute U D Cs present depends in large part on the available alternatives. Underground data centers, concealed in mines or excavated cavities, with off-grid power and construction disguised as civil or mining activity, offer substantially greater ease of hardware maintenance.
+
+00:34:42.835 --> 00:35:01.785
+Concealment of data centers as ordinary industrial buildings presents an even lower barrier: equipment can be delivered in ordinary shipments, personnel movements are unremarkable, and the construction signature is minimal compared to the marine logistics operation that any frontier-scale U D C requires.
+
+00:35:01.785 --> 00:35:13.360
+Compared with U D Cs, these data centers may be easier to detect after they have been built, but this is likely compensated for by the greater difficulty of hiding U D C construction.
+
+00:35:14.010 --> 00:35:28.710
+Given the obstacles outlined and the feasibility of detection during the buildout stage, the authors believe that, while in principle possible, U D Cs likely constitute a much harder path to treaty evasion compared with the alternatives.
+
+00:35:28.710 --> 00:35:38.585
+Nevertheless, they recommend that the intelligence agencies of nation states actively monitor developments in this area and research detection methodologies.
