@@ -1,0 +1,41 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Introduction"
+    },
+    {
+      "startTime": 44,
+      "title": "Fiona's life and death"
+    },
+    {
+      "startTime": 123,
+      "title": "The online reaction"
+    },
+    {
+      "startTime": 216,
+      "title": "Who is to blame"
+    },
+    {
+      "startTime": 300,
+      "title": "Moral inconsistency"
+    },
+    {
+      "startTime": 434,
+      "title": "Farmed animals"
+    },
+    {
+      "startTime": 484,
+      "title": "The American Hippo Bill"
+    },
+    {
+      "startTime": 555,
+      "title": "Conservation and fame"
+    },
+    {
+      "startTime": 620,
+      "title": "Closing"
+    }
+  ]
+}

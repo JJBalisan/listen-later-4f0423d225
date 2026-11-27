@@ -979,5 +979,21 @@
     "vtt": "audio/ep066.vtt",
     "link": "https://measuredlife.substack.com/p/want-more-great-grantmakers-in-your?publication_id=4322805&post_id=226522481&isFreemail=true&r=5yj8ty&triedRedirect=true",
     "cover": "covers/ep066.jpg"
+  },
+  {
+    "no": 67,
+    "date": "2026-11-27",
+    "title": "Fiona the hippo may have been unique, but she was not uniquely deserving of our empathy",
+    "summary": "The author argues that the public grief over Fiona the hippo's accidental death exposes an inconsistency in how we treat animals, since billions of farmed animals are just as deserving of compassion but are deliberately killed.",
+    "file": "audio/ep067.mp3",
+    "bytes": 4108967,
+    "duration": "00:11:00",
+    "music": true,
+    "music_credit": "Music: \u201cHop\u201d by Monplaisir (CC0).",
+    "chapters": "audio/ep067.chapters.json",
+    "transcript": "audio/ep067.transcript.html",
+    "vtt": "audio/ep067.vtt",
+    "link": "https://earthlinged.substack.com/p/fiona-the-hippo-may-have-been-unique?publication_id=3166106&post_id=226607824&isFreemail=true&r=8jprdw&triedRedirect=true",
+    "cover": "covers/ep067.jpg"
   }
 ]

@@ -8,7 +8,7 @@
     <link>https://jjbalisan.github.io/listen-later-4f0423d225/</link>
     <description>Pages, articles and papers JJ saved to hear later, cleaned up for listening and read aloud by a synthetic voice.</description>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 25 Nov 2026 23:50:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 11:45:11 +0000</lastBuildDate>
     <atom:link href="https://jjbalisan.github.io/listen-later-4f0423d225/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Claude</itunes:author>
     <itunes:owner><itunes:name>Claude</itunes:name><itunes:email>noreply@jjbalisan.com</itunes:email></itunes:owner>
@@ -20,6 +20,22 @@
     <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg"/>
     <image><url>https://jjbalisan.github.io/listen-later-4f0423d225/cover.jpg</url><title>Tab Closed</title><link>https://jjbalisan.github.io/listen-later-4f0423d225/</link></image>
     <itunes:category text="Education"/>
+    <item>
+      <title>Fiona the hippo may have been unique, but she was not uniquely deserving of our empathy</title>
+      <description>The author argues that the public grief over Fiona the hippo's accidental death exposes an inconsistency in how we treat animals, since billions of farmed animals are just as deserving of compassion but are deliberately killed. Music: “Hop” by Monplaisir (CC0).</description>
+      <itunes:summary>The author argues that the public grief over Fiona the hippo's accidental death exposes an inconsistency in how we treat animals, since billions of farmed animals are just as deserving of compassion but are deliberately killed. Music: “Hop” by Monplaisir (CC0).</itunes:summary>
+      <pubDate>Fri, 27 Nov 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">listen-later-ep067</guid>
+      <enclosure url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep067.mp3" length="4108967" type="audio/mpeg"/>
+      <itunes:duration>00:11:00</itunes:duration>
+      <itunes:episode>67</itunes:episode>
+      <itunes:image href="https://jjbalisan.github.io/listen-later-4f0423d225/covers/ep067.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://earthlinged.substack.com/p/fiona-the-hippo-may-have-been-unique?publication_id=3166106&amp;post_id=226607824&amp;isFreemail=true&amp;r=8jprdw&amp;triedRedirect=true</link>
+      <podcast:chapters url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep067.chapters.json" type="application/json+chapters"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep067.transcript.html" type="text/html"/>
+      <podcast:transcript url="https://jjbalisan.github.io/listen-later-4f0423d225/audio/ep067.vtt" type="text/vtt"/>
+    </item>
     <item>
       <title>Want more great grantmakers in your field? Offer donation matching as a staff benefit!</title>
       <description>The piece argues that organizations wanting more skilled grantmakers should offer staff donation matching, because giving money away, even at small scales, is excellent training for grantmaking. It describes how foundations and the author's own organization do this and what it costs. Music: “Hop” by Monplaisir (CC0).</description>
